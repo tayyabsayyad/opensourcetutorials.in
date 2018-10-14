@@ -1,0 +1,47 @@
+baseURL = "http://opensourcetutorials.in"
+languageCode = "en-us"
+paginate = "10"
+title = "Open Source Tutorials"
+theme = "Mainroad"
+disqusShortname = "www-opensourcetutorials-in"
+googleAnalytics = "UA-59503205-1"
+[Author]
+    name = "Tayyabali Sayyad"
+    bio = "Tayyabali is a Open Source evangelist, Works as Assistant Professor at DBIT, Mumbai, India."
+    avatar = "tayyabali.jpeg"
+
+[Params]
+    subtitle = "Where Open Source is Everything ! "
+    description = " Tayyabali Sayyad's Personal blog about Open Source"
+    opengraph = true # Enable OpenGraph if true
+    readmore = false # Show "Read more" button in list if true
+    leftsidebar = false # Move sidebar to the left side if true
+    authorbox = true # Show authorbox at bottom of pages if true
+    post_navigation = true # Show post navigation at bottom of pages if true
+    postSections = ["post"] # the section pages to show on home page and the "Recent articles" widget
+    #postSections = ["blog", "news"] # alternative that shows more than one section's pages
+    #dateformat = "2006-01-02" # change the format of dates
+
+
+[Params.widgets]
+    search = false # Enable "Search" widget
+    recent_num = 5 # Set the number of articles in the "Recent articles" widget
+    recent_articles = true # Enable "Recent articles" widget
+    recent_articles_num = 5 # Set the number of articles in the "Recent articles" widget
+    categories = true # Enable "Categories" widget
+    tags = true # Enable "Tags" widget
+    tags_counter = false # Enable counter for each tag in "Tags" widget (disabled by default)
+
+    # Enable "Social" widget, if any of "social_*" set a value
+    social_facebook = "tayyabsayyad"
+    social_twitter = "tayyabsayyad"
+    social_linkedin = "tayyabsayyad"
+    social_github = "tayyabsayyad"
+    social_email = "tayyabsayyad@gmail.com"
+
+[Params.sidebar]
+  home = "right"   # Configure layout for home page
+  list = "right"   # Configure layout for list pages
+  single = "right" # Configure layout for single pages
+  # Enable widgets in given order
+  widgets = ["search", "recent", "categories", "taglist"]

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://opensourcetutorials.in/post/os/fork/</loc>
+    <lastmod>2018-02-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://opensourcetutorials.in/post/docker/5.containerlifecycle/</loc>
+    <lastmod>2018-02-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://opensourcetutorials.in/post/docker/8.dockerfile/</loc>
+    <lastmod>2018-02-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://opensourcetutorials.in/post/docker/9.dockercheetsheet/</loc>
+    <lastmod>2018-02-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://opensourcetutorials.in/post/docker/docker/</loc>
+    <lastmod>2018-02-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://opensourcetutorials.in/post/docker/2.dockerhub/</loc>
+    <lastmod>2018-02-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://opensourcetutorials.in/post/docker/3.baseimages/</loc>
+    <lastmod>2018-02-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://opensourcetutorials.in/post/docker/6.image_container_management/</loc>
+    <lastmod>2018-02-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://opensourcetutorials.in/post/docker/1.install/</loc>
+    <lastmod>2018-02-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://opensourcetutorials.in/post/docker/7.redirect_ports_volumes/</loc>
+    <lastmod>2018-02-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://opensourcetutorials.in/post/docker/4.runningcontainers/</loc>
+    <lastmod>2018-02-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://opensourcetutorials.in/post/tips/todayslist/</loc>
+    <lastmod>2018-01-18T19:53:57+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://opensourcetutorials.in/post/tips/listbigfiles/</loc>
+    <lastmod>2018-01-18T19:53:57+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://opensourcetutorials.in/post/tips/removeunnecessary/</loc>
+    <lastmod>2018-01-18T19:53:57+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://opensourcetutorials.in/post/tips/javasetpath/</loc>
+    <lastmod>2018-01-18T19:53:57+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://opensourcetutorials.in/post/tips/youtubedl/</loc>
+    <lastmod>2018-01-18T19:53:57+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://opensourcetutorials.in/post/tutorials/selfsignedcertificate/</loc>
+    <lastmod>2018-01-15T21:46:55+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://opensourcetutorials.in/post/linux/vi-editor/</loc>
+    <lastmod>2018-01-15T21:46:44+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://opensourcetutorials.in/post/linux/my-first-post/</loc>
+    <lastmod>2018-01-15T21:46:34+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://opensourcetutorials.in/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://opensourcetutorials.in/tags/docker/</loc>
+    <lastmod>2018-02-04T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://opensourcetutorials.in/categories/dockers/</loc>
+    <lastmod>2018-02-04T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://opensourcetutorials.in/categories/linux/</loc>
+    <lastmod>2018-01-15T21:46:44+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://opensourcetutorials.in/</loc>
+    <lastmod>2018-02-09T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://opensourcetutorials.in/tags/os/</loc>
+    <lastmod>2018-02-09T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://opensourcetutorials.in/post/</loc>
+    <lastmod>2018-02-09T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://opensourcetutorials.in/tags/ssl/</loc>
+    <lastmod>2018-01-15T21:46:55+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://opensourcetutorials.in/tags/</loc>
+    <lastmod>2018-02-04T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://opensourcetutorials.in/categories/tutorials/</loc>
+    <lastmod>2018-01-15T21:46:55+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://opensourcetutorials.in/tags/vi/</loc>
+    <lastmod>2018-01-15T21:46:44+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+</urlset>

@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Fork System Call</title>
+	<meta name="description" content="">
+	<meta name="generator" content="Hugo 0.48" />
+	<meta property="og:title" content="Fork System Call" />
+<meta property="og:description" content="In this post we will learn to how fork system call works with example program.
+
+" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://opensourcetutorials.in/post/os/fork/" /><meta property="article:published_time" content="2018-02-09T00:00:00&#43;00:00"/>
+<meta property="article:modified_time" content="2018-02-09T00:00:00&#43;00:00"/>
+	
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+	<link rel="stylesheet" href="/css/style.css">
+	<script type="text/javascript" src="/js/scripts.js"></script>
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-59503205-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container">
+		<div class="logo" role="banner">
+			<a class="logo__link" href="/" title="Open Source Tutorials" rel="home">
+				<div class="logo__title">Open Source Tutorials</div>
+				<div class="logo__tagline">Where Open Source is Everything ! </div>
+			</a>
+		</div>
+	</div>
+	
+<nav class="menu">
+	<ul class="menu__list">
+		<li class="menu__item"><a class="menu__link" href="/post/docker/docker/">DOCKER TUTORIALS</a></li>
+	</ul>
+</nav>
+
+</header>
+		<div class="wrapper flex">
+			<section class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Fork System Call</h1><div class="post__meta meta">
+<svg class="icon icon-time" width="16" height="14" viewBox="0 0 16 16"><path d="m8-.0000003c-4.4 0-8 3.6-8 8 0 4.4000003 3.6 8.0000003 8 8.0000003 4.4 0 8-3.6 8-8.0000003 0-4.4-3.6-8-8-8zm0 14.4000003c-3.52 0-6.4-2.88-6.4-6.4000003 0-3.52 2.88-6.4 6.4-6.4 3.52 0 6.4 2.88 6.4 6.4 0 3.5200003-2.88 6.4000003-6.4 6.4000003zm.4-10.4000003h-1.2v4.8l4.16 2.5600003.64-1.04-3.6-2.1600003z"/></svg>
+<time class="post__meta-date meta-date" datetime="2018-02-09T00:00:00">February 09, 2018</time></div>
+		</header><div class="content post__content clearfix">
+			<p>In this post we will learn to how fork system call works with example program.</p>
+
+<p></p>
+
+<p>Fork is a system call used in the Linux to create a new process. Some of the important points about the fork is as follows.</p>
+
+<ul>
+<li>When you call fork system call, it creates a copy of the process from the point onwards where it is called</li>
+<li>The newly created process is called as <b>Child process</b> where as the process who created it is called <b>Parent Process</b></li>
+<li>Every process has its own process id so even child process has its own <b>Process id.</b></li>
+<li>Parent and Child Process runs concurently and scheduled independetly by operating system.</li>
+</ul>
+
+<p>Fork Example in c :</p>
+
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">10
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">11
+</span></span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">12
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">13
+</span></span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">14
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">15
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">16
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">17
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">18
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">19
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">20
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">21
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">22
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">23
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">24
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">25
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">26
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">27
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">28
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">29
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">30
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">31
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">32
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c">    <span style="color:#75715e">#include</span>  <span style="color:#75715e">&lt;stdio.h&gt;</span><span style="color:#75715e">
+</span><span style="color:#75715e"></span>    <span style="color:#75715e">#include</span>  <span style="color:#75715e">&lt;sys/types.h&gt;</span><span style="color:#75715e">
+</span><span style="color:#75715e"></span>    <span style="color:#75715e">#define COUNT  200
+</span><span style="color:#75715e"></span>
+    <span style="color:#66d9ef">void</span>  <span style="color:#a6e22e">ChildProcess</span>(<span style="color:#66d9ef">void</span>);                
+    <span style="color:#66d9ef">void</span>  <span style="color:#a6e22e">ParentProcess</span>(<span style="color:#66d9ef">void</span>);               
+
+    <span style="color:#66d9ef">void</span>  <span style="color:#a6e22e">main</span>(<span style="color:#66d9ef">void</span>)
+    {
+     pid_t  pid;
+<span style="display:block;width:100%;background-color:#3c3d38">     pid <span style="color:#f92672">=</span> fork();
+</span>
+<span style="display:block;width:100%;background-color:#3c3d38">     <span style="color:#66d9ef">if</span> (pid <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>)
+</span>          ChildProcess();  
+     <span style="color:#66d9ef">else</span>
+          ParentProcess();
+    }
+
+    <span style="color:#66d9ef">void</span>  <span style="color:#a6e22e">ChildProcess</span>(<span style="color:#66d9ef">void</span>)
+    {
+      <span style="color:#66d9ef">int</span> i;
+      <span style="color:#66d9ef">for</span> (i <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>; i <span style="color:#f92672">&lt;=</span> COUNT; i<span style="color:#f92672">++</span>)
+          printf(<span style="color:#e6db74">&#34;From child, value = %d</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>, i);
+     printf(<span style="color:#e6db74">&#34; -------- Child Process Finished ---------- </span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>);
+    }
+
+    <span style="color:#66d9ef">void</span>  <span style="color:#a6e22e">ParentProcess</span>(<span style="color:#66d9ef">void</span>){
+     <span style="color:#66d9ef">int</span> i;
+     <span style="color:#66d9ef">for</span> (i <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>; i <span style="color:#f92672">&lt;=</span> COUNT; i<span style="color:#f92672">++</span>)
+          printf(<span style="color:#e6db74">&#34;From parent, value = %d</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>, i);
+     printf(<span style="color:#e6db74">&#34;-------- Parent Process Finished --------</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>);
+    }</code></pre></td></tr></table>
+</div>
+</div>
+
+<p>Output :</p>
+
+<pre><code>  tayyabali:c$ ./fork7             
+  From parent, value = 1
+  From parent, value = 2
+  From parent, value = 3
+  From parent, value = 4
+  From parent, value = 5
+  From parent, value = 6
+  From parent, value = 7
+  From parent, value = 8
+  From parent, value = 9
+  From parent, value = 10
+  From parent, value = 11
+  From child, value = 1
+  From parent, value = 12
+  From parent, value = 13
+  From child, value = 2
+  From parent, value = 14
+  From child, value = 3
+  From child, value = 4
+  From parent, value = 15
+  From child, value = 5
+  From child, value = 6
+  From parent, value = 16
+  From child, value = 7
+  From parent, value = 17
+  From child, value = 8
+  From child, value = 9
+  -----------Ommited Output -------
+  From child, value = 195
+  From child, value = 196
+  From child, value = 197
+  From child, value = 198
+  From child, value = 199
+  From child, value = 200
+  -------- Child Process Finished ----------
+  From parent, value = 43
+  From parent, value = 44
+  From parent, value = 45
+  -----------Ommited Output -------
+  From parent, value = 195
+  From parent, value = 196
+  From parent, value = 197
+  From parent, value = 198
+  From parent, value = 199
+  From parent, value = 200
+  -------- Parent Process Finished --------
+</code></pre>
+
+<p>In the above program we have two functions ChildProcess and ParentProcess</p>
+
+<ul>
+<li>We create child process using fork() call on line no 11</li>
+<li>If fork call is sucessful it returns 0.</li>
+<li>If pid is 0 we call ChildProcess else we call ParentProcess function.</li>
+<li>Child and Parent processes run independetly and print count upto 200</li>
+<li>Child and parent will even have seprate copy of variables if we have any.</li>
+<li>Parent or Child any process can finish first depending on the CPU scheduling algorithm</li>
+</ul>
+
+<h3 id="getpid-and-getppid-methods">getpid and getppid methods</h3>
+
+<p><b>getpid </b> : Returns the process ID of the calling process.</p>
+
+<p><b> getppid </b>: Returns the process ID of the parent of the calling process</p>
+
+<p>Lets see how this works in the following program</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c">    <span style="color:#75715e">#include</span>  <span style="color:#75715e">&lt;stdio.h&gt;</span><span style="color:#75715e">
+</span><span style="color:#75715e"></span>    <span style="color:#75715e">#include</span>  <span style="color:#75715e">&lt;sys/types.h&gt;</span><span style="color:#75715e">
+</span><span style="color:#75715e"></span>    <span style="color:#75715e">#define COUNT  200
+</span><span style="color:#75715e"></span>
+    <span style="color:#66d9ef">void</span>  <span style="color:#a6e22e">ChildProcess</span>(<span style="color:#66d9ef">void</span>);                
+    <span style="color:#66d9ef">void</span>  <span style="color:#a6e22e">ParentProcess</span>(<span style="color:#66d9ef">void</span>);               
+
+    <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span>(<span style="color:#66d9ef">void</span>)
+        {
+         pid_t  pid;
+         pid <span style="color:#f92672">=</span> fork();
+
+         <span style="color:#66d9ef">if</span> (pid <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>)
+              ChildProcess();  
+         <span style="color:#66d9ef">else</span>
+              ParentProcess();
+        }
+
+    <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">ChildProcess</span>(<span style="color:#66d9ef">void</span>)
+        {
+          printf(<span style="color:#e6db74">&#34;Child Executes : Child Process id  : %d.</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>,getpid());
+          printf(<span style="color:#e6db74">&#34;Child Executes : Parent Process id : %d.</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>,getppid());
+        }
+
+    <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">ParentProcess</span>(<span style="color:#66d9ef">void</span>){
+         printf(<span style="color:#e6db74">&#34;Parent Executes : Process id  : %d.</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>,getpid());
+         printf(<span style="color:#e6db74">&#34;Parent Executes : Parents Parent pid : %d.</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>,getppid());
+        }
+
+        </code></pre></div>
+
+<p>Output :</p>
+
+<pre><code>    tayyabali:c$ ./fork9
+    Parent Executes : Process id  : 11437.
+    Parent Executes : Parents Parent pid : 9660.
+    Child Executes : Child Process id  : 11438.
+    Child Executes : Parent Process id : 11437.
+</code></pre>
+
+<p>When we see details of process 9660 we get as following</p>
+
+<pre><code>tayyabali:c$ ps aux | grep 9660
+tayyaba+  9660  0.0  0.0  22968  5236 pts/2    Ss   20:38   0:00 /bin/bash
+</code></pre>
+
+<p>So as you can see the our parent&rsquo;s parent process is started by the /bin/bash by user tayyabali</p>
+
+<p>We can see the relationship between all these processes is as follows</p>
+
+<p><b> (Parent&rsquo;s Parent 9660 )  &mdash; &gt; ( Parent 11437 ) &mdash; &gt; ( Child 11438 ) </b></p>
+		</div>
+		
+<div class="post__tags tags clearfix">
+	<svg class="icon icon-tag" width="16" height="16" viewBox="0 0 16 16"><path d="M16 9.5c0 .373-.24.74-.5 1l-5 5c-.275.26-.634.5-1 .5-.373 0-.74-.24-1-.5L1 8a2.853 2.853 0 0 1-.7-1C.113 6.55 0 5.973 0 5.6V1.4C0 1.034.134.669.401.401.67.134 1.034 0 1.4 0h4.2c.373 0 .95.113 1.4.3.45.187.732.432 1 .7l7.5 7.502c.26.274.5.632.5.998zM3.5 5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item"><a class="tags__link btn" href="/tags/os/" rel="tag">os</a></li>
+	</ul>
+</div>
+	</article>
+</main>
+
+<div class="authorbox clearfix">
+	<figure class="authorbox__avatar">
+		<img alt="Tayyabali Sayyad avatar" src="/tayyabali.jpeg" class="avatar" height="90" width="90">
+	</figure>
+	<div class="authorbox__header">
+		<span class="authorbox__name">About Tayyabali Sayyad</span>
+	</div>
+	<div class="authorbox__description">
+		Tayyabali is a Open Source evangelist, Works as Assistant Professor at DBIT, Mumbai, India.
+	</div>
+</div>
+
+<nav class="post-nav flex">
+	<div class="post-nav__item post-nav__item--prev">
+		<a class="post-nav__link" href="/post/docker/5.containerlifecycle/" rel="prev"><span class="post-nav__caption">«&thinsp;Previous</span><p class="post-nav__post-title">Container Lifecycle</p></a>
+	</div>
+</nav>
+
+<section class="comments">
+	<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "www-opensourcetutorials-in" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+
+			</section>
+			<aside class="sidebar"><div class="widget-search widget">
+	<form class="widget-search__form" role="search" method="get" action="https://google.com/search">
+		<label>
+			<input class="widget-search__field" type="search" placeholder="SEARCH..." value="" name="q" aria-label="SEARCH...">
+		</label>
+		<input class="widget-search__submit" type="submit" value="Search">
+		<input type="hidden" name="sitesearch" value="http://opensourcetutorials.in" />
+	</form>
+</div><div class="widget-recent widget">
+	<h4 class="widget__title">Recent Posts</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/post/os/fork/">Fork System Call</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/docker/5.containerlifecycle/">Container Lifecycle</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/docker/8.dockerfile/">Create custom docker image</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/docker/9.dockercheetsheet/">Docker Cheetsheet</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/docker/docker/">Docker Tutorials</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-categories widget">
+	<h4 class="widget__title">Categories</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/categories/dockers">Dockers</a></li>
+			<li class="widget__item"><a class="widget__link" href="/categories/linux">Linux</a></li>
+			<li class="widget__item"><a class="widget__link" href="/categories/tutorials">Tutorials</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-taglist widget">
+	<h4 class="widget__title">Tags</h4>
+	<div class="widget__content">
+		<a class="widget-taglist__link widget__link btn" href="/tags/docker" title="Docker">Docker</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/os" title="Os">Os</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/ssl" title="Ssl">Ssl</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/vi" title="Vi">Vi</a>
+	</div>
+</div>
+</aside>
+		</div>
+		<footer class="footer">
+	<div class="container">
+		<div class="footer__copyright">&copy; 2018 Open Source Tutorials. <span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span></div>
+	</div>
+</footer>
+
+	</div>
+<script>
+	var navigation = responsiveNav(".menu", {
+		navClass: "menu--collapse",
+		label: "Menu",
+	});
+</script></body>
+</html>

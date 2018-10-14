@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Open Source Tutorials</title>
+    <link>http://opensourcetutorials.in/post/</link>
+    <description>Recent content in Posts on Open Source Tutorials</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 09 Feb 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://opensourcetutorials.in/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Fork System Call</title>
+      <link>http://opensourcetutorials.in/post/os/fork/</link>
+      <pubDate>Fri, 09 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://opensourcetutorials.in/post/os/fork/</guid>
+      <description>&lt;p&gt;In this post we will learn to how fork system call works with example program.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Container Lifecycle</title>
+      <link>http://opensourcetutorials.in/post/docker/5.containerlifecycle/</link>
+      <pubDate>Sun, 04 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://opensourcetutorials.in/post/docker/5.containerlifecycle/</guid>
+      <description>&lt;p&gt;In this post lets learn Container Lifecycle&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Create custom docker image</title>
+      <link>http://opensourcetutorials.in/post/docker/8.dockerfile/</link>
+      <pubDate>Sun, 04 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://opensourcetutorials.in/post/docker/8.dockerfile/</guid>
+      <description>&lt;p&gt;In this post lets learn how to create custom docker image&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Docker Cheetsheet</title>
+      <link>http://opensourcetutorials.in/post/docker/9.dockercheetsheet/</link>
+      <pubDate>Sun, 04 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://opensourcetutorials.in/post/docker/9.dockercheetsheet/</guid>
+      <description>&lt;p&gt;This post contains all the docker commands summary&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Docker Tutorials</title>
+      <link>http://opensourcetutorials.in/post/docker/docker/</link>
+      <pubDate>Sun, 04 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://opensourcetutorials.in/post/docker/docker/</guid>
+      <description>&lt;h2 id=&#34;this-is-a-mini-docker-post-series&#34;&gt;This is a mini docker post series.&lt;/h2&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Explore Docker Hub</title>
+      <link>http://opensourcetutorials.in/post/docker/2.dockerhub/</link>
+      <pubDate>Sun, 04 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://opensourcetutorials.in/post/docker/2.dockerhub/</guid>
+      <description>&lt;p&gt;In this post we will explore docker hub. Official repository for dockers&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Get Docker images from the Docker hub</title>
+      <link>http://opensourcetutorials.in/post/docker/3.baseimages/</link>
+      <pubDate>Sun, 04 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://opensourcetutorials.in/post/docker/3.baseimages/</guid>
+      <description>&lt;p&gt;To learn how to download docker images from the docker hub.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Image and Container Management</title>
+      <link>http://opensourcetutorials.in/post/docker/6.image_container_management/</link>
+      <pubDate>Sun, 04 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://opensourcetutorials.in/post/docker/6.image_container_management/</guid>
+      <description>&lt;p&gt;In this post lets learn manage Image and Container&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Install Dockers on Ubuntu 16.04 or above</title>
+      <link>http://opensourcetutorials.in/post/docker/1.install/</link>
+      <pubDate>Sun, 04 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://opensourcetutorials.in/post/docker/1.install/</guid>
+      <description>&lt;p&gt;In this post we will learn to install docker in Ubuntu 16.04. We will be adding official repository and use apt-get install command to install docker.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Redirection of Ports and Volumes in Docker</title>
+      <link>http://opensourcetutorials.in/post/docker/7.redirect_ports_volumes/</link>
+      <pubDate>Sun, 04 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://opensourcetutorials.in/post/docker/7.redirect_ports_volumes/</guid>
+      <description>&lt;p&gt;In this post lets learn Port Redirection and Volumes attachment&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Running Containers</title>
+      <link>http://opensourcetutorials.in/post/docker/4.runningcontainers/</link>
+      <pubDate>Sun, 04 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://opensourcetutorials.in/post/docker/4.runningcontainers/</guid>
+      <description>&lt;p&gt;In this post lets learn how to run containers&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Display todays files in Ubuntu </title>
+      <link>http://opensourcetutorials.in/post/tips/todayslist/</link>
+      <pubDate>Thu, 18 Jan 2018 19:53:57 +0530</pubDate>
+      
+      <guid>http://opensourcetutorials.in/post/tips/todayslist/</guid>
+      <description>&lt;p&gt;Trick to display list of all files which are created today.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Finding big files in terminal</title>
+      <link>http://opensourcetutorials.in/post/tips/listbigfiles/</link>
+      <pubDate>Thu, 18 Jan 2018 19:53:57 +0530</pubDate>
+      
+      <guid>http://opensourcetutorials.in/post/tips/listbigfiles/</guid>
+      <description>&lt;p&gt;Trick to list all big files in order using ls command.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>How to remove unnecessary packages from Ubuntu ?</title>
+      <link>http://opensourcetutorials.in/post/tips/removeunnecessary/</link>
+      <pubDate>Thu, 18 Jan 2018 19:53:57 +0530</pubDate>
+      
+      <guid>http://opensourcetutorials.in/post/tips/removeunnecessary/</guid>
+      <description>&lt;p&gt;We will learn to remove unnecessary packages from the Ubuntu system.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Set Java Home in Ubuntu</title>
+      <link>http://opensourcetutorials.in/post/tips/javasetpath/</link>
+      <pubDate>Thu, 18 Jan 2018 19:53:57 +0530</pubDate>
+      
+      <guid>http://opensourcetutorials.in/post/tips/javasetpath/</guid>
+      <description>&lt;p&gt;How to set the java home in any Ubuntu operating system.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Youtube-dl</title>
+      <link>http://opensourcetutorials.in/post/tips/youtubedl/</link>
+      <pubDate>Thu, 18 Jan 2018 19:53:57 +0530</pubDate>
+      
+      <guid>http://opensourcetutorials.in/post/tips/youtubedl/</guid>
+      <description>&lt;p&gt;In this post we will learn easy way to download youtube videos and play lists.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Self Signed Certificate</title>
+      <link>http://opensourcetutorials.in/post/tutorials/selfsignedcertificate/</link>
+      <pubDate>Mon, 15 Jan 2018 21:46:55 +0530</pubDate>
+      
+      <guid>http://opensourcetutorials.in/post/tutorials/selfsignedcertificate/</guid>
+      <description>&lt;p&gt;In this post we will learn how to create self signed certificate.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Vi Editor</title>
+      <link>http://opensourcetutorials.in/post/linux/vi-editor/</link>
+      <pubDate>Mon, 15 Jan 2018 21:46:44 +0530</pubDate>
+      
+      <guid>http://opensourcetutorials.in/post/linux/vi-editor/</guid>
+      <description>&lt;p&gt;In this post we will learn how to use vi editor.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Install Linux Mint Desktop on Ubuntu 16.04</title>
+      <link>http://opensourcetutorials.in/post/linux/my-first-post/</link>
+      <pubDate>Mon, 15 Jan 2018 21:46:34 +0530</pubDate>
+      
+      <guid>http://opensourcetutorials.in/post/linux/my-first-post/</guid>
+      <description>&lt;p&gt;Learn how to install Linux Mint Desktop on Ubuntu 16.04&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
