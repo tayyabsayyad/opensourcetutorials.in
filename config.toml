@@ -1,19 +1,22 @@
-baseURL = "http://opensourcetutorials.in"
+baseURL = "https://opensourcetutorials.in"
 languageCode = "en-us"
 paginate = "10"
 title = "Open Source Tutorials"
 theme = "Mainroad"
 disqusShortname = "www-opensourcetutorials-in"
 googleAnalytics = "UA-59503205-1"
+
 [Author]
     name = "Tayyabali Sayyad"
     bio = "Tayyabali is a Open Source evangelist, Works as Assistant Professor at DBIT, Mumbai, India."
     avatar = "tayyabali.jpeg"
 
+
 [Params]
     subtitle = "Where Open Source is Everything ! "
     description = " Tayyabali Sayyad's Personal blog about Open Source"
     opengraph = true # Enable OpenGraph if true
+    twitter_cards = true
     readmore = false # Show "Read more" button in list if true
     leftsidebar = false # Move sidebar to the left side if true
     authorbox = true # Show authorbox at bottom of pages if true
@@ -24,20 +27,14 @@ googleAnalytics = "UA-59503205-1"
 
 
 [Params.widgets]
-    search = false # Enable "Search" widget
+    search = true # Enable "Search" widget
     recent_num = 5 # Set the number of articles in the "Recent articles" widget
     recent_articles = true # Enable "Recent articles" widget
     recent_articles_num = 5 # Set the number of articles in the "Recent articles" widget
     categories = true # Enable "Categories" widget
     tags = true # Enable "Tags" widget
     tags_counter = false # Enable counter for each tag in "Tags" widget (disabled by default)
-
-    # Enable "Social" widget, if any of "social_*" set a value
-    social_facebook = "tayyabsayyad"
-    social_twitter = "tayyabsayyad"
-    social_linkedin = "tayyabsayyad"
-    social_github = "tayyabsayyad"
-    social_email = "tayyabsayyad@gmail.com"
+    #social = true    # Enable "Social" widget, if any of "social_*" set a value
 
 [Params.sidebar]
   home = "right"   # Configure layout for home page

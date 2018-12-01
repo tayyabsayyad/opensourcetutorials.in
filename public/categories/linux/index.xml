@@ -2,22 +2,42 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Linux on Open Source Tutorials</title>
-    <link>http://opensourcetutorials.in/categories/linux/</link>
+    <link>https://opensourcetutorials.in/categories/linux/</link>
     <description>Recent content in Linux on Open Source Tutorials</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 15 Jan 2018 21:46:44 +0530</lastBuildDate>
+    <lastBuildDate>Thu, 29 Nov 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://opensourcetutorials.in/categories/linux/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://opensourcetutorials.in/categories/linux/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Vi Editor</title>
-      <link>http://opensourcetutorials.in/post/linux/vi-editor/</link>
-      <pubDate>Mon, 15 Jan 2018 21:46:44 +0530</pubDate>
+      <title>Why switch to Linux ?</title>
+      <link>https://opensourcetutorials.in/switchtolinux/whytoswitch/</link>
+      <pubDate>Thu, 29 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://opensourcetutorials.in/post/linux/vi-editor/</guid>
-      <description>&lt;p&gt;In this post we will learn how to use vi editor.&lt;/p&gt;
+      <guid>https://opensourcetutorials.in/switchtolinux/whytoswitch/</guid>
+      <description>&lt;p&gt;This post will try to explain why you must switch to Linux&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Linux Flavors</title>
+      <link>https://opensourcetutorials.in/switchtolinux/linuxflavors/</link>
+      <pubDate>Wed, 28 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://opensourcetutorials.in/switchtolinux/linuxflavors/</guid>
+      <description>&lt;p&gt;Choosing right Linux distribution&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Switch to Linux </title>
+      <link>https://opensourcetutorials.in/post/switchlinux/</link>
+      <pubDate>Tue, 27 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://opensourcetutorials.in/post/switchlinux/</guid>
+      <description>&lt;p&gt;Switch to Linux from other systems step by step !&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
     </item>

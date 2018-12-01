@@ -2,38 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Open Source Tutorials</title>
-    <link>http://opensourcetutorials.in/categories/</link>
+    <link>https://opensourcetutorials.in/categories/</link>
     <description>Recent content in Categories on Open Source Tutorials</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="http://opensourcetutorials.in/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://opensourcetutorials.in/categories/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Dockers</title>
-      <link>http://opensourcetutorials.in/categories/dockers/</link>
-      <pubDate>Sun, 04 Feb 2018 00:00:00 +0000</pubDate>
-      
-      <guid>http://opensourcetutorials.in/categories/dockers/</guid>
-      <description></description>
-    </item>
     
     <item>
       <title>Linux</title>
-      <link>http://opensourcetutorials.in/categories/linux/</link>
-      <pubDate>Mon, 15 Jan 2018 21:46:44 +0530</pubDate>
+      <link>https://opensourcetutorials.in/categories/linux/</link>
+      <pubDate>Thu, 29 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://opensourcetutorials.in/categories/linux/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Tutorials</title>
-      <link>http://opensourcetutorials.in/categories/tutorials/</link>
-      <pubDate>Mon, 15 Jan 2018 21:46:55 +0530</pubDate>
-      
-      <guid>http://opensourcetutorials.in/categories/tutorials/</guid>
+      <guid>https://opensourcetutorials.in/categories/linux/</guid>
       <description></description>
     </item>
     
