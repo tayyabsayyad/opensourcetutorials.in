@@ -1,5 +1,6 @@
 baseURL = "https://opensourcetutorials.in"
 languageCode = "en-us"
+copyright = "This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License."
 paginate = "10"
 title = "Open Source Tutorials"
 theme = "Mainroad"
@@ -10,7 +11,6 @@ googleAnalytics = "UA-59503205-1"
     name = "Tayyabali Sayyad"
     bio = "Tayyabali is a Open Source evangelist, Works as Assistant Professor at DBIT, Mumbai, India."
     avatar = "tayyabali.jpeg"
-
 
 [Params]
     subtitle = "Where Open Source is Everything ! "
@@ -42,3 +42,20 @@ googleAnalytics = "UA-59503205-1"
   single = "right" # Configure layout for single pages
   # Enable widgets in given order
   widgets = ["search", "recent", "categories", "taglist"]
+
+[sitemap]
+    changefreq = "monthly"
+    filename = "sitemap.xml"
+    priority = 0.5
+
+[menu]
+
+  [[menu.main]]
+    name = "Switch To Linux in Simple Steps"
+    url = "/post/switchlinux/"
+    weight = -120
+
+  [[menu.main]]
+        name = "RSS Feeds"
+        url = "index.xml"
+        weight = -100

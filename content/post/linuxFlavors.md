@@ -18,7 +18,7 @@ Choosing right Linux distribution
 
 > Which distribution should I use ?
 
-This is often a big question to all new Linux users. When you are introduced to the world of Linux and you experiment a little bit with Linux environment you might be tempted to try other Linux distributions.
+This is often a big question to all new Linux users. When you are introduced to the world of Linux and you experiment a little bit with Linux environment. You might be tempted to many other Linux distributions.
 
 Even I was tempted and tried lots of distributions, but then settled on Ubuntu, the reasons for that are as follows
 

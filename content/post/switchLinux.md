@@ -10,7 +10,6 @@ categories:
   - "Linux"
 tags:
   - "Linux"
-menu: main # Optional, add page to a menu. Options: main, side, footer
 ---
 
 Switch to Linux from other systems step by step !

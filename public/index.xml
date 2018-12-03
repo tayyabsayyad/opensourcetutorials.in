@@ -6,6 +6,7 @@
     <description>Recent content on Open Source Tutorials</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
     <lastBuildDate>Mon, 03 Dec 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://opensourcetutorials.in/index.xml" rel="self" type="application/rss+xml" />
@@ -43,6 +44,16 @@
     </item>
     
     <item>
+      <title> Understanding Linux distributions</title>
+      <link>https://opensourcetutorials.in/post/whatislinuxdistro/</link>
+      <pubDate>Sat, 01 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://opensourcetutorials.in/post/whatislinuxdistro/</guid>
+      <description>&lt;p&gt;We will discuss Linux Distributions and why they are so many
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Why switch to Linux ?</title>
       <link>https://opensourcetutorials.in/post/whytoswitch/</link>
       <pubDate>Thu, 29 Nov 2018 00:00:00 +0000</pubDate>
@@ -75,46 +86,46 @@
     
     <item>
       <title></title>
-      <link>https://opensourcetutorials.in/switchtolinux/filestructureoflinux/</link>
+      <link>https://opensourcetutorials.in/drafts/filestructureoflinux/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://opensourcetutorials.in/switchtolinux/filestructureoflinux/</guid>
+      <guid>https://opensourcetutorials.in/drafts/filestructureoflinux/</guid>
       <description>Why you need to undersntand the file structure</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://opensourcetutorials.in/switchtolinux/oemlicences/</link>
+      <link>https://opensourcetutorials.in/drafts/oemlicences/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://opensourcetutorials.in/switchtolinux/oemlicences/</guid>
+      <guid>https://opensourcetutorials.in/drafts/oemlicences/</guid>
       <description></description>
     </item>
     
     <item>
       <title></title>
-      <link>https://opensourcetutorials.in/switchtolinux/whylinuxisfree/</link>
+      <link>https://opensourcetutorials.in/drafts/whylinuxisfree/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://opensourcetutorials.in/switchtolinux/whylinuxisfree/</guid>
+      <guid>https://opensourcetutorials.in/drafts/whylinuxisfree/</guid>
       <description></description>
     </item>
     
     <item>
       <title></title>
-      <link>https://opensourcetutorials.in/switchtolinux/linuxdesktop/</link>
+      <link>https://opensourcetutorials.in/drafts/linuxdesktop/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://opensourcetutorials.in/switchtolinux/linuxdesktop/</guid>
+      <guid>https://opensourcetutorials.in/drafts/linuxdesktop/</guid>
       <description></description>
     </item>
     
     <item>
       <title></title>
-      <link>https://opensourcetutorials.in/switchtolinux/piratedwindows/</link>
+      <link>https://opensourcetutorials.in/drafts/piratedwindows/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://opensourcetutorials.in/switchtolinux/piratedwindows/</guid>
+      <guid>https://opensourcetutorials.in/drafts/piratedwindows/</guid>
       <description></description>
     </item>
     
