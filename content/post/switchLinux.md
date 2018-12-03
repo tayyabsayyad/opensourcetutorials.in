@@ -21,8 +21,8 @@ Switch to Linux from other systems step by step !
 | 1  | <a href='{{<ref "whytoswitch.md" >}}'>Understand why you need to migrate or adopt to Linux? |
 | 2  | <a href='{{<ref "advantages_linux.md" >}}'>What are the advantages of the Linux compared to other operating systems ? |
 | 3  | <a href = '{{<ref "UnixvsLinux.md" >}}'>What difference between Linux and Unix ? </a>|
-| 4  | <a href= '{{<ref "LinuxVsWindows.md" >}}'> How Linux is different from Windows ? </a> |
-| 5  | What are the flavers of Linux distributions like Ubuntu, Fedora, Elementry OS etc. ? |
+| 4  | <a href = '{{<ref "LinuxVsWindows.md" >}}'> How Linux is different from Windows ? </a> |
+| 5  | <a href = '{{<ref "whatislinuxdistro.md" >}}'> What are the flavers of Linux distributions like Ubuntu, Fedora, Elementry OS etc. ? |
 | 6  | <a href='{{<ref "linuxFlavors.md" >}}'> How to decide which flavers to use ? </a> |
 | 7  | Preparing you desktop/laptop for Linux installation ? |
 | 8  | How to make installation media ?  |

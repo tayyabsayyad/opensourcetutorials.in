@@ -40,8 +40,6 @@ In the picture, you can see Unix Like systems were not copy of Unix but the comm
 + Solaris has Open Source version of OpenSolaris which is derived from Solaris 10.
 + FreeBSD and Open BSD are Open sources derivated of the Unix.
 
-
-
- [To see following image clearly click on the this link](/img/unixhistory.svg) <br>
+[To see following image clearly click on the this link](/img/unixhistory.svg) <br>
 
  ![Evolution of Unix and Unix like systems](/img/unixhistory.svg)

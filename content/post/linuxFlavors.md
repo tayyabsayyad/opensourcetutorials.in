@@ -49,7 +49,7 @@ Top 10 Linux flavors as per many websites are as flollows, numbers
 All above distributions differ based on following points
 
 + Release Frequency, six months or year, stable realease only, rolling realease
-+ Focus on user interface, Elementry OS
++ Focus on user interface example Elementry OS
 + Privacy First
 + Customization if first priority
 + Beginners first distribution
