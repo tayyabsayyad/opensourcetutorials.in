@@ -3,12 +3,27 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://opensourcetutorials.in/switchtolinux/whytoswitch/</loc>
+    <loc>https://opensourcetutorials.in/post/unixvslinux/</loc>
+    <lastmod>2018-12-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensourcetutorials.in/post/linuxvswindows/</loc>
+    <lastmod>2018-12-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensourcetutorials.in/post/advantages_linux/</loc>
+    <lastmod>2018-12-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opensourcetutorials.in/post/whytoswitch/</loc>
     <lastmod>2018-11-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://opensourcetutorials.in/switchtolinux/linuxflavors/</loc>
+    <loc>https://opensourcetutorials.in/post/linuxflavors/</loc>
     <lastmod>2018-11-28T00:00:00+00:00</lastmod>
   </url>
   
@@ -18,43 +33,62 @@
   </url>
   
   <url>
+    <loc>https://opensourcetutorials.in/switchtolinux/filestructureoflinux/</loc>
+  </url>
+  
+  <url>
+    <loc>https://opensourcetutorials.in/switchtolinux/oemlicences/</loc>
+  </url>
+  
+  <url>
+    <loc>https://opensourcetutorials.in/switchtolinux/whylinuxisfree/</loc>
+  </url>
+  
+  <url>
+    <loc>https://opensourcetutorials.in/switchtolinux/linuxdesktop/</loc>
+  </url>
+  
+  <url>
+    <loc>https://opensourcetutorials.in/switchtolinux/piratedwindows/</loc>
+  </url>
+  
+  <url>
     <loc>https://opensourcetutorials.in/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://opensourcetutorials.in/categories/linux/</loc>
-    <lastmod>2018-11-29T00:00:00+00:00</lastmod>
+    <loc>https://opensourcetutorials.in/tags/linux/</loc>
+    <lastmod>2018-12-03T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://opensourcetutorials.in/tags/linux/</loc>
-    <lastmod>2018-11-29T00:00:00+00:00</lastmod>
+    <loc>https://opensourcetutorials.in/categories/linux/</loc>
+    <lastmod>2018-12-03T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://opensourcetutorials.in/</loc>
-    <lastmod>2018-11-29T00:00:00+00:00</lastmod>
+    <lastmod>2018-12-03T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://opensourcetutorials.in/post/</loc>
-    <lastmod>2018-11-27T00:00:00+00:00</lastmod>
+    <lastmod>2018-12-03T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://opensourcetutorials.in/switchtolinux/</loc>
-    <lastmod>2018-11-29T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://opensourcetutorials.in/tags/</loc>
-    <lastmod>2018-11-29T00:00:00+00:00</lastmod>
+    <lastmod>2018-12-03T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

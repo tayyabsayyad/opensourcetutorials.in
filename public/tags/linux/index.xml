@@ -6,26 +6,57 @@
     <description>Recent content in Linux on Open Source Tutorials</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 29 Nov 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 03 Dec 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://opensourcetutorials.in/tags/linux/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Difference between LINUX and UNIX </title>
+      <link>https://opensourcetutorials.in/post/unixvslinux/</link>
+      <pubDate>Mon, 03 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://opensourcetutorials.in/post/unixvslinux/</guid>
+      <description>&lt;p&gt;We will discuss in detail the difference between Linux and Unix&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>How Linux is different from Windows</title>
+      <link>https://opensourcetutorials.in/post/linuxvswindows/</link>
+      <pubDate>Mon, 03 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://opensourcetutorials.in/post/linuxvswindows/</guid>
+      <description>&lt;p&gt;We will discuss in detail diferences bewteen Linux and Windows
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title> Advantages of Open Source Softwares</title>
+      <link>https://opensourcetutorials.in/post/advantages_linux/</link>
+      <pubDate>Sat, 01 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://opensourcetutorials.in/post/advantages_linux/</guid>
+      <description>&lt;p&gt;We will discuss the advantages of the Linux and Open source Softwares
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Why switch to Linux ?</title>
-      <link>https://opensourcetutorials.in/switchtolinux/whytoswitch/</link>
+      <link>https://opensourcetutorials.in/post/whytoswitch/</link>
       <pubDate>Thu, 29 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://opensourcetutorials.in/switchtolinux/whytoswitch/</guid>
+      <guid>https://opensourcetutorials.in/post/whytoswitch/</guid>
       <description>&lt;p&gt;This post will try to explain why you must switch to Linux&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Linux Flavors</title>
-      <link>https://opensourcetutorials.in/switchtolinux/linuxflavors/</link>
+      <link>https://opensourcetutorials.in/post/linuxflavors/</link>
       <pubDate>Wed, 28 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://opensourcetutorials.in/switchtolinux/linuxflavors/</guid>
+      <guid>https://opensourcetutorials.in/post/linuxflavors/</guid>
       <description>&lt;p&gt;Choosing right Linux distribution&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>

@@ -6,29 +6,53 @@
     <description>Recent content in SwitchToLinuxes on Open Source Tutorials</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 29 Nov 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://opensourcetutorials.in/switchtolinux/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Why switch to Linux ?</title>
-      <link>https://opensourcetutorials.in/switchtolinux/whytoswitch/</link>
-      <pubDate>Thu, 29 Nov 2018 00:00:00 +0000</pubDate>
+      <title></title>
+      <link>https://opensourcetutorials.in/switchtolinux/filestructureoflinux/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://opensourcetutorials.in/switchtolinux/whytoswitch/</guid>
-      <description>&lt;p&gt;This post will try to explain why you must switch to Linux&lt;/p&gt;</description>
+      <guid>https://opensourcetutorials.in/switchtolinux/filestructureoflinux/</guid>
+      <description>Why you need to undersntand the file structure</description>
     </item>
     
     <item>
-      <title>Linux Flavors</title>
-      <link>https://opensourcetutorials.in/switchtolinux/linuxflavors/</link>
-      <pubDate>Wed, 28 Nov 2018 00:00:00 +0000</pubDate>
+      <title></title>
+      <link>https://opensourcetutorials.in/switchtolinux/oemlicences/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://opensourcetutorials.in/switchtolinux/linuxflavors/</guid>
-      <description>&lt;p&gt;Choosing right Linux distribution&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <guid>https://opensourcetutorials.in/switchtolinux/oemlicences/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://opensourcetutorials.in/switchtolinux/whylinuxisfree/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://opensourcetutorials.in/switchtolinux/whylinuxisfree/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://opensourcetutorials.in/switchtolinux/linuxdesktop/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://opensourcetutorials.in/switchtolinux/linuxdesktop/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://opensourcetutorials.in/switchtolinux/piratedwindows/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://opensourcetutorials.in/switchtolinux/piratedwindows/</guid>
+      <description></description>
     </item>
     
   </channel>
