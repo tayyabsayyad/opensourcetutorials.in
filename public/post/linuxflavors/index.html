@@ -158,6 +158,29 @@ if (!doNotTrack) {
 	</div>
 </nav>
 
+<section class="comments">
+	<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "www-opensourcetutorials-in" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
 
 			</section>
 			<aside class="sidebar"><div class="widget-search widget">
@@ -172,11 +195,11 @@ if (!doNotTrack) {
 	<h4 class="widget__title">Recent Posts</h4>
 	<div class="widget__content">
 		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/post/installationmedia/">How to make installation media ?</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/preparingforlinux/">Preparing you desktop/laptop for Linux installation</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/whylinuxinschools/">Why we need Open-source software in schools?</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/unixvslinux/">Difference between LINUX and UNIX </a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/linuxvswindows/">How Linux is different from Windows</a></li>
-			<li class="widget__item"><a class="widget__link" href="/post/advantages_linux/"> Advantages of Open Source Softwares</a></li>
-			<li class="widget__item"><a class="widget__link" href="/post/whatislinuxdistro/"> Understanding Linux distributions</a></li>
-			<li class="widget__item"><a class="widget__link" href="/post/whytoswitch/">Why switch to Linux ?</a></li>
 		</ul>
 	</div>
 </div>
