@@ -52,10 +52,21 @@ googleAnalytics = "UA-59503205-1"
 
   [[menu.main]]
     name = "Switch To Linux in Simple Steps"
-    url = "/post/switchlinux/"
+    url = "/post/switchlinux"
     weight = -120
+
+  [[menu.main]]
+    name = "QGIS Workshop"
+    url = "/qgis/gisworkshop"
+    weight = -100
+
 
   [[menu.main]]
         name = "RSS Feeds"
         url = "index.xml"
-        weight = -100
+        weight = -70
+
+  [[menu.main]]
+              name = "Subscribe"
+              url = "http://eepurl.com/gcdqnH"
+              weight = -70

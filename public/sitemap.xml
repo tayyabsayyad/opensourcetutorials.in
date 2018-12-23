@@ -3,6 +3,20 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://opensourcetutorials.in/post/linuxdesktopenvirnment/</loc>
+    <lastmod>2018-12-06T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://opensourcetutorials.in/drafts/alternatives/</loc>
+    <lastmod>2018-12-06T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://opensourcetutorials.in/post/installationmedia/</loc>
     <lastmod>2018-12-04T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -110,41 +124,42 @@
   
   <url>
     <loc>https://opensourcetutorials.in/drafts/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://opensourcetutorials.in/tags/linux/</loc>
-    <lastmod>2018-12-04T00:00:00+00:00</lastmod>
+    <lastmod>2018-12-06T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://opensourcetutorials.in/categories/linux/</loc>
-    <lastmod>2018-12-04T00:00:00+00:00</lastmod>
+    <lastmod>2018-12-06T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://opensourcetutorials.in/tags/linux/</loc>
+    <lastmod>2018-12-06T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://opensourcetutorials.in/</loc>
-    <lastmod>2018-12-04T00:00:00+00:00</lastmod>
+    <lastmod>2018-12-06T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://opensourcetutorials.in/post/</loc>
-    <lastmod>2018-12-04T00:00:00+00:00</lastmod>
+    <lastmod>2018-12-06T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://opensourcetutorials.in/tags/</loc>
-    <lastmod>2018-12-04T00:00:00+00:00</lastmod>
+    <lastmod>2018-12-06T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0</priority>
   </url>
