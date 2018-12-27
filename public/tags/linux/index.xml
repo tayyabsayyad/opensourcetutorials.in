@@ -7,10 +7,28 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Thu, 06 Dec 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 25 Dec 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://opensourcetutorials.in/tags/linux/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Cheetsheets</title>
+      <link>https://opensourcetutorials.in/cheetsheets/cheetsheets/</link>
+      <pubDate>Tue, 25 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://opensourcetutorials.in/cheetsheets/cheetsheets/</guid>
+      <description> Docker Cheetsheets  </description>
+    </item>
+    
+    <item>
+      <title>Docker Quick Start</title>
+      <link>https://opensourcetutorials.in/cheetsheets/docker_useful_commands/</link>
+      <pubDate>Tue, 25 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://opensourcetutorials.in/cheetsheets/docker_useful_commands/</guid>
+      <description>1. Install Dockers on Ubuntu 16.04 or above Update the Repository $ sudo apt-get update  Install ssl related packages $ sudo apt-get install \ apt-transport-https \ ca-certificates \ curl \ software-properties-common  Download the GPG key from the docker site $ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -  Add docker repository $ sudo add-apt-repository \ &amp;quot;deb [arch=amd64] https://download.docker.com/linux/ubuntu \ $(lsb_release -cs) \ stable edge test&amp;quot;  Update the packages and install docker community edition $ sudo apt-get update $ sudo apt-get install docker-ce  Finally check the docker installation is correct $ sudo docker run hello-world  You can check status, on, off and restart docker using following commands $ sudo service docker status $ sudo service docker start $ sudo service docker stop $ sudo service docker restart  To run the docker without sudo commands $ sudo usermod -aG docker $USER  Logout and then check with following command $ docker ps -a $ docker ps ## Docker Hub  2.</description>
+    </item>
     
     <item>
       <title>Linux Desktop Envirnment </title>

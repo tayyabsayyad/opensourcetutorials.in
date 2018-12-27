@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Gis on Open Source Tutorials</title>
+    <link>https://opensourcetutorials.in/categories/gis/</link>
+    <description>Recent content in Gis on Open Source Tutorials</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
+    <lastBuildDate>Sun, 23 Dec 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://opensourcetutorials.in/categories/gis/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title> Getting Started with QGIS </title>
+      <link>https://opensourcetutorials.in/qgis/gettingstarted/</link>
+      <pubDate>Sun, 23 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://opensourcetutorials.in/qgis/gettingstarted/</guid>
+      <description>In this post we will learn following skills  Launching QGIS Loading Raster and Vector Layers Saving Projects Understanding the QGIS User Interface  Download all data from : All Resource for Workshop 
+Launch QGIS Use Dashboard or QGIS icon to Launch QGIS. To close use can use X icon or Project Menu and Exit QGIS option When you start QGIS it will open following user interface
+The QGIS GUI is divided into five components:</description>
+    </item>
+    
+    <item>
+      <title> How to Install QGIS in Ubuntu </title>
+      <link>https://opensourcetutorials.in/qgis/install_ppa/</link>
+      <pubDate>Sun, 23 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://opensourcetutorials.in/qgis/install_ppa/</guid>
+      <description>Install QGIS in Ubuntu QGIS woks on following platforms
+ Linux Windows Mac OS X  The download all above versions at https://qgis.org/en/site/forusers/download.html this link.
+To add repositories into the sources.list file use following command
+$ sudo gedit /etc/apt/sources.list  To install QGIS using ppa on Ubuntu 18.04, Use following repositories to /etc/apt/sources.list
+deb https://qgis.org/ubuntugis bionic main deb-src https://qgis.org/ubuntugis bionic main  To install QGIS using ppa on Ubuntu 16.</description>
+    </item>
+    
+    <item>
+      <title> Workshop on QGIS</title>
+      <link>https://opensourcetutorials.in/qgis/gisworkshop/</link>
+      <pubDate>Sun, 23 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://opensourcetutorials.in/qgis/gisworkshop/</guid>
+      <description>Welcome to the QGIS workshop training, Here we will be covering following topics
+ Problem Statement Using QGIS for Mithi River Analysis Features of QGIS Installation of QGIS Getting Started with QGIS  </description>
+    </item>
+    
+  </channel>
+</rss>

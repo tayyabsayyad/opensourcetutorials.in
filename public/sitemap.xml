@@ -3,6 +3,62 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://opensourcetutorials.in/cheetsheets/cheetsheets/</loc>
+    <lastmod>2018-12-25T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://opensourcetutorials.in/cheetsheets/docker_useful_commands/</loc>
+    <lastmod>2018-12-25T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://opensourcetutorials.in/qgis/features/</loc>
+    <lastmod>2018-12-23T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://opensourcetutorials.in/qgis/gettingstarted/</loc>
+    <lastmod>2018-12-23T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://opensourcetutorials.in/qgis/install_ppa/</loc>
+    <lastmod>2018-12-23T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://opensourcetutorials.in/qgis/problem/</loc>
+    <lastmod>2018-12-23T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://opensourcetutorials.in/qgis/qgisforriver/</loc>
+    <lastmod>2018-12-23T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://opensourcetutorials.in/qgis/gisworkshop/</loc>
+    <lastmod>2018-12-23T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://opensourcetutorials.in/post/linuxdesktopenvirnment/</loc>
     <lastmod>2018-12-06T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -80,6 +136,31 @@
   </url>
   
   <url>
+    <loc>https://opensourcetutorials.in/categories/</loc>
+    <lastmod>2018-12-23T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://opensourcetutorials.in/cheetsheets/linux_useful_commands/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://opensourcetutorials.in/cheetsheets/tmux_useful_commands/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://opensourcetutorials.in/cheetsheets/useful_networking_commands/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://opensourcetutorials.in/drafts/filestructureoflinux/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -98,7 +179,21 @@
   </url>
   
   <url>
+    <loc>https://opensourcetutorials.in/qgis/georeferencing/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://opensourcetutorials.in/categories/</loc>
+    <lastmod>2018-12-23T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://opensourcetutorials.in/cheetsheets/</loc>
+    <lastmod>2018-12-25T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0</priority>
   </url>
@@ -110,22 +205,29 @@
   </url>
   
   <url>
+    <loc>https://opensourcetutorials.in/categories/gis/</loc>
+    <lastmod>2018-12-23T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://opensourcetutorials.in/tags/linux/</loc>
-    <lastmod>2018-12-06T00:00:00+00:00</lastmod>
+    <lastmod>2018-12-25T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://opensourcetutorials.in/categories/linux/</loc>
-    <lastmod>2018-12-06T00:00:00+00:00</lastmod>
+    <lastmod>2018-12-25T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://opensourcetutorials.in/</loc>
-    <lastmod>2018-12-06T00:00:00+00:00</lastmod>
+    <lastmod>2018-12-25T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0</priority>
   </url>
@@ -138,8 +240,22 @@
   </url>
   
   <url>
+    <loc>https://opensourcetutorials.in/qgis/</loc>
+    <lastmod>2018-12-23T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://opensourcetutorials.in/tags/qgis/</loc>
+    <lastmod>2018-12-23T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://opensourcetutorials.in/tags/</loc>
-    <lastmod>2018-12-06T00:00:00+00:00</lastmod>
+    <lastmod>2018-12-25T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0</priority>
   </url>

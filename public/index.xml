@@ -7,10 +7,94 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Thu, 06 Dec 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 25 Dec 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://opensourcetutorials.in/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Cheetsheets</title>
+      <link>https://opensourcetutorials.in/cheetsheets/cheetsheets/</link>
+      <pubDate>Tue, 25 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://opensourcetutorials.in/cheetsheets/cheetsheets/</guid>
+      <description> Docker Cheetsheets  </description>
+    </item>
+    
+    <item>
+      <title>Docker Quick Start</title>
+      <link>https://opensourcetutorials.in/cheetsheets/docker_useful_commands/</link>
+      <pubDate>Tue, 25 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://opensourcetutorials.in/cheetsheets/docker_useful_commands/</guid>
+      <description>1. Install Dockers on Ubuntu 16.04 or above Update the Repository $ sudo apt-get update  Install ssl related packages $ sudo apt-get install \ apt-transport-https \ ca-certificates \ curl \ software-properties-common  Download the GPG key from the docker site $ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -  Add docker repository $ sudo add-apt-repository \ &amp;quot;deb [arch=amd64] https://download.docker.com/linux/ubuntu \ $(lsb_release -cs) \ stable edge test&amp;quot;  Update the packages and install docker community edition $ sudo apt-get update $ sudo apt-get install docker-ce  Finally check the docker installation is correct $ sudo docker run hello-world  You can check status, on, off and restart docker using following commands $ sudo service docker status $ sudo service docker start $ sudo service docker stop $ sudo service docker restart  To run the docker without sudo commands $ sudo usermod -aG docker $USER  Logout and then check with following command $ docker ps -a $ docker ps ## Docker Hub  2.</description>
+    </item>
+    
+    <item>
+      <title> Features of QGIS </title>
+      <link>https://opensourcetutorials.in/qgis/features/</link>
+      <pubDate>Sun, 23 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://opensourcetutorials.in/qgis/features/</guid>
+      <description>View and Explore Data View Vector Data, which constists of points, lines, polygones shapes.
+Use Layer &amp;gt;&amp;gt; Add Layer &amp;gt;&amp;gt; Add Vector Layer to add Vector Layer
+Data Source : https://mapcruzin.com/free-maharashtra-country-city-place-gis-shapefiles.htm
+View Raster Data which consistes of matrix of cells (or pixels) organized into rows and columns (or a grid) where each cell contains a value representing information
+Use Layer &amp;gt;&amp;gt; Add Layer &amp;gt;&amp;gt; Add Raster Layer to add Raster Layer</description>
+    </item>
+    
+    <item>
+      <title> Getting Started with QGIS </title>
+      <link>https://opensourcetutorials.in/qgis/gettingstarted/</link>
+      <pubDate>Sun, 23 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://opensourcetutorials.in/qgis/gettingstarted/</guid>
+      <description>In this post we will learn following skills  Launching QGIS Loading Raster and Vector Layers Saving Projects Understanding the QGIS User Interface  Download all data from : All Resource for Workshop 
+Launch QGIS Use Dashboard or QGIS icon to Launch QGIS. To close use can use X icon or Project Menu and Exit QGIS option When you start QGIS it will open following user interface
+The QGIS GUI is divided into five components:</description>
+    </item>
+    
+    <item>
+      <title> How to Install QGIS in Ubuntu </title>
+      <link>https://opensourcetutorials.in/qgis/install_ppa/</link>
+      <pubDate>Sun, 23 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://opensourcetutorials.in/qgis/install_ppa/</guid>
+      <description>Install QGIS in Ubuntu QGIS woks on following platforms
+ Linux Windows Mac OS X  The download all above versions at https://qgis.org/en/site/forusers/download.html this link.
+To add repositories into the sources.list file use following command
+$ sudo gedit /etc/apt/sources.list  To install QGIS using ppa on Ubuntu 18.04, Use following repositories to /etc/apt/sources.list
+deb https://qgis.org/ubuntugis bionic main deb-src https://qgis.org/ubuntugis bionic main  To install QGIS using ppa on Ubuntu 16.</description>
+    </item>
+    
+    <item>
+      <title> Problem Statement </title>
+      <link>https://opensourcetutorials.in/qgis/problem/</link>
+      <pubDate>Sun, 23 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://opensourcetutorials.in/qgis/problem/</guid>
+      <description>Problem statement : Mithi river is a complete natural ecosystem in itself. It originates from the confluence of tail water discharges of Vihar lake and Powai lake. It came into focus as one of the major reasons to cause flooding due to the downpour on 26 th July, 2005 and was recognized as River of Death when it sank entire city of Mumbai. Mithi river has a total length of about 17.</description>
+    </item>
+    
+    <item>
+      <title> QGIS for River Analysis </title>
+      <link>https://opensourcetutorials.in/qgis/qgisforriver/</link>
+      <pubDate>Sun, 23 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://opensourcetutorials.in/qgis/qgisforriver/</guid>
+      <description> QGIS for River Analysis We will be using QGIS to following tasks
+ Create GIS Mapping points Create or Access the data from the database Visualize the River data Analyze the Data Generate Report Print the Map  </description>
+    </item>
+    
+    <item>
+      <title> Workshop on QGIS</title>
+      <link>https://opensourcetutorials.in/qgis/gisworkshop/</link>
+      <pubDate>Sun, 23 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://opensourcetutorials.in/qgis/gisworkshop/</guid>
+      <description>Welcome to the QGIS workshop training, Here we will be covering following topics
+ Problem Statement Using QGIS for Mithi River Analysis Features of QGIS Installation of QGIS Getting Started with QGIS  </description>
+    </item>
     
     <item>
       <title>Linux Desktop Envirnment </title>
@@ -126,6 +210,33 @@
     
     <item>
       <title></title>
+      <link>https://opensourcetutorials.in/cheetsheets/linux_useful_commands/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://opensourcetutorials.in/cheetsheets/linux_useful_commands/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://opensourcetutorials.in/cheetsheets/tmux_useful_commands/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://opensourcetutorials.in/cheetsheets/tmux_useful_commands/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://opensourcetutorials.in/cheetsheets/useful_networking_commands/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://opensourcetutorials.in/cheetsheets/useful_networking_commands/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://opensourcetutorials.in/drafts/filestructureoflinux/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -148,6 +259,15 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://opensourcetutorials.in/drafts/piratedwindows/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://opensourcetutorials.in/qgis/georeferencing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://opensourcetutorials.in/qgis/georeferencing/</guid>
       <description></description>
     </item>
     
