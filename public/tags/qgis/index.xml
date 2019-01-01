@@ -13,36 +13,57 @@
     
     
     <item>
-      <title> Features of QGIS </title>
-      <link>https://opensourcetutorials.in/qgis/features/</link>
+      <title> Create Vector Layer</title>
+      <link>https://opensourcetutorials.in/qgis/workshop/createvectorlayer/</link>
       <pubDate>Sun, 23 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://opensourcetutorials.in/qgis/features/</guid>
-      <description>View and Explore Data View Vector Data, which constists of points, lines, polygones shapes.
+      <guid>https://opensourcetutorials.in/qgis/workshop/createvectorlayer/</guid>
+      <description>Creating a New Vector Dataset The Layer Creation Dialog Data Sources
+Feature Topology Snapping Correct Topological Features Simplify Feature Add Ring Add Part Reshape Features Split Features Merge Features
+Forms Using QGIS’ Form Design Functionality Using the Form to Edit Values Setting Form Field Types Creating Test Data Creating a New Form Associating the Form with Your Layer
+Actions Open an Image Add a Field for Images Creating an Action Searching the Internet Open a Webpage Directly in QGIS</description>
+    </item>
+    
+    <item>
+      <title> Creating Maps</title>
+      <link>https://opensourcetutorials.in/qgis/workshop/creatingmaps/</link>
+      <pubDate>Sun, 23 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://opensourcetutorials.in/qgis/workshop/creatingmaps/</guid>
+      <description>The Layout Manager Basic Map Composition Adding a Title Adding a Legend Customizing Legend Items Exporting Your Map Assignment</description>
+    </item>
+    
+    <item>
+      <title> Features of QGIS </title>
+      <link>https://opensourcetutorials.in/qgis/workshop/features/</link>
+      <pubDate>Sun, 23 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://opensourcetutorials.in/qgis/workshop/features/</guid>
+      <description>1. View and Explore Data 1.1 View Vector Data It onstists of points, lines, polygones shapes
 Use Layer &amp;gt;&amp;gt; Add Layer &amp;gt;&amp;gt; Add Vector Layer to add Vector Layer
 Data Source : https://mapcruzin.com/free-maharashtra-country-city-place-gis-shapefiles.htm
-View Raster Data which consistes of matrix of cells (or pixels) organized into rows and columns (or a grid) where each cell contains a value representing information
+1.2 View Raster Data It consistes of matrix of cells (or pixels) organized into rows and columns (or a grid) where each cell contains a value representing information
 Use Layer &amp;gt;&amp;gt; Add Layer &amp;gt;&amp;gt; Add Raster Layer to add Raster Layer</description>
     </item>
     
     <item>
       <title> Getting Started with QGIS </title>
-      <link>https://opensourcetutorials.in/qgis/gettingstarted/</link>
+      <link>https://opensourcetutorials.in/qgis/workshop/gettingstarted/</link>
       <pubDate>Sun, 23 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://opensourcetutorials.in/qgis/gettingstarted/</guid>
-      <description>In this post we will learn following skills  Launching QGIS Loading Raster and Vector Layers Saving Projects Understanding the QGIS User Interface  Download all data from : All Resource for Workshop 
-Launch QGIS Use Dashboard or QGIS icon to Launch QGIS. To close use can use X icon or Project Menu and Exit QGIS option When you start QGIS it will open following user interface
-The QGIS GUI is divided into five components:</description>
+      <guid>https://opensourcetutorials.in/qgis/workshop/gettingstarted/</guid>
+      <description>In this post we will learn following skills  Launching QGIS Loading Raster and Vector Layers Saving Projects Understanding the QGIS User Interface  Required Data : All Resource for Workshop 
+Download the all-resources directory and extract in the home directory
+Add Vector Layer - Open New QGIS project - From Menu Layer &amp;gt;&amp;gt; Add Layer &amp;gt;&amp;gt; Add Vector Layer &amp;gt;&amp;gt; From Source Vector Dataset Select Maharashtra_water directory and select `maharashtra_water.</description>
     </item>
     
     <item>
       <title> How to Install QGIS in Ubuntu </title>
-      <link>https://opensourcetutorials.in/qgis/install_ppa/</link>
+      <link>https://opensourcetutorials.in/qgis/workshop/installppa/</link>
       <pubDate>Sun, 23 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://opensourcetutorials.in/qgis/install_ppa/</guid>
-      <description>Install QGIS in Ubuntu QGIS woks on following platforms
+      <guid>https://opensourcetutorials.in/qgis/workshop/installppa/</guid>
+      <description>1. Install QGIS in Ubuntu QGIS woks on following platforms
  Linux Windows Mac OS X  The download all above versions at https://qgis.org/en/site/forusers/download.html this link.
 To add repositories into the sources.list file use following command
 $ sudo gedit /etc/apt/sources.list  To install QGIS using ppa on Ubuntu 18.04, Use following repositories to /etc/apt/sources.list
@@ -51,31 +72,86 @@ deb https://qgis.org/ubuntugis bionic main deb-src https://qgis.org/ubuntugis bi
     
     <item>
       <title> Problem Statement </title>
-      <link>https://opensourcetutorials.in/qgis/problem/</link>
+      <link>https://opensourcetutorials.in/qgis/workshop/problem/</link>
       <pubDate>Sun, 23 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://opensourcetutorials.in/qgis/problem/</guid>
-      <description>Problem statement : Mithi river is a complete natural ecosystem in itself. It originates from the confluence of tail water discharges of Vihar lake and Powai lake. It came into focus as one of the major reasons to cause flooding due to the downpour on 26 th July, 2005 and was recognized as River of Death when it sank entire city of Mumbai. Mithi river has a total length of about 17.</description>
+      <guid>https://opensourcetutorials.in/qgis/workshop/problem/</guid>
+      <description>Problem statement : Mithi river is a complete natural ecosystem in itself. It originates from the confluence of tail water discharges of Vihar lake and Powai lake. It came into focus as one of the major reasons to cause flooding due to the downpour on 26 th July, 2005 and was recognized as River of Death when it sank entire city of Mumbai.
+Mithi river has a total length of about 17.</description>
     </item>
     
     <item>
-      <title> QGIS for River Analysis </title>
-      <link>https://opensourcetutorials.in/qgis/qgisforriver/</link>
+      <title> Styling</title>
+      <link>https://opensourcetutorials.in/qgis/workshop/styling/</link>
       <pubDate>Sun, 23 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://opensourcetutorials.in/qgis/qgisforriver/</guid>
-      <description> QGIS for River Analysis We will be using QGIS to following tasks
- Create GIS Mapping points Create or Access the data from the database Visualize the River data Analyze the Data Generate Report Print the Map  </description>
+      <guid>https://opensourcetutorials.in/qgis/workshop/styling/</guid>
+      <description>Changing Colors Changing Symbol Structure Scale-Based Visibility Adding Symbol Layers Ordering Symbol Levels Symbol layer types Geometry generator symbology Creating a Custom SVG Fill</description>
     </item>
     
     <item>
       <title> Workshop on QGIS</title>
-      <link>https://opensourcetutorials.in/qgis/gisworkshop/</link>
+      <link>https://opensourcetutorials.in/qgis/workshop/index/</link>
       <pubDate>Sun, 23 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://opensourcetutorials.in/qgis/gisworkshop/</guid>
+      <guid>https://opensourcetutorials.in/qgis/workshop/index/</guid>
       <description>Welcome to the QGIS workshop training, Here we will be covering following topics
- Problem Statement Using QGIS for Mithi River Analysis Features of QGIS Installation of QGIS Getting Started with QGIS  </description>
+ Problem Statement Features of QGIS Installation of QGIS Getting Started with QGIS Create Vector and Raster Data  Create Geopackage of Vector data  Create Basic Map in QGIS  Styling Maps in QGIS  Vector Classification in QGIS  Create Maps in QGIS  Create Vector Layer in QGIS  Vector Analysis in QGIS   </description>
+    </item>
+    
+    <item>
+      <title>Create Basic Map using QGIS</title>
+      <link>https://opensourcetutorials.in/qgis/workshop/createbasicmap/</link>
+      <pubDate>Sun, 23 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://opensourcetutorials.in/qgis/workshop/createbasicmap/</guid>
+      <description>In this post you will learn
+Viewing Layer Attributes Loading Vector Data From GeoPackage Loading Vector Data From a Database Reordering the Layers</description>
+    </item>
+    
+    <item>
+      <title>Create Basic Map using QGIS</title>
+      <link>https://opensourcetutorials.in/qgis/workshop/creatingbasicmap/</link>
+      <pubDate>Sun, 23 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://opensourcetutorials.in/qgis/workshop/creatingbasicmap/</guid>
+      <description>In this post you will learn
+Viewing Layer Attributes Loading Vector Data From GeoPackage Loading Vector Data From a Database Reordering the Layers</description>
+    </item>
+    
+    <item>
+      <title>Create Geopackage using QGIS</title>
+      <link>https://opensourcetutorials.in/qgis/workshop/creategeopackage/</link>
+      <pubDate>Sun, 23 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://opensourcetutorials.in/qgis/workshop/creategeopackage/</guid>
+      <description>Creating Geopackage from multiple Layers  Select Layer from Layer Panel
+ Save Layer as Select Geopackage and select the location to save
+ Now you can use Database Manager and Select Geopackage
+ Select the Geopackage which you want to connect
+ Use now import layer to add it to the geopackge
+ Save the Geopackage
+  Use geopackage to load all the layers  Data source manager</description>
+    </item>
+    
+    <item>
+      <title>Create Vector/Raster Data using OSM and QGIS</title>
+      <link>https://opensourcetutorials.in/qgis/workshop/createvectordata/</link>
+      <pubDate>Sun, 23 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://opensourcetutorials.in/qgis/workshop/createvectordata/</guid>
+      <description>In this post we will learn to create our own data using Open Street Map Steps  Open QGIS Create a new Project and save as DataImportActivity in Home / QGIS Projects Directory Select Layer &amp;gt;&amp;gt; Data Source Manager Select Browser tab and Under XYZ Tiles Dubble click OpenStreetMap and then close the Window Move to the India and Mumbai area on the Map  As shown below
+Now we have the area which we want to study, next step would be to download the data</description>
+    </item>
+    
+    <item>
+      <title>Vector Classification</title>
+      <link>https://opensourcetutorials.in/qgis/workshop/vectorclassification/</link>
+      <pubDate>Sun, 23 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://opensourcetutorials.in/qgis/workshop/vectorclassification/</guid>
+      <description>Using Labels Changing Label Options Using Labels Instead of Layer Symbology Customize the Labels Labeling Lines Data Defined Settings Possibilities With Labeling
+Classification Classifying Nominal Data Ratio Classification Refine the Classification Rule-based Classification</description>
     </item>
     
   </channel>

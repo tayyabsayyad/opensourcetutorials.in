@@ -13,21 +13,14 @@
     
     
     <item>
-      <title>Cheetsheets</title>
-      <link>https://opensourcetutorials.in/cheetsheets/cheetsheets/</link>
+      <title> </title>
+      <link>https://opensourcetutorials.in/cheetsheets/gitcheetsheet/</link>
       <pubDate>Tue, 25 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://opensourcetutorials.in/cheetsheets/cheetsheets/</guid>
-      <description> Docker Cheetsheets  </description>
-    </item>
-    
-    <item>
-      <title>Docker Quick Start</title>
-      <link>https://opensourcetutorials.in/cheetsheets/docker_useful_commands/</link>
-      <pubDate>Tue, 25 Dec 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://opensourcetutorials.in/cheetsheets/docker_useful_commands/</guid>
-      <description>1. Install Dockers on Ubuntu 16.04 or above Update the Repository $ sudo apt-get update  Install ssl related packages $ sudo apt-get install \ apt-transport-https \ ca-certificates \ curl \ software-properties-common  Download the GPG key from the docker site $ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -  Add docker repository $ sudo add-apt-repository \ &amp;quot;deb [arch=amd64] https://download.docker.com/linux/ubuntu \ $(lsb_release -cs) \ stable edge test&amp;quot;  Update the packages and install docker community edition $ sudo apt-get update $ sudo apt-get install docker-ce  Finally check the docker installation is correct $ sudo docker run hello-world  You can check status, on, off and restart docker using following commands $ sudo service docker status $ sudo service docker start $ sudo service docker stop $ sudo service docker restart  To run the docker without sudo commands $ sudo usermod -aG docker $USER  Logout and then check with following command $ docker ps -a $ docker ps ## Docker Hub  2.</description>
+      <guid>https://opensourcetutorials.in/cheetsheets/gitcheetsheet/</guid>
+      <description>&lt;p&gt;Git Quick Start&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -137,7 +130,7 @@
       <pubDate>Tue, 27 Nov 2018 00:00:00 +0000</pubDate>
       
       <guid>https://opensourcetutorials.in/post/switchlinux/</guid>
-      <description>&lt;p&gt;Switch to Linux from other systems step by step !&lt;/p&gt;
+      <description>&lt;p&gt;Switch to Linux with easy steps&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
     </item>

@@ -1,0 +1,456 @@
+Package: linux-headers-generic
+Architecture: amd64
+Auto-Installed: 1
+
+Package: os-prober
+Architecture: amd64
+Auto-Installed: 1
+
+Package: grub-common
+Architecture: amd64
+Auto-Installed: 1
+
+Package: grub2-common
+Architecture: amd64
+Auto-Installed: 1
+
+Package: linux-headers-virtual
+Architecture: amd64
+Auto-Installed: 1
+
+Package: libfreetype6
+Architecture: amd64
+Auto-Installed: 1
+
+Package: linux-image-virtual
+Architecture: amd64
+Auto-Installed: 1
+
+Package: libnginx-mod-http-geoip
+Architecture: amd64
+Auto-Installed: 1
+
+Package: libwebp6
+Architecture: amd64
+Auto-Installed: 1
+
+Package: libhttp-message-perl
+Architecture: amd64
+Auto-Installed: 1
+
+Package: php7.2-common
+Architecture: amd64
+Auto-Installed: 1
+
+Package: libencode-locale-perl
+Architecture: amd64
+Auto-Installed: 1
+
+Package: php7.2-cli
+Architecture: amd64
+Auto-Installed: 1
+
+Package: php-apcu-bc
+Architecture: amd64
+Auto-Installed: 1
+
+Package: mysql-client-5.7
+Architecture: amd64
+Auto-Installed: 1
+
+Package: php7.2-fpm
+Architecture: amd64
+Auto-Installed: 1
+
+Package: libevent-core-2.1-6
+Architecture: amd64
+Auto-Installed: 1
+
+Package: mysql-server-5.7
+Architecture: amd64
+Auto-Installed: 1
+
+Package: php-common
+Architecture: amd64
+Auto-Installed: 1
+
+Package: libaprutil1
+Architecture: amd64
+Auto-Installed: 1
+
+Package: whois
+Architecture: amd64
+Auto-Installed: 1
+
+Package: libgd3
+Architecture: amd64
+Auto-Installed: 1
+
+Package: php7.2-mysql
+Architecture: amd64
+Auto-Installed: 1
+
+Package: python2.7-minimal
+Architecture: amd64
+Auto-Installed: 1
+
+Package: nginx-core
+Architecture: amd64
+Auto-Installed: 1
+
+Package: php7.2
+Architecture: amd64
+Auto-Installed: 1
+
+Package: libcgi-fast-perl
+Architecture: amd64
+Auto-Installed: 1
+
+Package: libhttp-date-perl
+Architecture: amd64
+Auto-Installed: 1
+
+Package: liblwp-mediatypes-perl
+Architecture: amd64
+Auto-Installed: 1
+
+Package: python2.7
+Architecture: amd64
+Auto-Installed: 1
+
+Package: libfcgi-perl
+Architecture: amd64
+Auto-Installed: 1
+
+Package: libcgi-pm-perl
+Architecture: amd64
+Auto-Installed: 1
+
+Package: libaprutil1-dbd-sqlite3
+Architecture: amd64
+Auto-Installed: 1
+
+Package: libaio1
+Architecture: amd64
+Auto-Installed: 1
+
+Package: php7.2-json
+Architecture: amd64
+Auto-Installed: 1
+
+Package: php7.2-opcache
+Architecture: amd64
+Auto-Installed: 1
+
+Package: libio-html-perl
+Architecture: amd64
+Auto-Installed: 1
+
+Package: python
+Architecture: amd64
+Auto-Installed: 1
+
+Package: ssl-cert
+Architecture: amd64
+Auto-Installed: 1
+
+Package: fontconfig-config
+Architecture: amd64
+Auto-Installed: 1
+
+Package: apache2-data
+Architecture: amd64
+Auto-Installed: 1
+
+Package: php7.2-curl
+Architecture: amd64
+Auto-Installed: 1
+
+Package: nginx-common
+Architecture: amd64
+Auto-Installed: 1
+
+Package: python3-pyinotify
+Architecture: amd64
+Auto-Installed: 1
+
+Package: libapr1
+Architecture: amd64
+Auto-Installed: 1
+
+Package: libpython-stdlib
+Architecture: amd64
+Auto-Installed: 1
+
+Package: libaprutil1-ldap
+Architecture: amd64
+Auto-Installed: 1
+
+Package: libhtml-tagset-perl
+Architecture: amd64
+Auto-Installed: 1
+
+Package: mysql-client-core-5.7
+Architecture: amd64
+Auto-Installed: 1
+
+Package: libtiff5
+Architecture: amd64
+Auto-Installed: 1
+
+Package: libnginx-mod-http-image-filter
+Architecture: amd64
+Auto-Installed: 1
+
+Package: php7.2-readline
+Architecture: amd64
+Auto-Installed: 1
+
+Package: fonts-dejavu-core
+Architecture: amd64
+Auto-Installed: 1
+
+Package: libjpeg8
+Architecture: amd64
+Auto-Installed: 1
+
+Package: liblua5.2-0
+Architecture: amd64
+Auto-Installed: 1
+
+Package: libnginx-mod-mail
+Architecture: amd64
+Auto-Installed: 1
+
+Package: mysql-common
+Architecture: amd64
+Auto-Installed: 1
+
+Package: libfontconfig1
+Architecture: amd64
+Auto-Installed: 1
+
+Package: libsodium23
+Architecture: amd64
+Auto-Installed: 1
+
+Package: libjpeg-turbo8
+Architecture: amd64
+Auto-Installed: 1
+
+Package: libhtml-template-perl
+Architecture: amd64
+Auto-Installed: 1
+
+Package: libtimedate-perl
+Architecture: amd64
+Auto-Installed: 1
+
+Package: libjbig0
+Architecture: amd64
+Auto-Installed: 1
+
+Package: libpython2.7-minimal
+Architecture: amd64
+Auto-Installed: 1
+
+Package: apache2-bin
+Architecture: amd64
+Auto-Installed: 1
+
+Package: libnginx-mod-stream
+Architecture: amd64
+Auto-Installed: 1
+
+Package: libxpm4
+Architecture: amd64
+Auto-Installed: 1
+
+Package: libnginx-mod-http-xslt-filter
+Architecture: amd64
+Auto-Installed: 1
+
+Package: libpython2.7-stdlib
+Architecture: amd64
+Auto-Installed: 1
+
+Package: apache2-utils
+Architecture: amd64
+Auto-Installed: 1
+
+Package: libhtml-parser-perl
+Architecture: amd64
+Auto-Installed: 1
+
+Package: libapache2-mod-php7.2
+Architecture: amd64
+Auto-Installed: 1
+
+Package: liburi-perl
+Architecture: amd64
+Auto-Installed: 1
+
+Package: mysql-server-core-5.7
+Architecture: amd64
+Auto-Installed: 1
+
+Package: python-minimal
+Architecture: amd64
+Auto-Installed: 1
+
+Package: python3-icu
+Architecture: amd64
+Auto-Installed: 1
+
+Package: python3-configargparse
+Architecture: amd64
+Auto-Installed: 1
+
+Package: python3-josepy
+Architecture: amd64
+Auto-Installed: 1
+
+Package: certbot
+Architecture: amd64
+Auto-Installed: 1
+
+Package: python3-zope.hookable
+Architecture: amd64
+Auto-Installed: 1
+
+Package: python3-pbr
+Architecture: amd64
+Auto-Installed: 1
+
+Package: python3-zope.event
+Architecture: amd64
+Auto-Installed: 1
+
+Package: python3-zope.component
+Architecture: amd64
+Auto-Installed: 1
+
+Package: python3-mock
+Architecture: amd64
+Auto-Installed: 1
+
+Package: python3-pyparsing
+Architecture: amd64
+Auto-Installed: 1
+
+Package: python3-future
+Architecture: amd64
+Auto-Installed: 1
+
+Package: python3-acme
+Architecture: amd64
+Auto-Installed: 1
+
+Package: python3-rfc3339
+Architecture: amd64
+Auto-Installed: 1
+
+Package: python3-requests-toolbelt
+Architecture: amd64
+Auto-Installed: 1
+
+Package: python3-tz
+Architecture: amd64
+Auto-Installed: 1
+
+Package: python3-parsedatetime
+Architecture: amd64
+Auto-Installed: 1
+
+Package: php7.2-xml
+Architecture: amd64
+Auto-Installed: 1
+
+Package: libzip4
+Architecture: amd64
+Auto-Installed: 1
+
+Package: php7.2-zip
+Architecture: amd64
+Auto-Installed: 1
+
+Package: php7.2-gd
+Architecture: amd64
+Auto-Installed: 1
+
+Package: php7.2-intl
+Architecture: amd64
+Auto-Installed: 1
+
+Package: php7.2-mbstring
+Architecture: amd64
+Auto-Installed: 1
+
+Package: php7.2-soap
+Architecture: amd64
+Auto-Installed: 1
+
+Package: php7.2-xmlrpc
+Architecture: amd64
+Auto-Installed: 1
+
+Package: libxmlrpc-epi0
+Architecture: amd64
+Auto-Installed: 1
+
+Package: php7.2-sqlite3
+Architecture: amd64
+Auto-Installed: 1
+
+Package: libuv1
+Architecture: amd64
+Auto-Installed: 1
+
+Package: linux-modules-4.15.0-39-generic
+Architecture: amd64
+Auto-Installed: 1
+
+Package: linux-headers-4.15.0-39-generic
+Architecture: amd64
+Auto-Installed: 1
+
+Package: linux-headers-4.15.0-39
+Architecture: amd64
+Auto-Installed: 1
+
+Package: linux-image-4.15.0-39-generic
+Architecture: amd64
+Auto-Installed: 1
+
+Package: linux-headers-4.15.0-42
+Architecture: amd64
+Auto-Installed: 1
+
+Package: linux-modules-4.15.0-42-generic
+Architecture: amd64
+Auto-Installed: 1
+
+Package: linux-headers-4.15.0-42-generic
+Architecture: amd64
+Auto-Installed: 1
+
+Package: linux-image-4.15.0-42-generic
+Architecture: amd64
+Auto-Installed: 1
+
+Package: linux-headers-4.15.0-43
+Architecture: amd64
+Auto-Installed: 1
+
+Package: linux-modules-4.15.0-43-generic
+Architecture: amd64
+Auto-Installed: 1
+
+Package: linux-headers-4.15.0-43-generic
+Architecture: amd64
+Auto-Installed: 1
+
+Package: linux-image-4.15.0-43-generic
+Architecture: amd64
+Auto-Installed: 1
+

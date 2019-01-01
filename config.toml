@@ -6,11 +6,12 @@ title = "Open Source Tutorials"
 theme = "Mainroad"
 disqusShortname = "www-opensourcetutorials-in"
 googleAnalytics = "UA-59503205-1"
+rssLimit = 15
 
 [Author]
     name = "Tayyabali Sayyad"
     bio = "Tayyabali is a Open Source evangelist, Works as Assistant Professor at DBIT, Mumbai, India."
-    avatar = "tayyabali.jpeg"
+    avatar = "tayyabali2.jpg"
 
 [Params]
     subtitle = "Where Open Source is Everything ! "
@@ -53,25 +54,30 @@ googleAnalytics = "UA-59503205-1"
 
   [[menu.main]]
     name = "Switch To Linux in Simple Steps"
-    url = "/post/switchlinux"
+    url = "/post/switchLinux"
     weight = -120
 
   [[menu.main]]
     name = "QGIS Workshop"
-    url = "/qgis/gisworkshop"
+    url = "/qgis/workshop/index/"
     weight = -100
 
   [[menu.main]]
       name = "Cheetsheets"
-      url = "/cheetsheets/cheetsheets"
+      url = "/cheetsheets/index/"
       weight = -100
 
   [[menu.main]]
         name = "RSS Feeds"
-        url = "/index.xml/"
+        url = "/post/rss"
         weight = -70
 
   [[menu.main]]
         name = "Subscribe"
         url = "http://eepurl.com/gcdqnH"
+        weight = -70
+
+  [[menu.main]]
+        name = "About Me"
+        url = "https://tayyabali.in"
         weight = -70

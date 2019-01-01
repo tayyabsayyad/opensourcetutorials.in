@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Thu, 06 Dec 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 29 Dec 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://opensourcetutorials.in/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>RSS for the recent posts</title>
+      <link>https://opensourcetutorials.in/post/rss/</link>
+      <pubDate>Sat, 29 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://opensourcetutorials.in/post/rss/</guid>
+      <description>&lt;p&gt;RSS is one of the popular way how people subscribe to the blogs which they likes to read
+&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Linux Desktop Envirnment </title>
@@ -119,7 +129,7 @@
       <pubDate>Tue, 27 Nov 2018 00:00:00 +0000</pubDate>
       
       <guid>https://opensourcetutorials.in/post/switchlinux/</guid>
-      <description>&lt;p&gt;Switch to Linux from other systems step by step !&lt;/p&gt;
+      <description>&lt;p&gt;Switch to Linux with easy steps&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
     </item>

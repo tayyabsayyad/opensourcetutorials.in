@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<meta name="description" content="">
+	<meta name="generator" content="Hugo 0.48" />
+	<meta property="og:title" content="" />
+<meta property="og:description" content="Installation and Configuration Step 1 - Installing Ansible To configure the PPA on your machine and install ansible run these commands:
+$ sudo apt-get update $ sudo apt-get install software-properties-common $ sudo apt-add-repository ppa:ansible/ansible $ sudo apt-get update $ sudo apt-get install ansible  Check ansible install version
+$ ansible --version  Step 2 - Configure Hosts All host information is kept in the hosts files as follows
+$ sudo gedit /etc/ansible/hosts $ sudo gedit /etc/ansible/ansible." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://opensourcetutorials.in/cheetsheets/ansible/1.installconfig/" />
+	<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content=""/>
+<meta name="twitter:description" content="Installation and Configuration Step 1 - Installing Ansible To configure the PPA on your machine and install ansible run these commands:
+$ sudo apt-get update $ sudo apt-get install software-properties-common $ sudo apt-add-repository ppa:ansible/ansible $ sudo apt-get update $ sudo apt-get install ansible  Check ansible install version
+$ ansible --version  Step 2 - Configure Hosts All host information is kept in the hosts files as follows
+$ sudo gedit /etc/ansible/hosts $ sudo gedit /etc/ansible/ansible."/>
+
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+	<link rel="stylesheet" href="/css/style.css">
+	<script type="text/javascript" src="/js/scripts.js"></script>
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-59503205-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container">
+		<div class="logo" role="banner">
+
+				<a class="logo__link" href="/" title="Open Source Tutorials" rel="home">
+				<div class="logo__title">Open Source Tutorials</div>
+				<div class="logo__tagline">Where Open Source is Everything ! </div>
+			</a>
+
+		</div>
+	</div>
+
+	
+<nav class="menu">
+	<ul class="menu__list">
+		<li class="menu__item"><a class="menu__link" href="/post/switchlinux">SWITCH TO LINUX IN SIMPLE STEPS</a></li>
+		<li class="menu__item"><a class="menu__link" href="/cheetsheets/cheetsheets">CHEETSHEETS</a></li>
+		<li class="menu__item"><a class="menu__link" href="/qgis/gisworkshop">QGIS WORKSHOP</a></li>
+		<li class="menu__item"><a class="menu__link" href="https://tayyabali.in">ABOUT ME</a></li>
+		<li class="menu__item"><a class="menu__link" href="/post/rss">RSS FEEDS</a></li>
+		<li class="menu__item"><a class="menu__link" href="http://eepurl.com/gcdqnH">SUBSCRIBE</a></li>
+	</ul>
+</nav>
+
+	</header>
+
+		<div class="wrapper flex">
+			<section class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title"></h1>
+		</header><div class="content post__content clearfix">
+			
+
+<h1 id="installation-and-configuration">Installation and Configuration</h1>
+
+<h2 id="step-1-installing-ansible">Step 1 - Installing Ansible</h2>
+
+<p>To configure the PPA on your machine and install ansible run these commands:</p>
+
+<pre><code>$ sudo apt-get update
+$ sudo apt-get install software-properties-common
+$ sudo apt-add-repository ppa:ansible/ansible
+$ sudo apt-get update
+$ sudo apt-get install ansible
+</code></pre>
+
+<p>Check ansible install version</p>
+
+<pre><code>$ ansible --version
+</code></pre>
+
+<h2 id="step-2-configure-hosts">Step 2 - Configure Hosts</h2>
+
+<p>All host information is kept in the hosts files as follows</p>
+
+<pre><code>$ sudo gedit /etc/ansible/hosts
+
+$ sudo gedit /etc/ansible/ansible.cfg
+
+Remove comment of inventory and the sudo_user
+Its default but better to change and make it apply
+
+
+$ cat /etc/ansible/hosts
+
+$ sudo mv hosts hosts.original
+
+$ sudo gedit hosts
+
+Create entries of the hosts which you are going to manage
+
+      [local]
+      localhost
+
+      [itlab6]
+      10.0.1.198
+      10.0.1.197
+</code></pre>
+
+<p>Note : Better to use Vi than gedit</p>
+
+<p>Ansible Default configuration
+        $ cat /etc/ansible/ansible.cfg</p>
+
+<pre><code>    Keep as it is or you can uncomment following and save
+    #inventory      = /etc/ansible/hosts
+    #sudo_user      = root
+</code></pre>
+
+<hr />
+
+<h2 id="step-3-servers-setup">Step 3 - Servers Setup</h2>
+
+<p>### Install ssh on the server and your host also</p>
+
+<pre><code>$ sudo apt install ssh
+
+Check from your computer to server you can connect using the ssh
+
+$ ssh dbit@10.0.1.198
+
+This will ask username and password
+</code></pre>
+
+<h3 id="this-is-not-necessary-to-just-for-additional-information">This is not necessary to just for additional information</h3>
+
+<h3 id="if-you-want-to-enable-root-login-on-over-ssh-then-follow-following-commands">If you want to enable root login on over ssh then follow following commands</h3>
+
+<pre><code># gedit /etc/ssh/sshd_config
+
+Change the line &quot;PermitRootLogin&quot; to &quot;yes&quot;
+
+# service sshd restart
+
+$ ssh root@192.168.1.101
+
+You will be able to connect to the server using root username
+</code></pre>
+
+<h3 id="create-ansible-user-with-sudo-permissions">Create ansible user with sudo permissions</h3>
+
+<p>On the server where you will be configuring you need to have a user with sudo permissions and authentication method must not need password. i.e use ssh keys</p>
+
+<pre><code># sudo adduser ansible
+# sudo usermod -aG sudo ansible
+</code></pre>
+
+<h3 id="setup-ssh-keys">Setup ssh keys</h3>
+
+<pre><code>  On the OUR computer AND WITH ANSIBLE USER ( Create if not not available )
+  from where we will be managing ansible
+
+  Swith to the user using following command
+
+  $ su ansible
+
+Then start commands
+
+  $ ssh-keygen
+    accept all default options
+
+  $ cd /home/ansible/.ssh/
+   you can see all keys here at this place
+
+   Copy the Public Key on server where we created ansible user
+
+   $ ssh-copy-id ansible@192.168.1.101
+   Input password
+
+  $ ssh-copy-id tayyabali@localhost
+  $ ssh-copy-id ansible@localhost
+  $ ssh-copy-id ansible@10.0.1.198
+  $ ssh-copy-id ansible@10.0.1.197
+
+  Now try
+
+  $ ssh ansible@192.168.1.198
+  $ ssh localhost
+
+  You will be logged in without password
+</code></pre>
+
+<h3 id="disable-password-authentication-recommended-not-necessary-now">Disable Password Authentication (Recommended) not necessary now</h3>
+
+<pre><code>  On Server (Where we have ansible user):
+  Now oce you have configured the key based login, now you can disable the password based auth
+
+  $ sudo vi /etc/ssh/sshd_config
+
+  Change follwoing parameter to no as shown below
+
+      PasswordAuthentication no
+
+  $ sudo systemctl reload sshd
+</code></pre>
+
+<h3 id="set-up-a-basic-firewall">Set Up a Basic Firewall</h3>
+
+<pre><code>$ sudo ufw app list
+$ sudo ufw allow OpenSSH
+$ sudo ufw enable
+$ sudo ufw status
+</code></pre>
+
+<p>Now lets configure ansible user to run commands as a root on the remote machine</p>
+
+<pre><code>$ sudo visudo
+
+add following below the User privilege section, just below the root
+ansible  ALL=(ALL) NOPASSWD: ALL
+
+CTRL + O  ----&gt; Enter to Save  and CTRL + X
+
+
+and then check if its ok
+$ sudo visudo -c
+
+Check if you can be root without the password
+
+$ su ansible -
+</code></pre>
+
+<hr />
+
+		</div>
+		
+	</article>
+</main>
+
+<div class="authorbox clearfix">
+	<figure class="authorbox__avatar">
+		<img alt="Tayyabali Sayyad avatar" src="/tayyabali2.jpg" class="avatar" height="90" width="90">
+	</figure>
+	<div class="authorbox__header">
+		<span class="authorbox__name">About Tayyabali Sayyad</span>
+	</div>
+	<div class="authorbox__description">
+		Tayyabali is a Open Source evangelist, Works as Assistant Professor at DBIT, Mumbai, India.
+	</div>
+</div>
+
+<nav class="post-nav flex">
+	<div class="post-nav__item post-nav__item--prev">
+		<a class="post-nav__link" href="/cheetsheets/ansible/2.ansible_documentation/" rel="prev"><span class="post-nav__caption">«&thinsp;Previous</span><p class="post-nav__post-title"></p></a>
+	</div>
+	<div class="post-nav__item post-nav__item--next">
+		<a class="post-nav__link" href="/cheetsheets/geonodeinstall/" rel="next"><span class="post-nav__caption">Next&thinsp;»</span><p class="post-nav__post-title">Geonode Install using Docker</p></a>
+	</div>
+</nav>
+
+<section class="comments">
+	<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "www-opensourcetutorials-in" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+
+			</section>
+			
+		</div>
+		<footer class="footer">
+	<div class="container">
+		<div class="footer__copyright">&copy; 2018 Open Source Tutorials. <span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span></div>
+	</div>
+</footer>
+
+	</div>
+<script>
+	var navigation = responsiveNav(".menu", {
+		navClass: "menu--collapse",
+		label: "Menu",
+	});
+</script></body>
+</html>

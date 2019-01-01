@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Sun, 23 Dec 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 29 Dec 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://opensourcetutorials.in/categories/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,9 +15,18 @@
     <item>
       <title></title>
       <link>https://opensourcetutorials.in/categories/</link>
-      <pubDate>Sun, 23 Dec 2018 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 29 Dec 2018 00:00:00 +0000</pubDate>
       
       <guid>https://opensourcetutorials.in/categories/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cheetsheets</title>
+      <link>https://opensourcetutorials.in/categories/cheetsheets/</link>
+      <pubDate>Mon, 31 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://opensourcetutorials.in/categories/cheetsheets/</guid>
       <description></description>
     </item>
     
@@ -36,6 +45,15 @@
       <pubDate>Tue, 25 Dec 2018 00:00:00 +0000</pubDate>
       
       <guid>https://opensourcetutorials.in/categories/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Qgis</title>
+      <link>https://opensourcetutorials.in/categories/qgis/</link>
+      <pubDate>Sun, 23 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://opensourcetutorials.in/categories/qgis/</guid>
       <description></description>
     </item>
     

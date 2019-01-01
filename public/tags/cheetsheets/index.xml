@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cheetsheets on Open Source Tutorials</title>
+    <link>https://opensourcetutorials.in/tags/cheetsheets/</link>
+    <description>Recent content in Cheetsheets on Open Source Tutorials</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
+    <lastBuildDate>Mon, 31 Dec 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://opensourcetutorials.in/tags/cheetsheets/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Ansible</title>
+      <link>https://opensourcetutorials.in/cheetsheets/ansible/</link>
+      <pubDate>Mon, 31 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://opensourcetutorials.in/cheetsheets/ansible/</guid>
+      <description>&lt;p&gt;Ansible Hacks&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Screen : Terminal Multiplexer</title>
+      <link>https://opensourcetutorials.in/cheetsheets/screen_useful_commands/</link>
+      <pubDate>Sat, 29 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://opensourcetutorials.in/cheetsheets/screen_useful_commands/</guid>
+      <description>&lt;p&gt;Cheetsheet for Screen which is Terminal Multiplexer, Allows you to use multiple screens.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Cheetsheets</title>
+      <link>https://opensourcetutorials.in/cheetsheets/index/</link>
+      <pubDate>Tue, 25 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://opensourcetutorials.in/cheetsheets/index/</guid>
+      <description>&lt;h3 id=&#34;index-of-all-cheetsheets&#34;&gt;Index of all Cheetsheets&lt;/h3&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Docker Quick Start</title>
+      <link>https://opensourcetutorials.in/cheetsheets/docker_useful_commands/</link>
+      <pubDate>Tue, 25 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://opensourcetutorials.in/cheetsheets/docker_useful_commands/</guid>
+      <description>&lt;p&gt;Docker commands cheetsheet&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Geonode Install using Docker</title>
+      <link>https://opensourcetutorials.in/cheetsheets/geonodeinstall/</link>
+      <pubDate>Tue, 25 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://opensourcetutorials.in/cheetsheets/geonodeinstall/</guid>
+      <description>&lt;p&gt;Geonode Installation on Docker using shell scripts
+&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

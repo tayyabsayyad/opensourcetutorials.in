@@ -5,16 +5,16 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Docker Quick Start</title>
-	<meta name="description" content="Docker Quick Start? ">
+	<meta name="description" content="Docker Quick Start ">
 	<meta name="generator" content="Hugo 0.48" />
 	<meta property="og:title" content="Docker Quick Start" />
-<meta property="og:description" content="Docker Quick Start? " />
+<meta property="og:description" content="Docker Quick Start " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://opensourcetutorials.in/cheetsheets/docker_useful_commands/" /><meta property="article:published_time" content="2018-12-25T00:00:00&#43;00:00"/>
 <meta property="article:modified_time" content="2018-12-25T00:00:00&#43;00:00"/>
 	<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Docker Quick Start"/>
-<meta name="twitter:description" content="Docker Quick Start? "/>
+<meta name="twitter:description" content="Docker Quick Start "/>
 
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
 	<link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -53,9 +53,10 @@ if (!doNotTrack) {
 <nav class="menu">
 	<ul class="menu__list">
 		<li class="menu__item"><a class="menu__link" href="/post/switchlinux">SWITCH TO LINUX IN SIMPLE STEPS</a></li>
-		<li class="menu__item"><a class="menu__link" href="/cheetsheets/cheetsheets">CHEETSHEETS</a></li>
-		<li class="menu__item"><a class="menu__link" href="/qgis/gisworkshop">QGIS WORKSHOP</a></li>
-		<li class="menu__item"><a class="menu__link" href="/index.xml/">RSS FEEDS</a></li>
+		<li class="menu__item"><a class="menu__link" href="/cheetsheets/index/">CHEETSHEETS</a></li>
+		<li class="menu__item"><a class="menu__link" href="/qgis/workshop/index/">QGIS WORKSHOP</a></li>
+		<li class="menu__item"><a class="menu__link" href="https://tayyabali.in">ABOUT ME</a></li>
+		<li class="menu__item"><a class="menu__link" href="/post/rss">RSS FEEDS</a></li>
 		<li class="menu__item"><a class="menu__link" href="http://eepurl.com/gcdqnH">SUBSCRIBE</a></li>
 	</ul>
 </nav>
@@ -73,10 +74,12 @@ if (!doNotTrack) {
 <time class="post__meta-date meta-date" datetime="2018-12-25T00:00:00">December 25, 2018</time>
 <span class="post__meta-categories meta-categories">
 	<svg class="icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg>
-	<span class="meta-categories__list"><a class="meta-categories__link" href="/categories/linux" rel="category">Linux</a></span>
+	<span class="meta-categories__list"><a class="meta-categories__link" href="/categories/cheetsheets" rel="category">Cheetsheets</a></span>
 </span></div>
 		</header><div class="content post__content clearfix">
-			
+			<p>Docker commands cheetsheet</p>
+
+<p></p>
 
 <hr />
 
@@ -430,7 +433,7 @@ Examine the output
                           $ docker start Lifecycle1
                           $ docker ps</p>
 
-<p>## Run command in the Container with out affecting the Container process</p>
+<h2 id="run-command-in-the-container-with-out-affecting-the-container-process">Run command in the Container with out affecting the Container process</h2>
 
 <pre><code>  $ docker exec -it LifeCycle1 /bin/bash
                         - exec execute command
@@ -474,212 +477,240 @@ Examine the output
 
         By force you can delete image
         $ docker rmi -f hello-world
+</code></pre>
 
-    **If you remove images, you will be able to run the containers**
+<p><strong>If you remove images, you will be able to run the containers</strong></p>
 
-    ### To stop all non-running Container delete
-        $ docker ps -a -q
+<h3 id="to-stop-all-non-running-container-delete">To stop all non-running Container delete</h3>
+
+<pre><code>        $ docker ps -a -q
         $ docker rm `docker ps -a -q`
+</code></pre>
 
+<h2 id="redirection-ports-and-volumes">Redirection - Ports and Volumes</h2>
 
-        ## Redirection - Ports and Volumes
+<p>Lets see which all images we have available</p>
 
-        Lets see which all images we have available
+<pre><code>$ docker images
+</code></pre>
 
-              $ docker images
+<p>Lets run the ngins container</p>
 
-        Lets run the ngins container
+<pre><code>$ docker run -d nginx:latest
+</code></pre>
 
-              $ docker run -d nginx:latest
+<p>To check the Ip address</p>
 
-        To check the Ip address
+<pre><code>$ docker inspect stupefied_ramanujan | grep IPAddr
+</code></pre>
 
-              $ docker inspect stupefied_ramanujan | grep IPAddr
+<p>Check the nginx is running using the elinks</p>
 
-        Check the nginx is running using the elinks
+<pre><code>$elinks 172.17.0.2
+$elinks localhost
+</code></pre>
 
-              $elinks 172.17.0.2
-              $elinks localhost
+<p>Here container will show the web page but the localhost will not.</p>
 
-              Here container will show the web page but the localhost will not.
+<p>How to redirect from local port to container ?</p>
 
-              How to redirect from local port to container ?
+<p>Lets stop the container</p>
 
-        Lets stop the container
+<pre><code>      $ docker stop stupefied_ramanujan
+</code></pre>
 
-              $ docker stop stupefied_ramanujan
+<p>and also lets remove the container</p>
 
-              and also lets remove the container
+<pre><code>      $ docker rm `docker ps -a -q`
+</code></pre>
 
-              $ docker rm `docker ps -a -q`
+<p>Above will remove all containers</p>
 
-              Above will remove all containers
+<h2 id="port-redirection">Port redirection</h2>
 
-        ## Port redirection
+<pre><code>      $ docker images
+      $ docker run -d --name=WebServer2 -P nginx:latest
+</code></pre>
 
-              $ docker images
+<p>-P makes forawarding 32768 to 65000 range</p>
 
-              $ docker run -d --name=WebServer2 -P nginx:latest
+<p>Now You can connect to the container with two ways but lets see the port it is picked for binding</p>
 
-              -P makes forawarding 32768 to 65000 range
+<pre><code>      $ docker ps
+</code></pre>
 
-        Now You can connect to the container with two ways but lets see the port it is picked for binding
+<p>In my case port 32768 is picked upby container</p>
 
-              $ docker ps
+<p>$ docker inspect WebServer2</p>
 
-              In my case port 32768 is picked upby container
+<p>IP address of container is 172.17.0.2</p>
 
-              $ docker inspect WebServer2
+<p>$ elinks 172.17.0.2
+$ elinks <a href="http://localhost:32768">http://localhost:32768</a></p>
 
-        IP address of container is 172.17.0.2
+<p>You will be able to connecct to nginx using both the ways shown above</p>
 
-              $ elinks 172.17.0.2
-              $ elinks http://localhost:32768
+<h2 id="to-know-which-port-is-redirected-you-can-also-use-follwing-command">To know which port is redirected you can also use follwing command</h2>
 
-        You will be able to connecct to nginx using both the ways shown above
+<pre><code>  $ docker port WebServer2 $CONTAINERPORT
+</code></pre>
 
-        ## To know which port is redirected you can also use follwing command
+<p>To run bind a specific port like following 8090 we use -p option</p>
 
+<pre><code>  $ docker run -d -p 8090:80 --name=MyWebServer3 nginx:latest
 
-            $ docker port WebServer2 $CONTAINERPORT
+  $ docker ps
+</code></pre>
 
-        To run bind a specific port like following 8090 we use -p option
+<p>Check port which is getting redirected</p>
 
-              $ docker run -d -p 8090:80 --name=MyWebServer3 nginx:latest
+<p>You can check forwarding using follwing commands</p>
 
-              $ docker ps
-          Check port which is getting redirected
+<pre><code>  $ elinks 172.17.0.2
+  $ elinks http://localhost:8090
+</code></pre>
 
-        You can check forwarding using follwing commands
+<h2 id="mounting-volumes">Mounting Volumes</h2>
 
-            $ elinks 172.17.0.2
-            $ elinks http://localhost:8090
+<pre><code>  $ mkdir www
+  $ cd www
+  $ vi index.html
+</code></pre>
 
-        ## Mounting Volumes
+<p>Put following code in the index.html
+                <html>
+                <body>
+                <h1>My Custom HTML </h1>
+                </body>
+                </html></p>
 
-            $ mkdir www
-            $ cd www
-            $ vi index.html
+<pre><code>            $ docker run -d -p 8070:80 --name=WebServer5 -v /home/tayyabali/www:/usr/share/nginx/html nginx:latest
+</code></pre>
 
-            Put following code in the index.html
-            &lt;html&gt;
-            &lt;body&gt;
-            &lt;h1&gt;My Custom HTML &lt;/h1&gt;
-            &lt;/body&gt;
-            &lt;/html&gt;
+<p>Now you can check the site in the localhost or using ip address of the container as follows
+Check Ip</p>
 
-            $ docker run -d -p 8070:80 --name=WebServer5 -v /home/tayyabali/www:/usr/share/nginx/html nginx:latest
-
-        Now you can check the site in the localhost or using ip address of the container as follows
-
-            Check Ip
-
-            $ docker ps
+<pre><code>            $ docker ps
             $ docker inspect
             $ elinks 172.17.0.3
             $ elinks http://localhost:8070
             ## Docker File
 
-                $ docker images
-                $ docker ps
+            $ docker images
+            $ docker ps
+</code></pre>
 
-            Stop containers if any running
+<p>Stop containers if any running</p>
 
-                $ docker stop CONTAINER_ID/NAME
+<pre><code>            $ docker stop CONTAINER_ID/NAME
+</code></pre>
 
-            Lets Cleanup all the containers and keep only images
+<p>Lets Cleanup all the containers and keep only images</p>
 
-                $ docker ps -a
-                $ docker rm `docker ps -a -q`
-                $ docker ps -a
-                $ docker ps
+<pre><code>            $ docker ps -a
+            $ docker rm `docker ps -a -q`
+            $ docker ps -a
+            $ docker ps
+</code></pre>
 
-            Lets build a directory for our build
+<p>Lets build a directory for our build</p>
 
-                $ mkdir build
-                $ cd build
-                $ docker images
-            We only now have images
+<pre><code>            $ mkdir build
+            $ cd build
+            $ docker images
+</code></pre>
 
-            Create a file in build directory
-                $ vi Dockerfile
+<p>We only now have images</p>
 
-            Put followig text in the Dockerfile
+<p>Create a file in build directory
+                $ vi Dockerfile</p>
+
+<pre><code>Put followig text in the Dockerfile
 
                 FROM debian:stable
                 MAINTAINER tayyabali &lt;tayyabsayyad@gmail.com&gt;
                 RUN apt-get update
                 RUN apt-get upgrade
                 RUN apt-get install telnet
+</code></pre>
 
-            Then lets build the image using followig command
+<p>Then lets build the image using followig command</p>
 
-                $ build$ docker build -t tayyabali/myapache .
+<pre><code>              $ build$ docker build -t tayyabali/myapache .
+</code></pre>
 
-            You may see this is failed because of the questions it asks
+<p>You may see this is failed because of the questions it asks</p>
 
-                  Do you want to continue? [Y/n] Abort
+<pre><code>            Do you want to continue? [Y/n] Abort
+</code></pre>
 
-            If build is failed you have only latest debian image available as you can see
+<p>If build is failed you have only latest debian image available as you can see</p>
 
-                  $ docker images
+<pre><code>          $ docker images
+</code></pre>
 
-            But what happens if we try to pur a unknow command in the file as shown below and build image
+<p>But what happens if we try to pur a unknow command in the file as shown below and build image</p>
 
-                FROM debian:stable
+<pre><code>                FROM debian:stable
                 MAINTAINER tayyabali &lt;tayyabsayyad@gmail.com&gt;
                 RUN apt-get update
                 RUN apt-get upgrade
                 RUN apt-get install telnet
                 RUN my-command
+</code></pre>
 
-            Docker uses cache memory for the image layer, When you run commands separately image layers are increased good to combine command together as following
+<p>Docker uses cache memory for the image layer, When you run commands separately image layers are increased good to combine command together as following</p>
 
-
-                FROM debian:stable
+<pre><code>                FROM debian:stable
                 MAINTAINER tayyabali &lt;tayyabsayyad@gmail.com&gt;
                 RUN apt-get update &amp;&amp; apt-get upgrade -y &amp;&amp; apt-get install -y telnet apache2 elinks openssh-server
+</code></pre>
 
-            Check the build image
+<p>Check the build image</p>
 
-                $ docker images
+<pre><code>                $ docker images
+</code></pre>
 
-            Lets add envirnment variables and file looks as followig
+<p>Lets add envirnment variables and file looks as followig</p>
 
-                FROM debian:stable
+<pre><code>                FROM debian:stable
                 MAINTAINER tayyabali &lt;tayyabsayyad@gmail.com&gt;
 
                 RUN apt-get update &amp;&amp; apt-get upgrade -y &amp;&amp; apt-get install -y telnet apache2 elinks openssh-server
 
                 ENV MYVALUE my-value
+</code></pre>
 
-            and build image again
+<p>and build image again</p>
 
-                $ docker build -t tayyabali/myapache .
+<pre><code>                $ docker build -t tayyabali/myapache .
 
                 It will build quickly becaue it used cache
+</code></pre>
 
-            Lets make container from the image
+<p>Lets make container from the image</p>
 
-                $ docker run -it tayyabali/myapache:latest /bin/bash
+<pre><code>                $ docker run -it tayyabali/myapache:latest /bin/bash
+</code></pre>
 
-            and check the envirnment variable in container, you can see the value
+<p>and check the envirnment variable in container, you can see the value</p>
 
-                $ root@3012264990e9:/# echo $MYVALUE
+<pre><code>                $ root@3012264990e9:/# echo $MYVALUE
                 my-value
+</code></pre>
 
-            This is the way how you can pass variable in the container which is instantiated
+<p>This is the way how you can pass variable in the container which is instantiated
+  Lets Clean up again</p>
 
-            Lets Clean up again
-
-                $ docker ps -a
+<pre><code>                $ docker ps -a
                 $ docker rm `docker ps -a -q`
                 $ docker ps -a
                 $ docker ps
+</code></pre>
 
-            Lets chane the Dockerfile as follows to expose the ports
+<p>Lets change the Dockerfile as follows to expose the ports</p>
 
-                FROM debian:stable
+<pre><code>                FROM debian:stable
                 MAINTAINER tayyabali &lt;tayyabsayyad@gmail.com&gt;
 
                 RUN apt-get update &amp;&amp; apt-get upgrade -y &amp;&amp; apt-get install -y telnet apache2 elinks openssh-server
@@ -688,31 +719,36 @@ Examine the output
 
                 EXPOSE 80
                 EXPOSE 22
+</code></pre>
 
-            and build the image again
+<p>and build the image again</p>
 
-                $ docker build -t tayyabali/myapache .
+<pre><code>                $ docker build -t tayyabali/myapache .
+</code></pre>
 
-            Lets create the continer based on the image created
+<p>Lets create the continer based on the image created</p>
 
-                $ docker run -it tayyabali/myapache:latest /bin/bash
+<pre><code>                $ docker run -it tayyabali/myapache:latest /bin/bash
+</code></pre>
 
-            Open New Terminal and see ports are now open
+<p>Open New Terminal and see ports are now open</p>
 
-                $ docker ps
+<pre><code>                $ docker ps
+</code></pre>
 
-            Exit from the container and remove the container
+<p>Exit from the container and remove the container</p>
 
-                $ docker ps -a
+<pre><code>                $ docker ps -a
                 $ docker rm `docker ps -a -q`
                 $ docker ps -a
                 $ docker ps
+</code></pre>
 
-            Starting apache in the container
+<p>Starting apache in the container</p>
 
-            Remove the port 22 we dont need that to be exposed and add command to start apache as follows
+<p>Remove the port 22 we dont need that to be exposed and add command to start apache as follows</p>
 
-                  FROM debian:stable
+<pre><code>                  FROM debian:stable
                   MAINTAINER tayyabali &lt;tayyabsayyad@gmail.com&gt;
 
                   RUN apt-get update &amp;&amp; apt-get upgrade -y &amp;&amp; apt-get install -y telnet apache2 elinks openssh-server
@@ -742,26 +778,26 @@ Examine the output
 
 <p>You can also connect to the container as follows</p>
 
-<pre><code>  $ docker exec -it fervent_visvesvaraya /bin/bash
-  root@c4ecaf1aa2fe:/# ps aux | grep apache
-  root@c4ecaf1aa2fe:/# echo $MYVALUE
+<pre><code>$ docker exec -it fervent_visvesvaraya /bin/bash
+root@c4ecaf1aa2fe:/# ps aux | grep apache
+root@c4ecaf1aa2fe:/# echo $MYVALUE
 </code></pre>
 
 <p>See apache is running and MYVALUE is also set</p>
 
 <p>Exit and check ps it will be still running</p>
 
-<p>root@c4ecaf1aa2fe:/# exit
-  $ docker ps</p>
+<pre><code>root@c4ecaf1aa2fe:/# exit
+$ docker ps
+</code></pre>
 
 <p>To learn more about the docker files check the official repositories images docker files.</p>
-
 		</div>
 		
 <div class="post__tags tags clearfix">
 	<svg class="icon icon-tag" width="16" height="16" viewBox="0 0 16 16"><path d="M16 9.5c0 .373-.24.74-.5 1l-5 5c-.275.26-.634.5-1 .5-.373 0-.74-.24-1-.5L1 8a2.853 2.853 0 0 1-.7-1C.113 6.55 0 5.973 0 5.6V1.4C0 1.034.134.669.401.401.67.134 1.034 0 1.4 0h4.2c.373 0 .95.113 1.4.3.45.187.732.432 1 .7l7.5 7.502c.26.274.5.632.5.998zM3.5 5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/></svg>
 	<ul class="tags__list">
-		<li class="tags__item"><a class="tags__link btn" href="/tags/linux/" rel="tag">Linux</a></li>
+		<li class="tags__item"><a class="tags__link btn" href="/tags/cheetsheets/" rel="tag">Cheetsheets</a></li>
 	</ul>
 </div>
 	</article>
@@ -769,7 +805,7 @@ Examine the output
 
 <div class="authorbox clearfix">
 	<figure class="authorbox__avatar">
-		<img alt="Tayyabali Sayyad avatar" src="/tayyabali.jpeg" class="avatar" height="90" width="90">
+		<img alt="Tayyabali Sayyad avatar" src="/tayyabali2.jpg" class="avatar" height="90" width="90">
 	</figure>
 	<div class="authorbox__header">
 		<span class="authorbox__name">About Tayyabali Sayyad</span>
@@ -781,10 +817,10 @@ Examine the output
 
 <nav class="post-nav flex">
 	<div class="post-nav__item post-nav__item--prev">
-		<a class="post-nav__link" href="/cheetsheets/linux_useful_commands/" rel="prev"><span class="post-nav__caption">«&thinsp;Previous</span><p class="post-nav__post-title"></p></a>
+		<a class="post-nav__link" href="/cheetsheets/geonodeinstall/" rel="prev"><span class="post-nav__caption">«&thinsp;Previous</span><p class="post-nav__post-title">Geonode Install using Docker</p></a>
 	</div>
 	<div class="post-nav__item post-nav__item--next">
-		<a class="post-nav__link" href="/cheetsheets/cheetsheets/" rel="next"><span class="post-nav__caption">Next&thinsp;»</span><p class="post-nav__post-title">Cheetsheets</p></a>
+		<a class="post-nav__link" href="/cheetsheets/index/" rel="next"><span class="post-nav__caption">Next&thinsp;»</span><p class="post-nav__post-title">Cheetsheets</p></a>
 	</div>
 </nav>
 
@@ -817,7 +853,7 @@ Examine the output
 		</div>
 		<footer class="footer">
 	<div class="container">
-		<div class="footer__copyright">&copy; 2018 Open Source Tutorials. <span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span></div>
+		<div class="footer__copyright">&copy; 2019 Open Source Tutorials. <span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span></div>
 	</div>
 </footer>
 

@@ -1,3 +1,1 @@
-
-
-Why you need to undersntand the file structure
+Why you need to understand the file structure

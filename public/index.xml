@@ -7,18 +7,71 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Tue, 25 Dec 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 31 Dec 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://opensourcetutorials.in/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Cheetsheets</title>
-      <link>https://opensourcetutorials.in/cheetsheets/cheetsheets/</link>
+      <title>Ansible</title>
+      <link>https://opensourcetutorials.in/cheetsheets/ansible/</link>
+      <pubDate>Mon, 31 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://opensourcetutorials.in/cheetsheets/ansible/</guid>
+      <description>&lt;p&gt;Ansible Hacks&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>RSS for the recent posts</title>
+      <link>https://opensourcetutorials.in/post/rss/</link>
+      <pubDate>Sat, 29 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://opensourcetutorials.in/post/rss/</guid>
+      <description>&lt;p&gt;RSS is one of the popular way how people subscribe to the blogs which they likes to read
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Screen : Terminal Multiplexer</title>
+      <link>https://opensourcetutorials.in/cheetsheets/screen_useful_commands/</link>
+      <pubDate>Sat, 29 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://opensourcetutorials.in/cheetsheets/screen_useful_commands/</guid>
+      <description>&lt;p&gt;Cheetsheet for Screen which is Terminal Multiplexer, Allows you to use multiple screens.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title> </title>
+      <link>https://opensourcetutorials.in/cheetsheets/gitcheetsheet/</link>
       <pubDate>Tue, 25 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://opensourcetutorials.in/cheetsheets/cheetsheets/</guid>
-      <description> Docker Cheetsheets  </description>
+      <guid>https://opensourcetutorials.in/cheetsheets/gitcheetsheet/</guid>
+      <description>&lt;p&gt;Git Quick Start&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title> Linux Useful Daily Commands</title>
+      <link>https://opensourcetutorials.in/cheetsheets/linux_useful_commands/</link>
+      <pubDate>Tue, 25 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://opensourcetutorials.in/cheetsheets/linux_useful_commands/</guid>
+      <description>scp -r user@your.server.example.com:/path/to/foo /home/user/Desktop/</description>
+    </item>
+    
+    <item>
+      <title>Cheetsheets</title>
+      <link>https://opensourcetutorials.in/cheetsheets/index/</link>
+      <pubDate>Tue, 25 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://opensourcetutorials.in/cheetsheets/index/</guid>
+      <description>&lt;h3 id=&#34;index-of-all-cheetsheets&#34;&gt;Index of all Cheetsheets&lt;/h3&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -27,40 +80,73 @@
       <pubDate>Tue, 25 Dec 2018 00:00:00 +0000</pubDate>
       
       <guid>https://opensourcetutorials.in/cheetsheets/docker_useful_commands/</guid>
-      <description>1. Install Dockers on Ubuntu 16.04 or above Update the Repository $ sudo apt-get update  Install ssl related packages $ sudo apt-get install \ apt-transport-https \ ca-certificates \ curl \ software-properties-common  Download the GPG key from the docker site $ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -  Add docker repository $ sudo add-apt-repository \ &amp;quot;deb [arch=amd64] https://download.docker.com/linux/ubuntu \ $(lsb_release -cs) \ stable edge test&amp;quot;  Update the packages and install docker community edition $ sudo apt-get update $ sudo apt-get install docker-ce  Finally check the docker installation is correct $ sudo docker run hello-world  You can check status, on, off and restart docker using following commands $ sudo service docker status $ sudo service docker start $ sudo service docker stop $ sudo service docker restart  To run the docker without sudo commands $ sudo usermod -aG docker $USER  Logout and then check with following command $ docker ps -a $ docker ps ## Docker Hub  2.</description>
+      <description>&lt;p&gt;Docker commands cheetsheet&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Geonode Install using Docker</title>
+      <link>https://opensourcetutorials.in/cheetsheets/geonodeinstall/</link>
+      <pubDate>Tue, 25 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://opensourcetutorials.in/cheetsheets/geonodeinstall/</guid>
+      <description>&lt;p&gt;Geonode Installation on Docker using shell scripts
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title> Create Vector Layer</title>
+      <link>https://opensourcetutorials.in/qgis/workshop/createvectorlayer/</link>
+      <pubDate>Sun, 23 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://opensourcetutorials.in/qgis/workshop/createvectorlayer/</guid>
+      <description>Creating a New Vector Dataset The Layer Creation Dialog Data Sources
+Feature Topology Snapping Correct Topological Features Simplify Feature Add Ring Add Part Reshape Features Split Features Merge Features
+Forms Using QGIS’ Form Design Functionality Using the Form to Edit Values Setting Form Field Types Creating Test Data Creating a New Form Associating the Form with Your Layer
+Actions Open an Image Add a Field for Images Creating an Action Searching the Internet Open a Webpage Directly in QGIS</description>
+    </item>
+    
+    <item>
+      <title> Creating Maps</title>
+      <link>https://opensourcetutorials.in/qgis/workshop/creatingmaps/</link>
+      <pubDate>Sun, 23 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://opensourcetutorials.in/qgis/workshop/creatingmaps/</guid>
+      <description>The Layout Manager Basic Map Composition Adding a Title Adding a Legend Customizing Legend Items Exporting Your Map Assignment</description>
     </item>
     
     <item>
       <title> Features of QGIS </title>
-      <link>https://opensourcetutorials.in/qgis/features/</link>
+      <link>https://opensourcetutorials.in/qgis/workshop/features/</link>
       <pubDate>Sun, 23 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://opensourcetutorials.in/qgis/features/</guid>
-      <description>View and Explore Data View Vector Data, which constists of points, lines, polygones shapes.
+      <guid>https://opensourcetutorials.in/qgis/workshop/features/</guid>
+      <description>1. View and Explore Data 1.1 View Vector Data It onstists of points, lines, polygones shapes
 Use Layer &amp;gt;&amp;gt; Add Layer &amp;gt;&amp;gt; Add Vector Layer to add Vector Layer
 Data Source : https://mapcruzin.com/free-maharashtra-country-city-place-gis-shapefiles.htm
-View Raster Data which consistes of matrix of cells (or pixels) organized into rows and columns (or a grid) where each cell contains a value representing information
+1.2 View Raster Data It consistes of matrix of cells (or pixels) organized into rows and columns (or a grid) where each cell contains a value representing information
 Use Layer &amp;gt;&amp;gt; Add Layer &amp;gt;&amp;gt; Add Raster Layer to add Raster Layer</description>
     </item>
     
     <item>
       <title> Getting Started with QGIS </title>
-      <link>https://opensourcetutorials.in/qgis/gettingstarted/</link>
+      <link>https://opensourcetutorials.in/qgis/workshop/gettingstarted/</link>
       <pubDate>Sun, 23 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://opensourcetutorials.in/qgis/gettingstarted/</guid>
-      <description>In this post we will learn following skills  Launching QGIS Loading Raster and Vector Layers Saving Projects Understanding the QGIS User Interface  Download all data from : All Resource for Workshop 
-Launch QGIS Use Dashboard or QGIS icon to Launch QGIS. To close use can use X icon or Project Menu and Exit QGIS option When you start QGIS it will open following user interface
-The QGIS GUI is divided into five components:</description>
+      <guid>https://opensourcetutorials.in/qgis/workshop/gettingstarted/</guid>
+      <description>In this post we will learn following skills  Launching QGIS Loading Raster and Vector Layers Saving Projects Understanding the QGIS User Interface  Required Data : All Resource for Workshop 
+Download the all-resources directory and extract in the home directory
+Add Vector Layer - Open New QGIS project - From Menu Layer &amp;gt;&amp;gt; Add Layer &amp;gt;&amp;gt; Add Vector Layer &amp;gt;&amp;gt; From Source Vector Dataset Select Maharashtra_water directory and select `maharashtra_water.</description>
     </item>
     
     <item>
       <title> How to Install QGIS in Ubuntu </title>
-      <link>https://opensourcetutorials.in/qgis/install_ppa/</link>
+      <link>https://opensourcetutorials.in/qgis/workshop/installppa/</link>
       <pubDate>Sun, 23 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://opensourcetutorials.in/qgis/install_ppa/</guid>
-      <description>Install QGIS in Ubuntu QGIS woks on following platforms
+      <guid>https://opensourcetutorials.in/qgis/workshop/installppa/</guid>
+      <description>1. Install QGIS in Ubuntu QGIS woks on following platforms
  Linux Windows Mac OS X  The download all above versions at https://qgis.org/en/site/forusers/download.html this link.
 To add repositories into the sources.list file use following command
 $ sudo gedit /etc/apt/sources.list  To install QGIS using ppa on Ubuntu 18.04, Use following repositories to /etc/apt/sources.list
@@ -69,206 +155,21 @@ deb https://qgis.org/ubuntugis bionic main deb-src https://qgis.org/ubuntugis bi
     
     <item>
       <title> Problem Statement </title>
-      <link>https://opensourcetutorials.in/qgis/problem/</link>
+      <link>https://opensourcetutorials.in/qgis/workshop/problem/</link>
       <pubDate>Sun, 23 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://opensourcetutorials.in/qgis/problem/</guid>
-      <description>Problem statement : Mithi river is a complete natural ecosystem in itself. It originates from the confluence of tail water discharges of Vihar lake and Powai lake. It came into focus as one of the major reasons to cause flooding due to the downpour on 26 th July, 2005 and was recognized as River of Death when it sank entire city of Mumbai. Mithi river has a total length of about 17.</description>
+      <guid>https://opensourcetutorials.in/qgis/workshop/problem/</guid>
+      <description>Problem statement : Mithi river is a complete natural ecosystem in itself. It originates from the confluence of tail water discharges of Vihar lake and Powai lake. It came into focus as one of the major reasons to cause flooding due to the downpour on 26 th July, 2005 and was recognized as River of Death when it sank entire city of Mumbai.
+Mithi river has a total length of about 17.</description>
     </item>
     
     <item>
-      <title> QGIS for River Analysis </title>
-      <link>https://opensourcetutorials.in/qgis/qgisforriver/</link>
+      <title> Styling</title>
+      <link>https://opensourcetutorials.in/qgis/workshop/styling/</link>
       <pubDate>Sun, 23 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://opensourcetutorials.in/qgis/qgisforriver/</guid>
-      <description> QGIS for River Analysis We will be using QGIS to following tasks
- Create GIS Mapping points Create or Access the data from the database Visualize the River data Analyze the Data Generate Report Print the Map  </description>
-    </item>
-    
-    <item>
-      <title> Workshop on QGIS</title>
-      <link>https://opensourcetutorials.in/qgis/gisworkshop/</link>
-      <pubDate>Sun, 23 Dec 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://opensourcetutorials.in/qgis/gisworkshop/</guid>
-      <description>Welcome to the QGIS workshop training, Here we will be covering following topics
- Problem Statement Using QGIS for Mithi River Analysis Features of QGIS Installation of QGIS Getting Started with QGIS  </description>
-    </item>
-    
-    <item>
-      <title>Linux Desktop Envirnment </title>
-      <link>https://opensourcetutorials.in/post/linuxdesktopenvirnment/</link>
-      <pubDate>Thu, 06 Dec 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://opensourcetutorials.in/post/linuxdesktopenvirnment/</guid>
-      <description>&lt;p&gt;In this post, we will explore various Linux desktop environments
-&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>How to make installation media ?</title>
-      <link>https://opensourcetutorials.in/post/installationmedia/</link>
-      <pubDate>Tue, 04 Dec 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://opensourcetutorials.in/post/installationmedia/</guid>
-      <description>&lt;p&gt;In this post I will explain how to make installation media ?&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Preparing you desktop/laptop for Linux installation</title>
-      <link>https://opensourcetutorials.in/post/preparingforlinux/</link>
-      <pubDate>Tue, 04 Dec 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://opensourcetutorials.in/post/preparingforlinux/</guid>
-      <description>&lt;p&gt;In this post I will explain step by step how to prepare you PC or Laptop for any Linux distributions.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Why we need Open-source software in schools?</title>
-      <link>https://opensourcetutorials.in/post/whylinuxinschools/</link>
-      <pubDate>Tue, 04 Dec 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://opensourcetutorials.in/post/whylinuxinschools/</guid>
-      <description>&lt;p&gt;Computer technology is becoming prevalent throughout our society and is playing a crucial role in all walks of life and technological advancements and automation that we are now witnessing. It is at the core of the rapid advances that are occurring in almost every field of human endeavor.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Difference between LINUX and UNIX </title>
-      <link>https://opensourcetutorials.in/post/unixvslinux/</link>
-      <pubDate>Mon, 03 Dec 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://opensourcetutorials.in/post/unixvslinux/</guid>
-      <description>&lt;p&gt;We will discuss in detail the difference between Linux and Unix&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>How Linux is different from Windows</title>
-      <link>https://opensourcetutorials.in/post/linuxvswindows/</link>
-      <pubDate>Mon, 03 Dec 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://opensourcetutorials.in/post/linuxvswindows/</guid>
-      <description>&lt;p&gt;We will discuss in detail diferences bewteen Linux and Windows
-&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title> Advantages of Open Source Softwares</title>
-      <link>https://opensourcetutorials.in/post/advantages_linux/</link>
-      <pubDate>Sat, 01 Dec 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://opensourcetutorials.in/post/advantages_linux/</guid>
-      <description>&lt;p&gt;We will discuss the advantages of the Linux and Open source Softwares
-&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title> Understanding Linux distributions</title>
-      <link>https://opensourcetutorials.in/post/whatislinuxdistro/</link>
-      <pubDate>Sat, 01 Dec 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://opensourcetutorials.in/post/whatislinuxdistro/</guid>
-      <description>&lt;p&gt;In this post we will discuss what is Linux Distributions&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Why switch to Linux ?</title>
-      <link>https://opensourcetutorials.in/post/whytoswitch/</link>
-      <pubDate>Thu, 29 Nov 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://opensourcetutorials.in/post/whytoswitch/</guid>
-      <description>&lt;p&gt;This post will try to explain why you must switch to Linux&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Linux Flavors</title>
-      <link>https://opensourcetutorials.in/post/linuxflavors/</link>
-      <pubDate>Wed, 28 Nov 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://opensourcetutorials.in/post/linuxflavors/</guid>
-      <description>&lt;p&gt;Choosing right Linux distribution&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Switch to Linux </title>
-      <link>https://opensourcetutorials.in/post/switchlinux/</link>
-      <pubDate>Tue, 27 Nov 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://opensourcetutorials.in/post/switchlinux/</guid>
-      <description>&lt;p&gt;Switch to Linux from other systems step by step !&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://opensourcetutorials.in/cheetsheets/linux_useful_commands/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://opensourcetutorials.in/cheetsheets/linux_useful_commands/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://opensourcetutorials.in/cheetsheets/tmux_useful_commands/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://opensourcetutorials.in/cheetsheets/tmux_useful_commands/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://opensourcetutorials.in/cheetsheets/useful_networking_commands/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://opensourcetutorials.in/cheetsheets/useful_networking_commands/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://opensourcetutorials.in/drafts/filestructureoflinux/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://opensourcetutorials.in/drafts/filestructureoflinux/</guid>
-      <description>Why you need to undersntand the file structure</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://opensourcetutorials.in/drafts/oemlicences/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://opensourcetutorials.in/drafts/oemlicences/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://opensourcetutorials.in/drafts/piratedwindows/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://opensourcetutorials.in/drafts/piratedwindows/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://opensourcetutorials.in/qgis/georeferencing/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://opensourcetutorials.in/qgis/georeferencing/</guid>
-      <description></description>
+      <guid>https://opensourcetutorials.in/qgis/workshop/styling/</guid>
+      <description>Changing Colors Changing Symbol Structure Scale-Based Visibility Adding Symbol Layers Ordering Symbol Levels Symbol layer types Geometry generator symbology Creating a Custom SVG Fill</description>
     </item>
     
   </channel>
