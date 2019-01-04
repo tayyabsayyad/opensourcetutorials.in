@@ -15,15 +15,15 @@ tags:
 
 #### In this post we will learn to create our own data using Open Street Map
 
-#### Steps
 
-1. Open QGIS
+
+#### Activity 1 : Stpes to Download OSM data
+
+1. Start QGIS
 2. Create a new Project and save as DataImportActivity in Home / QGIS Projects Directory
 3. Select `Layer` >> `Data Source Manager`
 4. Select `Browser` tab and Under `XYZ Tiles` Dubble click `OpenStreetMap` and then close the Window
-5. Move to the India and Mumbai area on the Map
-
-As shown below
+5. Move to the India and Mumbai area on the Map as shown below
 
 ![Study Area of Map ](studyarea.png)
 
@@ -63,7 +63,7 @@ Steps
 
 The above process adds the layers as temporary files
 
-1. Click the icon next to the building layer, opening the Save Scratch Layer dialog
+1. Click the icon ![Click Icon](mIndicatorMemory.png) next to the building layer, opening the Save Scratch Layer dialog
 2. Make sure that you save in ESRI Shapefile
 3. Save all these layers in a Directory
 
@@ -99,7 +99,7 @@ Shapefiles also can include a file with a
 
 More information on shape files https://en.wikipedia.org/wiki/Shapefile
 
-#### Lets download raster data for our area of study
+#### Activity 2 : Download raster data for our area of study
 
 Steps
 

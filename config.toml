@@ -58,7 +58,7 @@ rssLimit = 15
     weight = -120
 
   [[menu.main]]
-    name = "QGIS Workshop"
+    name = "QGIS"
     url = "/qgis/workshop/index/"
     weight = -100
 

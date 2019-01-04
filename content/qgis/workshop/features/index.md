@@ -12,6 +12,17 @@ categories:
 tags:
   - "QGIS"
 ---
+
+
+## Why QGIS ?
+
++ It’s free and Open Source
++ It’s constantly developing
++ Help and documentation is available https://www.qgis.org/en/docs/index.html
++ Cross-platform
+
+
+
 ## 1. View and Explore Data
 
 ### 1.1 View Vector Data

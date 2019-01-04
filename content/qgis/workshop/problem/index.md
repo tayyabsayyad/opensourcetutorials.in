@@ -27,6 +27,10 @@ image
 
 ![ Mithi River Google ](mithinNadiGoogle.jpeg)
 
+Above map is create using the Google My Map
+
+You can learn about google my map here : [Google My Maps By : Kim Pollishuke ](https://www.youtube.com/playlist?list=PL65YjTzZu7_KPdYy96_rhWNd_e27C95T6)
+
 You have been given responsibility of the doing detailed survey of sources of the river polutions
 
 As a part of this assignment you are supposed to deliver following

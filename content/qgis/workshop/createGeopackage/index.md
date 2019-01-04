@@ -13,7 +13,7 @@ tags:
   - "QGIS"
 ---
 
-#### Creating Geopackage from multiple Layers
+#### ACtivity 1 : Creating Geopackage from multiple Layers
 
 1. Select Layer from Layer Panel
 
@@ -27,7 +27,7 @@ tags:
 
 6. Save the Geopackage
 
-#### Use geopackage to load all the layers
+#### Activity 2 : Use geopackage to load all the layers
 
 1. Data source manager
 

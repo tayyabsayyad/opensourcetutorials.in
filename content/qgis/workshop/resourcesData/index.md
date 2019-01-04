@@ -1,7 +1,7 @@
 ---
-title: "Create Basic Map using QGIS"
-date: "2018-12-23"
-description: "Create Basic Map using QGIS"
+title: "GIS Workshop Resources"
+date: "2019-01-02"
+description: "Data for Workshop on QGIS "
 disable_comments: false # Optional, disable Disqus comments if true
 authorbox: true # Optional, enable authorbox for specific post
 toc: false # Optional, enable Table of Contents for specific post
@@ -11,11 +11,20 @@ categories:
   - "GIS"
 tags:
   - "QGIS"
+
 ---
 
-After completing this session you will be able to do following
+Creadits :
 
-+ Viewing Layer Attributes
-+ Loading Vector Data From GeoPackage
-+ Loading Vector Data From a Database
-+ Reordering the Layers
+1.  QGIS documentation Teams
+2.
+
+
+Files Required
+
+1. Raster data from https://www.naturalearthdata.com/downloads/10m-raster-data/10m-natural-earth-1/
+
+
+Web sites and Blogs for GIS
+
+1. 

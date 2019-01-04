@@ -24,7 +24,7 @@ Required Data : [ All Resource for Workshop ](all-resources.zip)
 
 Download the all-resources directory and extract in the home directory
 
-### Add Vector Layer
+### Activity 1 : Add Vector Layer
     - Open New QGIS project
     - From Menu Layer >> Add Layer >> Add Vector Layer >> From Source Vector Dataset Select Maharashtra_water directory and select `maharashtra_water.shp` file
     - From the Layers menu, Right Click and Select Zoom to Layer option
@@ -36,19 +36,24 @@ Download the all-resources directory and extract in the home directory
 
 ![ Maharashtra Water ](maharashtra_water.png)
 
- + Save project it will be saved as `.qgs` file
+
+  From the Layers menu right click and open Attibute tables
 
 ![ Maharashtra Water Attribute Table ](maharashtra_water_attr.png)
 
- + Save project it will be saved as `.qgs` file
 
-### Add Raster Layer
-    - First Extract the NE1_LR_LC.zip file 
+`Remember that layer order matters !`
+
+
+### Activity 2 : Add Raster Layer
+    - First Extract the NE1_LR_LC.zip file
     - From From Menu Layer >> Add Layer >> Add Raster Layer >> From Source Raster Dataset Select the `NE1_LR_LC.tif` file
 
 ![ Naturla Earth Land Cover Data ](naturalEarthData.png)
 
 + If you want to save the layers as .sh in ESRI file format, You select any layer and from layer option > Save as >> Select ESRI shape file
+
+### Activty 3 : Explore the User Interface of the QGIS
 
 Use Dashboard or QGIS icon to Launch QGIS. To close use can use X icon or `Project` Menu and `Exit QGIS` option When you start QGIS it will open following user interface
 
