@@ -54,7 +54,7 @@ if (!doNotTrack) {
 	<ul class="menu__list">
 		<li class="menu__item"><a class="menu__link" href="/post/switchlinux">SWITCH TO LINUX IN SIMPLE STEPS</a></li>
 		<li class="menu__item"><a class="menu__link" href="/cheetsheets/index/">CHEETSHEETS</a></li>
-		<li class="menu__item"><a class="menu__link" href="/qgis/workshop/index/">QGIS WORKSHOP</a></li>
+		<li class="menu__item"><a class="menu__link" href="/qgis/workshop/index/">QGIS</a></li>
 		<li class="menu__item"><a class="menu__link" href="https://tayyabali.in">ABOUT ME</a></li>
 		<li class="menu__item"><a class="menu__link" href="/post/rss">RSS FEEDS</a></li>
 		<li class="menu__item"><a class="menu__link" href="http://eepurl.com/gcdqnH">SUBSCRIBE</a></li>
@@ -77,13 +77,54 @@ if (!doNotTrack) {
 	<span class="meta-categories__list"><a class="meta-categories__link" href="/categories/gis" rel="category">GIS</a></span>
 </span></div>
 		</header><div class="content post__content clearfix">
-			<p>The Layout Manager
-Basic Map Composition
-Adding a Title
-Adding a Legend
-Customizing Legend Items
-Exporting Your Map
-Assignment</p>
+			
+
+<p>In this Post we will learn to use the QGIS print layout to create a basic map with all the required settings.</p>
+
+<h2 id="layout-manager">Layout Manager</h2>
+
+<ol>
+<li>Go to <code>Project &gt;&gt; Layout Manager</code></li>
+</ol>
+
+<p><img src="layout.png" alt="Layout" /></p>
+
+<ol>
+<li>Create New Layout and click Ok It will look like following</li>
+</ol>
+
+<p><img src="layoutwindow.png" alt="" /></p>
+
+<ol>
+<li>You can now access layouts from, <code>Project &gt;&gt; Layouts</code></li>
+<li>Under <code>Layout</code> &gt;&gt; <code>Page Setup</code> Set A4, Landscape and Set margins</li>
+</ol>
+
+<p><img src="pagesetting.png" alt="" /></p>
+
+<ol>
+<li>Under Add Item, click in Add Map and Select the area on the layout to render the Map, you can Adjust the map in the page.</li>
+</ol>
+
+<p><img src="AddMap.png" alt="AddMap.png" /></p>
+
+<p><code>Add Label</code> from the <code>Add Item</code> in the bottom of the page, and Change Items properties from right panel</p>
+
+<p><img src="AddLabel.png" alt="AddLabel" /></p>
+
+<ol>
+<li><p>Set Font Apperence, Alignment and Color</p></li>
+
+<li><p>Add Legend Similarly and set its propertes, You can rename the layer names by double click on the layer name</p></li>
+</ol>
+
+<p><img src="PrintLayout.png" alt="Final Map " /></p>
+
+<ol>
+<li>Finally Export to Pdf from <code>Layout Menu</code></li>
+</ol>
+
+<p>File Looks like <a href="riverexport.pdf">riverexport.pdf</a></p>
 
 		</div>
 		
@@ -110,7 +151,7 @@ Assignment</p>
 
 <nav class="post-nav flex">
 	<div class="post-nav__item post-nav__item--prev">
-		<a class="post-nav__link" href="/qgis/workshop/features/" rel="prev"><span class="post-nav__caption">«&thinsp;Previous</span><p class="post-nav__post-title"> Features of QGIS </p></a>
+		<a class="post-nav__link" href="/qgis/workshop/explorevectordata/" rel="prev"><span class="post-nav__caption">«&thinsp;Previous</span><p class="post-nav__post-title"> Explore Vector Data </p></a>
 	</div>
 	<div class="post-nav__item post-nav__item--next">
 		<a class="post-nav__link" href="/qgis/workshop/createvectorlayer/" rel="next"><span class="post-nav__caption">Next&thinsp;»</span><p class="post-nav__post-title"> Create Vector Layer</p></a>

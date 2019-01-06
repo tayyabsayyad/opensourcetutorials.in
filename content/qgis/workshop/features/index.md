@@ -106,7 +106,7 @@ QGIS can be used as a client for
 
 `WFS-T client` : Web Feature Service (WFS) with transactions
 
-`WMS, WCS or WFS server` : QGIS can server as a server for WMS,WCS ot WFS services
+`WMS, WCS or WFS server` : QGIS can be used as a server for WMS,WCS ot WFS services
 
 ### 6. QGIS Plugins
 

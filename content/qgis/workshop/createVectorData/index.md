@@ -13,7 +13,7 @@ tags:
   - "QGIS"
 ---
 
-#### In this post we will learn to create our own data using Open Street Map
+#### Learn to create our own data using Open Street Map
 
 
 
@@ -43,7 +43,7 @@ If you are connected to internet using the proxy then you need to set the proxy 
 
 ----------------------------------
 
-### Install `QuickOSM` Plugin for OSM data download
+#### Install `QuickOSM` Plugin for OSM data download
 
 Steps
 
@@ -123,3 +123,9 @@ Import Raster Layer in the QIS and hide all other layers except SRTM
 
 
 You can also download raster data from https://www.naturalearthdata.com/downloads/10m-raster-data/10m-natural-earth-1/
+
+
+#### Installation of necessary plugins
+
++ Lat Long Tools - https://plugins.qgis.org/plugins/latlontools/
++ MMQGIS - https://plugins.qgis.org/plugins/mmqgis/

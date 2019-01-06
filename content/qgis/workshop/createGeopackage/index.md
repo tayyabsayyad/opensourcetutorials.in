@@ -32,3 +32,9 @@ tags:
 1. Data source manager
 
 2. Select the Geopackage and select layers which you want to load
+
+#### Activity 3
+
+1. Create Vector Data SQlight File
+2. Load Data from the database
+3. Load data from Geonode

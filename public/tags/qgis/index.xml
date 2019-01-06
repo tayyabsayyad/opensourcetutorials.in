@@ -7,10 +7,26 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Sun, 23 Dec 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 02 Jan 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://opensourcetutorials.in/tags/qgis/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>GIS Workshop Resources</title>
+      <link>https://opensourcetutorials.in/qgis/workshop/resourcesdata/</link>
+      <pubDate>Wed, 02 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://opensourcetutorials.in/qgis/workshop/resourcesdata/</guid>
+      <description>GeoNode Published Data
+ http://159.65.146.249/layers/geonode:industries  Files Required
+ Raster data from https://www.naturalearthdata.com/downloads/10m-raster-data/10m-natural-earth-1/ Data Required for Industry and Use of spaces industryCSVLatLong.csv ReportCSVLatLongCSV.csv  Resources Sites :
+ Data Collection using Mobile phone Specially useful for survey, Offline cloud support https://docs.opendatakit.org/collect-intro/
+ QGIS Documentation https://www.qgis.org/en/docs/index.html
+ For Geo Coding using google map you will require the google Map APi Key https://console.cloud.google.com
+ Google My Map https://www.google.com/maps/d/
+ Top 75 Blogs for GIS https://blog.</description>
+    </item>
     
     <item>
       <title> Create Vector Layer</title>
@@ -30,7 +46,17 @@ Actions Open an Image Add a Field for Images Creating an Action Searching the In
       <pubDate>Sun, 23 Dec 2018 00:00:00 +0000</pubDate>
       
       <guid>https://opensourcetutorials.in/qgis/workshop/creatingmaps/</guid>
-      <description>The Layout Manager Basic Map Composition Adding a Title Adding a Legend Customizing Legend Items Exporting Your Map Assignment</description>
+      <description>In this Post we will learn to use the QGIS print layout to create a basic map with all the required settings.
+Layout Manager  Go to Project &amp;gt;&amp;gt; Layout Manager   Create New Layout and click Ok It will look like following   You can now access layouts from, Project &amp;gt;&amp;gt; Layouts Under Layout &amp;gt;&amp;gt; Page Setup Set A4, Landscape and Set margins   Under Add Item, click in Add Map and Select the area on the layout to render the Map, you can Adjust the map in the page.</description>
+    </item>
+    
+    <item>
+      <title> Explore Vector Data </title>
+      <link>https://opensourcetutorials.in/qgis/workshop/explorevectordata/</link>
+      <pubDate>Sun, 23 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://opensourcetutorials.in/qgis/workshop/explorevectordata/</guid>
+      <description> Activity : Explore Vector Data  Import all the Layers which you have downloade from the Layer .. Add Layer .. Vector Layer Select all sh files Add the OSM layer from the data source manager and XYZ tiles Check all the Attibutes tables Hide all layers and check data displayed on map using i icon  </description>
     </item>
     
     <item>
@@ -39,11 +65,10 @@ Actions Open an Image Add a Field for Images Creating an Action Searching the In
       <pubDate>Sun, 23 Dec 2018 00:00:00 +0000</pubDate>
       
       <guid>https://opensourcetutorials.in/qgis/workshop/features/</guid>
-      <description>1. View and Explore Data 1.1 View Vector Data It onstists of points, lines, polygones shapes
+      <description>Why QGIS ?  It’s free and Open Source It’s constantly developing Help and documentation is available https://www.qgis.org/en/docs/index.html Cross-platform  1. View and Explore Data 1.1 View Vector Data It onstists of points, lines, polygones shapes
 Use Layer &amp;gt;&amp;gt; Add Layer &amp;gt;&amp;gt; Add Vector Layer to add Vector Layer
 Data Source : https://mapcruzin.com/free-maharashtra-country-city-place-gis-shapefiles.htm
-1.2 View Raster Data It consistes of matrix of cells (or pixels) organized into rows and columns (or a grid) where each cell contains a value representing information
-Use Layer &amp;gt;&amp;gt; Add Layer &amp;gt;&amp;gt; Add Raster Layer to add Raster Layer</description>
+1.2 View Raster Data It consistes of matrix of cells (or pixels) organized into rows and columns (or a grid) where each cell contains a value representing information</description>
     </item>
     
     <item>
@@ -54,7 +79,7 @@ Use Layer &amp;gt;&amp;gt; Add Layer &amp;gt;&amp;gt; Add Raster Layer to add Ra
       <guid>https://opensourcetutorials.in/qgis/workshop/gettingstarted/</guid>
       <description>In this post we will learn following skills  Launching QGIS Loading Raster and Vector Layers Saving Projects Understanding the QGIS User Interface  Required Data : All Resource for Workshop 
 Download the all-resources directory and extract in the home directory
-Add Vector Layer - Open New QGIS project - From Menu Layer &amp;gt;&amp;gt; Add Layer &amp;gt;&amp;gt; Add Vector Layer &amp;gt;&amp;gt; From Source Vector Dataset Select Maharashtra_water directory and select `maharashtra_water.</description>
+Activity 1 : Add Vector Layer - Open New QGIS project - From Menu Layer &amp;gt;&amp;gt; Add Layer &amp;gt;&amp;gt; Add Vector Layer &amp;gt;&amp;gt; From Source Vector Dataset Select Maharashtra_water directory and select `maharashtra_water.</description>
     </item>
     
     <item>
@@ -76,8 +101,8 @@ deb https://qgis.org/ubuntugis bionic main deb-src https://qgis.org/ubuntugis bi
       <pubDate>Sun, 23 Dec 2018 00:00:00 +0000</pubDate>
       
       <guid>https://opensourcetutorials.in/qgis/workshop/problem/</guid>
-      <description>Problem statement : Mithi river is a complete natural ecosystem in itself. It originates from the confluence of tail water discharges of Vihar lake and Powai lake. It came into focus as one of the major reasons to cause flooding due to the downpour on 26 th July, 2005 and was recognized as River of Death when it sank entire city of Mumbai.
-Mithi river has a total length of about 17.</description>
+      <description>Problem statement : Summary of the Mithi Nadi report
+ Originates from the confluence of tail water discharges of Vihar lake and Powai lake It came into focus because flooding due to the downpour on 26 th July, 2005 Total length of about 17.84 km and catchment area of 7,295ha It flows through residential and industrial regions of Mumbai Meeting Arabian Sea at Mahim creek Vakolla nalla joins Mithi river at BKC complex Due to Sewage and industrial waste are discharged into the river and solid waste is directly dumped into the river carrying capacity of river is reduced  Scpoe of work  Topographic study of Mithi Study of source of pollution from residential and industrial areas Study of biodiversity Comparative study of changes in areas along Mithi  State of Mithi River, Mumbai</description>
     </item>
     
     <item>
@@ -96,7 +121,8 @@ Mithi river has a total length of about 17.</description>
       
       <guid>https://opensourcetutorials.in/qgis/workshop/index/</guid>
       <description>Welcome to the QGIS workshop training, Here we will be covering following topics
- Problem Statement Features of QGIS Installation of QGIS Getting Started with QGIS Create Vector and Raster Data  Create Geopackage of Vector data  Create Basic Map in QGIS  Styling Maps in QGIS  Vector Classification in QGIS  Create Maps in QGIS  Create Vector Layer in QGIS  Vector Analysis in QGIS   </description>
+Data and References
+ Problem Statement Features of QGIS Installation of QGIS Getting Started with QGIS Create Vector and Raster Data  Explore Vector Data and attributes  Create Geopackage of Vector data  Styling Maps in QGIS  Vector Classification in QGIS  Create Maps in QGIS  Create Vector Layer in QGIS  Vector Analysis in QGIS   </description>
     </item>
     
     <item>
@@ -110,28 +136,18 @@ Viewing Layer Attributes Loading Vector Data From GeoPackage Loading Vector Data
     </item>
     
     <item>
-      <title>Create Basic Map using QGIS</title>
-      <link>https://opensourcetutorials.in/qgis/workshop/creatingbasicmap/</link>
-      <pubDate>Sun, 23 Dec 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://opensourcetutorials.in/qgis/workshop/creatingbasicmap/</guid>
-      <description>In this post you will learn
-Viewing Layer Attributes Loading Vector Data From GeoPackage Loading Vector Data From a Database Reordering the Layers</description>
-    </item>
-    
-    <item>
       <title>Create Geopackage using QGIS</title>
       <link>https://opensourcetutorials.in/qgis/workshop/creategeopackage/</link>
       <pubDate>Sun, 23 Dec 2018 00:00:00 +0000</pubDate>
       
       <guid>https://opensourcetutorials.in/qgis/workshop/creategeopackage/</guid>
-      <description>Creating Geopackage from multiple Layers  Select Layer from Layer Panel
+      <description>ACtivity 1 : Creating Geopackage from multiple Layers  Select Layer from Layer Panel
  Save Layer as Select Geopackage and select the location to save
  Now you can use Database Manager and Select Geopackage
  Select the Geopackage which you want to connect
  Use now import layer to add it to the geopackge
  Save the Geopackage
-  Use geopackage to load all the layers  Data source manager</description>
+  Activity 2 : Use geopackage to load all the layers  Data source manager</description>
     </item>
     
     <item>
@@ -140,8 +156,7 @@ Viewing Layer Attributes Loading Vector Data From GeoPackage Loading Vector Data
       <pubDate>Sun, 23 Dec 2018 00:00:00 +0000</pubDate>
       
       <guid>https://opensourcetutorials.in/qgis/workshop/createvectordata/</guid>
-      <description>In this post we will learn to create our own data using Open Street Map Steps  Open QGIS Create a new Project and save as DataImportActivity in Home / QGIS Projects Directory Select Layer &amp;gt;&amp;gt; Data Source Manager Select Browser tab and Under XYZ Tiles Dubble click OpenStreetMap and then close the Window Move to the India and Mumbai area on the Map  As shown below
-Now we have the area which we want to study, next step would be to download the data</description>
+      <description>Learn to create our own data using Open Street Map Activity 1 : Stpes to Download OSM data  Start QGIS Create a new Project and save as DataImportActivity in Home / QGIS Projects Directory Select Layer &amp;gt;&amp;gt; Data Source Manager Select Browser tab and Under XYZ Tiles Dubble click OpenStreetMap and then close the Window Move to the India and Mumbai area on the Map as shown below  Now we have the area which we want to study, next step would be to download the data</description>
     </item>
     
     <item>
