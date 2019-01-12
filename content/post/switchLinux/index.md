@@ -31,7 +31,7 @@ Switch to Linux with easy steps
 | 7  | <a href='{{<ref "preparingforLinux" >}}'> Preparing you desktop/laptop for Linux installation ? |
 | 8  | <a href='{{<ref "installationMedia" >}}'>How to make installation media ? </a> |
 | 9  | [1. Installation of Linux step by step process](https://tutorials.ubuntu.com/tutorial/tutorial-install-ubuntu-desktop#0),<br> [2. Things to do After Installing Ubuntu 18.04 LTS](https://www.youtube.com/watch?v=BLVtxpm5c2A) |
-| 10 | <a href = '{{<ref "linuxDesktopEnvirnment" >}}'> Explore various Linux desktop envirnments like kde, gnome, xfce etc </a>|
+| 10 | <a href = '{{<ref "linuxDesktopEnvironment" >}}'> Explore various Linux desktop environments like kde, gnome, xfce etc </a>|
 | 11 | [Introduction to GNOME desktop in Ubuntu 18.04](https://www.youtube.com/watch?v=ONXfL6evR0Q)   |
 | 12 | Various alternatives softwares in Linux   |
 | 13 | Installation of necessary softwares in Linux    |

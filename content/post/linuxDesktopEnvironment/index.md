@@ -1,7 +1,7 @@
 ---
-title: "Linux Desktop Envirnment "
+title: "Linux Desktop Environment "
 date: "2018-12-06"
-description: " Linux Desktop Envirnment "
+description: " Linux Desktop Environment "
 disable_comments: false # Optional, disable Disqus comments if true
 authorbox: true # Optional, enable authorbox for specific post
 toc: false # Optional, enable Table of Contents for specific post
@@ -22,7 +22,7 @@ Every Linux distributions has GUI environment, examples Ubuntu has modified GNOM
 
 Even if you get the default desktop environment you can install any and use. You can select whichever desktop you want once your computer is started.
 
-So how this desktop envirnment differs from one another.
+So how this desktop environment differs from one another.
 + The user interface is different
 + Default icons, File Explorer is different
 + Implementation language of these environment differs
