@@ -515,7 +515,7 @@ Check the build image
 
                     $ docker images
 
-Lets add envirnment variables and file looks as followig
+Lets add environment variables and file looks as followig
 
                     FROM debian:stable
                     MAINTAINER tayyabali <tayyabsayyad@gmail.com>
@@ -534,7 +534,7 @@ Lets make container from the image
 
                     $ docker run -it tayyabali/myapache:latest /bin/bash
 
-and check the envirnment variable in container, you can see the value
+and check the environment variable in container, you can see the value
 
                     $ root@3012264990e9:/# echo $MYVALUE
                     my-value
