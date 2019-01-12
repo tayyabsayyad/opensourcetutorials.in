@@ -15,7 +15,7 @@ tags:
 thumbnail: "img/thumbs/qgisworkshop.png"
 ---
 
-Welcome to the QGIS workshop training, Here we will be covering following topics
+Welcome to the QGIS workshop training, Here we will be covering the following topics
 
 <a href='{{<ref "resourcesData" >}}'>Data and References</a>
 

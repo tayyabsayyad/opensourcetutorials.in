@@ -13,7 +13,7 @@ tags:
   - "QGIS"
 ---
 
-### In this post we will learn following skills
+### In this post we will learn the following skills
 
 + Launching QGIS
 + Loading Raster and Vector Layers
@@ -37,7 +37,7 @@ Download the all-resources directory and extract in the home directory
 ![ Maharashtra Water ](maharashtra_water.png)
 
 
-  From the Layers menu right click and open Attibute tables
+  From the Layers menu right click and open Attribute tables
 
 ![ Maharashtra Water Attribute Table ](maharashtra_water_attr.png)
 
@@ -45,15 +45,15 @@ Download the all-resources directory and extract in the home directory
 `Remember that layer order matters !`
 
 
-### Activity 2 : Add Raster Layer
+### Activity 2: Add Raster Layer
     - First Extract the NE1_LR_LC.zip file
     - From From Menu Layer >> Add Layer >> Add Raster Layer >> From Source Raster Dataset Select the `NE1_LR_LC.tif` file
 
-![ Naturla Earth Land Cover Data ](naturalEarthData.png)
+![ Natural Earth Land Cover Data ](naturalEarthData.png)
 
 + If you want to save the layers as .sh in ESRI file format, You select any layer and from layer option > Save as >> Select ESRI shape file
 
-### Activty 3 : Explore the User Interface of the QGIS
+### Activity 3: Explore the User Interface of the QGIS
 
 Use Dashboard or QGIS icon to Launch QGIS. To close use can use X icon or `Project` Menu and `Exit QGIS` option When you start QGIS it will open following user interface
 
@@ -61,11 +61,11 @@ Use Dashboard or QGIS icon to Launch QGIS. To close use can use X icon or `Proje
 
 The QGIS GUI is divided into five components:
 
-  + **Menu Bar** : Standard Menu providing all QGIS features
+  + **Menu Bar**: Standard Menu providing all QGIS features
   + **Toolbars** : Tools for interacting with the map, `right click` on toolbars to on/off toolbar for specific function
-  + **Panels** : Special widgets that you can interact, see info, logs etc and perform complex tasks
-  + **Map View** : or Map canvas here maps are displayed, zoom in, zoom out and interact with map
-  + **Status Bar** : General information about the map view, and actions processed, Map Coordinates, CRS etc is displayed
+  + **Panels**: Special widgets that you can interact, see info, logs etc and perform complex tasks
+  + **Map View**: or Map canvas here maps are displayed, zoom in, zoom out and interact with the map
+  + **Status Bar**: General information about the map view, and actions processed, Map Coordinates, CRS etc is displayed
 
 ### Menu Bar
   + **Project** : Create, Save, Open projects, set Project properties, Print Layout and Making Report

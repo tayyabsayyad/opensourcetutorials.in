@@ -17,7 +17,7 @@ tags:
 
 
 
-#### Activity 1 : Stpes to Download OSM data
+#### Activity 1 : Steps to Download OSM data
 
 1. Start QGIS
 2. Create a new Project and save as DataImportActivity in Home / QGIS Projects Directory

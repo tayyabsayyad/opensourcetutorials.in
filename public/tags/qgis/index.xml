@@ -111,7 +111,11 @@ deb https://qgis.org/ubuntugis bionic main deb-src https://qgis.org/ubuntugis bi
       <pubDate>Sun, 23 Dec 2018 00:00:00 +0000</pubDate>
       
       <guid>https://opensourcetutorials.in/qgis/workshop/styling/</guid>
-      <description>Changing Colors Changing Symbol Structure Scale-Based Visibility Adding Symbol Layers Ordering Symbol Levels Symbol layer types Geometry generator symbology Creating a Custom SVG Fill</description>
+      <description> Now Lets say we have already did mapping of all the sources contributing to river polution,
+River Mapping Analysis Zip File 
+FinalRiverWithRiver.zip
+Lets try some symbology now,
+Changing Colors Changing Symbol Structure Scale-Based Visibility Adding Symbol Layers Ordering Symbol Levels Symbol layer types Geometry generator symbology </description>
     </item>
     
     <item>

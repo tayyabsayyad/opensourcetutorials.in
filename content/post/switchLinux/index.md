@@ -33,7 +33,7 @@ Switch to Linux with easy steps
 | 9  | [1. Installation of Linux step by step process](https://tutorials.ubuntu.com/tutorial/tutorial-install-ubuntu-desktop#0),<br> [2. Things to do After Installing Ubuntu 18.04 LTS](https://www.youtube.com/watch?v=BLVtxpm5c2A) |
 | 10 | <a href = '{{<ref "linuxDesktopEnvirnment" >}}'> Explore various Linux desktop envirnments like kde, gnome, xfce etc </a>|
 | 11 | [Introduction to GNOME desktop in Ubuntu 18.04](https://www.youtube.com/watch?v=ONXfL6evR0Q)   |
-| 12 | Various alternatives softwares in Linux   |
+| 12 | <a href='{{<ref "alternatives" >}}'>Various alternatives softwares in Linux </a> |
 | 13 | Installation of necessary softwares in Linux    |
 | 14 | Review of various ways of software installation in Linux |
 | 15 | Importance of command line in Linux   |
@@ -49,6 +49,6 @@ Switch to Linux with easy steps
 | 25 | Open Source Apps for Security   |
 | 26 | Open Source Web Development tools   |
 | 27 | Open Source Hardware and sources  |
-| 28 | Open Source tools for Blogging  |
+| 28 |  <a href='{{<ref "bloggingtools" >}}'> Open Source tools for Blogging </a> |
 | 29     | Open Source Multimedia tools  |
 | 30     | Concluding Remarks   |

@@ -1,18 +1,18 @@
 ---
-title: "Linux softwares equaivalent to windows softwares "
+title: "Linux softwares alternatives "
 date: "2018-12-06"
 description: "Linux softwares equaivalent to windows softwares "
 disable_comments: false # Optional, disable Disqus comments if true
 authorbox: true # Optional, enable authorbox for specific post
 toc: false # Optional, enable Table of Contents for specific post
-draft: true
+draft: false
 mathjax: true # Optional, enable MathJax for specific post
 categories:
   - "Linux"
 tags:
   - "Linux"
 ---
-Linux softwares equaivalent to windows softwares
+Linux softwares equaivalent to other softwares
 <!--more-->
 
 | Sr. No            |  Linux Software    |
@@ -23,5 +23,5 @@ Linux softwares equaivalent to windows softwares
 |4| [pidgin](http://pidgin.im/)  Messanger for Instant Messiging |
 |5| [Gimp](https://www.gimp.org/), [Krita](https://krita.org/en/), [Inkspace](https://inkscape.org/) Replaces MS paint, Adobe Photoshop   |
 |6 |[Brasero for CD/DVD Burning](https://wiki.gnome.org/Apps/Brasero)  |
-|7 | Mozila Thunderbird, Evolution for Email/Calenda like Outlook in the Microsoft Windows  |
-|8 |   |
+|7 | Mozila Thunderbird, Evolution for Email/Calender like Outlook in the Microsoft Windows  |
+|8 |    |

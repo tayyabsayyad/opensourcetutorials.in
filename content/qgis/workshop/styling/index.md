@@ -13,11 +13,18 @@ tags:
   - "QGIS"
 ---
 
-Changing Colors
-Changing Symbol Structure
-Scale-Based Visibility
-Adding Symbol Layers
-Ordering Symbol Levels
-Symbol layer types
-Geometry generator symbology
-Creating a Custom SVG Fill
+Now Lets say we have already did mapping of all the sources contributing to river polution,
+
+[River Mapping Analysis Zip File ](FinalRiverAnalysis.zip)
+
+[FinalRiverWithRiver.zip](FinalRiverWithRiver.zip)
+
+Lets try some symbology now,
+
+### Changing Colors
+### Changing Symbol Structure
+### Scale-Based Visibility
+### Adding Symbol Layers
+### Ordering Symbol Levels
+### Symbol layer types
+### Geometry generator symbology
