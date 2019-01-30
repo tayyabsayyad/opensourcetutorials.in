@@ -24,4 +24,3 @@ Linux softwares equaivalent to other softwares
 |5| [Gimp](https://www.gimp.org/), [Krita](https://krita.org/en/), [Inkspace](https://inkscape.org/) Replaces MS paint, Adobe Photoshop   |
 |6 |[Brasero for CD/DVD Burning](https://wiki.gnome.org/Apps/Brasero)  |
 |7 | Mozila Thunderbird, Evolution for Email/Calender like Outlook in the Microsoft Windows  |
-|8 |    |

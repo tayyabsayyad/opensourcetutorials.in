@@ -7,26 +7,10 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Wed, 02 Jan 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 31 Dec 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://opensourcetutorials.in/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>GIS Workshop Resources</title>
-      <link>https://opensourcetutorials.in/qgis/workshop/resourcesdata/</link>
-      <pubDate>Wed, 02 Jan 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://opensourcetutorials.in/qgis/workshop/resourcesdata/</guid>
-      <description>GeoNode Published Data
- http://159.65.146.249/layers/geonode:industries  Files Required
- Raster data from https://www.naturalearthdata.com/downloads/10m-raster-data/10m-natural-earth-1/ Data Required for Industry and Use of spaces industryCSVLatLong.csv ReportCSVLatLongCSV.csv  Resources Sites :
- Data Collection using Mobile phone Specially useful for survey, Offline cloud support https://docs.opendatakit.org/collect-intro/
- QGIS Documentation https://www.qgis.org/en/docs/index.html
- For Geo Coding using google map you will require the google Map APi Key https://console.cloud.google.com
- Google My Map https://www.google.com/maps/d/
- Top 75 Blogs for GIS https://blog.</description>
-    </item>
     
     <item>
       <title>Ansible</title>
@@ -34,9 +18,7 @@
       <pubDate>Mon, 31 Dec 2018 00:00:00 +0000</pubDate>
       
       <guid>https://opensourcetutorials.in/cheetsheets/ansible/</guid>
-      <description>&lt;p&gt;Ansible Hacks&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;Ansible Hacks&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -45,8 +27,7 @@
       <pubDate>Sat, 29 Dec 2018 00:00:00 +0000</pubDate>
       
       <guid>https://opensourcetutorials.in/post/rss/</guid>
-      <description>&lt;p&gt;RSS is one of the popular way how people subscribe to the blogs which they likes to read
-&lt;/p&gt;</description>
+      <description>&lt;p&gt;RSS is one of the popular way how people subscribe to the blogs which they likes to read&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -55,8 +36,7 @@
       <pubDate>Sat, 29 Dec 2018 00:00:00 +0000</pubDate>
       
       <guid>https://opensourcetutorials.in/cheetsheets/screen_useful_commands/</guid>
-      <description>&lt;p&gt;Cheetsheet for Screen which is Terminal Multiplexer, Allows you to use multiple screens.
-&lt;/p&gt;</description>
+      <description>&lt;p&gt;Cheetsheet for Screen which is Terminal Multiplexer, Allows you to use multiple screens.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -65,9 +45,7 @@
       <pubDate>Tue, 25 Dec 2018 00:00:00 +0000</pubDate>
       
       <guid>https://opensourcetutorials.in/cheetsheets/gitcheetsheet/</guid>
-      <description>&lt;p&gt;Git Quick Start&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;Git Quick Start&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -85,9 +63,7 @@
       <pubDate>Tue, 25 Dec 2018 00:00:00 +0000</pubDate>
       
       <guid>https://opensourcetutorials.in/cheetsheets/index/</guid>
-      <description>&lt;h3 id=&#34;index-of-all-cheetsheets&#34;&gt;Index of all Cheetsheets&lt;/h3&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;h3 id=&#34;index-of-all-cheetsheets&#34;&gt;Index of all Cheetsheets&lt;/h3&gt;</description>
     </item>
     
     <item>
@@ -96,9 +72,7 @@
       <pubDate>Tue, 25 Dec 2018 00:00:00 +0000</pubDate>
       
       <guid>https://opensourcetutorials.in/cheetsheets/docker_useful_commands/</guid>
-      <description>&lt;p&gt;Docker commands cheetsheet&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;Docker commands cheetsheet&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -107,75 +81,70 @@
       <pubDate>Tue, 25 Dec 2018 00:00:00 +0000</pubDate>
       
       <guid>https://opensourcetutorials.in/cheetsheets/geonodeinstall/</guid>
-      <description>&lt;p&gt;Geonode Installation on Docker using shell scripts
-&lt;/p&gt;</description>
+      <description>&lt;p&gt;Geonode Installation on Docker using shell scripts&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title> Create Vector Layer</title>
-      <link>https://opensourcetutorials.in/qgis/workshop/createvectorlayer/</link>
-      <pubDate>Sun, 23 Dec 2018 00:00:00 +0000</pubDate>
+      <title>Linux Desktop Environment </title>
+      <link>https://opensourcetutorials.in/post/linuxdesktopenvironment/</link>
+      <pubDate>Thu, 06 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://opensourcetutorials.in/qgis/workshop/createvectorlayer/</guid>
-      <description>Creating a New Vector Dataset The Layer Creation Dialog Data Sources
-Feature Topology Snapping Correct Topological Features Simplify Feature Add Ring Add Part Reshape Features Split Features Merge Features
-Forms Using QGIS’ Form Design Functionality Using the Form to Edit Values Setting Form Field Types Creating Test Data Creating a New Form Associating the Form with Your Layer
-Actions Open an Image Add a Field for Images Creating an Action Searching the Internet Open a Webpage Directly in QGIS</description>
+      <guid>https://opensourcetutorials.in/post/linuxdesktopenvironment/</guid>
+      <description>&lt;p&gt;In this post, we will explore various Linux desktop environments&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title> Creating Maps</title>
-      <link>https://opensourcetutorials.in/qgis/workshop/creatingmaps/</link>
-      <pubDate>Sun, 23 Dec 2018 00:00:00 +0000</pubDate>
+      <title>Linux softwares alternatives </title>
+      <link>https://opensourcetutorials.in/post/alternatives/</link>
+      <pubDate>Thu, 06 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://opensourcetutorials.in/qgis/workshop/creatingmaps/</guid>
-      <description>In this Post we will learn to use the QGIS print layout to create a basic map with all the required settings.
-Layout Manager  Go to Project &amp;gt;&amp;gt; Layout Manager   Create New Layout and click Ok It will look like following   You can now access layouts from, Project &amp;gt;&amp;gt; Layouts Under Layout &amp;gt;&amp;gt; Page Setup Set A4, Landscape and Set margins   Under Add Item, click in Add Map and Select the area on the layout to render the Map, you can Adjust the map in the page.</description>
+      <guid>https://opensourcetutorials.in/post/alternatives/</guid>
+      <description>&lt;p&gt;Linux softwares equaivalent to other softwares&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title> Explore Vector Data </title>
-      <link>https://opensourcetutorials.in/qgis/workshop/explorevectordata/</link>
-      <pubDate>Sun, 23 Dec 2018 00:00:00 +0000</pubDate>
+      <title>How to make installation media ?</title>
+      <link>https://opensourcetutorials.in/post/installationmedia/</link>
+      <pubDate>Tue, 04 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://opensourcetutorials.in/qgis/workshop/explorevectordata/</guid>
-      <description> Activity : Explore Vector Data  Import all the Layers which you have downloade from the Layer .. Add Layer .. Vector Layer Select all sh files Add the OSM layer from the data source manager and XYZ tiles Check all the Attibutes tables Hide all layers and check data displayed on map using i icon  </description>
+      <guid>https://opensourcetutorials.in/post/installationmedia/</guid>
+      <description>&lt;p&gt;In this post I will explain how to make installation media ?&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title> Features of QGIS </title>
-      <link>https://opensourcetutorials.in/qgis/workshop/features/</link>
-      <pubDate>Sun, 23 Dec 2018 00:00:00 +0000</pubDate>
+      <title>Preparing you desktop/laptop for Linux installation</title>
+      <link>https://opensourcetutorials.in/post/preparingforlinux/</link>
+      <pubDate>Tue, 04 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://opensourcetutorials.in/qgis/workshop/features/</guid>
-      <description>Why QGIS ?  It’s free and Open Source It’s constantly developing Help and documentation is available https://www.qgis.org/en/docs/index.html Cross-platform  1. View and Explore Data 1.1 View Vector Data It onstists of points, lines, polygones shapes
-Use Layer &amp;gt;&amp;gt; Add Layer &amp;gt;&amp;gt; Add Vector Layer to add Vector Layer
-Data Source : https://mapcruzin.com/free-maharashtra-country-city-place-gis-shapefiles.htm
-1.2 View Raster Data It consistes of matrix of cells (or pixels) organized into rows and columns (or a grid) where each cell contains a value representing information</description>
+      <guid>https://opensourcetutorials.in/post/preparingforlinux/</guid>
+      <description>&lt;p&gt;In this post I will explain step by step how to prepare you PC or Laptop for any Linux distributions.&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title> Getting Started with QGIS </title>
-      <link>https://opensourcetutorials.in/qgis/workshop/gettingstarted/</link>
-      <pubDate>Sun, 23 Dec 2018 00:00:00 +0000</pubDate>
+      <title>Why we need Open-source software in schools?</title>
+      <link>https://opensourcetutorials.in/post/whylinuxinschools/</link>
+      <pubDate>Tue, 04 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://opensourcetutorials.in/qgis/workshop/gettingstarted/</guid>
-      <description>In this post we will learn following skills  Launching QGIS Loading Raster and Vector Layers Saving Projects Understanding the QGIS User Interface  Required Data : All Resource for Workshop 
-Download the all-resources directory and extract in the home directory
-Activity 1 : Add Vector Layer - Open New QGIS project - From Menu Layer &amp;gt;&amp;gt; Add Layer &amp;gt;&amp;gt; Add Vector Layer &amp;gt;&amp;gt; From Source Vector Dataset Select Maharashtra_water directory and select `maharashtra_water.</description>
+      <guid>https://opensourcetutorials.in/post/whylinuxinschools/</guid>
+      <description>&lt;p&gt;Computer technology is becoming prevalent throughout our society and is playing a crucial role in all walks of life and technological advancements and automation that we are now witnessing. It is at the core of the rapid advances that are occurring in almost every field of human endeavor.&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title> How to Install QGIS in Ubuntu </title>
-      <link>https://opensourcetutorials.in/qgis/workshop/installppa/</link>
-      <pubDate>Sun, 23 Dec 2018 00:00:00 +0000</pubDate>
+      <title>Difference between LINUX and UNIX </title>
+      <link>https://opensourcetutorials.in/post/unixvslinux/</link>
+      <pubDate>Mon, 03 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://opensourcetutorials.in/qgis/workshop/installppa/</guid>
-      <description>1. Install QGIS in Ubuntu QGIS woks on following platforms
- Linux Windows Mac OS X  The download all above versions at https://qgis.org/en/site/forusers/download.html this link.
-To add repositories into the sources.list file use following command
-$ sudo gedit /etc/apt/sources.list  To install QGIS using ppa on Ubuntu 18.04, Use following repositories to /etc/apt/sources.list
-deb https://qgis.org/ubuntugis bionic main deb-src https://qgis.org/ubuntugis bionic main  To install QGIS using ppa on Ubuntu 16.</description>
+      <guid>https://opensourcetutorials.in/post/unixvslinux/</guid>
+      <description>&lt;p&gt;We will discuss in detail the difference between Linux and Unix&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>How Linux is different from Windows</title>
+      <link>https://opensourcetutorials.in/post/linuxvswindows/</link>
+      <pubDate>Mon, 03 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://opensourcetutorials.in/post/linuxvswindows/</guid>
+      <description>&lt;p&gt;We will discuss in detail diferences bewteen Linux and Windows&lt;/p&gt;</description>
     </item>
     
   </channel>

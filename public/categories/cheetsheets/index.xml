@@ -18,9 +18,7 @@
       <pubDate>Mon, 31 Dec 2018 00:00:00 +0000</pubDate>
       
       <guid>https://opensourcetutorials.in/cheetsheets/ansible/</guid>
-      <description>&lt;p&gt;Ansible Hacks&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;Ansible Hacks&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -29,8 +27,7 @@
       <pubDate>Sat, 29 Dec 2018 00:00:00 +0000</pubDate>
       
       <guid>https://opensourcetutorials.in/cheetsheets/screen_useful_commands/</guid>
-      <description>&lt;p&gt;Cheetsheet for Screen which is Terminal Multiplexer, Allows you to use multiple screens.
-&lt;/p&gt;</description>
+      <description>&lt;p&gt;Cheetsheet for Screen which is Terminal Multiplexer, Allows you to use multiple screens.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -48,9 +45,7 @@
       <pubDate>Tue, 25 Dec 2018 00:00:00 +0000</pubDate>
       
       <guid>https://opensourcetutorials.in/cheetsheets/index/</guid>
-      <description>&lt;h3 id=&#34;index-of-all-cheetsheets&#34;&gt;Index of all Cheetsheets&lt;/h3&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;h3 id=&#34;index-of-all-cheetsheets&#34;&gt;Index of all Cheetsheets&lt;/h3&gt;</description>
     </item>
     
     <item>
@@ -59,9 +54,7 @@
       <pubDate>Tue, 25 Dec 2018 00:00:00 +0000</pubDate>
       
       <guid>https://opensourcetutorials.in/cheetsheets/docker_useful_commands/</guid>
-      <description>&lt;p&gt;Docker commands cheetsheet&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;Docker commands cheetsheet&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -70,8 +63,7 @@
       <pubDate>Tue, 25 Dec 2018 00:00:00 +0000</pubDate>
       
       <guid>https://opensourcetutorials.in/cheetsheets/geonodeinstall/</guid>
-      <description>&lt;p&gt;Geonode Installation on Docker using shell scripts
-&lt;/p&gt;</description>
+      <description>&lt;p&gt;Geonode Installation on Docker using shell scripts&lt;/p&gt;</description>
     </item>
     
   </channel>

@@ -11,7 +11,7 @@ rssLimit = 15
 [Author]
     name = "Tayyabali Sayyad"
     bio = "Tayyabali is a Open Source evangelist, Works as Assistant Professor at DBIT, Mumbai, India."
-    avatar = "tayyabali2.jpg"
+    avatar = "tayyabali2.png"
 
 [Params]
     subtitle = "Where Open Source is Everything ! "
@@ -58,14 +58,14 @@ rssLimit = 15
     weight = -120
 
   [[menu.main]]
-    name = "QGIS"
-    url = "/qgis/workshop/index/"
+    name = "GIS Tutorials"
+    url = "https://gis.opensourcetutorials.in/"
     weight = -100
 
   [[menu.main]]
       name = "Cheetsheets"
       url = "/cheetsheets/index/"
-      weight = -100
+      weight = -80
 
   [[menu.main]]
         name = "RSS Feeds"

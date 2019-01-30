@@ -18,8 +18,7 @@
       <pubDate>Sat, 29 Dec 2018 00:00:00 +0000</pubDate>
       
       <guid>https://opensourcetutorials.in/post/rss/</guid>
-      <description>&lt;p&gt;RSS is one of the popular way how people subscribe to the blogs which they likes to read
-&lt;/p&gt;</description>
+      <description>&lt;p&gt;RSS is one of the popular way how people subscribe to the blogs which they likes to read&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -28,8 +27,16 @@
       <pubDate>Thu, 06 Dec 2018 00:00:00 +0000</pubDate>
       
       <guid>https://opensourcetutorials.in/post/linuxdesktopenvironment/</guid>
-      <description>&lt;p&gt;In this post, we will explore various Linux desktop environments
-&lt;/p&gt;</description>
+      <description>&lt;p&gt;In this post, we will explore various Linux desktop environments&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Linux softwares alternatives </title>
+      <link>https://opensourcetutorials.in/post/alternatives/</link>
+      <pubDate>Thu, 06 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://opensourcetutorials.in/post/alternatives/</guid>
+      <description>&lt;p&gt;Linux softwares equaivalent to other softwares&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -47,9 +54,7 @@
       <pubDate>Tue, 04 Dec 2018 00:00:00 +0000</pubDate>
       
       <guid>https://opensourcetutorials.in/post/preparingforlinux/</guid>
-      <description>&lt;p&gt;In this post I will explain step by step how to prepare you PC or Laptop for any Linux distributions.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;In this post I will explain step by step how to prepare you PC or Laptop for any Linux distributions.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -58,9 +63,7 @@
       <pubDate>Tue, 04 Dec 2018 00:00:00 +0000</pubDate>
       
       <guid>https://opensourcetutorials.in/post/whylinuxinschools/</guid>
-      <description>&lt;p&gt;Computer technology is becoming prevalent throughout our society and is playing a crucial role in all walks of life and technological advancements and automation that we are now witnessing. It is at the core of the rapid advances that are occurring in almost every field of human endeavor.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;Computer technology is becoming prevalent throughout our society and is playing a crucial role in all walks of life and technological advancements and automation that we are now witnessing. It is at the core of the rapid advances that are occurring in almost every field of human endeavor.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -69,9 +72,7 @@
       <pubDate>Mon, 03 Dec 2018 00:00:00 +0000</pubDate>
       
       <guid>https://opensourcetutorials.in/post/unixvslinux/</guid>
-      <description>&lt;p&gt;We will discuss in detail the difference between Linux and Unix&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;We will discuss in detail the difference between Linux and Unix&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -80,8 +81,7 @@
       <pubDate>Mon, 03 Dec 2018 00:00:00 +0000</pubDate>
       
       <guid>https://opensourcetutorials.in/post/linuxvswindows/</guid>
-      <description>&lt;p&gt;We will discuss in detail diferences bewteen Linux and Windows
-&lt;/p&gt;</description>
+      <description>&lt;p&gt;We will discuss in detail diferences bewteen Linux and Windows&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -90,8 +90,7 @@
       <pubDate>Sat, 01 Dec 2018 00:00:00 +0000</pubDate>
       
       <guid>https://opensourcetutorials.in/post/advantages_linux/</guid>
-      <description>&lt;p&gt;We will discuss the advantages of the Linux and Open source Softwares
-&lt;/p&gt;</description>
+      <description>&lt;p&gt;We will discuss the advantages of the Linux and Open source Softwares&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -118,9 +117,7 @@
       <pubDate>Wed, 28 Nov 2018 00:00:00 +0000</pubDate>
       
       <guid>https://opensourcetutorials.in/post/linuxflavors/</guid>
-      <description>&lt;p&gt;Choosing right Linux distribution&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;Choosing right Linux distribution&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -129,9 +126,25 @@
       <pubDate>Tue, 27 Nov 2018 00:00:00 +0000</pubDate>
       
       <guid>https://opensourcetutorials.in/post/switchlinux/</guid>
-      <description>&lt;p&gt;Switch to Linux with easy steps&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;Switch to Linux with easy steps&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Open Source Blogging Tools </title>
+      <link>https://opensourcetutorials.in/post/bloggingtools/</link>
+      <pubDate>Wed, 10 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://opensourcetutorials.in/post/bloggingtools/</guid>
+      <description>&lt;p&gt;In this post we will look at top open source blogging tools&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://opensourcetutorials.in/post/oem/oemlicences/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://opensourcetutorials.in/post/oem/oemlicences/</guid>
+      <description></description>
     </item>
     
   </channel>
