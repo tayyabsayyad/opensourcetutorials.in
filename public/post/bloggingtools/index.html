@@ -77,29 +77,51 @@ if (!doNotTrack) {
 	<svg class="icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg>
 	<span class="meta-categories__list"><a class="meta-categories__link" href="/categories/linux" rel="category">Linux</a></span>
 </span></div>
-		</header><div class="content post__content clearfix">
-			<p>In this post we will look at top open source blogging tools</p>
+		</header>
+		<figure class="post__thumbnail">
+			<img src="/img/thumbs/bloggingTools.png" alt="Open Source Blogging Tools ">
+		</figure><div class="content post__content clearfix">
+			<p>In this post, we will look at top open source blogging tools</p>
 
 <p>We will categories the blogging tools into two categories</p>
 
-<ol>
-<li>Static - Generate a static website using data and templates, so site is prerendered no need to generate the page at server level.</li>
-<li>Dynamic - Here the page is dynamically generated using the ex php and then served, server level processing is required.</li>
-</ol>
+<ul>
+<li><p>Static - Generate a static website using data and templates, so the site is prerendered no need to generate the page at the server level. Static sites are normally used by the developers and coders. Here you can write your templates or themes.</p></li>
 
-<h4 id="dynamic-content-management-systems-cms">Dynamic Content Management Systems (CMS)</h4>
+<li><p>Dynamic - Here the page is dynamically generated using PHP etc and then served, server level processing is required. All dynamic software need to have a server or some website hosting platforms publish sites, whereas static sites don&rsquo;t need the database or PHP etc for the content to be rendered.</p></li>
+</ul>
 
-<p><a href="https://wordpress.org/">1. Wordpress</a></p>
+<p>Static sites are good if you don&rsquo;t want to keep the headache of the management of the websites and want to just focus on the blogging.</p>
 
-<p><a href="https://www.joomla.org/">2. Joomla</a></p>
+<p>You can host you static blogs on GitHub or GitLab also.</p>
 
-<p><a href="https://www.drupal.org/">3. Drupal</a></p>
+<h4 id="top-dynamic-content-management-systems-cms">Top Dynamic Content Management Systems (CMS)</h4>
 
-<ol>
-<li>Ghost</li>
-<li>Hugo</li>
-<li>Jekyll</li>
-</ol>
+<ul>
+<li><p><a href="https://wordpress.org/"> Wordpress</a>
+Wordpress is the most popular blogging platform, it has GUI to configure the blog, it uses WYSIWYG editor. It has lots of themes free and paid. Wordpress functionalities can be extended using plugins also. You can also host your blog with wordpress.com where no need to set up your own server with Apache, Database, PHP etc</p></li>
+
+<li><p><a href="https://www.joomla.org/"> Joomla</a>
+Joomla is again similar to WordPress based on PHP, Joomla also has many themes and plugins to extend the Joomla functionalities.</p></li>
+
+<li><p><a href="https://www.drupal.org/"> Drupal</a>
+Drupal is also based on the PHP and has similar functionalities like Wordpress and Joomla. Drupal is considered to be more SEO friendly.</p></li>
+</ul>
+
+<p>It depends on individual choice which content management system to use. Normally people prefer cms which has greater community support, most popular, many themes and plugins.</p>
+
+<h4 id="top-static-content-management-systems-cms">Top Static Content Management Systems (CMS)</h4>
+
+<ul>
+<li><p><a href="https://gohugo.io/"> Hugo </a>
+Hugo Hugo is based in the go language and created by Steve Francia and Bjørn Erik Pedersen. Hugo is considered to be faster in comparison with other site generators. You can write the blogs using markdown format. Installation and configuration are simple.</p></li>
+
+<li><p><a href="https://jekyllrb.com/"> Jekyll </a>
+Jekyll is a static site generator by the GitHub Founder, Tom Preston-Werner, It is based on the Ruby language and using the templates you can generate your sites. You can write the posts in the markdown formats and generate the HTML content which can be then published on the GitHub or GitLab or even on your server.</p></li>
+
+<li><p><a href="https://middlemanapp.com/"> Middleman</a>
+Middleman Middleman clams to have all the shortcuts and tools in modern web development. Again like Jekyll, it is based in Ruby language.</p></li>
+</ul>
 		</div>
 		
 <div class="post__tags tags clearfix">
@@ -157,7 +179,45 @@ if (!doNotTrack) {
 
 
 			</section>
-			
+			<aside class="sidebar"><div class="widget-search widget">
+	<form class="widget-search__form" role="search" method="get" action="https://google.com/search">
+		<label>
+			<input class="widget-search__field" type="search" placeholder="SEARCH..." value="" name="q" aria-label="SEARCH...">
+		</label>
+		<input class="widget-search__submit" type="submit" value="Search">
+		<input type="hidden" name="sitesearch" value="https://opensourcetutorials.in" />
+	</form>
+</div><div class="widget-recent widget">
+	<h4 class="widget__title">Recent Posts</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/post/rss/">RSS for the recent posts</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/linuxdesktopenvironment/">Linux Desktop Environment </a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/alternatives/">Linux softwares alternatives </a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/installationmedia/">How to make installation media ?</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/preparingforlinux/">Preparing you desktop/laptop for Linux installation</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-categories widget">
+	<h4 class="widget__title">Categories</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/categories/"></a></li>
+			<li class="widget__item"><a class="widget__link" href="/categories/cheetsheets">Cheetsheets</a></li>
+			<li class="widget__item"><a class="widget__link" href="/categories/linux">Linux</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-taglist widget">
+	<h4 class="widget__title">Tags</h4>
+	<div class="widget__content">
+		<a class="widget-taglist__link widget__link btn" href="/tags/cheetsheets" title="Cheetsheets">Cheetsheets</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/commands" title="Commands">Commands</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/linux" title="Linux">Linux</a>
+	</div>
+</div>
+</aside>
 		</div>
 		<footer class="footer">
 	<div class="container">

@@ -1,7 +1,7 @@
 baseURL = "https://opensourcetutorials.in"
 languageCode = "en-us"
 copyright = "This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License."
-paginate = "10"
+paginate = "05"
 title = "Open Source Tutorials"
 theme = "Mainroad"
 disqusShortname = "www-opensourcetutorials-in"
@@ -38,12 +38,12 @@ rssLimit = 15
     #social = true    # Enable "Social" widget, if any of "social_*" set a value
 
 
-#[Params.sidebar]
-#  home = "right"   # Configure layout for home page
-#  list = "right"   # Configure layout for list pages
-#  single = "right" # Configure layout for single pages
+[Params.sidebar]
+  home = "right"   # Configure layout for home page
+  list = "right"   # Configure layout for list pages
+  single = "right" # Configure layout for single pages
   # Enable widgets in given order
-#  widgets = ["search", "recent", "categories", "taglist"]
+  widgets = ["search", "recent", "categories", "taglist"]
 
 [sitemap]
     changefreq = "monthly"

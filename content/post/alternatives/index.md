@@ -11,6 +11,9 @@ categories:
   - "Linux"
 tags:
   - "Linux"
+
+thumbnail: "img/thumbs/linuxSoftwares.png"
+
 ---
 Linux softwares equaivalent to other softwares
 <!--more-->

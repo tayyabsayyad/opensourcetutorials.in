@@ -26,8 +26,8 @@ Switch to Linux with easy steps
 | 2  | <a href='{{<ref "advantages_linux" >}}'>What are the advantages of the Linux compared to other operating systems ? </a>|
 | 3  | <a href = '{{<ref "UnixvsLinux" >}}'>What difference between Linux and Unix ? </a>|
 | 4  | <a href = '{{<ref "LinuxVsWindows" >}}'> How Linux is different from Windows ? </a> |
-| 5  | <a href = '{{<ref "whatislinuxdistro" >}}'> What are the flavers of Linux distributions like Ubuntu, Fedora, Elementry OS etc. ? </a> |
-| 6  | <a href='{{<ref "linuxFlavors" >}}'> How to decide which flavers to use ? </a> |
+| 5  | <a href = '{{<ref "whatislinuxdistro" >}}'> What are the flavours of Linux distributions like Ubuntu, Fedora, Elementry OS etc. ? </a> |
+| 6  | <a href='{{<ref "linuxFlavors" >}}'> How to decide which flavours to use ? </a> |
 | 7  | <a href='{{<ref "preparingforLinux" >}}'> Preparing you desktop/laptop for Linux installation ? |
 | 8  | <a href='{{<ref "installationMedia" >}}'>How to make installation media ? </a> |
 | 9  | [1. Installation of Linux step by step process](https://tutorials.ubuntu.com/tutorial/tutorial-install-ubuntu-desktop#0),<br> [2. Things to do After Installing Ubuntu 18.04 LTS](https://www.youtube.com/watch?v=BLVtxpm5c2A) |

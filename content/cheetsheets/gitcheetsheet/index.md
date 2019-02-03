@@ -1,5 +1,5 @@
 ---
-title: " "
+title: " Git Quick Start"
 date: "2018-12-25"
 description: ""
 disable_comments: false # Optional, disable Disqus comments if true
@@ -9,9 +9,12 @@ mathjax: true # Optional, enable MathJax for specific post
 categories:
   - "Linux"
 tags:
-  - "Linux"
+  - "Cheetsheets"
+
+thumbnail: "img/thumbs/git.png"
+
 ---
-Git Quick Start
+In this post we will learn basic commands to get started with git and github
 
 <!--more-->
 

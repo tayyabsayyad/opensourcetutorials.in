@@ -13,12 +13,12 @@
     
     
     <item>
-      <title> Linux Useful Daily Commands</title>
+      <title> Linux Commands</title>
       <link>https://opensourcetutorials.in/cheetsheets/linux_useful_commands/</link>
       <pubDate>Tue, 25 Dec 2018 00:00:00 +0000</pubDate>
       
       <guid>https://opensourcetutorials.in/cheetsheets/linux_useful_commands/</guid>
-      <description>scp -r user@your.server.example.com:/path/to/foo /home/user/Desktop/</description>
+      <description>&lt;p&gt;In this post we will see all linux commands which you find find useful in daily activites.&lt;/p&gt;</description>
     </item>
     
   </channel>

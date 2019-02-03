@@ -11,9 +11,14 @@ categories:
   - "Linux"
 tags:
   - "Linux"
+
+thumbnail: "img/thumbs/whyopensourcefree.png"
+
 ---
 
-In this post we will discuss why Linux or in general many open source software is free.
+In this post we will discuss concepts behind free and Open Source Softwares.
+
+<!--more-->
 
 - Software is supported by the community which consists of people across the world. Volunteers work in their free time and don't expect anything
 

@@ -12,13 +12,14 @@ tags:
   - "Linux"
 
 thumbnail: "img/thumbs/linuxforschools.png"
-
+  
 ---
 
-
-Computer technology is becoming prevalent throughout our society and is playing a crucial role in all walks of life and technological advancements and automation that we are now witnessing. It is at the core of the rapid advances that are occurring in almost every field of human endeavor.
+In this post we will see why we need to adpot Linux and FOSS in schools.
 
 <!--more-->
+
+Computer technology is becoming prevalent throughout our society and is playing a crucial role in all walks of life and technological advancements and automation that we are now witnessing. It is at the core of the rapid advances that are occurring in almost every field of human endeavor.
 
 Open source software and operating systems are well suited in educational institutions and if implemented, these institutions will be the biggest beneficiaries from the use of such software.
 

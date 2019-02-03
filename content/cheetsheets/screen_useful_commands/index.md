@@ -10,6 +10,9 @@ categories:
   - "Cheetsheets"
 tags:
   - "Cheetsheets"
+
+thumbnail: "img/thumbs/screen.png"
+
 ---
 Cheetsheet for Screen which is Terminal Multiplexer, Allows you to use multiple screens.
 <!--more-->

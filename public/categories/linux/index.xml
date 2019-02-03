@@ -13,12 +13,12 @@
     
     
     <item>
-      <title> </title>
+      <title> Git Quick Start</title>
       <link>https://opensourcetutorials.in/cheetsheets/gitcheetsheet/</link>
       <pubDate>Tue, 25 Dec 2018 00:00:00 +0000</pubDate>
       
       <guid>https://opensourcetutorials.in/cheetsheets/gitcheetsheet/</guid>
-      <description>&lt;p&gt;Git Quick Start&lt;/p&gt;</description>
+      <description>&lt;p&gt;In this post we will learn basic commands to get started with git and github&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -63,7 +63,7 @@
       <pubDate>Tue, 04 Dec 2018 00:00:00 +0000</pubDate>
       
       <guid>https://opensourcetutorials.in/post/whylinuxinschools/</guid>
-      <description>&lt;p&gt;Computer technology is becoming prevalent throughout our society and is playing a crucial role in all walks of life and technological advancements and automation that we are now witnessing. It is at the core of the rapid advances that are occurring in almost every field of human endeavor.&lt;/p&gt;</description>
+      <description>&lt;p&gt;In this post we will see why we need to adpot Linux and FOSS in schools.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -135,7 +135,7 @@
       <pubDate>Wed, 10 Jan 2018 00:00:00 +0000</pubDate>
       
       <guid>https://opensourcetutorials.in/post/bloggingtools/</guid>
-      <description>&lt;p&gt;In this post we will look at top open source blogging tools&lt;/p&gt;</description>
+      <description>&lt;p&gt;In this post, we will look at top open source blogging tools&lt;/p&gt;</description>
     </item>
     
   </channel>

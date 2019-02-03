@@ -10,9 +10,11 @@ categories:
   - "Cheetsheets"
 tags:
   - "Cheetsheets"
+thumbnail: "img/thumbs/docker.png"
+
 ---
 
-Docker commands cheetsheet
+In this post we will learn how to quickly start using docker 
 
 <!--more-->
 

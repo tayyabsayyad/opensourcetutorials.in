@@ -7,19 +7,10 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Sat, 29 Dec 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 31 Dec 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://opensourcetutorials.in/tags/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title></title>
-      <link>https://opensourcetutorials.in/tags/</link>
-      <pubDate>Sat, 29 Dec 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://opensourcetutorials.in/tags/</guid>
-      <description></description>
-    </item>
     
     <item>
       <title>Cheetsheets</title>
@@ -42,7 +33,7 @@
     <item>
       <title>Linux</title>
       <link>https://opensourcetutorials.in/tags/linux/</link>
-      <pubDate>Tue, 25 Dec 2018 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 06 Dec 2018 00:00:00 +0000</pubDate>
       
       <guid>https://opensourcetutorials.in/tags/linux/</guid>
       <description></description>

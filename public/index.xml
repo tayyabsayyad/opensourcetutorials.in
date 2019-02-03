@@ -18,7 +18,7 @@
       <pubDate>Mon, 31 Dec 2018 00:00:00 +0000</pubDate>
       
       <guid>https://opensourcetutorials.in/cheetsheets/ansible/</guid>
-      <description>&lt;p&gt;Ansible Hacks&lt;/p&gt;</description>
+      <description>&lt;p&gt;Ansible is powerful open source IT automation tool. It allows you to manage IT infrasture and apps deployment easily.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -40,21 +40,21 @@
     </item>
     
     <item>
-      <title> </title>
+      <title> Git Quick Start</title>
       <link>https://opensourcetutorials.in/cheetsheets/gitcheetsheet/</link>
       <pubDate>Tue, 25 Dec 2018 00:00:00 +0000</pubDate>
       
       <guid>https://opensourcetutorials.in/cheetsheets/gitcheetsheet/</guid>
-      <description>&lt;p&gt;Git Quick Start&lt;/p&gt;</description>
+      <description>&lt;p&gt;In this post we will learn basic commands to get started with git and github&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title> Linux Useful Daily Commands</title>
+      <title> Linux Commands</title>
       <link>https://opensourcetutorials.in/cheetsheets/linux_useful_commands/</link>
       <pubDate>Tue, 25 Dec 2018 00:00:00 +0000</pubDate>
       
       <guid>https://opensourcetutorials.in/cheetsheets/linux_useful_commands/</guid>
-      <description>scp -r user@your.server.example.com:/path/to/foo /home/user/Desktop/</description>
+      <description>&lt;p&gt;In this post we will see all linux commands which you find find useful in daily activites.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -72,16 +72,7 @@
       <pubDate>Tue, 25 Dec 2018 00:00:00 +0000</pubDate>
       
       <guid>https://opensourcetutorials.in/cheetsheets/docker_useful_commands/</guid>
-      <description>&lt;p&gt;Docker commands cheetsheet&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Geonode Install using Docker</title>
-      <link>https://opensourcetutorials.in/cheetsheets/geonodeinstall/</link>
-      <pubDate>Tue, 25 Dec 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://opensourcetutorials.in/cheetsheets/geonodeinstall/</guid>
-      <description>&lt;p&gt;Geonode Installation on Docker using shell scripts&lt;/p&gt;</description>
+      <description>&lt;p&gt;In this post we will learn how to quickly start using docker&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -126,7 +117,7 @@
       <pubDate>Tue, 04 Dec 2018 00:00:00 +0000</pubDate>
       
       <guid>https://opensourcetutorials.in/post/whylinuxinschools/</guid>
-      <description>&lt;p&gt;Computer technology is becoming prevalent throughout our society and is playing a crucial role in all walks of life and technological advancements and automation that we are now witnessing. It is at the core of the rapid advances that are occurring in almost every field of human endeavor.&lt;/p&gt;</description>
+      <description>&lt;p&gt;In this post we will see why we need to adpot Linux and FOSS in schools.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -145,6 +136,15 @@
       
       <guid>https://opensourcetutorials.in/post/linuxvswindows/</guid>
       <description>&lt;p&gt;We will discuss in detail diferences bewteen Linux and Windows&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title> Advantages of Open Source Softwares</title>
+      <link>https://opensourcetutorials.in/post/advantages_linux/</link>
+      <pubDate>Sat, 01 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://opensourcetutorials.in/post/advantages_linux/</guid>
+      <description>&lt;p&gt;We will discuss the advantages of the Linux and Open source Softwares&lt;/p&gt;</description>
     </item>
     
   </channel>

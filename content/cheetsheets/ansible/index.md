@@ -10,9 +10,9 @@ categories:
   - "Cheetsheets"
 tags:
   - "Cheetsheets"
+thumbnail: "img/thumbs/ansible.png"
 ---
-
-Ansible Hacks
+Ansible is powerful open source IT automation tool. It allows you to manage IT infrasture and apps deployment easily.
 
 <!--more-->
 
