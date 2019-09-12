@@ -7,18 +7,54 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Tue, 06 Aug 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 09 Sep 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://opensourcetutorials.in/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>GoeDjango Important Steps</title>
-      <link>https://opensourcetutorials.in/cheetsheets/geodjango/</link>
-      <pubDate>Tue, 06 Aug 2019 00:00:00 +0000</pubDate>
+      <title> Linux Commands Examples </title>
+      <link>https://opensourcetutorials.in/post/linuxcommands/</link>
+      <pubDate>Mon, 09 Sep 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://opensourcetutorials.in/cheetsheets/geodjango/</guid>
-      <description>&lt;p&gt;Ansible is powerful open source IT automation tool. It allows you to manage IT infrasture and apps deployment easily.&lt;/p&gt;</description>
+      <guid>https://opensourcetutorials.in/post/linuxcommands/</guid>
+      <description>&lt;p&gt;In this post we will see all linux commands with detailed examples.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Installation of Skype on Manjaro Linux  </title>
+      <link>https://opensourcetutorials.in/post/manjaraoskype/</link>
+      <pubDate>Sun, 08 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://opensourcetutorials.in/post/manjaraoskype/</guid>
+      <description>&lt;p&gt;In this post we will learn install skype in Manjaro Linux !&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Must have softwares in Linux</title>
+      <link>https://opensourcetutorials.in/post/linuxsoftwares/</link>
+      <pubDate>Sun, 08 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://opensourcetutorials.in/post/linuxsoftwares/</guid>
+      <description>&lt;p&gt;In post contains the List of commonly used softwares in Linux.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title> Installation of Postgis and Geoserver on Ubuntu 18.04 </title>
+      <link>https://opensourcetutorials.in/gis/postgis/postgis/</link>
+      <pubDate>Fri, 06 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://opensourcetutorials.in/gis/postgis/postgis/</guid>
+      <description>&lt;p&gt;In this post we will learn install the geoserver and postgis on ubuntu 18.04&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>GoeDjango Application Example</title>
+      <link>https://opensourcetutorials.in/gis/geodjango/</link>
+      <pubDate>Fri, 06 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://opensourcetutorials.in/gis/geodjango/</guid>
+      <description>&lt;p&gt;In this post we will learn about the basic steps required to setup geodjango&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -109,42 +145,6 @@
       
       <guid>https://opensourcetutorials.in/post/installationmedia/</guid>
       <description>&lt;p&gt;In this post I will explain how to make installation media ?&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Preparing you desktop/laptop for Linux installation</title>
-      <link>https://opensourcetutorials.in/post/preparingforlinux/</link>
-      <pubDate>Tue, 04 Dec 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://opensourcetutorials.in/post/preparingforlinux/</guid>
-      <description>&lt;p&gt;In this post I will explain step by step how to prepare you PC or Laptop for any Linux distributions.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Why we need Open-source software in schools?</title>
-      <link>https://opensourcetutorials.in/post/whylinuxinschools/</link>
-      <pubDate>Tue, 04 Dec 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://opensourcetutorials.in/post/whylinuxinschools/</guid>
-      <description>&lt;p&gt;In this post we will see why we need to adpot Linux and FOSS in schools.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Difference between LINUX and UNIX </title>
-      <link>https://opensourcetutorials.in/post/unixvslinux/</link>
-      <pubDate>Mon, 03 Dec 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://opensourcetutorials.in/post/unixvslinux/</guid>
-      <description>&lt;p&gt;We will discuss in detail the difference between Linux and Unix&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>How Linux is different from Windows</title>
-      <link>https://opensourcetutorials.in/post/linuxvswindows/</link>
-      <pubDate>Mon, 03 Dec 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://opensourcetutorials.in/post/linuxvswindows/</guid>
-      <description>&lt;p&gt;We will discuss in detail diferences bewteen Linux and Windows&lt;/p&gt;</description>
     </item>
     
   </channel>

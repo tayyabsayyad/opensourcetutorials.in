@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>GoeDjango Application Example</title>
+	<meta name="description" content="Geodjago ">
+	<meta name="generator" content="Hugo 0.57.2" />
+	<meta property="og:title" content="GoeDjango Application Example" />
+<meta property="og:description" content="Geodjago " />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://opensourcetutorials.in/post/geodjango/" />
+<meta property="article:published_time" content="2019-09-06T00:00:00+00:00" />
+<meta property="article:modified_time" content="2019-09-06T00:00:00+00:00" />
+
+	<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="GoeDjango Application Example"/>
+<meta name="twitter:description" content="Geodjago "/>
+
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+	<link rel="stylesheet" href="/css/style.css">
+	<script type="text/javascript" src="/js/scripts.js"></script>
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-59503205-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container">
+		<div class="logo" role="banner">
+
+				<a class="logo__link" href="/" title="Open Source Tutorials" rel="home">
+				<div class="logo__title">Open Source Tutorials</div>
+				<div class="logo__tagline">Where Open Source is Everything ! </div>
+			</a>
+
+		</div>
+	</div>
+
+	
+<nav class="menu">
+	<ul class="menu__list">
+		<li class="menu__item"><a class="menu__link" href="/post/switchlinux">SWITCH TO LINUX IN SIMPLE STEPS</a></li>
+		<li class="menu__item"><a class="menu__link" href="/cheetsheets/index/">CHEETSHEETS</a></li>
+		<li class="menu__item"><a class="menu__link" href="https://tayyabali.in">ABOUT ME</a></li>
+		<li class="menu__item"><a class="menu__link" href="/post/rss">RSS FEEDS</a></li>
+		<li class="menu__item"><a class="menu__link" href="http://eepurl.com/gcdqnH">SUBSCRIBE</a></li>
+	</ul>
+</nav>
+
+	</header>
+
+		<div class="wrapper flex">
+			<section class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">GoeDjango Application Example</h1><div class="post__meta meta">
+<svg class="icon icon-time" width="16" height="14" viewBox="0 0 16 16"><path d="m8-.0000003c-4.4 0-8 3.6-8 8 0 4.4000003 3.6 8.0000003 8 8.0000003 4.4 0 8-3.6 8-8.0000003 0-4.4-3.6-8-8-8zm0 14.4000003c-3.52 0-6.4-2.88-6.4-6.4000003 0-3.52 2.88-6.4 6.4-6.4 3.52 0 6.4 2.88 6.4 6.4 0 3.5200003-2.88 6.4000003-6.4 6.4000003zm.4-10.4000003h-1.2v4.8l4.16 2.5600003.64-1.04-3.6-2.1600003z"/></svg>
+<time class="post__meta-date meta-date" datetime="2019-09-06T00:00:00">September 06, 2019</time>
+<span class="post__meta-categories meta-categories">
+	<svg class="icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg>
+	<span class="meta-categories__list"><a class="meta-categories__link" href="/categories/geodjango" rel="category">GeoDjango</a></span>
+</span></div>
+		</header>
+		<figure class="post__thumbnail">
+			<img src="/img/thumbs/postgis.png" alt="GoeDjango Application Example">
+		</figure><div class="content post__content clearfix">
+			<p>In this post we will learn about the basic steps required to setup geodjango</p>
+
+<p>Code repository : <a href="https://github.com/tayyabsayyad/treemapping">https://github.com/tayyabsayyad/treemapping</a></p>
+
+<h2 id="tools-required">Tools required</h2>
+
+<ol>
+<li>Python 3</li>
+<li>pip package manager</li>
+<li>virtualen for manageing virtual envirnments</li>
+<li>Django</li>
+<li>Geodjango</li>
+<li>Postgresql</li>
+<li>postgis GIs extension for the Postgresql</li>
+<li>pgadmin for manageing the databases</li>
+<li>pycharm or Atom code editor</li>
+<li>Geoserver for serving maps</li>
+<li>psycopg2 for Python postgre adaptor</li>
+<li>Android Studio</li>
+</ol>
+
+<h1 id="setup-the-project">Setup the project</h1>
+
+<ol>
+<li><p>Create a virtual Envirnment ( Install Virtualenv tool in you system if not installed)</p>
+
+<pre><code>python3 -m venv env
+</code></pre></li>
+
+<li><p>Activate the envirnment</p>
+
+<pre><code> source env/bin/activate
+</code></pre></li>
+
+<li><p>Install Django ( Install pip if not installed in system)</p>
+
+<pre><code>pip install django
+</code></pre></li>
+
+<li><p>Create Project</p>
+
+<pre><code>django-admin.py startproject tree
+</code></pre></li>
+
+<li><p>Configure the posgreSQL database</p>
+
+<pre><code>  DATABASES = {
+  'default': {
+  'ENGINE': 'django.contrib.gis.db.backends.postgis',
+  'NAME': 'database_name',
+  'USER': 'user_name_database',
+  'PASSWORD': 'password',
+  'HOST': 'localhost',
+  'PORT': '5432'
+  }
+  }
+</code></pre></li>
+
+<li><p>Install Required libraries</p>
+
+<pre><code>pip install psycopg2-binary
+pip install geos
+pip install pyproj
+pip install geoip
+pip install django-leaflet
+</code></pre>
+
+<p>To install the postgis and geoserver refer Post : <a href='https://opensourcetutorials.in/post/postgis/postgis/'>Installation of PostGIS </a></p></li>
+
+<li><p>Add geodjango framework in the setting.py file</p>
+
+<pre><code>INSTALLED_APPS = [
+# [...]
+'django.contrib.gis'
+]
+</code></pre></li>
+</ol>
+
+<h1 id="create-application">Create Application</h1>
+
+<p>Now we will make Create the treemapping app, we will add its <code>model</code>, <code>migrate</code> the database, add <code>view</code> function and finally a <code>template</code> for frount end</p>
+
+<ol>
+<li><p>Create Application as treemapping</p>
+
+<pre><code>python manage.py startapp shops
+</code></pre></li>
+
+<li><p>Add treemapping app into INSTALLED_APPS in setting.py</p>
+
+<pre><code>  INSTALLED_APPS = [
+  # [.....]
+  'django.contrib.gis'
+  'treemapping',
+  ]
+</code></pre></li>
+
+<li><p>Creating a model for tree mapping application<br><br>
+add following to the <code>treemapping/models</code></p>
+
+<pre><code>  class TreeData(models.Model):
+  treeID = models.IntegerField(default=0)
+  location = models.PointField()
+  commonName = models.CharField(max_length=100)
+  scientificName = models.CharField(max_length=100)
+  trunkDiameter = models.IntegerField(default=0)
+  treeHeight = models.IntegerField(default=0)
+  datePlanted = models.DateTimeField(auto_now=True)
+  condition = models.CharField(max_length=100)
+  treeStewardship = models.CharField(max_length=100)
+  address = models.CharField(max_length=100)
+  city = models.CharField(max_length=100)
+  pincode = models.IntegerField(default=413405)
+</code></pre></li>
+
+<li><p>Creating Tables in the database</p>
+
+<pre><code>python manage.py makemigrations
+python manage.py migrate
+</code></pre></li>
+
+<li><p>Add super user to your application</p>
+
+<pre><code>python manage.py createsuperuser
+</code></pre></li>
+
+<li><p>Register Admin Module on <code>treemapping/admin.py</code></p>
+
+<pre><code>from django.contrib import admin
+from .models import TreeData
+
+admin.site.register(TreeData)
+</code></pre></li>
+</ol>
+
+<p>By default it will use openlayer for displaying map, if you want to use the openstreetmap then use folllwoing way to register admin Module</p>
+
+<pre><code>  from django.contrib.gis.admin import OSMGeoAdmin
+  from django.contrib.gis import admin
+
+  from .models import TreeData
+
+
+  @admin.register(TreeData)
+  class TreeAdmin(OSMGeoAdmin):
+      list_display = ('location', 'city')
+</code></pre>
+
+<ol>
+<li><p>Finally run django server</p>
+
+<pre><code>python manage.py runserver
+</code></pre>
+
+<p><img src="output1.png" alt="Example image" /></p></li>
+</ol>
+		</div>
+		
+<div class="post__tags tags clearfix">
+	<svg class="icon icon-tag" width="16" height="16" viewBox="0 0 16 16"><path d="M16 9.5c0 .373-.24.74-.5 1l-5 5c-.275.26-.634.5-1 .5-.373 0-.74-.24-1-.5L1 8a2.853 2.853 0 0 1-.7-1C.113 6.55 0 5.973 0 5.6V1.4C0 1.034.134.669.401.401.67.134 1.034 0 1.4 0h4.2c.373 0 .95.113 1.4.3.45.187.732.432 1 .7l7.5 7.502c.26.274.5.632.5.998zM3.5 5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item"><a class="tags__link btn" href="/tags/geodjango/" rel="tag">GeoDjango</a></li>
+	</ul>
+</div>
+	</article>
+</main>
+
+<div class="authorbox clearfix">
+	<figure class="authorbox__avatar">
+		<img alt="Tayyabali Sayyad avatar" src="/tayyabali2.png" class="avatar" height="90" width="90">
+	</figure>
+	<div class="authorbox__header">
+		<span class="authorbox__name">About Tayyabali Sayyad</span>
+	</div>
+	<div class="authorbox__description">
+		Tayyabali is a Open Source evangelist, Works as Assistant Professor at DBIT, Mumbai, India.
+	</div>
+</div>
+
+<nav class="post-nav flex">
+	<div class="post-nav__item post-nav__item--prev">
+		<a class="post-nav__link" href="/post/rss/" rel="prev"><span class="post-nav__caption">«&thinsp;Previous</span><p class="post-nav__post-title">RSS for the recent posts</p></a>
+	</div>
+	<div class="post-nav__item post-nav__item--next">
+		<a class="post-nav__link" href="/post/postgis/postgis/" rel="next"><span class="post-nav__caption">Next&thinsp;»</span><p class="post-nav__post-title"> Installation of Postgis and Geoserver on Ubuntu 18.04 </p></a>
+	</div>
+</nav>
+
+<section class="comments">
+	<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "www-opensourcetutorials-in" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+
+			</section>
+			<aside class="sidebar"><div class="widget-search widget">
+	<form class="widget-search__form" role="search" method="get" action="https://google.com/search">
+		<label>
+			<input class="widget-search__field" type="search" placeholder="SEARCH..." value="" name="q" aria-label="SEARCH...">
+		</label>
+		<input class="widget-search__submit" type="submit" value="Search">
+		<input type="hidden" name="sitesearch" value="https://opensourcetutorials.in" />
+	</form>
+</div><div class="widget-recent widget">
+	<h4 class="widget__title">Recent Posts</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/post/manjaraoskype/">Installation of Skype on Manjaro Linux  </a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/postgis/postgis/"> Installation of Postgis and Geoserver on Ubuntu 18.04 </a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/geodjango/">GoeDjango Application Example</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/rss/">RSS for the recent posts</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/linuxdesktopenvironment/">Linux Desktop Environment </a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-categories widget">
+	<h4 class="widget__title">Categories</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/categories/"></a></li>
+			<li class="widget__item"><a class="widget__link" href="/categories/cheetsheets">Cheetsheets</a></li>
+			<li class="widget__item"><a class="widget__link" href="/categories/geodjango">Geodjango</a></li>
+			<li class="widget__item"><a class="widget__link" href="/categories/geoserver">Geoserver</a></li>
+			<li class="widget__item"><a class="widget__link" href="/categories/linux">Linux</a></li>
+			<li class="widget__item"><a class="widget__link" href="/categories/postgis">Postgis</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-taglist widget">
+	<h4 class="widget__title">Tags</h4>
+	<div class="widget__content">
+		<a class="widget-taglist__link widget__link btn" href="/tags/cheetsheets" title="Cheetsheets">Cheetsheets</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/commands" title="Commands">Commands</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/geodjango" title="Geodjango">Geodjango</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/geoserver" title="Geoserver">Geoserver</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/linux" title="Linux">Linux</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/postgis" title="Postgis">Postgis</a>
+	</div>
+</div>
+</aside>
+		</div>
+		<footer class="footer">
+	<div class="container">
+		<div class="footer__copyright">&copy; 2019 Open Source Tutorials. <span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span></div>
+	</div>
+</footer>
+
+	</div>
+<script>
+	var navigation = responsiveNav(".menu", {
+		navClass: "menu--collapse",
+		label: "Menu",
+	});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async></script>
+</body>
+</html>

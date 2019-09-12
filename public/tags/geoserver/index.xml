@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>geoserver on Open Source Tutorials</title>
+    <link>https://opensourcetutorials.in/tags/geoserver/</link>
+    <description>Recent content in geoserver on Open Source Tutorials</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
+    <lastBuildDate>Fri, 06 Sep 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://opensourcetutorials.in/tags/geoserver/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title> Installation of Postgis and Geoserver on Ubuntu 18.04 </title>
+      <link>https://opensourcetutorials.in/gis/postgis/postgis/</link>
+      <pubDate>Fri, 06 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://opensourcetutorials.in/gis/postgis/postgis/</guid>
+      <description>&lt;p&gt;In this post we will learn install the geoserver and postgis on ubuntu 18.04&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

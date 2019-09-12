@@ -4,10 +4,10 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>GoeDjango Important Steps</title>
+	<title>GoeDjango Application Example</title>
 	<meta name="description" content="Geodjago ">
 	<meta name="generator" content="Hugo 0.57.2" />
-	<meta property="og:title" content="GoeDjango Important Steps" />
+	<meta property="og:title" content="GoeDjango Application Example" />
 <meta property="og:description" content="Geodjago " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://opensourcetutorials.in/cheetsheets/geodjango/" />
@@ -15,7 +15,7 @@
 <meta property="article:modified_time" content="2019-08-06T00:00:00+00:00" />
 
 	<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="GoeDjango Important Steps"/>
+<meta name="twitter:title" content="GoeDjango Application Example"/>
 <meta name="twitter:description" content="Geodjago "/>
 
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
@@ -70,344 +70,165 @@ if (!doNotTrack) {
 <main class="main" role="main">
 	<article class="post">
 		<header class="post__header">
-			<h1 class="post__title">GoeDjango Important Steps</h1><div class="post__meta meta">
+			<h1 class="post__title">GoeDjango Application Example</h1><div class="post__meta meta">
 <svg class="icon icon-time" width="16" height="14" viewBox="0 0 16 16"><path d="m8-.0000003c-4.4 0-8 3.6-8 8 0 4.4000003 3.6 8.0000003 8 8.0000003 4.4 0 8-3.6 8-8.0000003 0-4.4-3.6-8-8-8zm0 14.4000003c-3.52 0-6.4-2.88-6.4-6.4000003 0-3.52 2.88-6.4 6.4-6.4 3.52 0 6.4 2.88 6.4 6.4 0 3.5200003-2.88 6.4000003-6.4 6.4000003zm.4-10.4000003h-1.2v4.8l4.16 2.5600003.64-1.04-3.6-2.1600003z"/></svg>
 <time class="post__meta-date meta-date" datetime="2019-08-06T00:00:00">August 06, 2019</time>
 <span class="post__meta-categories meta-categories">
 	<svg class="icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg>
 	<span class="meta-categories__list"><a class="meta-categories__link" href="/categories/cheetsheets" rel="category">Cheetsheets</a></span>
 </span></div>
-		</header>
-		<figure class="post__thumbnail">
-			<img src="/img/thumbs/ansible.png" alt="GoeDjango Important Steps">
-		</figure><div class="content post__content clearfix">
-			<p>Ansible is powerful open source IT automation tool. It allows you to manage IT infrasture and apps deployment easily.</p>
+		</header><div class="content post__content clearfix">
+			<p>In this post we will learn about the basic steps required to setup geodjango</p>
 
-<h2 id="step-1-installing-ansible">Step 1 - Installing Ansible</h2>
+<h2 id="tools-required">Tools required</h2>
 
-<p>To configure the PPA on your machine and install ansible run these commands:</p>
+<ol>
+<li>Python 3</li>
+<li>pip package manager</li>
+<li>virtualen for manageing virtual envirnments</li>
+<li>Django</li>
+<li>Geodjango</li>
+<li>Postgresql</li>
+<li>postgis GIs extension for the Postgresql</li>
+<li>pgadmin for manageing the databases</li>
+<li>pycharm or Atom code editor</li>
+<li>Geoserver for serving maps</li>
+<li>psycopg2 for Python postgre adaptor</li>
+<li>Android Studio</li>
+</ol>
 
-<pre><code>   $ sudo apt-get update
-   $ sudo apt-get install software-properties-common
-   $ sudo apt-add-repository ppa:ansible/ansible
-   $ sudo apt-get update
-   $ sudo apt-get install ansible
+<h1 id="setup-the-project">Setup the project</h1>
+
+<ol>
+<li><p>Create a virtual Envirnment ( Install Virtualenv tool in you system if not installed)</p>
+
+<pre><code>python3 -m venv env
+</code></pre></li>
+
+<li><p>Activate the envirnment</p>
+
+<pre><code> source env/bin/activate
+</code></pre></li>
+
+<li><p>Install Django ( Install pip if not installed in system)</p>
+
+<pre><code>pip install django
+</code></pre></li>
+
+<li><p>Create Project</p>
+
+<pre><code>django-admin.py startproject tree
+</code></pre></li>
+
+<li><p>Configure the posgreSQL database</p>
+
+<pre><code>  DATABASES = {
+  'default': {
+  'ENGINE': 'django.contrib.gis.db.backends.postgis',
+  'NAME': 'database_name',
+  'USER': 'user_name_database',
+  'PASSWORD': 'password',
+  'HOST': 'localhost',
+  'PORT': '5432'
+  }
+  }
+</code></pre></li>
+
+<li><p>Install Required libraries</p>
+
+<pre><code>pip install psycopg2-binary
+pip install geos
+pip install pyproj
+pip install geoip
 </code></pre>
 
-<p>Check ansible install version</p>
+<p>To install the postgis and geoserver refer Post : <img src="Installation od PostGIS" alt="postgis" /></p></li>
 
-<p>$ ansible &ndash;version</p>
+<li><p>Add geodjango framework in the setting.py file</p>
 
-<h2 id="step-2-configure-hosts">Step 2 - Configure Hosts</h2>
+<pre><code>INSTALLED_APPS = [
+# [...]
+'django.contrib.gis'
+]
+</code></pre></li>
+</ol>
 
-<p>All host information is kept in the hosts files as follows</p>
+<h1 id="create-application">Create Application</h1>
 
-<p>$ sudo gedit /etc/ansible/hosts</p>
+<p>Now we will make Create the treemapping app, we will add its <code>model</code>, <code>migrate</code> the database, add <code>view</code> function and finally a <code>template</code> for frount end</p>
 
-<p>$ sudo gedit /etc/ansible/ansible.cfg</p>
+<ol>
+<li><p>Create Application as treemapping</p>
 
-<p>Remove comment of inventory and the sudo_user
-   Its default but better to change and make it apply</p>
+<pre><code>python manage.py startapp shops
+</code></pre></li>
 
-<p>$ cat /etc/ansible/hosts</p>
+<li><p>Add treemapping app into INSTALLED_APPS in setting.py</p>
 
-<p>$ sudo mv hosts hosts.original</p>
+<pre><code>  INSTALLED_APPS = [
+  # [.....]
+  'django.contrib.gis'
+  'treemapping',
+  ]
+</code></pre></li>
 
-<p>$ sudo gedit hosts</p>
+<li><p>Creating a model for tree mapping application<br><br>
+add following to the <code>treemapping/models</code></p>
 
-<p>Create entries of the hosts which you are going to manage</p>
+<pre><code>  class TreeData(models.Model):
+  treeID = models.IntegerField(default=0)
+  location = models.PointField()
+  commonName = models.CharField(max_length=100)
+  scientificName = models.CharField(max_length=100)
+  trunkDiameter = models.IntegerField(default=0)
+  treeHeight = models.IntegerField(default=0)
+  datePlanted = models.DateTimeField(auto_now=True)
+  condition = models.CharField(max_length=100)
+  treeStewardship = models.CharField(max_length=100)
+  address = models.CharField(max_length=100)
+  city = models.CharField(max_length=100)
+  pincode = models.IntegerField(default=413405)
+</code></pre></li>
 
-<pre><code>     [local]
-     localhost
+<li><p>Creating Tables in the database</p>
 
-     [itlab6]
-     10.0.1.198
-     10.0.1.197
+<pre><code>python manage.py makemigrations
+python manage.py migrate
+</code></pre></li>
+
+<li><p>Add super user to your application</p>
+
+<pre><code>python manage.py createsuperuser
+</code></pre></li>
+
+<li><p>Register Admin Module on <code>treemapping/admin.py</code></p>
+
+<pre><code>from django.contrib import admin
+from .models import TreeData
+
+admin.site.register(TreeData)
+</code></pre></li>
+</ol>
+
+<p>By default it will use openlayer for displaying map, if you want to use the openstreetmap then use folllwoing way to register admin Module</p>
+
+<pre><code>  from django.contrib.gis.admin import OSMGeoAdmin
+  from django.contrib.gis import admin
+
+  from .models import TreeData
+
+
+  @admin.register(TreeData)
+  class TreeAdmin(OSMGeoAdmin):
+      list_display = ('location', 'city')
 </code></pre>
 
-<p>Note : Better to use Vi than gedit</p>
-
-<p>Ansible Default configuration
-       $ cat /etc/ansible/ansible.cfg</p>
-
-<pre><code>   Keep as it is or you can uncomment following and save
-   #inventory      = /etc/ansible/hosts
-   #sudo_user      = root
-</code></pre>
-
-<hr />
-
-<h2 id="step-3-servers-setup">Step 3 - Servers Setup</h2>
-
-<p>### Install ssh on the server and your host also</p>
-
-<p>$ sudo apt install ssh</p>
-
-<p>Check from your computer to server you can connect using the ssh</p>
-
-<p>$ ssh dbit@10.0.1.198</p>
-
-<p>This will ask username and password</p>
-
-<h3 id="this-is-not-necessary-to-just-for-additional-information">This is not necessary to just for additional information</h3>
-
-<h3 id="if-you-want-to-enable-root-login-on-over-ssh-then-follow-following-commands">If you want to enable root login on over ssh then follow following commands</h3>
-
-<p># gedit /etc/ssh/sshd_config</p>
-
-<p>Change the line &ldquo;PermitRootLogin&rdquo; to &ldquo;yes&rdquo;</p>
-
-<p># service sshd restart</p>
-
-<p>$ ssh root@192.168.1.101</p>
-
-<p>You will be able to connect to the server using root username</p>
-
-<h3 id="create-ansible-user-with-sudo-permissions">Create ansible user with sudo permissions</h3>
-
-<p>On the server where you will be configuring you need to have a user with sudo permissions and authentication method must not need password. i.e use ssh keys</p>
-
-<p># sudo adduser ansible
-   # sudo usermod -aG sudo ansible</p>
-
-<h3 id="setup-ssh-keys">Setup ssh keys</h3>
-
-<pre><code> On the OUR computer AND WITH ANSIBLE USER ( Create if not not available )
- from where we will be managing ansible
-</code></pre>
-
-<p>Swith to the user using following command</p>
-
-<pre><code> $ su ansible
-</code></pre>
-
-<p>Then start commands</p>
-
-<pre><code> $ ssh-keygen
-   accept all default options
-
- $ cd /home/ansible/.ssh/
-  you can see all keys here at this place
-
-  Copy the Public Key on server where we created ansible user
-
-  $ ssh-copy-id ansible@192.168.1.101
-  Input password
-
- $ ssh-copy-id tayyabali@localhost
- $ ssh-copy-id ansible@localhost
- $ ssh-copy-id ansible@10.0.1.198
- $ ssh-copy-id ansible@10.0.1.197
-
- Now try
-
- $ ssh ansible@192.168.1.198
- $ ssh localhost
-
- You will be logged in without password
-</code></pre>
-
-<h3 id="disable-password-authentication-recommended-not-necessary-now">Disable Password Authentication (Recommended) not necessary now</h3>
-
-<pre><code> On Server (Where we have ansible user):
- Now oce you have configured the key based login, now you can disable the password based auth
-
- $ sudo vi /etc/ssh/sshd_config
-
- Change follwoing parameter to no as shown below
-
-     PasswordAuthentication no
-
- $ sudo systemctl reload sshd
-</code></pre>
-
-<h3 id="set-up-a-basic-firewall">Set Up a Basic Firewall</h3>
-
-<p>$ sudo ufw app list
-   $ sudo ufw allow OpenSSH
-   $ sudo ufw enable
-   $ sudo ufw status</p>
-
-<p>Now lets configure ansible user to run commands as a root on the remote machine</p>
-
-<p>$ sudo visudo</p>
-
-<p>add following below the User privilege section, just below the root
-   ansible  ALL=(ALL) NOPASSWD: ALL</p>
-
-<p>CTRL + O  &mdash;-&gt; Enter to Save  and CTRL + X</p>
-
-<p>and then check if its ok
-   $ sudo visudo -c</p>
-
-<p>Check if you can be root without the password</p>
-
-<p>$ su ansible -</p>
-
-<hr />
-
-<p><code>Explore the documentation of the ansible.com</code></p>
-
-<h2 id="running-ansible-commands">Running Ansible Commands</h2>
-
-<p>Make sure you are anisible user Also you have configured ansible user on remote hosts with ssh keys login and sudo commands permissions</p>
-
-<p>Check nodes present in the inventory by using folowing command</p>
-
-<pre><code>$ cat /etc/ansible/hosts
-</code></pre>
-
-<h2 id="to-ping-all-hosts">To ping all hosts</h2>
-
-<pre><code>$ ansible all -m ping
-
--m Use following module
-ping is a module
-</code></pre>
-
-<h2 id="to-list-all-files-on-the-nodes">To list all files on the nodes</h2>
-
-<pre><code>$ ansible all -a &quot;ls -al /home/ansible&quot;
-</code></pre>
-
-<h2 id="to-open-syslog-file">To open syslog file</h2>
-
-<pre><code>$ ansible all -a &quot;cat /var/log/syslog&quot;
-</code></pre>
-
-<h2 id="copy-files-to-remote-machines">Copy files to remote machines</h2>
-
-<p>On My computer</p>
-
-<p>touch test.txt
-Enter some text</p>
-
-<p>$ ansible all -m copy -a &ldquo;src=test.txt dest=/tmp/test.txt&rdquo;</p>
-
-<h2 id="install-packages">Install packages</h2>
-
-<p>$ ansible ubuntu -m apt -a &ldquo;name=elinks state=latest&rdquo;</p>
-
-<p>Whats the difference</p>
-
-<p>$ ansible ubuntu -m apt -a &ldquo;name=elinks state=present&rdquo;</p>
-
-<p>Will it run ?</p>
-
-<pre><code>$ ansible ubuntu -s -m apt -a &quot;name=elinks state=present&quot;
-</code></pre>
-
-<p>-s is become super user and then install</p>
-
-<pre><code>$ ansible ubuntu -s -m apt -a &quot;name=elinks state=absent&quot;
-</code></pre>
-
-<p>Above command will remove the package</p>
-
-<p>Lets create a user with the user module</p>
-
-<pre><code>$ ansible centos -s -m user -a &quot;name=test&quot;
-</code></pre>
-
-<p>Check test user on the server , see its home directory</p>
-
-<pre><code>$ ansible centos -s -m user -a &quot;name=test state=abset&quot;
-</code></pre>
-
-<p>Check User has gone</p>
-
-<pre><code>$ cat /etc/passwd | grep test
-
-Assignment install, upgrade ubunutu
-install vlc, install kazam
-</code></pre>
-
-<h2 id="playbook-structure">Playbook Structure</h2>
-
-<p>In the ansible user
-      $ mkdir ansible</p>
-
-<p>Use following command to Check the playbook syntex</p>
-
-<pre><code>$ ansible-playbook name.yaml
-</code></pre>
-
-<p>Execute the following Playbook</p>
-
-<p>From the URL  :</p>
-
-<pre><code>    https://github.com/ansible/ansible-examples
-</code></pre>
-
-<p>Execute and Explain the Structure of the playbook</p>
-
-<h2 id="gathering-the-facts">Gathering the facts</h2>
-
-<h4 id="observe-the-output">Observe the output</h4>
-
-<pre><code>    $ ansible centos -m setup
-</code></pre>
-
-<h4 id="you-can-do-grep-also">You can do grep also</h4>
-
-<pre><code>      $ ansible centos -m setup | grep ipv4
-
-      $ ansible localhost -m setup -a 'filter=*ipv4*'
-</code></pre>
-
-<h4 id="to-get-the-facts-in-to-the-directory-and-in-separate-files">To get the facts in to the directory and in separate files</h4>
-
-<pre><code>      $ ansible all -m setup -m --tree facts
-      $ cd facts
-      $ ls
-</code></pre>
-
-<h4 id="install-httpd-on-ubuntu">Install httpd on ubuntu</h4>
-
-<pre><code>      --- # This is a structure example to install httpd on ubuntu
-
-      - hosts: ubuntu
-        remote_user: ansible
-        become: yes
-        become_method: sudo
-        connection: ssh
-        gather_factcs: yes
-        vars:
-          userName:myuser
-        tasks:
-        - name: Install HTTPD server on ubunutu server
-          apt: name:apache2 state:latest
-          notify:
-          - startservice
-        handlers:
-         - name : startservice
-           service: name:apache2 state:restarted
-
-
-           ---
-
-           - hosts: ubuntu # hosts to be configured
-
-           sudo: yes # sudo permissions
-
-           tasks:
-
-           - name: update
-
-           apt: update_cache=yes
-
-           - name: install apache2
-
-           apt: name=apache2 state=present
-
-           - name: restart apache2
-
-           service: name=apache2 state=restarted
-
-           - debug: msg=&quot;apache has been installed&quot;
-
-           ...
-</code></pre>
+<ol>
+<li><p>Finally run django server</p>
+
+<pre><code>python manage.py runserver
+</code></pre></li>
+</ol>
 		</div>
 		
 <div class="post__tags tags clearfix">
@@ -474,11 +295,11 @@ install vlc, install kazam
 	<h4 class="widget__title">Recent Posts</h4>
 	<div class="widget__content">
 		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/post/postgis.md/postgis/"> Installation of Postgis and Geoserver on Ubuntu 18.04 </a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/rss/">RSS for the recent posts</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/linuxdesktopenvironment/">Linux Desktop Environment </a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/alternatives/">Linux softwares alternatives </a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/installationmedia/">How to make installation media ?</a></li>
-			<li class="widget__item"><a class="widget__link" href="/post/preparingforlinux/">Preparing you desktop/laptop for Linux installation</a></li>
 		</ul>
 	</div>
 </div>
@@ -488,6 +309,7 @@ install vlc, install kazam
 		<ul class="widget__list">
 			<li class="widget__item"><a class="widget__link" href="/categories/"></a></li>
 			<li class="widget__item"><a class="widget__link" href="/categories/cheetsheets">Cheetsheets</a></li>
+			<li class="widget__item"><a class="widget__link" href="/categories/gis">Gis</a></li>
 			<li class="widget__item"><a class="widget__link" href="/categories/linux">Linux</a></li>
 		</ul>
 	</div>
@@ -497,6 +319,7 @@ install vlc, install kazam
 	<div class="widget__content">
 		<a class="widget-taglist__link widget__link btn" href="/tags/cheetsheets" title="Cheetsheets">Cheetsheets</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/commands" title="Commands">Commands</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/gis" title="Gis">Gis</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/linux" title="Linux">Linux</a>
 	</div>
 </div>

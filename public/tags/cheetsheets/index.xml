@@ -7,19 +7,10 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Tue, 06 Aug 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 31 Dec 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://opensourcetutorials.in/tags/cheetsheets/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>GoeDjango Important Steps</title>
-      <link>https://opensourcetutorials.in/cheetsheets/geodjango/</link>
-      <pubDate>Tue, 06 Aug 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://opensourcetutorials.in/cheetsheets/geodjango/</guid>
-      <description>&lt;p&gt;Ansible is powerful open source IT automation tool. It allows you to manage IT infrasture and apps deployment easily.&lt;/p&gt;</description>
-    </item>
     
     <item>
       <title>Ansible</title>

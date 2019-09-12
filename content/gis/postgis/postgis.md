@@ -7,17 +7,25 @@ authorbox: true # Optional, enable authorbox for specific post
 toc: false # Optional, enable Table of Contents for specific post
 mathjax: true # Optional, enable MathJax for specific post
 categories:
-  - "GIS"
+  - "postgis"
+  - "geoserver"
 tags:
-  - "GIS"
+  - "postgis"
+  - "geoserver"
 
 thumbnail: "img/thumbs/postgis.png"
+
+resource: geoserver
 ---
+
+In this post we will learn install the geoserver and postgis on ubuntu 18.04
+
+<!--more-->
 
 ### Install openjdk
 
-      sudo su
-      apt-get install openjdk-8-jre
+    sudo su
+    apt-get install openjdk-8-jre
 
 ### PostgreSQL and PostGIS
 
@@ -43,6 +51,13 @@ thumbnail: "img/thumbs/postgis.png"
 ### Starting GeoServer remember to change directory to /var/www/geoserver  
     ./bin/startup.sh
 
+
+### To restart
+    sudo sh /var/www/geoserver/bin/startup.sh
+
 ### In the browser open http://localhost:8080/geoserver/web/
     If you are on the server use http://IP:8080/geoserver/web
     Default username and password is admin and geoserver
+
+
+![Geoserver](/img/postimages/geoserver.png)

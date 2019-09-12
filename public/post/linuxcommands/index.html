@@ -1,0 +1,1307 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title> Linux Commands Examples </title>
+	<meta name="description" content="">
+	<meta name="generator" content="Hugo 0.57.2" />
+	<meta property="og:title" content=" Linux Commands Examples " />
+<meta property="og:description" content="In this post we will see all linux commands with detailed examples." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://opensourcetutorials.in/post/linuxcommands/" />
+<meta property="article:published_time" content="2019-09-09T00:00:00+00:00" />
+<meta property="article:modified_time" content="2019-09-09T00:00:00+00:00" />
+
+	<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content=" Linux Commands Examples "/>
+<meta name="twitter:description" content="In this post we will see all linux commands with detailed examples."/>
+
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+	<link rel="stylesheet" href="/css/style.css">
+	<script type="text/javascript" src="/js/scripts.js"></script>
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-59503205-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container">
+		<div class="logo" role="banner">
+
+				<a class="logo__link" href="/" title="Open Source Tutorials" rel="home">
+				<div class="logo__title">Open Source Tutorials</div>
+				<div class="logo__tagline">Where Open Source is Everything ! </div>
+			</a>
+
+		</div>
+	</div>
+
+	
+<nav class="menu">
+	<ul class="menu__list">
+		<li class="menu__item"><a class="menu__link" href="/post/switchlinux">SWITCH TO LINUX IN SIMPLE STEPS</a></li>
+		<li class="menu__item"><a class="menu__link" href="/cheetsheets/index/">CHEETSHEETS</a></li>
+		<li class="menu__item"><a class="menu__link" href="https://tayyabali.in">ABOUT ME</a></li>
+		<li class="menu__item"><a class="menu__link" href="/post/rss">RSS FEEDS</a></li>
+		<li class="menu__item"><a class="menu__link" href="http://eepurl.com/gcdqnH">SUBSCRIBE</a></li>
+	</ul>
+</nav>
+
+	</header>
+
+		<div class="wrapper flex">
+			<section class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title"> Linux Commands Examples </h1><div class="post__meta meta">
+<svg class="icon icon-time" width="16" height="14" viewBox="0 0 16 16"><path d="m8-.0000003c-4.4 0-8 3.6-8 8 0 4.4000003 3.6 8.0000003 8 8.0000003 4.4 0 8-3.6 8-8.0000003 0-4.4-3.6-8-8-8zm0 14.4000003c-3.52 0-6.4-2.88-6.4-6.4000003 0-3.52 2.88-6.4 6.4-6.4 3.52 0 6.4 2.88 6.4 6.4 0 3.5200003-2.88 6.4000003-6.4 6.4000003zm.4-10.4000003h-1.2v4.8l4.16 2.5600003.64-1.04-3.6-2.1600003z"/></svg>
+<time class="post__meta-date meta-date" datetime="2019-09-09T00:00:00">September 09, 2019</time>
+<span class="post__meta-categories meta-categories">
+	<svg class="icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg>
+	<span class="meta-categories__list"><a class="meta-categories__link" href="/categories/cheetsheets" rel="category">Cheetsheets</a></span>
+</span></div>
+		</header>
+		<figure class="post__thumbnail">
+			<img src="/img/thumbs/linuxcommands.png" alt=" Linux Commands Examples ">
+		</figure><div class="content post__content clearfix">
+			<p>In this post we will see all linux commands with detailed examples.</p>
+
+<p>I sincerely thank <a href="https://www.linkedin.com/in/sushree-satapathy-481a1948/"> Sushree Satapathy </a> for her time and efforts for contributing this article and open source community.</p>
+
+<h1 id="whatis">whatis</h1>
+
+<p>Display one-line manual page descriptions</p>
+
+<pre><code>sushree@Sushree:/$ whatis pwd
+pwd (1)          - print name of current/working directory
+</code></pre>
+
+<h1 id="whereis">whereis</h1>
+
+<p>To find the source, binary, and manuals sections for specified commands or files</p>
+
+<pre><code>sushree@Sushree:~/Desktop/opensourcetutorial$ whereis ls
+ls: /bin/ls /usr/share/man/man1/ls.1.gz
+</code></pre>
+
+<h1 id="who">who</h1>
+
+<p>Shows who is logged on</p>
+
+<pre><code>sushree@Sushree:/$ who
+sushree  :0           2019-02-10 11:52 (:0)
+sushree  pts/0        2019-02-10 12:46 (:0)
+</code></pre>
+
+<h1 id="who-am-i">who am  i</h1>
+
+<p>Print  the  user  name  associated  with the current effective user ID.</p>
+
+<pre><code>sushree@Sushree:/$ who am i
+sushree  pts/0        2019-02-10 12:46 (:0)
+</code></pre>
+
+<h1 id="cat">cat</h1>
+
+<p>Concatenate files and print on the standard output</p>
+
+<p>SYNTAX : cat [OPTION]&hellip; [FILE]&hellip;</p>
+
+<pre><code>sushree@Sushree:~/Desktop/opensourcetutorial$ ls
+hello.txt  hello.txt~  welcome.txt  welcome.txt~
+sushree@Sushree:~/Desktop/opensourcetutorial$ cat hello.txt welcome.txt
+Hello World..!!
+Welcome to www.opensourcetutorials.in
+</code></pre>
+
+<h1 id="cal">cal</h1>
+
+<p>Displays a calendar</p>
+
+<pre><code>sushree@Sushree:~/Desktop/opensourcetutorial$ cal
+February 2019      
+Su Mo Tu We Th Fr Sa  
+                1  2  
+3  4  5  6  7  8  9  
+10 11 12 13 14 15 16  
+17 18 19 20 21 22 23  
+24 25 26 27 28
+</code></pre>
+
+<h1 id="pwd">pwd</h1>
+
+<p>Print name of current/working directory</p>
+
+<p>SYNTAX : pwd [OPTION]&hellip;</p>
+
+<pre><code>sushree@Sushree:~$ pwd
+/home/sushree
+</code></pre>
+
+<h1 id="ls">ls</h1>
+
+<p>List directory contents</p>
+
+<p>SYNTAX : ls [OPTION]&hellip; [FILE]&hellip;</p>
+
+<pre><code>sushree@Sushree:~$ ls
+Desktop    Downloads         Music     Public     Videos
+Documents  examples.desktop  Pictures  Templates  VirtualBox VMs
+</code></pre>
+
+<p><strong>Note</strong> : The directories are listed in lexicographical order.</p>
+
+<h3 id="r"><strong><em>-r</em></strong></h3>
+
+<p><em>reverse</em> order while sorting</p>
+
+<pre><code>sushree@Sushree:~$ ls -r
+VirtualBox VMs  Templates  Pictures  examples.desktop  Documents
+Videos          Public     Music     Downloads         Desktop
+</code></pre>
+
+<h3 id="l"><strong><em>-l</em></strong></h3>
+
+<p>use a <em>long listing</em> format</p>
+
+<pre><code>sushree@Sushree:~$ ls -l
+total 48
+drwxr-xr-x 2 sushree sushree 4096 Jan 18 12:14 Desktop
+drwxr-xr-x 2 sushree sushree 4096 Aug 10  2018 Documents
+drwxr-xr-x 3 sushree sushree 4096 Feb  5 23:07 Downloads
+-rw-r--r-- 1 sushree sushree 8980 May 12  2017 examples.desktop
+drwxr-xr-x 2 sushree sushree 4096 May 12  2017 Music
+drwxr-xr-x 2 sushree sushree 4096 Apr 16  2018 Pictures
+drwxr-xr-x 2 sushree sushree 4096 May 12  2017 Public
+drwxr-xr-x 2 sushree sushree 4096 May 12  2017 Templates
+drwxr-xr-x 2 sushree sushree 4096 May 12  2017 Videos
+drwxrwxr-x 4 sushree sushree 4096 Jan 21 22:36 VirtualBox VMs
+</code></pre>
+
+<p>The information can be broken down into ten fields as shown below. Let us consider the Desktop directory.</p>
+
+<p><code>drwxr-xr-x 2 sushree sushree 4096 Jan 18 12:14 Desktop</code></p>
+
+<table>
+<thead>
+<tr>
+<th align="center">Detail</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="center">d</td>
+<td>file type</td>
+</tr>
+
+<tr>
+<td align="center">rwx</td>
+<td>owner&rsquo;s mode of access(permission)</td>
+</tr>
+
+<tr>
+<td align="center">r-x</td>
+<td>group&rsquo;s mode of access(permission)</td>
+</tr>
+
+<tr>
+<td align="center">r-x</td>
+<td>other&rsquo;s mode of access(permission)</td>
+</tr>
+
+<tr>
+<td align="center">2</td>
+<td>number of hard links</td>
+</tr>
+
+<tr>
+<td align="center">sushree</td>
+<td>owner of the file</td>
+</tr>
+
+<tr>
+<td align="center">sushree</td>
+<td>group of the file</td>
+</tr>
+
+<tr>
+<td align="center">4096</td>
+<td>size of the file in bytes</td>
+</tr>
+
+<tr>
+<td align="center">Aug 10  2018</td>
+<td>last modified time stamp</td>
+</tr>
+
+<tr>
+<td align="center">Desktop</td>
+<td>Name</td>
+</tr>
+</tbody>
+</table>
+
+<p><code>**d**rwxr-xr-x 2 sushree sushree 4096 Jan 18 12:14 Desktop</code></p>
+
+<p>The first field <strong>file type</strong> can be of the following types:</p>
+
+<table>
+<thead>
+<tr>
+<th align="center">Detail</th>
+<th align="center">FileType</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="center">d</td>
+<td align="center">Directory</td>
+<td>A file used to store other files.</td>
+</tr>
+
+<tr>
+<td align="center">-</td>
+<td align="center">Regular file</td>
+<td>Includes readable files, images files, binary files, and compressed files.</td>
+</tr>
+
+<tr>
+<td align="center">l</td>
+<td align="center">Symbolic link</td>
+<td>Points to another file.</td>
+</tr>
+
+<tr>
+<td align="center">s</td>
+<td align="center">Socket</td>
+<td>Allows for communication between processes.(duplex)</td>
+</tr>
+
+<tr>
+<td align="center">p</td>
+<td align="center">Pipe</td>
+<td>Allows for communication between processes executed under different user names and permission.(unidirectional)</td>
+</tr>
+
+<tr>
+<td align="center">b</td>
+<td align="center">Block file</td>
+<td>Used to communicate with hardware.(read/write data in blocks)</td>
+</tr>
+
+<tr>
+<td align="center">c</td>
+<td align="center">Character file</td>
+<td>Used to communicate with hardware.(read/write data character by character)</td>
+</tr>
+</tbody>
+</table>
+
+<p><br>
+d<strong>rwxr-xr-x</strong> 2 sushree sushree 4096 Jan 18 12:14 Desktop
+<br></p>
+
+<p>The next nine set of characters indicate the <strong>permissions/mode of access</strong> o the file. There are three different types of permissions as shown below
+Permission | Effect on file | Effects on directory</p>
+
+<table>
+<thead>
+<tr>
+<th align="center">Permisson</th>
+<th align="center">Use</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="center">Read ( r )</td>
+<td align="center">Allows for file contents to be read or copied.</td>
+<td>Without execute permission on the directory, allows for a non-detailed listing of files. With execute permission, ls -l can provide a detailed listing.</td>
+</tr>
+
+<tr>
+<td align="center">Write ( w )</td>
+<td align="center">Allows for contents to be modified or overwritten. Allows for files to be added or removed from a directory.</td>
+<td>For this permission to work, the directory must also have execute permission.</td>
+</tr>
+
+<tr>
+<td align="center">Execute( x)</td>
+<td align="center">Allows for a file to be run as a process, although script files require read permission, as well.</td>
+<td>Allows a user to change to the directory if parent directories have write permission as well.</td>
+</tr>
+</tbody>
+</table>
+
+<p>The nine characters can be broken down into sets of three. They correspond to the owner of the file, the group that own&rsquo;s the file and others(excluding the owner and the group)</p>
+
+<p>In case of the Desktop directory, the owner has read, write and execute permission, the group which owns the directory has read and execute permission &amp; the others have read and execute permission.</p>
+
+<hr />
+
+<p>drwxr-xr-x <strong>2</strong> sushree sushree 4096 Jan 18 12:14 Desktop</p>
+
+<pre><code>The next field indicates the number of hard links to the file.
+</code></pre>
+
+<hr />
+
+<p>drwxr-xr-x 2 <strong>sushree</strong> sushree 4096 Jan 18 12:14 Desktop</p>
+
+<pre><code>The next field indicates the owner of the file.
+</code></pre>
+
+<hr />
+
+<p>drwxr-xr-x 2 sushree <strong>sushree</strong> 4096 Jan 18 12:14 Desktop</p>
+
+<pre><code>The next field indicates the group that owns the file.
+</code></pre>
+
+<hr />
+
+<p>drwxr-xr-x 2 sushree sushree <strong>4096</strong> Jan 18 12:14 Desktop</p>
+
+<pre><code>The field that follows is the size of the file in bytes.
+</code></pre>
+
+<hr />
+
+<p>drwxr-xr-x 2 sushree sushree 4096 <strong>Jan 18 12:14</strong> Desktop</p>
+
+<pre><code>The next field is the last modified date of thee file.
+</code></pre>
+
+<hr />
+
+<p>drwxr-xr-x 2 sushree sushree 4096 Jan 18 12:14 <strong>Desktop</strong></p>
+
+<pre><code>The last field  is the name of file.
+</code></pre>
+
+<hr />
+
+<p><strong>Linux command options can be combined without a space between them and with a single - (dash).</strong></p>
+
+<p>The following are the file types</p>
+
+<h3 id="lr">-lr</h3>
+
+<p>Long listing format in the reverse order</p>
+
+<pre><code>sushree@Sushree:~$ ls -lr
+total 48
+drwxrwxr-x 4 sushree sushree 4096 Jan 21 22:36 VirtualBox VMs
+drwxr-xr-x 2 sushree sushree 4096 May 12  2017 Videos
+drwxr-xr-x 2 sushree sushree 4096 May 12  2017 Templates
+drwxr-xr-x 2 sushree sushree 4096 May 12  2017 Public
+drwxr-xr-x 2 sushree sushree 4096 Apr 16  2018 Pictures
+drwxr-xr-x 2 sushree sushree 4096 May 12  2017 Music
+-rw-r--r-- 1 sushree sushree 8980 May 12  2017 examples.desktop
+drwxr-xr-x 3 sushree sushree 4096 Feb  5 23:07 Downloads
+drwxr-xr-x 2 sushree sushree 4096 Aug 10  2018 Documents
+drwxr-xr-x 2 sushree sushree 4096 Jan 18 12:14 Desktop
+</code></pre>
+
+<p><strong>Note</strong> : The order of the options doesnot affect the output.</p>
+
+<pre><code>sushree@Sushree:~$ ls -rl
+total 48
+drwxrwxr-x 4 sushree sushree 4096 Jan 21 22:36 VirtualBox VMs
+drwxr-xr-x 2 sushree sushree 4096 May 12  2017 Videos
+drwxr-xr-x 2 sushree sushree 4096 May 12  2017 Templates
+drwxr-xr-x 2 sushree sushree 4096 May 12  2017 Public
+drwxr-xr-x 2 sushree sushree 4096 Apr 16  2018 Pictures
+drwxr-xr-x 2 sushree sushree 4096 May 12  2017 Music
+-rw-r--r-- 1 sushree sushree 8980 May 12  2017 examples.desktop
+drwxr-xr-x 3 sushree sushree 4096 Feb  5 23:07 Downloads
+drwxr-xr-x 2 sushree sushree 4096 Aug 10  2018 Documents
+drwxr-xr-x 2 sushree sushree 4096 Jan 18 12:14 Desktop
+</code></pre>
+
+<h3 id="t"><strong><em>-t</em></strong></h3>
+
+<p>sort by modification time, newest first</p>
+
+<pre><code>sushree@Sushree:~$ ls -lt
+total 48
+drwxr-xr-x 3 sushree sushree 4096 Feb  5 23:07 Downloads
+drwxrwxr-x 4 sushree sushree 4096 Jan 21 22:36 VirtualBox VMs
+drwxr-xr-x 2 sushree sushree 4096 Jan 18 12:14 Desktop
+drwxr-xr-x 2 sushree sushree 4096 Aug 10  2018 Documents
+drwxr-xr-x 2 sushree sushree 4096 Apr 16  2018 Pictures
+drwxr-xr-x 2 sushree sushree 4096 May 12  2017 Music
+drwxr-xr-x 2 sushree sushree 4096 May 12  2017 Public
+drwxr-xr-x 2 sushree sushree 4096 May 12  2017 Templates
+drwxr-xr-x 2 sushree sushree 4096 May 12  2017 Videos
+-rw-r--r-- 1 sushree sushree 8980 May 12  2017 examples.desktop
+</code></pre>
+
+<h3 id="lrt"><strong><em>-lrt</em></strong></h3>
+
+<p>sort by modification time and reverse order for the same modification time stamp</p>
+
+<pre><code>sushree@Sushree:~$ ls -lrt
+total 48
+-rw-r--r-- 1 sushree sushree 8980 May 12  2017 examples.desktop
+drwxr-xr-x 2 sushree sushree 4096 May 12  2017 Videos
+drwxr-xr-x 2 sushree sushree 4096 May 12  2017 Templates
+drwxr-xr-x 2 sushree sushree 4096 May 12  2017 Public
+drwxr-xr-x 2 sushree sushree 4096 May 12  2017 Music
+drwxr-xr-x 2 sushree sushree 4096 Apr 16  2018 Pictures
+drwxr-xr-x 2 sushree sushree 4096 Aug 10  2018 Documents
+drwxr-xr-x 2 sushree sushree 4096 Jan 18 12:14 Desktop
+drwxrwxr-x 4 sushree sushree 4096 Jan 21 22:36 VirtualBox VMs
+drwxr-xr-x 3 sushree sushree 4096 Feb  5 23:07 Downloads
+</code></pre>
+
+<h1 id="cd">cd</h1>
+
+<p>Change the shell working directory</p>
+
+<p>SYNTAX : cd [options] [path]</p>
+
+<pre><code>sushree@Sushree:~$ pwd
+/home/sushree
+sushree@Sushree:~$ ls
+Desktop    Downloads         Music     Public     Videos
+Documents  examples.desktop  Pictures  Templates  VirtualBox VMs
+sushree@Sushree:~$ cd Desktop
+sushree@Sushree:~/Desktop$ pwd
+/home/sushree/Desktop
+</code></pre>
+
+<h3 id="cd-1">cd ..</h3>
+
+<p>Change the shell to <em>parent directory</em></p>
+
+<pre><code>sushree@Sushree:~/Desktop$ pwd
+/home/sushree/Desktop
+sushree@Sushree:~/Desktop$ cd ..
+sushree@Sushree:~$ pwd
+/home/sushree
+</code></pre>
+
+<h3 id="cd-2">cd ~</h3>
+
+<p>Change directory to the <em>home directory</em> of the current user</p>
+
+<pre><code>sushree@Sushree:~/Desktop/opensourcetutorial$ pwd
+/home/sushree/Desktop/opensourcetutorial
+sushree@Sushree:~/Desktop/opensourcetutorial$ cd ~
+sushree@Sushree:~$ pwd
+/home/sushree
+</code></pre>
+
+<h3 id="cd-using-absolute-path">cd using absolute path</h3>
+
+<pre><code>sushree@Sushree:~$ pwd
+/home/sushree
+sushree@Sushree:~$ cd /home/sushree/Desktop/opensourcetutorial/
+sushree@Sushree:~/Desktop/opensourcetutorial$ pwd
+/home/sushree/Desktop/opensourcetutorial
+</code></pre>
+
+<h3 id="cd-using-relative-path">cd using relative path</h3>
+
+<pre><code>sushree@Sushree:~$ pwd
+/home/sushree
+sushree@Sushree:~$ cd Desktop/opensourcetutorial/
+sushree@Sushree:~/Desktop/opensourcetutorial$ pwd
+/home/sushree/Desktop/opensourcetutorial
+</code></pre>
+
+<h3 id="cd-command">cd command</h3>
+
+<p>Change directory two directories up</p>
+
+<pre><code>sushree@Sushree:~$ cd Desktop/opensourcetutorial/
+sushree@Sushree:~/Desktop/opensourcetutorial$ cd ../../
+sushree@Sushree:~$ pwd
+/home/sushree
+sushree@Sushree:~$
+</code></pre>
+
+<h3 id="chmod">chmod</h3>
+
+<p>Change the file permissions (mode of access)</p>
+
+<p>There are two techniques</p>
+
+<h4 id="1-symbolic-method">1. Symbolic Method</h4>
+
+<p>SYNTAX : chmod [<WHO><OPERATOR><PERMISSIONS>]&hellip; FILE</p>
+
+<p>Use combinations of letters and symbols to add or remove permissions.</p>
+
+<p>The who are indicated using the following characters</p>
+
+<table>
+<thead>
+<tr>
+<th align="center">Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="center">u</td>
+<td>User: The user who owns the file.</td>
+</tr>
+
+<tr>
+<td align="center">g</td>
+<td>Group: The group who owns the file.</td>
+</tr>
+
+<tr>
+<td align="center">o</td>
+<td>Others: Anyone other than the user owner or member of the group owner.</td>
+</tr>
+
+<tr>
+<td align="center">a</td>
+<td>All: Refers to the user, group and others.</td>
+</tr>
+</tbody>
+</table>
+
+<p>The operators can be indicated using the following characters</p>
+
+<table>
+<thead>
+<tr>
+<th align="center">Symbol</th>
+<th align="center">Meaning</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="center">+</td>
+<td align="center">Add the permission</td>
+</tr>
+
+<tr>
+<td align="center">=</td>
+<td align="center">Assign the permission</td>
+</tr>
+
+<tr>
+<td align="center">-</td>
+<td align="center">Remove the permission</td>
+</tr>
+</tbody>
+</table>
+
+<p>The permissions can be indicated using the following characters</p>
+
+<table>
+<thead>
+<tr>
+<th align="center">Symbol</th>
+<th align="center">Meaning</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="center">r</td>
+<td align="center">read</td>
+</tr>
+
+<tr>
+<td align="center">w</td>
+<td align="center">write</td>
+</tr>
+
+<tr>
+<td align="center">x</td>
+<td align="center">execute</td>
+</tr>
+</tbody>
+</table>
+
+<p>The option will be followed by the path to the file whose permission is to be modified.</p>
+
+<pre><code>sushree@Sushree:~/Desktop/opensourcetutorial$ ls -l
+total 4
+drwxrwxr-x 2 sushree sushree 4096 Feb 10 23:42 sush.txt
+sushree@Sushree:~/Desktop/opensourcetutorial$ chmod u-w sush.txt
+sushree@Sushree:~/Desktop/opensourcetutorial$ ls -l
+total 4
+dr-xrwxr-x 2 sushree sushree 4096 Feb 10 23:42 sush.txt
+</code></pre>
+
+<h4 id="2-absolute-method">2. Absolute Method</h4>
+
+<p>SYNTAX : chmod [OPTION]&hellip; OCTAL-MODE FILE&hellip;</p>
+
+<p>Use numbers to represent the permissions where each triplet is an octal number</p>
+
+<p>The following is the list of octal values for setting the file permissions</p>
+
+<table>
+<thead>
+<tr>
+<th align="center">Octal Value</th>
+<th align="center">File Permissions Set</th>
+<th>Permissions Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="center">0</td>
+<td align="center">&mdash;</td>
+<td>No permissions</td>
+</tr>
+
+<tr>
+<td align="center">1</td>
+<td align="center">&ndash;x</td>
+<td>Execute permission only</td>
+</tr>
+
+<tr>
+<td align="center">2</td>
+<td align="center">-w-</td>
+<td>Write permission only</td>
+</tr>
+
+<tr>
+<td align="center">3</td>
+<td align="center">-wx</td>
+<td>Write and execute permissions</td>
+</tr>
+
+<tr>
+<td align="center">4</td>
+<td align="center">r&ndash;</td>
+<td>Read permission only</td>
+</tr>
+
+<tr>
+<td align="center">5</td>
+<td align="center">r-x</td>
+<td>Read and execute permissions</td>
+</tr>
+
+<tr>
+<td align="center">6</td>
+<td align="center">rw-</td>
+<td>Read and write permissions</td>
+</tr>
+
+<tr>
+<td align="center">7</td>
+<td align="center">rwx</td>
+<td>Read, write, and execute permissions</td>
+</tr>
+</tbody>
+</table>
+
+<pre><code>sushree@Sushree:~/Desktop/opensourcetutorial$ ls -l
+total 4
+dr-xrwxr-x 2 sushree sushree 4096 Feb 10 23:42 sush.txt
+
+sushree@Sushree:~/Desktop/opensourcetutorial$ chmod 775 sush.txt
+
+sushree@Sushree:~/Desktop/opensourcetutorial$ ls -l
+total 4
+drwxrwxr-x 2 sushree sushree 4096 Feb 10 23:42 sush.txt
+</code></pre>
+
+<p>The octal nnumber 775 represents rwx rwx r-x. Therefore, the users gets the write access back.</p>
+
+<h1 id="chown">chown</h1>
+
+<p>Change file owner and group</p>
+
+<p>Changing ownership requires administrative access. Even an owner does noot have the right to give ownership of his file to another user. However, group ownership does not require administrative rights.</p>
+
+<p>SYNTAX : chown [OPTIONS] [OWNER] FILE</p>
+
+<p><strong>Changing user ownership</strong></p>
+
+<pre><code>sushree@Sushree:~/Desktop/opensourcetutorial$ ls -l
+total 8
+-rw-rw-r-- 1 sushree sushree 16 Feb 11 00:49 hello.txt
+-rw-rw-r-- 1 sushree sushree 38 Feb 11 00:49 welcome.txt
+
+sushree@Sushree:~/Desktop/opensourcetutorial$ sudo su
+[sudo] password for sushree:
+
+root@Sushree:/home/sushree/Desktop/opensourcetutorial# chown root hello.txt
+root@Sushree:/home/sushree/Desktop/opensourcetutorial# ls -l
+total 8
+-rw-rw-r-- 1 root    sushree 16 Feb 11 00:49 hello.txt
+-rw-rw-r-- 1 sushree sushree 38 Feb 11 00:49 welcome.txt
+</code></pre>
+
+<p><strong>Changing group ownership</strong></p>
+
+<pre><code>root@Sushree:/home/sushree/Desktop/opensourcetutorial# ls -l
+total 8
+-rw-rw-r-- 1 sushree sushree 16 Feb 11 00:49 hello.txt
+-rw-rw-r-- 1 sushree sushree 38 Feb 11 00:49 welcome.txt
+
+root@Sushree:/home/sushree/Desktop/opensourcetutorial# chown root:root hello.txtroot@Sushree:/home/sushree/Desktop/opensourcetutorial# ls -l
+total 8
+-rw-rw-r-- 1 root    root    16 Feb 11 00:49 hello.txt
+-rw-rw-r-- 1 sushree sushree 38 Feb 11 00:49 welcome.txt
+</code></pre>
+
+<h1 id="mv">mv</h1>
+
+<p>It is a file management command used to Rename SOURCE to DEST, or move SOURCE(s) to DIRECTORY.</p>
+
+<p>SYNTAX : mv SOURCE DESTINATION</p>
+
+<p>The <strong>mv</strong> command requires two arguments. The first argument is the path of the file to be moved (<strong>source</strong>) and the second is the path where the file is to be moved (<strong>destination</strong>).</p>
+
+<p>If the file is moved from source to destination without specfying a new name, it will retain its old name.</p>
+
+<pre><code>sushree@Sushree:~/Desktop$ ls
+opensourcetutorial  osgeolive-12.0-vm.7z  osgeolive-12.0-vm.vmdk
+
+sushree@Sushree:~/Desktop$ cd opensourcetutorial/
+
+sushree@Sushree:~/Desktop/opensourcetutorial$ ls
+hello.txt  welcome.txt
+
+sushree@Sushree:~/Desktop/opensourcetutorial$ mv hello.txt /home/sushree/Desktop/
+
+sushree@Sushree:~/Desktop/opensourcetutorial$ cd ..
+
+sushree@Sushree:~/Desktop$ ls
+hello.txt  opensourcetutorial  osgeolive-12.0-vm.7z  osgeolive-12.0-vm.vmdk
+</code></pre>
+
+<p>however, the file can be renamed using the <strong>mv</strong> command by specifying the new name in the destination argument.</p>
+
+<pre><code>sushree@Sushree:~/Desktop$ ls
+hello.txt  opensourcetutorial  osgeolive-12.0-vm.7z  osgeolive-12.0-vm.vmdk
+
+sushree@Sushree:~/Desktop$ mv hello.txt /home/sushree/Desktop/opensourcetutorial/newhello.txt
+
+sushree@Sushree:~/Desktop$ cd opensourcetutorial/
+
+sushree@Sushree:~/Desktop/opensourcetutorial$ ls
+newhello.txt  welcome.txt
+</code></pre>
+
+<p>Moving the file in the same directory will result in renaming the file.</p>
+
+<pre><code>sushree@Sushree:~/Desktop/opensourcetutorial$ ls
+newhello.txt  welcome.txt
+
+sushree@Sushree:~/Desktop/opensourcetutorial$ mv newhello.txt rename.txt
+
+sushree@Sushree:~/Desktop/opensourcetutorial$ ls
+rename.txt  welcome.txt
+</code></pre>
+
+<p>Multiple files can be moved using the <strong>mv command</strong></p>
+
+<pre><code>sushree@Sushree:~/Desktop/opensourcetutorial$ ls
+rename.txt  welcome.txt
+
+sushree@Sushree:~/Desktop/opensourcetutorial$ mv rename.txt welcome.txt /home/sushree/Desktop/
+
+sushree@Sushree:~/Desktop/opensourcetutorial$ ls
+
+sushree@Sushree:~/Desktop/opensourcetutorial$ cd ..
+
+sushree@Sushree:~/Desktop$ ls
+opensourcetutorial    osgeolive-12.0-vm.vmdk  welcome.txt
+osgeolive-12.0-vm.7z  rename.txt
+</code></pre>
+
+<p><strong>mv</strong> command requires <strong><em>write</em></strong> and <strong><em>execute</em></strong> permission on both the source and destination.</p>
+
+<pre><code>sushree@Sushree:~/Desktop$ ls -l
+total 14118052
+-rw-rw-r-- 1 sushree sushree          17 Feb 17 21:07 hello.txt
+drwxrwxr-x 2 sushree sushree        4096 Feb 17 21:11 opensourcetutorial
+-rw-r--r-- 1 sushree sushree  3359521331 Jan 16 07:28 osgeolive-12.0-vm.7z
+-rw------- 1 sushree sushree 11097341952 Jan 21 22:35 osgeolive-12.0-vm.vmdk
+-rw-rw-r-- 1 sushree sushree          38 Feb 11 00:49 welcome.txt
+
+sushree@Sushree:~/Desktop$ mv hello.txt /home/sushree/Desktop/opensourcetutorial/hello.txt
+
+sushree@Sushree:~/Desktop$ ls -l
+total 14118048
+drwxrwxr-x 2 sushree sushree        4096 Feb 17 21:12 opensourcetutorial
+-rw-r--r-- 1 sushree sushree  3359521331 Jan 16 07:28 osgeolive-12.0-vm.7z
+-rw------- 1 sushree sushree 11097341952 Jan 21 22:35 osgeolive-12.0-vm.vmdk
+-rw-rw-r-- 1 sushree sushree          38 Feb 11 00:49 welcome.txt
+
+sushree@Sushree:~/Desktop$ chmod u-w opensourcetutorial/
+sushree@Sushree:~/Desktop$ chmod u-x opensourcetutorial/
+
+sushree@Sushree:~/Desktop$ ls -l
+total 14118048
+dr--rwxr-x 2 sushree sushree        4096 Feb 17 21:12 opensourcetutorial
+-rw-r--r-- 1 sushree sushree  3359521331 Jan 16 07:28 osgeolive-12.0-vm.7z
+-rw------- 1 sushree sushree 11097341952 Jan 21 22:35 osgeolive-12.0-vm.vmdk
+-rw-rw-r-- 1 sushree sushree          38 Feb 11 00:49 welcome.txt
+
+sushree@Sushree:~/Desktop$ mv welcome.txt /home/sushree/Desktop/opensourcetutorial/
+mv: cannot stat ‘/home/sushree/Desktop/opensourcetutorial/welcome.txt’: Permission denied
+</code></pre>
+
+<h1 id="cp">cp</h1>
+
+<p>Copy SOURCE to DEST, or multiple SOURCE(s) to DIRECTORY.</p>
+
+<p>SYNTAX : cp [OPTIONS] SOURCE DESTINATION</p>
+
+<pre><code>sushree@Sushree:~/Desktop$ ls -l
+total 14118052
+-rw-rw-r-- 1 sushree sushree          17 Feb 17 21:07 hello.txt
+drwxrwxr-x 2 sushree sushree        4096 Feb 17 21:12 opensourcetutorial
+-rw-r--r-- 1 sushree sushree  3359521331 Jan 16 07:28 osgeolive-12.0-vm.7z
+-rw------- 1 sushree sushree 11097341952 Jan 21 22:35 osgeolive-12.0-vm.vmdk
+-rw-rw-r-- 1 sushree sushree          38 Feb 11 00:49 welcome.txt
+
+sushree@Sushree:~/Desktop$ cp hello.txt /home/sushree/Desktop/opensourcetutorial/
+
+sushree@Sushree:~/Desktop$ cd opensourcetutorial/
+sushree@Sushree:~/Desktop/opensourcetutorial$ ls
+hello.txt
+
+sushree@Sushree:~/Desktop$ ls -l
+total 14118048
+dr--rwxr-x 2 sushree sushree        4096 Feb 17 21:12 opensourcetutorial
+-rw-r--r-- 1 sushree sushree  3359521331 Jan 16 07:28 osgeolive-12.0-vm.7z
+-rw------- 1 sushree sushree 11097341952 Jan 21 22:35 osgeolive-12.0-vm.vmdk
+-rw-rw-r-- 1 sushree sushree          38 Feb 11 00:49 welcome.txt
+
+sushree@Sushree:~/Desktop$ cp /home/sushree/Desktop/opensourcetutorial/hello.txt /home/sushree/Desktop/
+cp: cannot stat ‘/home/sushree/Desktop/opensourcetutorial/hello.txt’: Permission denied
+</code></pre>
+
+<h1 id="rm">rm</h1>
+
+<p>remove files or directories</p>
+
+<p>SYNTAX : rm [OPTION]&hellip; FILE&hellip;</p>
+
+<pre><code>sushree@Sushree:~/Desktop$ ls
+hello.txt           osgeolive-12.0-vm.7z    welcome.txt
+opensourcetutorial  osgeolive-12.0-vm.vmdk
+sushree@Sushree:~/Desktop$ rm hello.txt
+sushree@Sushree:~/Desktop$ ls
+opensourcetutorial  osgeolive-12.0-vm.7z  osgeolive-12.0-vm.vmdk  welcome.txt
+</code></pre>
+
+<h1 id="date">date</h1>
+
+<p>Display the current time in the given FORMAT, or set the system date.</p>
+
+<p>SYNTAX : date [OPTION]&hellip; [+FORMAT]</p>
+
+<pre><code>sushree@Sushree:~/Desktop$ date
+Sun Feb 24 11:35:17 IST 2019
+</code></pre>
+
+<p>Display date in a given format</p>
+
+<p>The following are the format specifier</p>
+
+<table>
+<thead>
+<tr>
+<th align="center">Format Specifier</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="center">%D</td>
+<td align="left">Display date as mm/dd/yy.</td>
+</tr>
+
+<tr>
+<td align="center">%d</td>
+<td align="left">Display the day of the month (01 to 31).</td>
+</tr>
+
+<tr>
+<td align="center">%a</td>
+<td align="left">Displays the abbreviated name for weekdays (Sun to Sat).</td>
+</tr>
+
+<tr>
+<td align="center">%A</td>
+<td align="left">Displays full weekdays (Sunday to Saturday).</td>
+</tr>
+
+<tr>
+<td align="center">%h</td>
+<td align="left">Displays abbreviated month name (Jan to Dec).</td>
+</tr>
+
+<tr>
+<td align="center">%b</td>
+<td align="left">Displays abbreviated month name (Jan to Dec).</td>
+</tr>
+
+<tr>
+<td align="center">%B</td>
+<td align="left">Displays full month name(January to December).</td>
+</tr>
+
+<tr>
+<td align="center">%m</td>
+<td align="left">Displays the month of year (01 to 12).</td>
+</tr>
+
+<tr>
+<td align="center">%y</td>
+<td align="left">Displays last two digits of the year(00 to 99).</td>
+</tr>
+
+<tr>
+<td align="center">%Y</td>
+<td align="left">Display four-digit year.</td>
+</tr>
+
+<tr>
+<td align="center">%T</td>
+<td align="left">Display the time in 24 hour format as HH:MM:SS.</td>
+</tr>
+
+<tr>
+<td align="center">%H</td>
+<td align="left">Display the hour.</td>
+</tr>
+
+<tr>
+<td align="center">%M</td>
+<td align="left">Display the minute.</td>
+</tr>
+
+<tr>
+<td align="center">%S</td>
+<td align="left">Display the seconds.</td>
+</tr>
+</tbody>
+</table>
+
+<p>Display <strong>UTC</strong>(Coordinated Universal Time ) time</p>
+
+<pre><code>sushree@Sushree:~$ date -u
+Sat Mar 30 04:15:45 UTC 2019
+</code></pre>
+
+<p>Display the date specified in the <strong>string</strong> in date format</p>
+
+<pre><code>sushree@Sushree:~$ date --date=&quot;09/20/2018&quot;
+Thu Sep 20 00:00:00 IST 2018
+</code></pre>
+
+<p>Here the date specified is 20th September 2018 which has been displayedd in the date format.</p>
+
+<p>Displaying <strong>past date</strong></p>
+
+<pre><code>sushree@Sushree:~$ date --date=&quot;1 year ago&quot;
+Fri Mar 30 09:54:23 IST 2018
+
+sushree@Sushree:~$ date --date=&quot;5 secs ago&quot;
+Sat Mar 30 09:54:49 IST 2019
+
+sushree@Sushree:~$ date --date=&quot;6 months ago&quot;
+Sun Sep 30 09:55:49 IST 2018
+</code></pre>
+
+<p>Displaying <strong>futre date</strong></p>
+
+<pre><code>sushree@Sushree:~$ date --date=&quot;next monday&quot;
+Mon Apr  1 00:00:00 IST 2019
+
+sushree@Sushree:~$ date --date=&quot;5 year&quot;
+Sat Mar 30 09:57:39 IST 2024
+
+sushree@Sushree:~$ date --date=&quot;tomorrow&quot;
+Sun Mar 31 09:58:30 IST 2019
+</code></pre>
+
+<p><strong>Set</strong> the system date</p>
+
+<pre><code>sushree@Sushree:~$ date --set=&quot;Tue Nov 13 15:23:34 UTC 2018&quot;
+sushree@Sushree:~$ date
+Tue Nov 13 15:23:34 UTC 2018
+</code></pre>
+
+<p>#stat</p>
+
+<p>Displays file status or inofrmation</p>
+
+<pre><code>sushree@Sushree:~/Desktop/opensourcetutorial$ stat a.txt
+File: ‘a.txt’
+Size: 0             Blocks: 0          IO Block: 4096   regular empty file
+Device: 809h/2057d  Inode: 2121285     Links: 1
+Access: (0664/-rw-rw-r--)  Uid: ( 1000/ sushree)   Gid: ( 1000/ sushree)
+Access: 2019-03-31 18:27:02.261105369 +0530
+Modify: 2019-03-31 18:27:02.261105369 +0530
+Change: 2019-03-31 18:27:02.261105369 +0530
+Birth: -
+</code></pre>
+
+<p>It includes information like the name of the file, size, number of blocks it is using, inode number, number of hard links, last modified time, last access time etc.</p>
+
+<h1 id="touch">touch</h1>
+
+<p>Touch command allows to create a blank file. In case if the file already exist it will change the access time of the file.</p>
+
+<p>SYNTAX : touch [OPTION]&hellip; FILE&hellip;</p>
+
+<p>To create an empty file</p>
+
+<pre><code>sushree@Sushree:~/Desktop/opensourcetutorial$ ls
+hello.txt
+sushree@Sushree:~/Desktop/opensourcetutorial$ touch welcome.txt
+sushree@Sushree:~/Desktop/opensourcetutorial$ ls
+hello.txt  welcome.txt
+</code></pre>
+
+<p>To <strong>create multiple files</strong> at a time, specify space separated names of the files</p>
+
+<pre><code>sushree@Sushree:~/Desktop/opensourcetutorial$ ls
+hello.txt  welcome.txt
+sushree@Sushree:~/Desktop/opensourcetutorial$ touch test.txt test1.txt test2.txtsushree@Sushree:~/Desktop/opensourcetutorial$ ls
+hello.txt  test1.txt  test2.txt  test.txt  welcome.txt
+</code></pre>
+
+<p>To create multiple files with a variety of <strong>patterns</strong></p>
+
+<pre><code>sushree@Sushree:~/Desktop/opensourcetutorial$ touch {a..c}.txt
+sushree@Sushree:~/Desktop/opensourcetutorial$ ls
+a.txt  b.txt  c.txt  hello.txt  test1.txt  test2.txt  test.txt  welcome.txt
+</code></pre>
+
+<p>To change the <strong>access time</strong></p>
+
+<pre><code>sushree@Sushree:~/Desktop/opensourcetutorial$ stat a.txt
+File: ‘a.txt’
+Size: 0             Blocks: 0          IO Block: 4096   regular empty file
+Device: 809h/2057d  Inode: 2121285     Links: 1
+Access: (0664/-rw-rw-r--)  Uid: ( 1000/ sushree)   Gid: ( 1000/ sushree)
+Access: 2019-03-31 18:27:02.261105369 +0530
+Modify: 2019-03-31 18:27:02.261105369 +0530
+Change: 2019-03-31 18:27:02.261105369 +0530
+Birth: -
+
+sushree@Sushree:~/Desktop/opensourcetutorial$ touch -a a.txt
+
+sushree@Sushree:~/Desktop/opensourcetutorial$ stat a.txt
+File: ‘a.txt’
+Size: 0             Blocks: 0          IO Block: 4096   regular empty file
+Device: 809h/2057d  Inode: 2121285     Links: 1
+Access: (0664/-rw-rw-r--)  Uid: ( 1000/ sushree)   Gid: ( 1000/ sushree)
+Access: 2019-03-31 18:33:50.857102355 +0530
+Modify: 2019-03-31 18:27:02.261105369 +0530
+Change: 2019-03-31 18:33:50.857102355 +0530
+Birth: -
+</code></pre>
+
+<p><strong>Note</strong> : the access time changes from 18:27 to 18:33 whereas the modified time still remains the same.</p>
+
+<p>To change the <strong>last modified time</strong></p>
+
+<pre><code>sushree@Sushree:~/Desktop/opensourcetutorial$ stat a.txt
+File: ‘a.txt’
+Size: 0             Blocks: 0          IO Block: 4096   regular empty file
+Device: 809h/2057d  Inode: 2121285     Links: 1
+Access: (0664/-rw-rw-r--)  Uid: ( 1000/ sushree)   Gid: ( 1000/ sushree)
+Access: 2019-03-31 18:33:50.857102355 +0530
+Modify: 2019-03-31 18:27:02.261105369 +0530
+Change: 2019-03-31 18:33:50.857102355 +0530
+Birth: -
+
+sushree@Sushree:~/Desktop/opensourcetutorial$ touch -m a.txt
+
+sushree@Sushree:~/Desktop/opensourcetutorial$ stat a.txt
+File: ‘a.txt’
+Size: 0             Blocks: 0          IO Block: 4096   regular empty file
+Device: 809h/2057d  Inode: 2121285     Links: 1
+Access: (0664/-rw-rw-r--)  Uid: ( 1000/ sushree)   Gid: ( 1000/ sushree)
+Access: 2019-03-31 18:33:50.857102355 +0530
+Modify: 2019-03-31 18:34:09.045102221 +0530
+Change: 2019-03-31 18:34:09.045102221 +0530
+Birth: -
+</code></pre>
+
+<p><strong>Note</strong> : the modified time changes from 18:27 to 18:34</p>
+
+<p>To change both the <strong>access time</strong> as well as the <strong>modified time</strong></p>
+
+<pre><code>sushree@Sushree:~/Desktop/opensourcetutorial$ stat a.txt
+File: ‘a.txt’
+Size: 0             Blocks: 0          IO Block: 4096   regular empty file
+Device: 809h/2057d  Inode: 2121285     Links: 1
+Access: (0664/-rw-rw-r--)  Uid: ( 1000/ sushree)   Gid: ( 1000/ sushree)
+Access: 2019-03-31 18:33:50.857102355 +0530
+Modify: 2019-03-31 18:34:09.045102221 +0530
+Change: 2019-03-31 18:34:09.045102221 +0530
+Birth: -
+
+sushree@Sushree:~/Desktop/opensourcetutorial$ touch -am a.txt
+
+sushree@Sushree:~/Desktop/opensourcetutorial$ stat a.txt
+File: ‘a.txt’
+Size: 0             Blocks: 0          IO Block: 4096   regular empty file
+Device: 809h/2057d  Inode: 2121285     Links: 1
+Access: (0664/-rw-rw-r--)  Uid: ( 1000/ sushree)   Gid: ( 1000/ sushree)
+Access: 2019-03-31 18:43:52.241097918 +0530
+Modify: 2019-03-31 18:43:52.241097918 +0530
+Change: 2019-03-31 18:43:52.241097918 +0530
+Birth: -
+</code></pre>
+		</div>
+		
+<div class="post__tags tags clearfix">
+	<svg class="icon icon-tag" width="16" height="16" viewBox="0 0 16 16"><path d="M16 9.5c0 .373-.24.74-.5 1l-5 5c-.275.26-.634.5-1 .5-.373 0-.74-.24-1-.5L1 8a2.853 2.853 0 0 1-.7-1C.113 6.55 0 5.973 0 5.6V1.4C0 1.034.134.669.401.401.67.134 1.034 0 1.4 0h4.2c.373 0 .95.113 1.4.3.45.187.732.432 1 .7l7.5 7.502c.26.274.5.632.5.998zM3.5 5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item"><a class="tags__link btn" href="/tags/commands/" rel="tag">Commands</a></li>
+	</ul>
+</div>
+	</article>
+</main>
+
+<div class="authorbox clearfix">
+	<figure class="authorbox__avatar">
+		<img alt="Tayyabali Sayyad avatar" src="/tayyabali2.png" class="avatar" height="90" width="90">
+	</figure>
+	<div class="authorbox__header">
+		<span class="authorbox__name">About Tayyabali Sayyad</span>
+	</div>
+	<div class="authorbox__description">
+		Tayyabali is a Open Source evangelist, Works as Assistant Professor at DBIT, Mumbai, India.
+	</div>
+</div>
+
+<nav class="post-nav flex">
+	<div class="post-nav__item post-nav__item--prev">
+		<a class="post-nav__link" href="/post/manjaraoskype/" rel="prev"><span class="post-nav__caption">«&thinsp;Previous</span><p class="post-nav__post-title">Installation of Skype on Manjaro Linux  </p></a>
+	</div>
+</nav>
+
+<section class="comments">
+	<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "www-opensourcetutorials-in" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+
+			</section>
+			<aside class="sidebar"><div class="widget-search widget">
+	<form class="widget-search__form" role="search" method="get" action="https://google.com/search">
+		<label>
+			<input class="widget-search__field" type="search" placeholder="SEARCH..." value="" name="q" aria-label="SEARCH...">
+		</label>
+		<input class="widget-search__submit" type="submit" value="Search">
+		<input type="hidden" name="sitesearch" value="https://opensourcetutorials.in" />
+	</form>
+</div><div class="widget-recent widget">
+	<h4 class="widget__title">Recent Posts</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/post/linuxcommands/"> Linux Commands Examples </a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/manjaraoskype/">Installation of Skype on Manjaro Linux  </a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/linuxsoftwares/">Must have softwares in Linux</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/rss/">RSS for the recent posts</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/linuxdesktopenvironment/">Linux Desktop Environment </a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/alternatives/">Linux softwares alternatives </a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/installationmedia/">How to make installation media ?</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/preparingforlinux/">Preparing you desktop/laptop for Linux installation</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/whylinuxinschools/">Why we need Open-source software in schools?</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/unixvslinux/">Difference between LINUX and UNIX </a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-categories widget">
+	<h4 class="widget__title">Categories</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/categories/"></a></li>
+			<li class="widget__item"><a class="widget__link" href="/categories/cheetsheets">Cheetsheets</a></li>
+			<li class="widget__item"><a class="widget__link" href="/categories/geodjango">Geodjango</a></li>
+			<li class="widget__item"><a class="widget__link" href="/categories/geoserver">Geoserver</a></li>
+			<li class="widget__item"><a class="widget__link" href="/categories/linux">Linux</a></li>
+			<li class="widget__item"><a class="widget__link" href="/categories/postgis">Postgis</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-taglist widget">
+	<h4 class="widget__title">Tags</h4>
+	<div class="widget__content">
+		<a class="widget-taglist__link widget__link btn" href="/tags/cheetsheets" title="Cheetsheets">Cheetsheets</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/commands" title="Commands">Commands</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/geodjango" title="Geodjango">Geodjango</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/geoserver" title="Geoserver">Geoserver</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/linux" title="Linux">Linux</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/postgis" title="Postgis">Postgis</a>
+	</div>
+</div>
+</aside>
+		</div>
+		<footer class="footer">
+	<div class="container">
+		<div class="footer__copyright">&copy; 2019 Open Source Tutorials. <span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span></div>
+	</div>
+</footer>
+
+	</div>
+<script>
+	var navigation = responsiveNav(".menu", {
+		navClass: "menu--collapse",
+		label: "Menu",
+	});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async></script>
+</body>
+</html>

@@ -1,19 +1,26 @@
 ---
-title: "GoeDjango Important Steps"
-date: "2019-08-06"
+title: "GoeDjango Application Example"
+date: "2019-09-06"
 description: "Geodjago "
 disable_comments: false # Optional, disable Disqus comments if true
 authorbox: true # Optional, enable authorbox for specific post
 toc: false # Optional, enable Table of Contents for specific post
 mathjax: true # Optional, enable MathJax for specific post
 categories:
-  - "Cheetsheets"
+  - "GeoDjango"
 tags:
-  - "Cheetsheets"
+  - "GeoDjango"
+
+thumbnail: "img/thumbs/postgis.png"
+
+resources: output1.png, postgis.png
+
 ---
 In this post we will learn about the basic steps required to setup geodjango
 
 <!--more-->
+
+Code repository : https://github.com/tayyabsayyad/treemapping
 
 ## Tools required
 
@@ -34,19 +41,19 @@ In this post we will learn about the basic steps required to setup geodjango
 
 1. Create a virtual Envirnment ( Install Virtualenv tool in you system if not installed)
 
-          $ python3 -m venv env
+        python3 -m venv env
 
 2. Activate the envirnment
 
-          $ source env/bin/activate
+         source env/bin/activate
 
 3. Install Django ( Install pip if not installed in system)
 
-          $ pip install django
+        pip install django
 
 4. Create Project
 
-          $ django-admin.py startproject tree
+        django-admin.py startproject tree
 
 
 4. Configure the posgreSQL database
@@ -65,13 +72,13 @@ In this post we will learn about the basic steps required to setup geodjango
 
 5. Install Required libraries
 
-        $ pip install psycopg2-binary
-        $ pip install geos
-        $ pip install pyproj
-        $ pip install geoip
+        pip install psycopg2-binary
+        pip install geos
+        pip install pyproj
+        pip install geoip
+        pip install django-leaflet
 
-    To install the postgis and geoserver refer this post  
-
+    To install the postgis and geoserver refer Post : <a href='{{<ref "postgis" >}}'>Installation of PostGIS </a>
 
 6. Add geodjango framework in the setting.py file
 
@@ -87,7 +94,7 @@ Now we will make Create the treemapping app, we will add its `model`, `migrate` 
 
 1.  Create Application as treemapping
 
-          $ python manage.py startapp shops
+        python manage.py startapp shops
 
 2. Add treemapping app into INSTALLED_APPS in setting.py
 
@@ -118,5 +125,53 @@ Now we will make Create the treemapping app, we will add its `model`, `migrate` 
 
 4. Creating Tables in the database
 
-        $ python manage.py makemigrations
-        $ python manage.py migrate
+        python manage.py makemigrations
+        python manage.py migrate
+
+
+5. Add super user to your application
+
+        python manage.py createsuperuser
+
+6. Register Admin Module on `treemapping/admin.py`
+
+        from django.contrib import admin
+        from .models import TreeData
+
+        admin.site.register(TreeData)
+
+
+By default it will use openlayer for displaying map, if you want to use the openstreetmap then use folllwoing way to register admin Module
+
+      from django.contrib.gis.admin import OSMGeoAdmin
+      from django.contrib.gis import admin
+
+      from .models import TreeData
+
+
+      @admin.register(TreeData)
+      class TreeAdmin(OSMGeoAdmin):
+          list_display = ('location', 'city')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+7. Finally run django server
+
+        python manage.py runserver
+
+
+
+    ![Example image](output1.png)
