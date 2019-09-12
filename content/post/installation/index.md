@@ -11,7 +11,7 @@ categories:
   - "Linux"
 tags:
   - "Linux"
-thumbnail: "img/postimages/package.png"
+thumbnail: "img/postimages/packages.png"
 
 ---
 
@@ -19,10 +19,11 @@ In this post, we will see installation methods used in Linux distributions
 
 <!--more-->
 
-
 When you use Linux, there are be different methods of software installation.
 Some of the methods I will try to cover in this post
 Before we learn about the package managers, let's see what they do for us
+
+![Package managers](package.png)
 
 + Package managers help us to install, uninstall Linux software from the trusted repositories
 + They also help us to fetch dependencies required to install the current package to install in a single command
@@ -31,7 +32,7 @@ Before we learn about the package managers, let's see what they do for us
 ### Using package managers
 
 
-![Package managers scale=.5](packagamanagers.png)
+![Package managers](packagamanagers.png)
 
 We have something called `Debian Package Management System` which is base for most of the Debian based Linux distributions systems.
 Under this, we use different package managers

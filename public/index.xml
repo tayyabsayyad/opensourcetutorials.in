@@ -7,10 +7,46 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Mon, 09 Sep 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 12 Sep 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://opensourcetutorials.in/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Linux alternatives to windows softwares </title>
+      <link>https://opensourcetutorials.in/post/alternatives/</link>
+      <pubDate>Thu, 12 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://opensourcetutorials.in/post/alternatives/</guid>
+      <description>&lt;p&gt;In this post we will list all the Linux softwares equaivalent to windows softwares&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Why to learn commands in Linux </title>
+      <link>https://opensourcetutorials.in/post/whycommandline/</link>
+      <pubDate>Thu, 12 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://opensourcetutorials.in/post/whycommandline/</guid>
+      <description>&lt;p&gt;In this post we discuss why you must learn command line in Linux&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title> How to get help from Linux Community ? </title>
+      <link>https://opensourcetutorials.in/post/gettinghelp/</link>
+      <pubDate>Wed, 11 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://opensourcetutorials.in/post/gettinghelp/</guid>
+      <description>&lt;p&gt;In this post we learn how to get help from various open source communities.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title> Linux Package Managers </title>
+      <link>https://opensourcetutorials.in/post/installation/</link>
+      <pubDate>Tue, 10 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://opensourcetutorials.in/post/installation/</guid>
+      <description>&lt;p&gt;In this post, we will see installation methods used in Linux distributions&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title> Linux Commands Examples </title>
@@ -109,42 +145,6 @@
       
       <guid>https://opensourcetutorials.in/cheetsheets/index/</guid>
       <description>&lt;h3 id=&#34;index-of-all-cheetsheets&#34;&gt;Index of all Cheetsheets&lt;/h3&gt;</description>
-    </item>
-    
-    <item>
-      <title>Docker Quick Start</title>
-      <link>https://opensourcetutorials.in/cheetsheets/docker_useful_commands/</link>
-      <pubDate>Tue, 25 Dec 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://opensourcetutorials.in/cheetsheets/docker_useful_commands/</guid>
-      <description>&lt;p&gt;In this post we will learn how to quickly start using docker&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Linux Desktop Environment </title>
-      <link>https://opensourcetutorials.in/post/linuxdesktopenvironment/</link>
-      <pubDate>Thu, 06 Dec 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://opensourcetutorials.in/post/linuxdesktopenvironment/</guid>
-      <description>&lt;p&gt;In this post, we will explore various Linux desktop environments&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Linux softwares alternatives </title>
-      <link>https://opensourcetutorials.in/post/alternatives/</link>
-      <pubDate>Thu, 06 Dec 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://opensourcetutorials.in/post/alternatives/</guid>
-      <description>&lt;p&gt;Linux softwares equaivalent to other softwares&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>How to make installation media ?</title>
-      <link>https://opensourcetutorials.in/post/installationmedia/</link>
-      <pubDate>Tue, 04 Dec 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://opensourcetutorials.in/post/installationmedia/</guid>
-      <description>&lt;p&gt;In this post I will explain how to make installation media ?&lt;/p&gt;</description>
     </item>
     
   </channel>

@@ -1,5 +1,5 @@
 ---
-title: "Linux softwares alternatives "
+title: "Linux alternatives to windows softwares "
 date: "2019-09-12"
 description: "Linux softwares equaivalent to windows softwares "
 disable_comments: false # Optional, disable Disqus comments if true

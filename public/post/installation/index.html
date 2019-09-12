@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title> Linux Package Managers </title>
+	<meta name="description" content="">
+	<meta name="generator" content="Hugo 0.57.2" />
+	<meta property="og:title" content=" Linux Package Managers " />
+<meta property="og:description" content="In this post, we will see installation methods used in Linux distributions" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://opensourcetutorials.in/post/installation/" />
+<meta property="article:published_time" content="2019-09-10T00:00:00+00:00" />
+<meta property="article:modified_time" content="2019-09-10T00:00:00+00:00" />
+
+	<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content=" Linux Package Managers "/>
+<meta name="twitter:description" content="In this post, we will see installation methods used in Linux distributions"/>
+
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+	<link rel="stylesheet" href="/css/style.css">
+	<script type="text/javascript" src="/js/scripts.js"></script>
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-59503205-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container">
+		<div class="logo" role="banner">
+
+				<a class="logo__link" href="/" title="Open Source Tutorials" rel="home">
+				<div class="logo__title">Open Source Tutorials</div>
+				<div class="logo__tagline">Where Open Source is Everything ! </div>
+			</a>
+
+		</div>
+	</div>
+
+	
+<nav class="menu">
+	<ul class="menu__list">
+		<li class="menu__item"><a class="menu__link" href="/post/switchlinux">SWITCH TO LINUX IN SIMPLE STEPS</a></li>
+		<li class="menu__item"><a class="menu__link" href="/cheetsheets/index/">CHEETSHEETS</a></li>
+		<li class="menu__item"><a class="menu__link" href="https://tayyabali.in">ABOUT ME</a></li>
+		<li class="menu__item"><a class="menu__link" href="/post/rss">RSS FEEDS</a></li>
+		<li class="menu__item"><a class="menu__link" href="http://eepurl.com/gcdqnH">SUBSCRIBE</a></li>
+	</ul>
+</nav>
+
+	</header>
+
+		<div class="wrapper flex">
+			<section class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title"> Linux Package Managers </h1><div class="post__meta meta">
+<svg class="icon icon-time" width="16" height="14" viewBox="0 0 16 16"><path d="m8-.0000003c-4.4 0-8 3.6-8 8 0 4.4000003 3.6 8.0000003 8 8.0000003 4.4 0 8-3.6 8-8.0000003 0-4.4-3.6-8-8-8zm0 14.4000003c-3.52 0-6.4-2.88-6.4-6.4000003 0-3.52 2.88-6.4 6.4-6.4 3.52 0 6.4 2.88 6.4 6.4 0 3.5200003-2.88 6.4000003-6.4 6.4000003zm.4-10.4000003h-1.2v4.8l4.16 2.5600003.64-1.04-3.6-2.1600003z"/></svg>
+<time class="post__meta-date meta-date" datetime="2019-09-10T00:00:00">September 10, 2019</time>
+<span class="post__meta-categories meta-categories">
+	<svg class="icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg>
+	<span class="meta-categories__list"><a class="meta-categories__link" href="/categories/linux" rel="category">Linux</a></span>
+</span></div>
+		</header>
+		<figure class="post__thumbnail">
+			<img src="/img/postimages/packages.png" alt=" Linux Package Managers ">
+		</figure><div class="content post__content clearfix">
+			<p>In this post, we will see installation methods used in Linux distributions</p>
+
+<p>When you use Linux, there are be different methods of software installation.
+Some of the methods I will try to cover in this post
+Before we learn about the package managers, let&rsquo;s see what they do for us</p>
+
+<p><img src="package.png" alt="Package managers" /></p>
+
+<ul>
+<li>Package managers help us to install, uninstall Linux software from the trusted repositories</li>
+<li>They also help us to fetch dependencies required to install the current package to install in a single command</li>
+<li>They help to standardise the locations and configuration files at a fixed location decided by the Linux distribution</li>
+</ul>
+
+<h3 id="using-package-managers">Using package managers</h3>
+
+<p><img src="packagamanagers.png" alt="Package managers" /></p>
+
+<p>We have something called <code>Debian Package Management System</code> which is base for most of the Debian based Linux distributions systems.
+Under this, we use different package managers</p>
+
+<h3 id="apt-advanced-packaging-tool">Apt (Advanced packaging tool)</h3>
+
+<p>Some of the commands and its usage are as follows</p>
+
+<table>
+<thead>
+<tr>
+<th align="left">Command</th>
+<th>Usage</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left"><code>sudo apt update</code></td>
+<td>Update package database</td>
+</tr>
+
+<tr>
+<td align="left"><code>sudo apt upgrade</code></td>
+<td>Upgrade all system packages</td>
+</tr>
+
+<tr>
+<td align="left"><code>sudo apt update &amp;&amp; &lt;br&gt;sudo apt upgrade -y</code></td>
+<td>Update and Upgrade in single command</td>
+</tr>
+
+<tr>
+<td align="left"><code>sudo apt install &lt;package_name</code></td>
+<td>Install specifid package</td>
+</tr>
+
+<tr>
+<td align="left"><code>sudo apt remove</code></td>
+<td>Remove package</td>
+</tr>
+
+<tr>
+<td align="left"><code>sudo apt purge</code></td>
+<td>Removes package including its the configuration files</td>
+</tr>
+
+<tr>
+<td align="left"><code>sudo apt search &lt;search term&gt;</code>`</td>
+<td>Search for package information in package database</td>
+</tr>
+
+<tr>
+<td align="left"><code>sudo apt show &lt;package_name&gt;</code>`</td>
+<td>Shows the contents of the package</td>
+</tr>
+
+<tr>
+<td align="left"><code>sudo apt list --upgradeable</code></td>
+<td>Shows all packages for which updates are available</td>
+</tr>
+
+<tr>
+<td align="left"><code>sudo apt list --installed</code></td>
+<td>Shows list of installed packages</td>
+</tr>
+
+<tr>
+<td align="left"><code>sudo apt autoremove</code></td>
+<td>Remove useless packages which got installed with other softwares but now not needed</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="aptitude-package-manager-this-works-similar-like-apt-package-manager">Aptitude Package Manager this works similar like apt package manager</h3>
+
+<table>
+<thead>
+<tr>
+<th align="left">Command</th>
+<th>Usage</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left"><code>aptitude install &lt;package_name&gt;</code></td>
+<td>Install <package_name></td>
+</tr>
+
+<tr>
+<td align="left"><code>aptitude search &lt;package_name&gt;</code></td>
+<td>Search <package_name></td>
+</tr>
+
+<tr>
+<td align="left"><code>aptitude search ~i</code></td>
+<td>List installed packages</td>
+</tr>
+
+<tr>
+<td align="left"><code>aptitude remove &lt;package_name&gt;</code></td>
+<td>Remove <package_name></td>
+</tr>
+
+<tr>
+<td align="left"><code>aptitude search ~D&lt;package_name&gt;</code></td>
+<td>List reverse dependencies</td>
+</tr>
+
+<tr>
+<td align="left"><code>aptitude versions &lt;package_name&gt;</code></td>
+<td>Print information on priorities for <package_name></td>
+</tr>
+
+<tr>
+<td align="left"><code>aptitude show &lt;package_name&gt;</code></td>
+<td>Show package information for <package_name></td>
+</tr>
+
+<tr>
+<td align="left"><code>aptitude source &lt;package_name&gt;</code></td>
+<td>Download <package_name>&rsquo;s sources</td>
+</tr>
+</tbody>
+</table>
+
+<ol>
+<li>Using dpkg tool</li>
+</ol>
+
+<h3 id="next-comes-rpm-red-hat-package-manager">Next comes RPM (Red Hat Package Manager)</h3>
+
+<p>Here we have YUM (Yellowdog Updater, Modified) which is now updated with DNF – Dandified Yum</p>
+
+<table>
+<thead>
+<tr>
+<th align="left">Command</th>
+<th>Usage</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left"><code>dnf install &lt;pkg&gt;</code></td>
+<td>Install package</td>
+</tr>
+
+<tr>
+<td align="left"><code>dnf install httpd-manual -y</code></td>
+<td>While doing installation it assumes Yes</td>
+</tr>
+
+<tr>
+<td align="left"><code>dnf check-update</code></td>
+<td>Check for Updates</td>
+</tr>
+
+<tr>
+<td align="left"><code>dnf update &lt;pkg&gt; -y</code></td>
+<td>Updates pkg</td>
+</tr>
+
+<tr>
+<td align="left"><code>dnf download &lt;pkg&gt;</code></td>
+<td>Download RMP package</td>
+</tr>
+
+<tr>
+<td align="left"><code>dnf install pkg.rpm</code></td>
+<td>Install local package</td>
+</tr>
+
+<tr>
+<td align="left"><code>dnf remove pkg</code></td>
+<td>Uninstall package</td>
+</tr>
+
+<tr>
+<td align="left"><code>dnf reinstall pkg -y</code></td>
+<td>Reinstall package</td>
+</tr>
+
+<tr>
+<td align="left"><code>dnf repolist</code></td>
+<td>View the repository informinstallationation</td>
+</tr>
+
+<tr>
+<td align="left"><code>dnf search pkg</code></td>
+<td>Search for specific package information</td>
+</tr>
+
+<tr>
+<td align="left"><code>dnf info pkg</code></td>
+<td>See package information</td>
+</tr>
+
+<tr>
+<td align="left"><code>dnf history</code></td>
+<td>VIew the history of the dnf commands /transcations</td>
+</tr>
+
+<tr>
+<td align="left"><code>dnf clean all</code></td>
+<td>Clear Cached  Information</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="pacman-package-manager-arch-linux">Pacman Package Manager  Arch Linux</h4>
+
+<p>pacman is used in arch based distributions like manjaro linux</p>
+
+<p><strong>Common Commands</strong></p>
+
+<table>
+<thead>
+<tr>
+<th align="left">Command</th>
+<th>Usage</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left"><code>pacman -Syu &lt;pkg&gt;</code></td>
+<td>Install (and update package list)</td>
+</tr>
+
+<tr>
+<td align="left"><code>pacman -S &lt;pkg&gt;</code></td>
+<td>Install only</td>
+</tr>
+
+<tr>
+<td align="left"><code>pacman -Rsc &lt;pkg&gt;</code></td>
+<td>Uninstall</td>
+</tr>
+
+<tr>
+<td align="left"><code>pacman -Ss &lt;keywords&gt;</code></td>
+<td>Search</td>
+</tr>
+
+<tr>
+<td align="left"><code>pacman -Syu</code></td>
+<td>Upgrade everything</td>
+</tr>
+</tbody>
+</table>
+
+<p>installation
+<strong>Query</strong></p>
+
+<table>
+<thead>
+<tr>
+<th align="left">Command</th>
+<th>Usage</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left"><code>pacman -Qe</code></td>
+<td>List explictly-installed packages</td>
+</tr>
+
+<tr>
+<td align="left"><code>pacman -Ql</code></td>
+<td><pkg>   What files does this package have?</td>
+</tr>
+
+<tr>
+<td align="left"><code>pacman -Qii</code></td>
+<td><pkg>  List information on package</td>
+</tr>
+
+<tr>
+<td align="left"><code>pacman -Qo</code></td>
+<td><file>  Who owns this file?</td>
+</tr>
+
+<tr>
+<td align="left"><code>pacman -Qs</code></td>
+<td><query>    Search installed packages for keywords</td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>Orphans</strong></p>
+
+<table>
+<thead>
+<tr>
+<th align="left">Command</th>
+<th>Usage</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left"><code>pacman -Qdt</code></td>
+<td>List unneeded packages</td>
+</tr>
+
+<tr>
+<td align="left"><code>pacman -Rns $(pacman -Qdtq)</code></td>
+<td>Uninstall unneeded packages</td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>Other</strong></p>
+
+<table>
+<thead>
+<tr>
+<th align="left">Command</th>
+<th>Usage</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left"><code>pactree &lt;pkg&gt;</code></td>
+<td>What does pkg depend on?</td>
+</tr>
+
+<tr>
+<td align="left"><code>pactree -r &lt;pkg&gt;</code></td>
+<td>What depends on pkg?</td>
+</tr>
+</tbody>
+</table>
+
+<p>If you dont like to work with commands, there are also the Graphical Package Managers as shown below</p>
+
+<h3 id="ubuntu-software-center">Ubuntu Software Center</h3>
+
+<p><img src="Ubuntu-Software-Center.png" alt="Ubuntu-Software-Center" /></p>
+
+<h3 id="fedora-software-center">Fedora Software center</h3>
+
+<p><img src="fedora.png" alt="Fedora Software Center" /></p>
+
+<h3 id="synaptic-package-manager">Synaptic Package Manager</h3>
+
+<p><img src="synaptic-install.png" alt="Synaptic Package Manager" /></p>
+
+<h3 id="pamac-manager">Pamac Manager</h3>
+
+<p><img src="pamac-manager1.png" alt="Pamcmanager" /></p>
+		</div>
+		
+<div class="post__tags tags clearfix">
+	<svg class="icon icon-tag" width="16" height="16" viewBox="0 0 16 16"><path d="M16 9.5c0 .373-.24.74-.5 1l-5 5c-.275.26-.634.5-1 .5-.373 0-.74-.24-1-.5L1 8a2.853 2.853 0 0 1-.7-1C.113 6.55 0 5.973 0 5.6V1.4C0 1.034.134.669.401.401.67.134 1.034 0 1.4 0h4.2c.373 0 .95.113 1.4.3.45.187.732.432 1 .7l7.5 7.502c.26.274.5.632.5.998zM3.5 5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item"><a class="tags__link btn" href="/tags/linux/" rel="tag">Linux</a></li>
+	</ul>
+</div>
+	</article>
+</main>
+
+<div class="authorbox clearfix">
+	<figure class="authorbox__avatar">
+		<img alt="Tayyabali Sayyad avatar" src="/tayyabali2.png" class="avatar" height="90" width="90">
+	</figure>
+	<div class="authorbox__header">
+		<span class="authorbox__name">About Tayyabali Sayyad</span>
+	</div>
+	<div class="authorbox__description">
+		Tayyabali is a Open Source evangelist, Works as Assistant Professor at DBIT, Mumbai, India.
+	</div>
+</div>
+
+<nav class="post-nav flex">
+	<div class="post-nav__item post-nav__item--prev">
+		<a class="post-nav__link" href="/post/linuxcommands/" rel="prev"><span class="post-nav__caption">«&thinsp;Previous</span><p class="post-nav__post-title"> Linux Commands Examples </p></a>
+	</div>
+	<div class="post-nav__item post-nav__item--next">
+		<a class="post-nav__link" href="/post/gettinghelp/" rel="next"><span class="post-nav__caption">Next&thinsp;»</span><p class="post-nav__post-title"> How to get help from Linux Community ? </p></a>
+	</div>
+</nav>
+
+<section class="comments">
+	<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "www-opensourcetutorials-in" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+
+			</section>
+			<aside class="sidebar"><div class="widget-search widget">
+	<form class="widget-search__form" role="search" method="get" action="https://google.com/search">
+		<label>
+			<input class="widget-search__field" type="search" placeholder="SEARCH..." value="" name="q" aria-label="SEARCH...">
+		</label>
+		<input class="widget-search__submit" type="submit" value="Search">
+		<input type="hidden" name="sitesearch" value="https://opensourcetutorials.in" />
+	</form>
+</div><div class="widget-recent widget">
+	<h4 class="widget__title">Recent Posts</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/post/alternatives/">Linux alternatives to windows softwares </a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/whycommandline/">Why to learn commands in Linux </a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/gettinghelp/"> How to get help from Linux Community ? </a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/installation/"> Linux Package Managers </a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/linuxcommands/"> Linux Commands Examples </a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/manjaraoskype/">Installation of Skype on Manjaro Linux  </a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/linuxsoftwares/">Must have softwares in Linux</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/rss/">RSS for the recent posts</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/linuxdesktopenvironment/">Linux Desktop Environment </a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/installationmedia/">How to make installation media ?</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-categories widget">
+	<h4 class="widget__title">Categories</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/categories/"></a></li>
+			<li class="widget__item"><a class="widget__link" href="/categories/cheetsheets">Cheetsheets</a></li>
+			<li class="widget__item"><a class="widget__link" href="/categories/geodjango">Geodjango</a></li>
+			<li class="widget__item"><a class="widget__link" href="/categories/geoserver">Geoserver</a></li>
+			<li class="widget__item"><a class="widget__link" href="/categories/linux">Linux</a></li>
+			<li class="widget__item"><a class="widget__link" href="/categories/postgis">Postgis</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-taglist widget">
+	<h4 class="widget__title">Tags</h4>
+	<div class="widget__content">
+		<a class="widget-taglist__link widget__link btn" href="/tags/applications" title="Applications">Applications</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/cheetsheets" title="Cheetsheets">Cheetsheets</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/commands" title="Commands">Commands</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/geodjango" title="Geodjango">Geodjango</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/geoserver" title="Geoserver">Geoserver</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/linux" title="Linux">Linux</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/postgis" title="Postgis">Postgis</a>
+	</div>
+</div>
+</aside>
+		</div>
+		<footer class="footer">
+	<div class="container">
+		<div class="footer__copyright">&copy; 2019 Open Source Tutorials. <span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span></div>
+	</div>
+</footer>
+
+	</div>
+<script>
+	var navigation = responsiveNav(".menu", {
+		navClass: "menu--collapse",
+		label: "Menu",
+	});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async></script>
+</body>
+</html>

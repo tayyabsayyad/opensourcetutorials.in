@@ -2,14 +2,91 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://opensourcetutorials.in/post/linuxcommands/</loc>
-    <lastmod>2019-09-09T00:00:00+00:00</lastmod>
+    <loc>https://opensourcetutorials.in/tags/applications/</loc>
+    <lastmod>2019-09-12T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://opensourcetutorials.in/categories/</loc>
+    <lastmod>2019-09-12T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://opensourcetutorials.in/tags/commands/</loc>
+    <lastmod>2019-09-12T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://opensourcetutorials.in/categories/linux/</loc>
+    <lastmod>2019-09-12T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://opensourcetutorials.in/post/alternatives/</loc>
+    <lastmod>2019-09-12T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://opensourcetutorials.in/</loc>
+    <lastmod>2019-09-12T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://opensourcetutorials.in/post/</loc>
+    <lastmod>2019-09-12T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://opensourcetutorials.in/tags/</loc>
+    <lastmod>2019-09-12T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://opensourcetutorials.in/post/whycommandline/</loc>
+    <lastmod>2019-09-12T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://opensourcetutorials.in/post/gettinghelp/</loc>
+    <lastmod>2019-09-11T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://opensourcetutorials.in/tags/linux/</loc>
+    <lastmod>2019-09-11T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://opensourcetutorials.in/post/installation/</loc>
+    <lastmod>2019-09-10T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://opensourcetutorials.in/post/linuxcommands/</loc>
     <lastmod>2019-09-09T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -23,49 +100,7 @@
   </url>
   
   <url>
-    <loc>https://opensourcetutorials.in/tags/commands/</loc>
-    <lastmod>2019-09-09T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://opensourcetutorials.in/</loc>
-    <lastmod>2019-09-09T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://opensourcetutorials.in/post/</loc>
-    <lastmod>2019-09-09T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://opensourcetutorials.in/tags/</loc>
-    <lastmod>2019-09-09T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://opensourcetutorials.in/post/manjaraoskype/</loc>
-    <lastmod>2019-09-08T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://opensourcetutorials.in/tags/linux/</loc>
-    <lastmod>2019-09-08T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://opensourcetutorials.in/categories/linux/</loc>
     <lastmod>2019-09-08T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -100,14 +135,14 @@
   </url>
   
   <url>
-    <loc>https://opensourcetutorials.in/categories/geoserver/</loc>
+    <loc>https://opensourcetutorials.in/tags/geoserver/</loc>
     <lastmod>2019-09-06T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://opensourcetutorials.in/tags/geoserver/</loc>
+    <loc>https://opensourcetutorials.in/categories/geoserver/</loc>
     <lastmod>2019-09-06T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -206,13 +241,6 @@
   
   <url>
     <loc>https://opensourcetutorials.in/post/linuxdesktopenvironment/</loc>
-    <lastmod>2018-12-06T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://opensourcetutorials.in/post/alternatives/</loc>
     <lastmod>2018-12-06T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>

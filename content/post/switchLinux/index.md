@@ -25,13 +25,7 @@ Switch to Linux with easy steps
 | 1  | <a href='{{<ref "whytoswitch" >}}'>Understand why you need to migrate or adopt to Linux? </a>|
 | 2  | <a href='{{<ref "advantages_linux" >}}'>What are the advantages of the Linux compared to other operating systems ? </a>|
 | 3  | <a href = '{{<ref "UnixvsLinux" >}}'>What difference between Linux and Unix ? </a>|
-| 4  | <a href = '{{<ref "LinuxVsWindows" >}}'> How Linux is diffIn this post, we will see installation methods used in Linux distributions
-When you use Linux, there are be different methods of software installation.
-Some of the methods I will try to cover in this post
-Before we learn about the package managers, let's see what they do for us
-Package managers help us to install, uninstall Linux software from the trusted repositories
-They also help us to fetch dependencies required to install the current package to install in a single command
-They help to standardise the locations and configuration files at a fixed location decided by the Linux distributionerent from Windows ? </a> |
+| 4  | <a href = '{{<ref "LinuxVsWindows" >}}'> How Linux is different from Windows </a> |
 | 5  | <a href = '{{<ref "whatislinuxdistro" >}}'> What are the flavours of Linux distributions like Ubuntu, Fedora, Elementry OS etc. ? </a> |
 | 6  | <a href='{{<ref "linuxFlavors" >}}'> How to decide which flavours to use ? </a> |
 | 7  | <a href='{{<ref "preparingforLinux" >}}'> Preparing you desktop/laptop for Linux installation ? |
@@ -42,13 +36,13 @@ They help to standardise the locations and configuration files at a fixed locati
 | 12 | <a href='{{<ref "alternatives" >}}'>Various alternatives softwares in Linux </a> |
 | 13 | <a href='{{<ref "linuxsoftwares">}}'> Installation of necessary softwares in Linux</a>   |
 | 14 | <a href='{{<ref "installation" >}}'> Review of various ways of software installation in Linux </a>|
-| 15 | Importance of command line in Linux   |
+| 15 | <a href='{{<ref "whycommandline">}}'> Importance of command line in Linux </a>  |
 | 16 | File System of Linux Operating System |
-| 17 | Useful commands in Linux with examples   |
+| 17 | <a href='{{<ref "linuxcommands" >}}'> Useful commands in Linux with examples </a>  |
 | 18 | Introduction to shell script, Why you need to learn shell script ?   |
 | 19 | <a href='{{<ref "whyLinuxinSchools" >}}'> How Linux is good for students and schools ? </a>  |
 | 20 | Various advanced tools in Linux for daily tasks   |
-| 21 | How to get help from community   |
+| 21 | <a href='{{<ref "gettinghelp" >}}'> How to get help from community </a> |
 | 22 | Open Source Apps for Students  |
 | 23 | Open Source Apps for Teachers    |
 | 24 | Open Source Apps for Productivity |
