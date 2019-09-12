@@ -114,14 +114,7 @@
   </url>
   
   <url>
-    <loc>https://opensourcetutorials.in/gis/postgis/postgis/</loc>
-    <lastmod>2019-09-06T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://opensourcetutorials.in/tags/geodjango/</loc>
+    <loc>https://opensourcetutorials.in/post/gis/postgis/postgis/</loc>
     <lastmod>2019-09-06T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -129,6 +122,13 @@
   
   <url>
     <loc>https://opensourcetutorials.in/categories/geodjango/</loc>
+    <lastmod>2019-09-06T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://opensourcetutorials.in/tags/geodjango/</loc>
     <lastmod>2019-09-06T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -149,14 +149,7 @@
   </url>
   
   <url>
-    <loc>https://opensourcetutorials.in/gis/</loc>
-    <lastmod>2019-09-06T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://opensourcetutorials.in/gis/geodjango/</loc>
+    <loc>https://opensourcetutorials.in/post/gis/geodjango/</loc>
     <lastmod>2019-09-06T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -177,14 +170,7 @@
   </url>
   
   <url>
-    <loc>https://opensourcetutorials.in/cheetsheets/ansible/</loc>
-    <lastmod>2018-12-31T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://opensourcetutorials.in/cheetsheets/</loc>
+    <loc>https://opensourcetutorials.in/post/cheetsheets/ansible/</loc>
     <lastmod>2018-12-31T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -205,35 +191,35 @@
   </url>
   
   <url>
-    <loc>https://opensourcetutorials.in/cheetsheets/screen_useful_commands/</loc>
+    <loc>https://opensourcetutorials.in/post/cheetsheets/screen_useful_commands/</loc>
     <lastmod>2018-12-29T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://opensourcetutorials.in/cheetsheets/gitcheetsheet/</loc>
+    <loc>https://opensourcetutorials.in/post/cheetsheets/gitcheetsheet/</loc>
     <lastmod>2018-12-25T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://opensourcetutorials.in/cheetsheets/linux_useful_commands/</loc>
+    <loc>https://opensourcetutorials.in/post/cheetsheets/linux_useful_commands/</loc>
     <lastmod>2018-12-25T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://opensourcetutorials.in/cheetsheets/index/</loc>
+    <loc>https://opensourcetutorials.in/post/cheetsheets/index/</loc>
     <lastmod>2018-12-25T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://opensourcetutorials.in/cheetsheets/docker_useful_commands/</loc>
+    <loc>https://opensourcetutorials.in/post/cheetsheets/docker_useful_commands/</loc>
     <lastmod>2018-12-25T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>

@@ -76,6 +76,33 @@
     </item>
     
     <item>
+      <title> Installation of Postgis and Geoserver on Ubuntu 18.04 </title>
+      <link>https://opensourcetutorials.in/post/gis/postgis/postgis/</link>
+      <pubDate>Fri, 06 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://opensourcetutorials.in/post/gis/postgis/postgis/</guid>
+      <description>&lt;p&gt;In this post we will learn install the geoserver and postgis on ubuntu 18.04&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>GoeDjango Application Example</title>
+      <link>https://opensourcetutorials.in/post/gis/geodjango/</link>
+      <pubDate>Fri, 06 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://opensourcetutorials.in/post/gis/geodjango/</guid>
+      <description>&lt;p&gt;In this post we will learn about the basic steps required to setup geodjango&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Ansible</title>
+      <link>https://opensourcetutorials.in/post/cheetsheets/ansible/</link>
+      <pubDate>Mon, 31 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://opensourcetutorials.in/post/cheetsheets/ansible/</guid>
+      <description>&lt;p&gt;Ansible is powerful open source IT automation tool. It allows you to manage IT infrasture and apps deployment easily.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>RSS for the recent posts</title>
       <link>https://opensourcetutorials.in/post/rss/</link>
       <pubDate>Sat, 29 Dec 2018 00:00:00 +0000</pubDate>
@@ -85,66 +112,39 @@
     </item>
     
     <item>
-      <title>Linux Desktop Environment </title>
-      <link>https://opensourcetutorials.in/post/linuxdesktopenvironment/</link>
-      <pubDate>Thu, 06 Dec 2018 00:00:00 +0000</pubDate>
+      <title>Screen : Terminal Multiplexer</title>
+      <link>https://opensourcetutorials.in/post/cheetsheets/screen_useful_commands/</link>
+      <pubDate>Sat, 29 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://opensourcetutorials.in/post/linuxdesktopenvironment/</guid>
-      <description>&lt;p&gt;In this post, we will explore various Linux desktop environments&lt;/p&gt;</description>
+      <guid>https://opensourcetutorials.in/post/cheetsheets/screen_useful_commands/</guid>
+      <description>&lt;p&gt;Cheetsheet for Screen which is Terminal Multiplexer, Allows you to use multiple screens.&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>How to make installation media ?</title>
-      <link>https://opensourcetutorials.in/post/installationmedia/</link>
-      <pubDate>Tue, 04 Dec 2018 00:00:00 +0000</pubDate>
+      <title> Git Quick Start</title>
+      <link>https://opensourcetutorials.in/post/cheetsheets/gitcheetsheet/</link>
+      <pubDate>Tue, 25 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://opensourcetutorials.in/post/installationmedia/</guid>
-      <description>&lt;p&gt;In this post I will explain how to make installation media ?&lt;/p&gt;</description>
+      <guid>https://opensourcetutorials.in/post/cheetsheets/gitcheetsheet/</guid>
+      <description>&lt;p&gt;In this post we will learn basic commands to get started with git and github&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>Preparing you desktop/laptop for Linux installation</title>
-      <link>https://opensourcetutorials.in/post/preparingforlinux/</link>
-      <pubDate>Tue, 04 Dec 2018 00:00:00 +0000</pubDate>
+      <title> Linux Commands</title>
+      <link>https://opensourcetutorials.in/post/cheetsheets/linux_useful_commands/</link>
+      <pubDate>Tue, 25 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://opensourcetutorials.in/post/preparingforlinux/</guid>
-      <description>&lt;p&gt;In this post I will explain step by step how to prepare you PC or Laptop for any Linux distributions.&lt;/p&gt;</description>
+      <guid>https://opensourcetutorials.in/post/cheetsheets/linux_useful_commands/</guid>
+      <description>&lt;p&gt;In this post we will see all linux commands which you find find useful in daily activites.&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>Why we need Open-source software in schools?</title>
-      <link>https://opensourcetutorials.in/post/whylinuxinschools/</link>
-      <pubDate>Tue, 04 Dec 2018 00:00:00 +0000</pubDate>
+      <title>Cheetsheets</title>
+      <link>https://opensourcetutorials.in/post/cheetsheets/index/</link>
+      <pubDate>Tue, 25 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://opensourcetutorials.in/post/whylinuxinschools/</guid>
-      <description>&lt;p&gt;In this post we will see why we need to adpot Linux and FOSS in schools.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Difference between LINUX and UNIX </title>
-      <link>https://opensourcetutorials.in/post/unixvslinux/</link>
-      <pubDate>Mon, 03 Dec 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://opensourcetutorials.in/post/unixvslinux/</guid>
-      <description>&lt;p&gt;We will discuss in detail the difference between Linux and Unix&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>How Linux is different from Windows</title>
-      <link>https://opensourcetutorials.in/post/linuxvswindows/</link>
-      <pubDate>Mon, 03 Dec 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://opensourcetutorials.in/post/linuxvswindows/</guid>
-      <description>&lt;p&gt;We will discuss in detail diferences bewteen Linux and Windows&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title> Advantages of Open Source Softwares</title>
-      <link>https://opensourcetutorials.in/post/advantages_linux/</link>
-      <pubDate>Sat, 01 Dec 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://opensourcetutorials.in/post/advantages_linux/</guid>
-      <description>&lt;p&gt;We will discuss the advantages of the Linux and Open source Softwares&lt;/p&gt;</description>
+      <guid>https://opensourcetutorials.in/post/cheetsheets/index/</guid>
+      <description>&lt;h3 id=&#34;index-of-all-cheetsheets&#34;&gt;Index of all Cheetsheets&lt;/h3&gt;</description>
     </item>
     
   </channel>

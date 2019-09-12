@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title> Linux Commands</title>
+	<meta name="description" content="">
+	<meta name="generator" content="Hugo 0.57.2" />
+	<meta property="og:title" content=" Linux Commands" />
+<meta property="og:description" content="In this post we will see all linux commands which you find find useful in daily activites." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://opensourcetutorials.in/post/cheetsheets/linux_useful_commands/" />
+<meta property="article:published_time" content="2018-12-25T00:00:00+00:00" />
+<meta property="article:modified_time" content="2018-12-25T00:00:00+00:00" />
+
+	<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content=" Linux Commands"/>
+<meta name="twitter:description" content="In this post we will see all linux commands which you find find useful in daily activites."/>
+
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+	<link rel="stylesheet" href="/css/style.css">
+	<script type="text/javascript" src="/js/scripts.js"></script>
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-59503205-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container">
+		<div class="logo" role="banner">
+
+				<a class="logo__link" href="/" title="Open Source Tutorials" rel="home">
+				<div class="logo__title">Open Source Tutorials</div>
+				<div class="logo__tagline">Where Open Source is Everything ! </div>
+			</a>
+
+		</div>
+	</div>
+
+	
+<nav class="menu">
+	<ul class="menu__list">
+		<li class="menu__item"><a class="menu__link" href="/post/switchlinux">SWITCH TO LINUX IN SIMPLE STEPS</a></li>
+		<li class="menu__item"><a class="menu__link" href="/cheetsheets/index/">CHEETSHEETS</a></li>
+		<li class="menu__item"><a class="menu__link" href="https://tayyabali.in">ABOUT ME</a></li>
+		<li class="menu__item"><a class="menu__link" href="/post/rss">RSS FEEDS</a></li>
+		<li class="menu__item"><a class="menu__link" href="http://eepurl.com/gcdqnH">SUBSCRIBE</a></li>
+	</ul>
+</nav>
+
+	</header>
+
+		<div class="wrapper flex">
+			<section class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title"> Linux Commands</h1><div class="post__meta meta">
+<svg class="icon icon-time" width="16" height="14" viewBox="0 0 16 16"><path d="m8-.0000003c-4.4 0-8 3.6-8 8 0 4.4000003 3.6 8.0000003 8 8.0000003 4.4 0 8-3.6 8-8.0000003 0-4.4-3.6-8-8-8zm0 14.4000003c-3.52 0-6.4-2.88-6.4-6.4000003 0-3.52 2.88-6.4 6.4-6.4 3.52 0 6.4 2.88 6.4 6.4 0 3.5200003-2.88 6.4000003-6.4 6.4000003zm.4-10.4000003h-1.2v4.8l4.16 2.5600003.64-1.04-3.6-2.1600003z"/></svg>
+<time class="post__meta-date meta-date" datetime="2018-12-25T00:00:00">December 25, 2018</time>
+<span class="post__meta-categories meta-categories">
+	<svg class="icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg>
+	<span class="meta-categories__list"><a class="meta-categories__link" href="/categories/cheetsheets" rel="category">Cheetsheets</a></span>
+</span></div>
+		</header>
+		<figure class="post__thumbnail">
+			<img src="/img/thumbs/linuxcommands.png" alt=" Linux Commands">
+		</figure><div class="content post__content clearfix">
+			<p>In this post we will see all linux commands which you find find useful in daily activites.</p>
+
+<table>
+<thead>
+<tr>
+<th align="center">Sr. No</th>
+<th align="center">Command</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="center">1.</td>
+<td align="center"><code>ls</code></td>
+<td>Displays a list of all files in the current terminal directory</td>
+</tr>
+
+<tr>
+<td align="center">2.</td>
+<td align="center"><code>cd</code></td>
+<td>Change the current terminal directory to specified</td>
+</tr>
+
+<tr>
+<td align="center">3.</td>
+<td align="center"><code>clear</code></td>
+<td>Clear the terminal screen</td>
+</tr>
+
+<tr>
+<td align="center">4.</td>
+<td align="center"><code>!</code></td>
+<td>Repeat previous command</td>
+</tr>
+
+<tr>
+<td align="center">5.</td>
+<td align="center"><code>history</code></td>
+<td>Display history of the commands executed</td>
+</tr>
+
+<tr>
+<td align="center">6.</td>
+<td align="center"><code>man</code></td>
+<td>Display mannual pages for help</td>
+</tr>
+
+<tr>
+<td align="center">7.</td>
+<td align="center"><code>pwd</code></td>
+<td>Prints the working directory, absolute path</td>
+</tr>
+
+<tr>
+<td align="center">8.</td>
+<td align="center"><code>whatis</code></td>
+<td>Displays the brief descriptions of commands</td>
+</tr>
+
+<tr>
+<td align="center">9.</td>
+<td align="center"><code>cat</code></td>
+<td>Concatenation : used to create/ display and concatenate text file</td>
+</tr>
+
+<tr>
+<td align="center">10.</td>
+<td align="center"><code>chmod</code></td>
+<td>Used to change the permissions of files or directories</td>
+</tr>
+
+<tr>
+<td align="center">11.</td>
+<td align="center"><code>chown</code></td>
+<td>Used to change file owner and group</td>
+</tr>
+
+<tr>
+<td align="center">12.</td>
+<td align="center"><code>cp</code></td>
+<td>Used to copy a file from one location to another location</td>
+</tr>
+
+<tr>
+<td align="center">13.</td>
+<td align="center"><code>find</code></td>
+<td>To search and locate list of files and directories based on conditions</td>
+</tr>
+
+<tr>
+<td align="center">14.</td>
+<td align="center"><code>grep</code></td>
+<td>Filter searche a file for a particular pattern of characters, and displays all lines that contain that pattern</td>
+</tr>
+
+<tr>
+<td align="center">15.</td>
+<td align="center"><code>locate</code></td>
+<td>Locate command gives you the the name of the matched files along with their complete or absolute paths</td>
+</tr>
+
+<tr>
+<td align="center">16.</td>
+<td align="center"><code>mkdir</code></td>
+<td>To create directories</td>
+</tr>
+
+<tr>
+<td align="center">17.</td>
+<td align="center"><code>rmdir</code></td>
+<td>To remove directories</td>
+</tr>
+
+<tr>
+<td align="center">18.</td>
+<td align="center"><code>mv</code></td>
+<td>Used to rename or move files and directories</td>
+</tr>
+
+<tr>
+<td align="center">19.</td>
+<td align="center"><code>vi</code></td>
+<td>Text editor</td>
+</tr>
+
+<tr>
+<td align="center">20.</td>
+<td align="center"><code>vim</code></td>
+<td>Improved version of vi editor</td>
+</tr>
+
+<tr>
+<td align="center">21.</td>
+<td align="center"><code>nano</code></td>
+<td>Text editor</td>
+</tr>
+
+<tr>
+<td align="center">22.</td>
+<td align="center"><code>rename</code></td>
+<td>To rename files and directories</td>
+</tr>
+
+<tr>
+<td align="center">23.</td>
+<td align="center"><code>rm</code></td>
+<td>To remove files</td>
+</tr>
+
+<tr>
+<td align="center">24.</td>
+<td align="center"><code>touch</code></td>
+<td>To create empty files</td>
+</tr>
+
+<tr>
+<td align="center">25.</td>
+<td align="center"><code>wget</code></td>
+<td>To download files from internet</td>
+</tr>
+
+<tr>
+<td align="center">26.</td>
+<td align="center"><code>tar</code></td>
+<td>Tape Archive: Used to create archives</td>
+</tr>
+
+<tr>
+<td align="center">27.</td>
+<td align="center"><code>zip</code></td>
+<td>To create zip files</td>
+</tr>
+
+<tr>
+<td align="center">28.</td>
+<td align="center"><code>apt</code></td>
+<td>Advanced Package Tool Used to install,search, update packages in debian based systems</td>
+</tr>
+
+<tr>
+<td align="center">29.</td>
+<td align="center"><code>bg</code></td>
+<td>Restart a stopped background process</td>
+</tr>
+
+<tr>
+<td align="center">30.</td>
+<td align="center"><code>fg</code></td>
+<td>Bring a background process to the foreground</td>
+</tr>
+
+<tr>
+<td align="center">31.</td>
+<td align="center"><code>df</code></td>
+<td>Summary of available and used disk space usage of file system</td>
+</tr>
+
+<tr>
+<td align="center">32.</td>
+<td align="center"><code>free</code></td>
+<td>Displays the total amount of free space available along with the swap memory in the system</td>
+</tr>
+
+<tr>
+<td align="center">33.</td>
+<td align="center"><code>ip</code></td>
+<td>To assign an address to a network interface and/or configure network interface</td>
+</tr>
+
+<tr>
+<td align="center">34.</td>
+<td align="center"><code>jobs</code></td>
+<td>Display status of jobs which are running in background</td>
+</tr>
+
+<tr>
+<td align="center">35.</td>
+<td align="center"><code>kill/killall</code></td>
+<td>Used to teminate jobs/processes running</td>
+</tr>
+
+<tr>
+<td align="center">36.</td>
+<td align="center"><code>sudo</code></td>
+<td>Allows a user with proper permissions to execute a command as another user, such as the superuser.</td>
+</tr>
+
+<tr>
+<td align="center">37.</td>
+<td align="center"><code>gksudo</code></td>
+<td>Run graphical commands that need root</td>
+</tr>
+
+<tr>
+<td align="center">38.</td>
+<td align="center"><code>top</code></td>
+<td>Displays tasks managed by kernel in real-time</td>
+</tr>
+
+<tr>
+<td align="center">39.</td>
+<td align="center"><code>uname</code></td>
+<td>Unix Name : Print detailed information about the machine name, Operating System and Kernel.</td>
+</tr>
+
+<tr>
+<td align="center">40.</td>
+<td align="center"><code>uptime</code></td>
+<td>Displays how much time the system is running</td>
+</tr>
+
+<tr>
+<td align="center">41.</td>
+<td align="center"><code>whereis</code></td>
+<td>To find the source, binary, and manuals sections for specified commands or files</td>
+</tr>
+
+<tr>
+<td align="center">42.</td>
+<td align="center"><code>whoami</code></td>
+<td>Display owner of the current login session to standard output</td>
+</tr>
+
+<tr>
+<td align="center">43.</td>
+<td align="center"><code>lsblk</code></td>
+<td>List Block Devices, print block devices by their assigned name</td>
+</tr>
+
+<tr>
+<td align="center">44.</td>
+<td align="center"><code>md5sum</code></td>
+<td>Compute abd Check MD5 Message Digest</td>
+</tr>
+
+<tr>
+<td align="center">45.</td>
+<td align="center"><code>dd</code></td>
+<td>Convert and Copy a file, can be used for making disks bootable</td>
+</tr>
+
+<tr>
+<td align="center">46.</td>
+<td align="center"><code>cal</code></td>
+<td>To displays calendar of the present month or any year or month</td>
+</tr>
+
+<tr>
+<td align="center">47.</td>
+<td align="center"><code>crontab</code></td>
+<td>Used to schedule jobs</td>
+</tr>
+
+<tr>
+<td align="center">48.</td>
+<td align="center"><code>less</code></td>
+<td>Used to display files small portion quickly</td>
+</tr>
+
+<tr>
+<td align="center">49.</td>
+<td align="center">`more</td>
+<td>Similar to less command but here it also displays the percentage of remaining file</td>
+</tr>
+
+<tr>
+<td align="center">50.</td>
+<td align="center">`sort</td>
+<td>Sorting lines of text files ascending or descending</td>
+</tr>
+
+<tr>
+<td align="center">51.</td>
+<td align="center"><code>ssh</code></td>
+<td>Used to login into remote host</td>
+</tr>
+
+<tr>
+<td align="center">52.</td>
+<td align="center"><code>ftp</code></td>
+<td>File transfer protocol used for remote file transfers</td>
+</tr>
+
+<tr>
+<td align="center">53.</td>
+<td align="center"><code>last</code></td>
+<td>To see user’s activity in the system</td>
+</tr>
+
+<tr>
+<td align="center">54.</td>
+<td align="center"><code>awk</code></td>
+<td>Used to do advance text filters</td>
+</tr>
+
+<tr>
+<td align="center">55.</td>
+<td align="center"><code>passwd</code></td>
+<td>Used to set password for a user</td>
+</tr>
+
+<tr>
+<td align="center">56.</td>
+<td align="center"><code>ifconfig</code></td>
+<td>Used to see and set ip of a system</td>
+</tr>
+
+<tr>
+<td align="center">57.</td>
+<td align="center"><code>curl</code></td>
+<td>Advance command line tool for data transfer using various protocols</td>
+</tr>
+
+<tr>
+<td align="center">58.</td>
+<td align="center"><code>sed</code></td>
+<td>Stream editor for text files</td>
+</tr>
+
+<tr>
+<td align="center">59.</td>
+<td align="center"><code>ping</code></td>
+<td>Used to check network connectivity between computers</td>
+</tr>
+
+<tr>
+<td align="center">60.</td>
+<td align="center"><code>dig</code></td>
+<td>Used to get DNS related information about the url/ip etc</td>
+</tr>
+</tbody>
+</table>
+		</div>
+		
+<div class="post__tags tags clearfix">
+	<svg class="icon icon-tag" width="16" height="16" viewBox="0 0 16 16"><path d="M16 9.5c0 .373-.24.74-.5 1l-5 5c-.275.26-.634.5-1 .5-.373 0-.74-.24-1-.5L1 8a2.853 2.853 0 0 1-.7-1C.113 6.55 0 5.973 0 5.6V1.4C0 1.034.134.669.401.401.67.134 1.034 0 1.4 0h4.2c.373 0 .95.113 1.4.3.45.187.732.432 1 .7l7.5 7.502c.26.274.5.632.5.998zM3.5 5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item"><a class="tags__link btn" href="/tags/commands/" rel="tag">Commands</a></li>
+	</ul>
+</div>
+	</article>
+</main>
+
+<div class="authorbox clearfix">
+	<figure class="authorbox__avatar">
+		<img alt="Tayyabali Sayyad avatar" src="/tayyabali2.png" class="avatar" height="90" width="90">
+	</figure>
+	<div class="authorbox__header">
+		<span class="authorbox__name">About Tayyabali Sayyad</span>
+	</div>
+	<div class="authorbox__description">
+		Tayyabali is a Open Source evangelist, Works as Assistant Professor at DBIT, Mumbai, India.
+	</div>
+</div>
+
+<nav class="post-nav flex">
+	<div class="post-nav__item post-nav__item--prev">
+		<a class="post-nav__link" href="/post/cheetsheets/index/" rel="prev"><span class="post-nav__caption">«&thinsp;Previous</span><p class="post-nav__post-title">Cheetsheets</p></a>
+	</div>
+	<div class="post-nav__item post-nav__item--next">
+		<a class="post-nav__link" href="/post/cheetsheets/gitcheetsheet/" rel="next"><span class="post-nav__caption">Next&thinsp;»</span><p class="post-nav__post-title"> Git Quick Start</p></a>
+	</div>
+</nav>
+
+<section class="comments">
+	<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "www-opensourcetutorials-in" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+
+			</section>
+			<aside class="sidebar"><div class="widget-search widget">
+	<form class="widget-search__form" role="search" method="get" action="https://google.com/search">
+		<label>
+			<input class="widget-search__field" type="search" placeholder="SEARCH..." value="" name="q" aria-label="SEARCH...">
+		</label>
+		<input class="widget-search__submit" type="submit" value="Search">
+		<input type="hidden" name="sitesearch" value="https://opensourcetutorials.in" />
+	</form>
+</div><div class="widget-recent widget">
+	<h4 class="widget__title">Recent Posts</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/post/alternatives/">Linux alternatives to windows softwares </a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/whycommandline/">Why to learn commands in Linux </a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/gettinghelp/"> How to get help from Linux Community ? </a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/installation/"> Linux Package Managers </a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/linuxcommands/"> Linux Commands Examples </a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/manjaraoskype/">Installation of Skype on Manjaro Linux  </a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/linuxsoftwares/">Must have softwares in Linux</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/gis/postgis/postgis/"> Installation of Postgis and Geoserver on Ubuntu 18.04 </a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/gis/geodjango/">GoeDjango Application Example</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/cheetsheets/ansible/">Ansible</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-categories widget">
+	<h4 class="widget__title">Categories</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/categories/"></a></li>
+			<li class="widget__item"><a class="widget__link" href="/categories/cheetsheets">Cheetsheets</a></li>
+			<li class="widget__item"><a class="widget__link" href="/categories/geodjango">Geodjango</a></li>
+			<li class="widget__item"><a class="widget__link" href="/categories/geoserver">Geoserver</a></li>
+			<li class="widget__item"><a class="widget__link" href="/categories/linux">Linux</a></li>
+			<li class="widget__item"><a class="widget__link" href="/categories/postgis">Postgis</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-taglist widget">
+	<h4 class="widget__title">Tags</h4>
+	<div class="widget__content">
+		<a class="widget-taglist__link widget__link btn" href="/tags/applications" title="Applications">Applications</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/cheetsheets" title="Cheetsheets">Cheetsheets</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/commands" title="Commands">Commands</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/geodjango" title="Geodjango">Geodjango</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/geoserver" title="Geoserver">Geoserver</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/linux" title="Linux">Linux</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/postgis" title="Postgis">Postgis</a>
+	</div>
+</div>
+</aside>
+		</div>
+		<footer class="footer">
+	<div class="container">
+		<div class="footer__copyright">&copy; 2019 Open Source Tutorials. <span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span></div>
+	</div>
+</footer>
+
+	</div>
+<script>
+	var navigation = responsiveNav(".menu", {
+		navClass: "menu--collapse",
+		label: "Menu",
+	});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async></script>
+</body>
+</html>

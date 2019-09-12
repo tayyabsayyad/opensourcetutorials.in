@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Ansible</title>
+	<meta name="description" content="Ansible ">
+	<meta name="generator" content="Hugo 0.57.2" />
+	<meta property="og:title" content="Ansible" />
+<meta property="og:description" content="Ansible " />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://opensourcetutorials.in/post/cheetsheets/ansible/" />
+<meta property="article:published_time" content="2018-12-31T00:00:00+00:00" />
+<meta property="article:modified_time" content="2018-12-31T00:00:00+00:00" />
+
+	<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Ansible"/>
+<meta name="twitter:description" content="Ansible "/>
+
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+	<link rel="stylesheet" href="/css/style.css">
+	<script type="text/javascript" src="/js/scripts.js"></script>
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-59503205-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container">
+		<div class="logo" role="banner">
+
+				<a class="logo__link" href="/" title="Open Source Tutorials" rel="home">
+				<div class="logo__title">Open Source Tutorials</div>
+				<div class="logo__tagline">Where Open Source is Everything ! </div>
+			</a>
+
+		</div>
+	</div>
+
+	
+<nav class="menu">
+	<ul class="menu__list">
+		<li class="menu__item"><a class="menu__link" href="/post/switchlinux">SWITCH TO LINUX IN SIMPLE STEPS</a></li>
+		<li class="menu__item"><a class="menu__link" href="/cheetsheets/index/">CHEETSHEETS</a></li>
+		<li class="menu__item"><a class="menu__link" href="https://tayyabali.in">ABOUT ME</a></li>
+		<li class="menu__item"><a class="menu__link" href="/post/rss">RSS FEEDS</a></li>
+		<li class="menu__item"><a class="menu__link" href="http://eepurl.com/gcdqnH">SUBSCRIBE</a></li>
+	</ul>
+</nav>
+
+	</header>
+
+		<div class="wrapper flex">
+			<section class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Ansible</h1><div class="post__meta meta">
+<svg class="icon icon-time" width="16" height="14" viewBox="0 0 16 16"><path d="m8-.0000003c-4.4 0-8 3.6-8 8 0 4.4000003 3.6 8.0000003 8 8.0000003 4.4 0 8-3.6 8-8.0000003 0-4.4-3.6-8-8-8zm0 14.4000003c-3.52 0-6.4-2.88-6.4-6.4000003 0-3.52 2.88-6.4 6.4-6.4 3.52 0 6.4 2.88 6.4 6.4 0 3.5200003-2.88 6.4000003-6.4 6.4000003zm.4-10.4000003h-1.2v4.8l4.16 2.5600003.64-1.04-3.6-2.1600003z"/></svg>
+<time class="post__meta-date meta-date" datetime="2018-12-31T00:00:00">December 31, 2018</time>
+<span class="post__meta-categories meta-categories">
+	<svg class="icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg>
+	<span class="meta-categories__list"><a class="meta-categories__link" href="/categories/cheetsheets" rel="category">Cheetsheets</a></span>
+</span></div>
+		</header>
+		<figure class="post__thumbnail">
+			<img src="/img/thumbs/ansible.png" alt="Ansible">
+		</figure><div class="content post__content clearfix">
+			<p>Ansible is powerful open source IT automation tool. It allows you to manage IT infrasture and apps deployment easily.</p>
+
+<h2 id="step-1-installing-ansible">Step 1 - Installing Ansible</h2>
+
+<p>To configure the PPA on your machine and install ansible run these commands:</p>
+
+<pre><code>   $ sudo apt-get update
+   $ sudo apt-get install software-properties-common
+   $ sudo apt-add-repository ppa:ansible/ansible
+   $ sudo apt-get update
+   $ sudo apt-get install ansible
+</code></pre>
+
+<p>Check ansible install version</p>
+
+<p>$ ansible &ndash;version</p>
+
+<h2 id="step-2-configure-hosts">Step 2 - Configure Hosts</h2>
+
+<p>All host information is kept in the hosts files as follows</p>
+
+<p>$ sudo gedit /etc/ansible/hosts</p>
+
+<p>$ sudo gedit /etc/ansible/ansible.cfg</p>
+
+<p>Remove comment of inventory and the sudo_user
+   Its default but better to change and make it apply</p>
+
+<p>$ cat /etc/ansible/hosts</p>
+
+<p>$ sudo mv hosts hosts.original</p>
+
+<p>$ sudo gedit hosts</p>
+
+<p>Create entries of the hosts which you are going to manage</p>
+
+<pre><code>     [local]
+     localhost
+
+     [itlab6]
+     10.0.1.198
+     10.0.1.197
+</code></pre>
+
+<p>Note : Better to use Vi than gedit</p>
+
+<p>Ansible Default configuration
+       $ cat /etc/ansible/ansible.cfg</p>
+
+<pre><code>   Keep as it is or you can uncomment following and save
+   #inventory      = /etc/ansible/hosts
+   #sudo_user      = root
+</code></pre>
+
+<hr />
+
+<h2 id="step-3-servers-setup">Step 3 - Servers Setup</h2>
+
+<p>### Install ssh on the server and your host also</p>
+
+<p>$ sudo apt install ssh</p>
+
+<p>Check from your computer to server you can connect using the ssh</p>
+
+<p>$ ssh dbit@10.0.1.198</p>
+
+<p>This will ask username and password</p>
+
+<h3 id="this-is-not-necessary-to-just-for-additional-information">This is not necessary to just for additional information</h3>
+
+<h3 id="if-you-want-to-enable-root-login-on-over-ssh-then-follow-following-commands">If you want to enable root login on over ssh then follow following commands</h3>
+
+<p># gedit /etc/ssh/sshd_config</p>
+
+<p>Change the line &ldquo;PermitRootLogin&rdquo; to &ldquo;yes&rdquo;</p>
+
+<p># service sshd restart</p>
+
+<p>$ ssh root@192.168.1.101</p>
+
+<p>You will be able to connect to the server using root username</p>
+
+<h3 id="create-ansible-user-with-sudo-permissions">Create ansible user with sudo permissions</h3>
+
+<p>On the server where you will be configuring you need to have a user with sudo permissions and authentication method must not need password. i.e use ssh keys</p>
+
+<p># sudo adduser ansible
+   # sudo usermod -aG sudo ansible</p>
+
+<h3 id="setup-ssh-keys">Setup ssh keys</h3>
+
+<pre><code> On the OUR computer AND WITH ANSIBLE USER ( Create if not not available )
+ from where we will be managing ansible
+</code></pre>
+
+<p>Swith to the user using following command</p>
+
+<pre><code> $ su ansible
+</code></pre>
+
+<p>Then start commands</p>
+
+<pre><code> $ ssh-keygen
+   accept all default options
+
+ $ cd /home/ansible/.ssh/
+  you can see all keys here at this place
+
+  Copy the Public Key on server where we created ansible user
+
+  $ ssh-copy-id ansible@192.168.1.101
+  Input password
+
+ $ ssh-copy-id tayyabali@localhost
+ $ ssh-copy-id ansible@localhost
+ $ ssh-copy-id ansible@10.0.1.198
+ $ ssh-copy-id ansible@10.0.1.197
+
+ Now try
+
+ $ ssh ansible@192.168.1.198
+ $ ssh localhost
+
+ You will be logged in without password
+</code></pre>
+
+<h3 id="disable-password-authentication-recommended-not-necessary-now">Disable Password Authentication (Recommended) not necessary now</h3>
+
+<pre><code> On Server (Where we have ansible user):
+ Now oce you have configured the key based login, now you can disable the password based auth
+
+ $ sudo vi /etc/ssh/sshd_config
+
+ Change follwoing parameter to no as shown below
+
+     PasswordAuthentication no
+
+ $ sudo systemctl reload sshd
+</code></pre>
+
+<h3 id="set-up-a-basic-firewall">Set Up a Basic Firewall</h3>
+
+<p>$ sudo ufw app list
+   $ sudo ufw allow OpenSSH
+   $ sudo ufw enable
+   $ sudo ufw status</p>
+
+<p>Now lets configure ansible user to run commands as a root on the remote machine</p>
+
+<p>$ sudo visudo</p>
+
+<p>add following below the User privilege section, just below the root
+   ansible  ALL=(ALL) NOPASSWD: ALL</p>
+
+<p>CTRL + O  &mdash;-&gt; Enter to Save  and CTRL + X</p>
+
+<p>and then check if its ok
+   $ sudo visudo -c</p>
+
+<p>Check if you can be root without the password</p>
+
+<p>$ su ansible -</p>
+
+<hr />
+
+<p><code>Explore the documentation of the ansible.com</code></p>
+
+<h2 id="running-ansible-commands">Running Ansible Commands</h2>
+
+<p>Make sure you are anisible user Also you have configured ansible user on remote hosts with ssh keys login and sudo commands permissions</p>
+
+<p>Check nodes present in the inventory by using folowing command</p>
+
+<pre><code>$ cat /etc/ansible/hosts
+</code></pre>
+
+<h2 id="to-ping-all-hosts">To ping all hosts</h2>
+
+<pre><code>$ ansible all -m ping
+
+-m Use following module
+ping is a module
+</code></pre>
+
+<h2 id="to-list-all-files-on-the-nodes">To list all files on the nodes</h2>
+
+<pre><code>$ ansible all -a &quot;ls -al /home/ansible&quot;
+</code></pre>
+
+<h2 id="to-open-syslog-file">To open syslog file</h2>
+
+<pre><code>$ ansible all -a &quot;cat /var/log/syslog&quot;
+</code></pre>
+
+<h2 id="copy-files-to-remote-machines">Copy files to remote machines</h2>
+
+<p>On My computer</p>
+
+<p>touch test.txt
+Enter some text</p>
+
+<p>$ ansible all -m copy -a &ldquo;src=test.txt dest=/tmp/test.txt&rdquo;</p>
+
+<h2 id="install-packages">Install packages</h2>
+
+<p>$ ansible ubuntu -m apt -a &ldquo;name=elinks state=latest&rdquo;</p>
+
+<p>Whats the difference</p>
+
+<p>$ ansible ubuntu -m apt -a &ldquo;name=elinks state=present&rdquo;</p>
+
+<p>Will it run ?</p>
+
+<pre><code>$ ansible ubuntu -s -m apt -a &quot;name=elinks state=present&quot;
+</code></pre>
+
+<p>-s is become super user and then install</p>
+
+<pre><code>$ ansible ubuntu -s -m apt -a &quot;name=elinks state=absent&quot;
+</code></pre>
+
+<p>Above command will remove the package</p>
+
+<p>Lets create a user with the user module</p>
+
+<pre><code>$ ansible centos -s -m user -a &quot;name=test&quot;
+</code></pre>
+
+<p>Check test user on the server , see its home directory</p>
+
+<pre><code>$ ansible centos -s -m user -a &quot;name=test state=abset&quot;
+</code></pre>
+
+<p>Check User has gone</p>
+
+<pre><code>$ cat /etc/passwd | grep test
+
+Assignment install, upgrade ubunutu
+install vlc, install kazam
+</code></pre>
+
+<h2 id="playbook-structure">Playbook Structure</h2>
+
+<p>In the ansible user
+      $ mkdir ansible</p>
+
+<p>Use following command to Check the playbook syntex</p>
+
+<pre><code>$ ansible-playbook name.yaml
+</code></pre>
+
+<p>Execute the following Playbook</p>
+
+<p>From the URL  :</p>
+
+<pre><code>    https://github.com/ansible/ansible-examples
+</code></pre>
+
+<p>Execute and Explain the Structure of the playbook</p>
+
+<h2 id="gathering-the-facts">Gathering the facts</h2>
+
+<h4 id="observe-the-output">Observe the output</h4>
+
+<pre><code>    $ ansible centos -m setup
+</code></pre>
+
+<h4 id="you-can-do-grep-also">You can do grep also</h4>
+
+<pre><code>      $ ansible centos -m setup | grep ipv4
+
+      $ ansible localhost -m setup -a 'filter=*ipv4*'
+</code></pre>
+
+<h4 id="to-get-the-facts-in-to-the-directory-and-in-separate-files">To get the facts in to the directory and in separate files</h4>
+
+<pre><code>      $ ansible all -m setup -m --tree facts
+      $ cd facts
+      $ ls
+</code></pre>
+
+<h4 id="install-httpd-on-ubuntu">Install httpd on ubuntu</h4>
+
+<pre><code>      --- # This is a structure example to install httpd on ubuntu
+
+      - hosts: ubuntu
+        remote_user: ansible
+        become: yes
+        become_method: sudo
+        connection: ssh
+        gather_factcs: yes
+        vars:
+          userName:myuser
+        tasks:
+        - name: Install HTTPD server on ubunutu server
+          apt: name:apache2 state:latest
+          notify:
+          - startservice
+        handlers:
+         - name : startservice
+           service: name:apache2 state:restarted
+
+
+           ---
+
+           - hosts: ubuntu # hosts to be configured
+
+           sudo: yes # sudo permissions
+
+           tasks:
+
+           - name: update
+
+           apt: update_cache=yes
+
+           - name: install apache2
+
+           apt: name=apache2 state=present
+
+           - name: restart apache2
+
+           service: name=apache2 state=restarted
+
+           - debug: msg=&quot;apache has been installed&quot;
+
+           ...
+</code></pre>
+		</div>
+		
+<div class="post__tags tags clearfix">
+	<svg class="icon icon-tag" width="16" height="16" viewBox="0 0 16 16"><path d="M16 9.5c0 .373-.24.74-.5 1l-5 5c-.275.26-.634.5-1 .5-.373 0-.74-.24-1-.5L1 8a2.853 2.853 0 0 1-.7-1C.113 6.55 0 5.973 0 5.6V1.4C0 1.034.134.669.401.401.67.134 1.034 0 1.4 0h4.2c.373 0 .95.113 1.4.3.45.187.732.432 1 .7l7.5 7.502c.26.274.5.632.5.998zM3.5 5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item"><a class="tags__link btn" href="/tags/cheetsheets/" rel="tag">Cheetsheets</a></li>
+	</ul>
+</div>
+	</article>
+</main>
+
+<div class="authorbox clearfix">
+	<figure class="authorbox__avatar">
+		<img alt="Tayyabali Sayyad avatar" src="/tayyabali2.png" class="avatar" height="90" width="90">
+	</figure>
+	<div class="authorbox__header">
+		<span class="authorbox__name">About Tayyabali Sayyad</span>
+	</div>
+	<div class="authorbox__description">
+		Tayyabali is a Open Source evangelist, Works as Assistant Professor at DBIT, Mumbai, India.
+	</div>
+</div>
+
+<nav class="post-nav flex">
+	<div class="post-nav__item post-nav__item--prev">
+		<a class="post-nav__link" href="/post/rss/" rel="prev"><span class="post-nav__caption">«&thinsp;Previous</span><p class="post-nav__post-title">RSS for the recent posts</p></a>
+	</div>
+	<div class="post-nav__item post-nav__item--next">
+		<a class="post-nav__link" href="/post/gis/geodjango/" rel="next"><span class="post-nav__caption">Next&thinsp;»</span><p class="post-nav__post-title">GoeDjango Application Example</p></a>
+	</div>
+</nav>
+
+<section class="comments">
+	<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "www-opensourcetutorials-in" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+
+			</section>
+			<aside class="sidebar"><div class="widget-search widget">
+	<form class="widget-search__form" role="search" method="get" action="https://google.com/search">
+		<label>
+			<input class="widget-search__field" type="search" placeholder="SEARCH..." value="" name="q" aria-label="SEARCH...">
+		</label>
+		<input class="widget-search__submit" type="submit" value="Search">
+		<input type="hidden" name="sitesearch" value="https://opensourcetutorials.in" />
+	</form>
+</div><div class="widget-recent widget">
+	<h4 class="widget__title">Recent Posts</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/post/alternatives/">Linux alternatives to windows softwares </a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/whycommandline/">Why to learn commands in Linux </a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/gettinghelp/"> How to get help from Linux Community ? </a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/installation/"> Linux Package Managers </a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/linuxcommands/"> Linux Commands Examples </a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/manjaraoskype/">Installation of Skype on Manjaro Linux  </a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/linuxsoftwares/">Must have softwares in Linux</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/gis/postgis/postgis/"> Installation of Postgis and Geoserver on Ubuntu 18.04 </a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/gis/geodjango/">GoeDjango Application Example</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/cheetsheets/ansible/">Ansible</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-categories widget">
+	<h4 class="widget__title">Categories</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/categories/"></a></li>
+			<li class="widget__item"><a class="widget__link" href="/categories/cheetsheets">Cheetsheets</a></li>
+			<li class="widget__item"><a class="widget__link" href="/categories/geodjango">Geodjango</a></li>
+			<li class="widget__item"><a class="widget__link" href="/categories/geoserver">Geoserver</a></li>
+			<li class="widget__item"><a class="widget__link" href="/categories/linux">Linux</a></li>
+			<li class="widget__item"><a class="widget__link" href="/categories/postgis">Postgis</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-taglist widget">
+	<h4 class="widget__title">Tags</h4>
+	<div class="widget__content">
+		<a class="widget-taglist__link widget__link btn" href="/tags/applications" title="Applications">Applications</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/cheetsheets" title="Cheetsheets">Cheetsheets</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/commands" title="Commands">Commands</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/geodjango" title="Geodjango">Geodjango</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/geoserver" title="Geoserver">Geoserver</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/linux" title="Linux">Linux</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/postgis" title="Postgis">Postgis</a>
+	</div>
+</div>
+</aside>
+		</div>
+		<footer class="footer">
+	<div class="container">
+		<div class="footer__copyright">&copy; 2019 Open Source Tutorials. <span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span></div>
+	</div>
+</footer>
+
+	</div>
+<script>
+	var navigation = responsiveNav(".menu", {
+		navClass: "menu--collapse",
+		label: "Menu",
+	});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async></script>
+</body>
+</html>
