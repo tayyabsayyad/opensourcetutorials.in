@@ -194,17 +194,17 @@ Examine the output
 
 <p>Docker will pull the latest version of image</p>
 
-<pre><code>  $ docker pull hello-world
+<pre><code>$ docker pull hello-world
 </code></pre>
 
 <p>Check the image using docker images command</p>
 
-<pre><code>  $ docker images
+<pre><code>$ docker images
 </code></pre>
 
 <p>Run the docker using docker run command, Its always good to specify the tag</p>
 
-<pre><code>  $ docker run hello-world:latest
+<pre><code>$ docker run hello-world:latest
 </code></pre>
 
 <p>You can also run the docker image using its ID which you can get from the docker images output</p>
@@ -214,46 +214,46 @@ Examine the output
 
 <h4 id="lets-pull-some-useful-image-from-hub">Lets pull some useful image from hub</h4>
 
-<pre><code>      $ docker images
+<pre><code>$ docker images
 </code></pre>
 
 <p>All below command get the same image</p>
 
-<pre><code>      $ docker pull centos:centos7
-      $ docker pull centos:latest
-      $ docker pull centos
+<pre><code>$ docker pull centos:centos7
+$ docker pull centos:latest
+$ docker pull centos
 </code></pre>
 
 <p>Following will pull the centos6 image</p>
 
-<pre><code>      $ docker pull centos:centos6
+<pre><code>$ docker pull centos:centos6
 </code></pre>
 
 <p>Lets pull some of the ubuntu images, Below command will pull ubuntu 16.04</p>
 
-<pre><code>      $ docker pull ubuntu:latest
+<pre><code>$ docker pull ubuntu:latest
 </code></pre>
 
 <p>Below command will pull ubuntu 17.10</p>
 
-<pre><code>      $ docker pull ubuntu:artful
+<pre><code>$ docker pull ubuntu:artful
 </code></pre>
 
 <h4 id="lets-pull-nginx">Lets pull nginx</h4>
 
-<pre><code>      $ docker pull nginx:latest
+<pre><code>$ docker pull nginx:latest
 </code></pre>
 
 <h4 id="getting-information-from-the-docker">Getting information from the docker</h4>
 
-<pre><code>      $ docker inspect nginx:latest
-      $ docker inspect ubuntu:artful
-      $ docker inspect centos:centos7
+<pre><code>$ docker inspect nginx:latest
+$ docker inspect ubuntu:artful
+$ docker inspect centos:centos7
 </code></pre>
 
 <p>You can also give the ID for inspection</p>
 
-<pre><code>              $ docker inspect 275d79972a86
+<pre><code>$ docker inspect 275d79972a86
 </code></pre>
 
 <p>Observe the details given in the output</p>
@@ -262,182 +262,188 @@ Examine the output
 
 <p>We have lots of base images</p>
 
-<pre><code>      $ docker images
-      $ docker run hello-world
+<pre><code>$ docker images
+$ docker run hello-world
 </code></pre>
 
 <h3 id="lets-pull-docker-whalesay-image-which-is-built-for-study-of-docker">Lets pull docker/whalesay image which is built for study of docker</h3>
 
-<pre><code>      $ docker search docker-whale
-      $ docker pull docker/whalesay
-      $ docker run docker/whalesay cowsay hello
-      $ docker run docker/whalesay cowsay I AM DOCKER
+<pre><code>$ docker search docker-whale
+$ docker pull docker/whalesay
+$ docker run docker/whalesay cowsay hello
+$ docker run docker/whalesay cowsay I AM DOCKER
 </code></pre>
 
 <p>This container has cowsay application which displays hello</p>
 
 <h2 id="how-to-know-what-all-containers-are-running-on-our-system">How to know what all containers are running on our system</h2>
 
-<pre><code>                $ docker ps
+<pre><code>$ docker ps
 </code></pre>
 
 <p>Why output is nothing ? Containers run and stop.</p>
 
 <h2 id="get-the-list-of-containers-which-are-stopped-and-i-have-run">Get the list of containers which are stopped and I have run</h2>
 
-<pre><code>                  $ docker ps -a
+<pre><code>  $ docker ps -a
 
-                  - Each container has unique ID
-                  - Command shows what executed when it started
-                  - NAMEs which are used to refer
+  - Each container has unique ID
+  - Command shows what executed when it started
+  - NAMEs which are used to refer
 
-                  $ docker inspect hungry_booth
+  $ docker inspect hungry_booth
 
               If docker is running then you can see ip address etc.
 </code></pre>
 
 <h2 id="docker-network-interface">Docker Network Interface</h2>
 
-<pre><code>                  $ ifconfig
-                      docker0:
-                      flags=4099&lt;UP,BROADCAST,MULTICAST&gt;  mtu 1500
-                      inet 172.17.0.1  netmask 255.255.0.0  broadcast 172.17.255.255
-                      inet6 fe80::42:b7ff:fee2:978e  prefixlen 64  scopeid 0x20&lt;link&gt;
-                      ether 02:42:b7:e2:97:8e  txqueuelen 0  (Ethernet)
-                      RX packets 0  bytes 0 (0.0 B)
-                      RX errors 0  dropped 0  overruns 0  frame 0
-                      TX packets 55  bytes 4903 (4.9 KB)
-                      TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+<pre><code>  $ ifconfig
+      docker0:
+      flags=4099&lt;UP,BROADCAST,MULTICAST&gt;  mtu 1500
+      inet 172.17.0.1  netmask 255.255.0.0  broadcast 172.17.255.255
+      inet6 fe80::42:b7ff:fee2:978e  prefixlen 64  scopeid 0x20&lt;link&gt;
+      ether 02:42:b7:e2:97:8e  txqueuelen 0  (Ethernet)
+      RX packets 0  bytes 0 (0.0 B)
+      RX errors 0  dropped 0  overruns 0  frame 0
+      TX packets 55  bytes 4903 (4.9 KB)
+      TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
 
-                See the range of ip address which docker is going to assign to containers when they are running
+      See the range of ip address which docker is going to assign to containers when they are running
 
-                **We are not going to see how to configure the network of the docker interfaces**
+      **We are not going to see how to configure the network of the docker interfaces**
 </code></pre>
 
 <h2 id="lets-start-container-and-then-inspect">Lets start container and then inspect</h2>
 
-<pre><code>                    $ docker run -it centos:latest /bin/bash
-                        - run : run the container
-                        - i   : interactively
-                        - t   : connect it to terminal or tty
-                        - run centos latest
-                        - run /bin/bash command
+<pre><code>$ docker run -it centos:latest /bin/bash
+                    - run : run the container
+                    - i   : interactively
+                    - t   : connect it to terminal or tty
+                    - run centos latest
+                    - run /bin/bash command
 
-              Run following command in the container
+  Run following command in the container
 
-                      $ whoami
+  $ whoami
 
-              Now open another terminal and run following command It will show you the container is running
+  Now open another terminal and run following command It will show you the container is running
 
-                      $ docker ps
-                      $ docker inspect goofy_easley
+  $ docker ps
+  $ docker inspect goofy_easley
 
-              To come out of the centos container
+  To come out of the centos container
 
-                    [root@d0756568442e /]# exit
+  [root@d0756568442e /]# exit
 
-              Exit terminate the container, now you can chech following command
+  Exit terminate the container, now you can chech following command
 
-                  $ docker ps
-                  $ docker ps -a
+  $ docker ps
+  $ docker ps -a
 
-              Why it existed ? Its because the command we run is now terminiated so container
+ Why it existed ? Its because the command we run is now terminiated so container
 </code></pre>
 
 <h3 id="to-run-container-in-the-backgroud-use-d-option">To run container in the backgroud use -d option</h3>
 
-<pre><code>                  $ docker run -d centos:latest /bin/bash
+<pre><code>    $ docker run -d centos:latest /bin/bash
 
-                  Here command executed and finished
+    Here command executed and finished
 </code></pre>
 
 <h3 id="lets-run-the-nginx-in-the-background-mode">Lets run the nginx in the background mode</h3>
 
-<pre><code>                  $ docker run -d nginx:latest
-                  $ docker ps
-              Now here the container is running in the backgroud. It continues to run.
+<pre><code>    $ docker run -d nginx:latest
+    $ docker ps
 
-              Now Lets inspect and find the ip address of the container which is running
+Now here the container is running in the backgroud. It continues to run.
 
-                  $ docker inspect focused_swirles
-                  $ ping 172.17.0.2
+Now Lets inspect and find the ip address of the container which is running
 
-              We are able to ping because the container is running
+    $ docker inspect focused_swirles
+    $ ping 172.17.0.2
 
-                  $ docker ps
-                  also tell us that nginx has port 80
+We are able to ping because the container is running
 
-                  So open the browser and put 172.17.0.2 you can also use elinks terminal based browaser to check the nginx webpage
+    $ docker ps
+    also tell us that nginx has port 80
 
-                  You can install elinks as follows
+    So open the browser and put 172.17.0.2 you can also use elinks terminal based browaser to check the nginx webpage
 
-                  $ sudo apt install elinks
-                  $ elinks http://172.17.0.2
+    You can install elinks as follows
 
-              Use q to exit
+    $ sudo apt install elinks
+    $ elinks http://172.17.0.2
+
+    Use q to exit
 </code></pre>
 
 <h3 id="to-stop-nginx-container">To stop nginx container</h3>
 
-<pre><code>                  $ docker stop focused_swirles
+<pre><code>    $ docker stop focused_swirles
 </code></pre>
 
 <h2 id="to-start-docker-with-name-start-2nd-instance-of-nginx-image">To start docker with name, start 2nd instance of nginx image</h2>
 
-<pre><code>                  $ docker run -d --name=MyWeb1 nginx:latest
-                  $ docker ps
+<pre><code>    $ docker run -d --name=MyWeb1 nginx:latest
+    $ docker ps
 
-                  $ docker inspect MyWeb1
-                  $ docker stop MyWeb1
+    $ docker inspect MyWeb1
+    $ docker stop MyWeb1
 
-              Ip address is from dhcp of docker interface, we we run another container it will get next ip from ip pool.
+Ip address is from dhcp of docker interface, we we run another container it will get next ip from ip pool.
 </code></pre>
 
-<p>### To start container again
-                      $ docker container start MyWeb1</p>
+<h3 id="to-start-container-again">To start container again</h3>
+
+<pre><code>    $ docker container start MyWeb1
+</code></pre>
 
 <p>## Container Lifecycle</p>
 
-<p>Lets have a look at all images we have</p>
+<pre><code>Lets have a look at all images we have
 
-<pre><code>                      $ docker images
+$ docker images
 
-                  Lets see whether we are running any Container
+Lets see whether we are running any Container
 
-                      $ docker ps
+$ docker ps
 
-                  Lets see history of the Containers we run
+Lets see history of the Containers we run
 
-                      $ docker ps -a
+$ docker ps -a
 </code></pre>
 
-<p>## Lifecycle of Container
-                          $ docker run -d &ndash;name=LifeCycle1 nginx:latest
-                          $ docker ps
-                          $ ping 172.17.0.2</p>
+<p>## Lifecycle of Container</p>
 
-<pre><code>                      Container is running, its ip must be 172.17.0.2
+<pre><code>$ docker run -d --name=LifeCycle1 nginx:latest
+$ docker ps
+$ ping 172.17.0.2
 </code></pre>
+
+<p>Container is running, its ip must be 172.17.0.2</p>
 
 <h2 id="attach-to-the-container">Attach to the Container</h2>
 
-<pre><code>                      $ docker attach Lifecycle1
+<pre><code>$docker attach Lifecycle1
 
-                      you are attached to the process and not the coommand prompt
+You are attached to the process and not the coommand prompt
 
-                      Now if you put CTL + C then you will close the Container
+Now if you put CTL + C then you will close the Container
 
-                      $ docker ps
+$ docker ps
 </code></pre>
 
-<p>## Restart Container
-                          $ docker restart Lifecycle1
-                          $ docker start Lifecycle1
-                          $ docker ps</p>
+<p>## Restart Container</p>
+
+<pre><code>$ docker restart Lifecycle1
+$ docker start Lifecycle1
+$ docker ps
+</code></pre>
 
 <h2 id="run-command-in-the-container-with-out-affecting-the-container-process">Run command in the Container with out affecting the Container process</h2>
 
-<pre><code>  $ docker exec -it LifeCycle1 /bin/bash
+<pre><code>$ docker exec -it LifeCycle1 /bin/bash
                         - exec execute command
                         - -i interactively
                         - attach to the tty / terminal
@@ -450,43 +456,42 @@ Examine the output
 
 <h2 id="docker-stop">Docker Stop</h2>
 
-<pre><code>    $ docker stop LifeCycle1
+<pre><code>  $ docker stop LifeCycle1
 </code></pre>
 
 <h2 id="docker-restart-or-start">Docker Restart or start</h2>
 
-<pre><code>    $ docker restart LifeCycle1
-    $ docker ps
+<pre><code>$ docker restart LifeCycle1
+$ docker ps
 
-    ## Image and Container Management
+  ## Image and Container Management
 
-    ### How to deal with images and containers
+  ### How to deal with images and containers
 
-        $ docker images
+$ docker images
 
-    ### Delete image which is not used
-        $ docker rmi centos:centos6
+### Delete image which is not used
+    $ docker rmi centos:centos6
 
-    ### Delete the image which is being used
-        $ docker rmi hello-world
+### Delete the image which is being used
+    $ docker rmi hello-world
 
-        This must give error, you can force but its better to first delete the Container
+    This must give error, you can force but its better to first delete the Container
 
-        $ docker rm Container-Name
-        $ docker rm Container-ID Container-ID
-        $ docker rm fd61930cb2b9
+    $ docker rm Container-Name
+    $ docker rm Container-ID Container-ID
+    $ docker rm fd61930cb2b9
 
-
-        By force you can delete image
-        $ docker rmi -f hello-world
+    By force you can delete image
+    $ docker rmi -f hello-world
 </code></pre>
 
 <p><strong>If you remove images, you will be able to run the containers</strong></p>
 
 <h3 id="to-stop-all-non-running-container-delete">To stop all non-running Container delete</h3>
 
-<pre><code>        $ docker ps -a -q
-        $ docker rm `docker ps -a -q`
+<pre><code>    $ docker ps -a -q
+    $ docker rm `docker ps -a -q`
 </code></pre>
 
 <h2 id="redirection-ports-and-volumes">Redirection - Ports and Volumes</h2>
@@ -518,27 +523,27 @@ $elinks localhost
 
 <p>Lets stop the container</p>
 
-<pre><code>      $ docker stop stupefied_ramanujan
+<pre><code>  $ docker stop stupefied_ramanujan
 </code></pre>
 
 <p>and also lets remove the container</p>
 
-<pre><code>      $ docker rm `docker ps -a -q`
+<pre><code>  $ docker rm `docker ps -a -q`
 </code></pre>
 
 <p>Above will remove all containers</p>
 
 <h2 id="port-redirection">Port redirection</h2>
 
-<pre><code>      $ docker images
-      $ docker run -d --name=WebServer2 -P nginx:latest
+<pre><code>  $ docker images
+  $ docker run -d --name=WebServer2 -P nginx:latest
 </code></pre>
 
 <p>-P makes forawarding 32768 to 65000 range</p>
 
 <p>Now You can connect to the container with two ways but lets see the port it is picked for binding</p>
 
-<pre><code>      $ docker ps
+<pre><code>  $ docker ps
 </code></pre>
 
 <p>In my case port 32768 is picked upby container</p>
@@ -554,14 +559,14 @@ $ elinks <a href="http://localhost:32768">http://localhost:32768</a></p>
 
 <h2 id="to-know-which-port-is-redirected-you-can-also-use-follwing-command">To know which port is redirected you can also use follwing command</h2>
 
-<pre><code>  $ docker port WebServer2 $CONTAINERPORT
+<pre><code>$ docker port WebServer2 $CONTAINERPORT
 </code></pre>
 
 <p>To run bind a specific port like following 8090 we use -p option</p>
 
-<pre><code>  $ docker run -d -p 8090:80 --name=MyWebServer3 nginx:latest
+<pre><code>$ docker run -d -p 8090:80 --name=MyWebServer3 nginx:latest
 
-  $ docker ps
+$ docker ps
 </code></pre>
 
 <p>Check port which is getting redirected</p>
@@ -580,197 +585,199 @@ $ elinks <a href="http://localhost:32768">http://localhost:32768</a></p>
 </code></pre>
 
 <p>Put following code in the index.html
-                <html>
-                <body>
-                <h1>My Custom HTML </h1>
-                </body>
-                </html></p>
+        <html>
+        <body>
+        <h1>My Custom HTML </h1>
+        </body>
+        </html></p>
 
-<pre><code>            $ docker run -d -p 8070:80 --name=WebServer5 -v /home/tayyabali/www:/usr/share/nginx/html nginx:latest
+<pre><code>    $ docker run -d -p 8070:80 --name=WebServer5 -v /home/tayyabali/www:/usr/share/nginx/html nginx:latest
 </code></pre>
 
 <p>Now you can check the site in the localhost or using ip address of the container as follows
 Check Ip</p>
 
-<pre><code>            $ docker ps
-            $ docker inspect
-            $ elinks 172.17.0.3
-            $ elinks http://localhost:8070
-            ## Docker File
+<pre><code>    $ docker ps
+    $ docker inspect
+    $ elinks 172.17.0.3
+    $ elinks http://localhost:8070
+    ## Docker File
 
-            $ docker images
-            $ docker ps
+    $ docker images
+    $ docker ps
 </code></pre>
 
 <p>Stop containers if any running</p>
 
-<pre><code>            $ docker stop CONTAINER_ID/NAME
+<pre><code>    $ docker stop CONTAINER_ID/NAME
 </code></pre>
 
 <p>Lets Cleanup all the containers and keep only images</p>
 
-<pre><code>            $ docker ps -a
-            $ docker rm `docker ps -a -q`
-            $ docker ps -a
-            $ docker ps
+<pre><code>    $ docker ps -a
+    $ docker rm `docker ps -a -q`
+    $ docker ps -a
+    $ docker ps
 </code></pre>
 
 <p>Lets build a directory for our build</p>
 
-<pre><code>            $ mkdir build
-            $ cd build
-            $ docker images
+<pre><code>    $ mkdir build
+    $ cd build
+    $ docker images
 </code></pre>
 
 <p>We only now have images</p>
 
 <p>Create a file in build directory
-                $ vi Dockerfile</p>
+        $ vi Dockerfile</p>
 
 <pre><code>Put followig text in the Dockerfile
 
-                FROM debian:stable
-                MAINTAINER tayyabali &lt;tayyabsayyad@gmail.com&gt;
-                RUN apt-get update
-                RUN apt-get upgrade
-                RUN apt-get install telnet
+    FROM debian:stable
+    MAINTAINER tayyabali &lt;tayyabsayyad@gmail.com&gt;
+    RUN apt-get update
+    RUN apt-get upgrade
+    RUN apt-get install telnet
 </code></pre>
 
 <p>Then lets build the image using followig command</p>
 
-<pre><code>              $ build$ docker build -t tayyabali/myapache .
+<pre><code>  $ build$ docker build -t tayyabali/myapache .
 </code></pre>
 
 <p>You may see this is failed because of the questions it asks</p>
 
-<pre><code>            Do you want to continue? [Y/n] Abort
+<pre><code>  Do you want to continue? [Y/n] Abort
 </code></pre>
 
 <p>If build is failed you have only latest debian image available as you can see</p>
 
-<pre><code>          $ docker images
+<pre><code>  $ docker images
 </code></pre>
 
 <p>But what happens if we try to pur a unknow command in the file as shown below and build image</p>
 
-<pre><code>                FROM debian:stable
-                MAINTAINER tayyabali &lt;tayyabsayyad@gmail.com&gt;
-                RUN apt-get update
-                RUN apt-get upgrade
-                RUN apt-get install telnet
-                RUN my-command
+<pre><code>  FROM debian:stable
+  MAINTAINER tayyabali &lt;tayyabsayyad@gmail.com&gt;
+  RUN apt-get update
+  RUN apt-get upgrade
+  RUN apt-get install telnet
+  RUN my-command
 </code></pre>
 
 <p>Docker uses cache memory for the image layer, When you run commands separately image layers are increased good to combine command together as following</p>
 
-<pre><code>                FROM debian:stable
-                MAINTAINER tayyabali &lt;tayyabsayyad@gmail.com&gt;
-                RUN apt-get update &amp;&amp; apt-get upgrade -y &amp;&amp; apt-get install -y telnet apache2 elinks openssh-server
+<pre><code>  FROM debian:stable
+  MAINTAINER tayyabali &lt;tayyabsayyad@gmail.com&gt;
+  RUN apt-get update &amp;&amp; apt-get upgrade -y &amp;&amp; apt-get install -y telnet apache2 elinks openssh-server
 </code></pre>
 
 <p>Check the build image</p>
 
-<pre><code>                $ docker images
+<pre><code>  $ docker images
 </code></pre>
 
 <p>Lets add environment variables and file looks as followig</p>
 
-<pre><code>                FROM debian:stable
-                MAINTAINER tayyabali &lt;tayyabsayyad@gmail.com&gt;
+<pre><code>  FROM debian:stable
+  MAINTAINER tayyabali &lt;tayyabsayyad@gmail.com&gt;
 
-                RUN apt-get update &amp;&amp; apt-get upgrade -y &amp;&amp; apt-get install -y telnet apache2 elinks openssh-server
+  RUN apt-get update &amp;&amp; apt-get upgrade -y &amp;&amp; apt-get install -y telnet apache2 elinks openssh-server
 
-                ENV MYVALUE my-value
+  ENV MYVALUE my-value
 </code></pre>
 
 <p>and build image again</p>
 
-<pre><code>                $ docker build -t tayyabali/myapache .
+<pre><code>  $ docker build -t tayyabali/myapache .
 
                 It will build quickly becaue it used cache
 </code></pre>
 
 <p>Lets make container from the image</p>
 
-<pre><code>                $ docker run -it tayyabali/myapache:latest /bin/bash
+<pre><code>  $ docker run -it tayyabali/myapache:latest /bin/bash
 </code></pre>
 
 <p>and check the environment variable in container, you can see the value</p>
 
-<pre><code>                $ root@3012264990e9:/# echo $MYVALUE
-                my-value
+<pre><code>  $ root@3012264990e9:/# echo $MYVALUE
+  my-value
 </code></pre>
 
 <p>This is the way how you can pass variable in the container which is instantiated
   Lets Clean up again</p>
 
-<pre><code>                $ docker ps -a
-                $ docker rm `docker ps -a -q`
-                $ docker ps -a
-                $ docker ps
+<pre><code>    $ docker ps -a
+    $ docker rm `docker ps -a -q`
+    $ docker ps -a
+    $ docker ps
 </code></pre>
 
 <p>Lets change the Dockerfile as follows to expose the ports</p>
 
-<pre><code>                FROM debian:stable
-                MAINTAINER tayyabali &lt;tayyabsayyad@gmail.com&gt;
+<pre><code>    FROM debian:stable
+    MAINTAINER tayyabali &lt;tayyabsayyad@gmail.com&gt;
 
-                RUN apt-get update &amp;&amp; apt-get upgrade -y &amp;&amp; apt-get install -y telnet apache2 elinks openssh-server
+    RUN apt-get update &amp;&amp; apt-get upgrade -y &amp;&amp; apt-get install -y telnet apache2 elinks openssh-server
 
-                ENV MYVALUE my-value
+    ENV MYVALUE my-value
 
-                EXPOSE 80
-                EXPOSE 22
+    EXPOSE 80
+    EXPOSE 22
 </code></pre>
 
 <p>and build the image again</p>
 
-<pre><code>                $ docker build -t tayyabali/myapache .
+<pre><code>    $ docker build -t tayyabali/myapache .
 </code></pre>
 
 <p>Lets create the continer based on the image created</p>
 
-<pre><code>                $ docker run -it tayyabali/myapache:latest /bin/bash
+<pre><code>    $ docker run -it tayyabali/myapache:latest /bin/bash
 </code></pre>
 
 <p>Open New Terminal and see ports are now open</p>
 
-<pre><code>                $ docker ps
+<pre><code>    $ docker ps
 </code></pre>
 
 <p>Exit from the container and remove the container</p>
 
-<pre><code>                $ docker ps -a
-                $ docker rm `docker ps -a -q`
-                $ docker ps -a
-                $ docker ps
+<pre><code>    $ docker ps -a
+    $ docker rm `docker ps -a -q`
+    $ docker ps -a
+    $ docker ps
 </code></pre>
 
 <p>Starting apache in the container</p>
 
 <p>Remove the port 22 we dont need that to be exposed and add command to start apache as follows</p>
 
-<pre><code>                  FROM debian:stable
-                  MAINTAINER tayyabali &lt;tayyabsayyad@gmail.com&gt;
+<pre><code>    FROM debian:stable
+    MAINTAINER tayyabali &lt;tayyabsayyad@gmail.com&gt;
 
-                  RUN apt-get update &amp;&amp; apt-get upgrade -y &amp;&amp; apt-get install -y telnet apache2 elinks openssh-server
+    RUN apt-get update &amp;&amp; apt-get upgrade -y &amp;&amp; apt-get install -y telnet apache2 elinks openssh-server
 
-                  ENV MYVALUE my-value
+    ENV MYVALUE my-value
 
-                  EXPOSE 80
+    EXPOSE 80
 
-                  CMD [&quot;/usr/sbin/apache2ctl&quot;,&quot;-D&quot;,&quot;FOREGROUND&quot;]
+    CMD [&quot;/usr/sbin/apache2ctl&quot;,&quot;-D&quot;,&quot;FOREGROUND&quot;]
+</code></pre>
 
-            Build the image again
+<p>Build the image again</p>
 
-                $ docker build -t tayyabali/myapache .
+<pre><code>  $ docker build -t tayyabali/myapache .
 </code></pre>
 
 <p>Now once image is built make container as follows, we will run in the -d mode as we have executed commands in the continer</p>
 
-<p>$ docker run -d tayyabali/myapache:latest
+<pre><code>  $ docker run -d tayyabali/myapache:latest
   $ docker ps
-  $ docker inspect CONTAINER_ID</p>
+  $ docker inspect CONTAINER_ID
+</code></pre>
 
 <p>Now check the apache page</p>
 

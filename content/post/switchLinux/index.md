@@ -37,18 +37,7 @@ Switch to Linux with easy steps
 | 13 | <a href='{{<ref "linuxsoftwares">}}'> Installation of necessary softwares in Linux</a>   |
 | 14 | <a href='{{<ref "installation" >}}'> Review of various ways of software installation in Linux </a>|
 | 15 | <a href='{{<ref "whycommandline">}}'> Importance of command line in Linux </a>  |
-| 16 | File System of Linux Operating System |
-| 17 | <a href='{{<ref "linuxcommands" >}}'> Useful commands in Linux with examples </a>  |
-| 18 | Introduction to shell script, Why you need to learn shell script ?   |
-| 19 | <a href='{{<ref "whyLinuxinSchools" >}}'> How Linux is good for students and schools ? </a>  |
-| 20 | Various advanced tools in Linux for daily tasks   |
-| 21 | <a href='{{<ref "gettinghelp" >}}'> How to get help from community </a> |
-| 22 | Open Source Apps for Students  |
-| 23 | Open Source Apps for Teachers    |
-| 24 | Open Source Apps for Productivity |
-| 25 | Open Source Apps for Security   |
-| 26 | Open Source Web Development tools   |
-| 27 | Open Source Hardware and sources  |
-| 28 |  <a href='{{<ref "bloggingtools" >}}'> Open Source tools for Blogging </a> |
-| 29     | Open Source Multimedia tools  |
-| 30     | Concluding Remarks   |
+| 16 | <a href='{{<ref "linuxcommands" >}}'> Useful commands in Linux with examples </a>  |
+| 17 | <a href='{{<ref "whyLinuxinSchools" >}}'> How Linux is good for students and schools ? </a>  |
+| 18 | <a href='{{<ref "gettinghelp" >}}'> How to get help from community </a> |
+| 19 |  <a href='{{<ref "bloggingtools" >}}'> Open Source tools for Blogging </a> |
