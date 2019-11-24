@@ -5,13 +5,24 @@
   "license": "GPL-2.0",
   "dependencies": {},
   "devDependencies": {
-    "stylelint": "^9.2.0",
-    "stylelint-order": "^0.8.1"
+    "autoprefixer": "^9.6.1",
+    "eslint": "^5.15.3",
+    "eslint-config-airbnb-base": "^13.2.0",
+    "eslint-plugin-import": "^2.18.0",
+    "eslint-plugin-node": "^7.0.1",
+    "postcss-cli": "^6.1.3",
+    "stylelint": "^9.10.1",
+    "stylelint-order": "^2.2.1"
   },
   "scripts": {
     "lint:css": "stylelint static/css/*.css",
-    "lint": "npm run lint:css",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint:js": "eslint static/js/*.js",
+    "lint": "npm run lint:css && npm run lint:js",
+    "fix:prefixes": "postcss -r static/css/*.css",
+    "fix:css": "stylelint static/css/*.css --fix",
+    "fix:js": "eslint static/js/*.js --fix",
+    "fix": "npm run fix:prefixes && npm run fix:css && npm run fix:js",
+    "test": "npm run lint"
   },
   "repository": {
     "type": "git",

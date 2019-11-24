@@ -13,6 +13,7 @@ tags:
 
 thumbnail: "img/thumbs/switchtolinuxstepbystep.png"
 
+menu: main
 ---
 
 Switch to Linux with easy steps

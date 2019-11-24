@@ -1,7 +1,7 @@
 baseURL = "https://opensourcetutorials.in"
 languageCode = "en-us"
 copyright = "This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License."
-paginate = "05"
+paginate = "7"
 title = "Open Source Tutorials"
 theme = "Mainroad"
 disqusShortname = "www-opensourcetutorials-in"
@@ -22,16 +22,16 @@ rssLimit = 15
     leftsidebar = false # Move sidebar to the left side if true
     authorbox = true # Show authorbox at bottom of pages if true
     post_navigation = true # Show post navigation at bottom of pages if true
-    postSections = ["post"] # the section pages to show on home page and the "Recent articles" widget
+    postSections = ['post'] # the section pages to show on home page and the "Recent articles" widget
     #postSections = ["blog", "news"] # alternative that shows more than one section's pages
     #dateformat = "2006-01-02" # change the format of dates
 
 
 [Params.widgets]
     search = true # Enable "Search" widget
-    recent_num = 10 # Set the number of articles in the "Recent articles" widget
+    recent_num = 05 # Set the number of articles in the "Recent articles" widget
     recent_articles = true # Enable "Recent articles" widget
-    recent_articles_num = 10 # Set the number of articles in the "Recent articles" widget
+    recent_articles_num = 5 # Set the number of articles in the "Recent articles" widget
     categories = true # Enable "Categories" widget
     tags = true # Enable "Tags" widget
     tags_counter = false # Enable counter for each tag in "Tags" widget (disabled by default)
@@ -43,7 +43,7 @@ rssLimit = 15
   list = "right"   # Configure layout for list pages
   single = "right" # Configure layout for single pages
   # Enable widgets in given order
-  widgets = ["search", "recent", "categories", "taglist"]
+  widgets = ["search", "recent", "social", "categories", "taglist" ]
 
 [sitemap]
     changefreq = "monthly"
@@ -52,15 +52,6 @@ rssLimit = 15
 
 [menu]
 
-  [[menu.main]]
-    name = "Switch To Linux in Simple Steps"
-    url = "/post/switchLinux"
-    weight = -120
-
-  [[menu.main]]
-      name = "Cheetsheets"
-      url = "/cheetsheets/index/"
-      weight = -80
 
   [[menu.main]]
         name = "RSS Feeds"
@@ -76,3 +67,15 @@ rssLimit = 15
         name = "About Me"
         url = "https://tayyabali.in"
         weight = -70
+
+
+[Params.widgets.social]
+  # Enable parts of social widget
+  facebook = "https://www.facebook.com/tayyabsayyad"
+  twitter = "https://twitter.com/tayyabsayyad"
+  instagram = "https://www.instagram.com/tayyabsayyad/"
+  linkedin = "https://www.linkedin.com/in/tayyabsayyad"
+  telegram = "https://telegram.me/tayyabali"
+  github = "https://github.com/tayyabsayyad"
+  gitlab = "https://gitlab.com/tayyabsayyad"
+  email = "tayyabsayyad@gmail.com"

@@ -8,6 +8,8 @@ toc: false # Optional, enable Table of Contents for specific post
 mathjax: true # Optional, enable MathJax for specific post
 categories:
   - "Cheetsheets"
+
+menu: main
 ---
 
 ### Index of all Cheetsheets
