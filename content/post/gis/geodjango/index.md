@@ -154,20 +154,6 @@ By default it will use openlayer for displaying map, if you want to use the open
           list_display = ('location', 'city')
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 7. Finally run django server
 
         python manage.py runserver

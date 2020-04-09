@@ -106,41 +106,26 @@ if (!doNotTrack) {
 			<img src="/img/thumbs/ansible.png" alt="Ansible">
 		</figure><div class="content post__content clearfix">
 			<p>Ansible is powerful open source IT automation tool. It allows you to manage IT infrasture and apps deployment easily.</p>
-
-<h2 id="step-1-installing-ansible">Step 1 - Installing Ansible</h2>
-
+<h2 id="step-1---installing-ansible">Step 1 - Installing Ansible</h2>
 <p>To configure the PPA on your machine and install ansible run these commands:</p>
-
 <pre><code>   $ sudo apt-get update
    $ sudo apt-get install software-properties-common
    $ sudo apt-add-repository ppa:ansible/ansible
    $ sudo apt-get update
    $ sudo apt-get install ansible
 </code></pre>
-
 <p>Check ansible install version</p>
-
 <p>$ ansible &ndash;version</p>
-
-<h2 id="step-2-configure-hosts">Step 2 - Configure Hosts</h2>
-
+<h2 id="step-2---configure-hosts">Step 2 - Configure Hosts</h2>
 <p>All host information is kept in the hosts files as follows</p>
-
 <p>$ sudo gedit /etc/ansible/hosts</p>
-
 <p>$ sudo gedit /etc/ansible/ansible.cfg</p>
-
 <p>Remove comment of inventory and the sudo_user
-   Its default but better to change and make it apply</p>
-
+Its default but better to change and make it apply</p>
 <p>$ cat /etc/ansible/hosts</p>
-
 <p>$ sudo mv hosts hosts.original</p>
-
 <p>$ sudo gedit hosts</p>
-
 <p>Create entries of the hosts which you are going to manage</p>
-
 <pre><code>     [local]
      localhost
 
@@ -148,65 +133,39 @@ if (!doNotTrack) {
      10.0.1.198
      10.0.1.197
 </code></pre>
-
 <p>Note : Better to use Vi than gedit</p>
-
 <p>Ansible Default configuration
-       $ cat /etc/ansible/ansible.cfg</p>
-
+$ cat /etc/ansible/ansible.cfg</p>
 <pre><code>   Keep as it is or you can uncomment following and save
    #inventory      = /etc/ansible/hosts
    #sudo_user      = root
 </code></pre>
-
-<hr />
-
-<h2 id="step-3-servers-setup">Step 3 - Servers Setup</h2>
-
-<p>### Install ssh on the server and your host also</p>
-
+<hr>
+<h2 id="step-3---servers-setup">Step 3 - Servers Setup</h2>
+<h3 id="install-ssh-on-the-server-and-your-host-also">Install ssh on the server and your host also</h3>
 <p>$ sudo apt install ssh</p>
-
 <p>Check from your computer to server you can connect using the ssh</p>
-
-<p>$ ssh dbit@10.0.1.198</p>
-
+<p>$ ssh <a href="mailto:dbit@10.0.1.198">dbit@10.0.1.198</a></p>
 <p>This will ask username and password</p>
-
 <h3 id="this-is-not-necessary-to-just-for-additional-information">This is not necessary to just for additional information</h3>
-
 <h3 id="if-you-want-to-enable-root-login-on-over-ssh-then-follow-following-commands">If you want to enable root login on over ssh then follow following commands</h3>
-
-<p># gedit /etc/ssh/sshd_config</p>
-
+<h1 id="gedit-etcsshsshd_config">gedit /etc/ssh/sshd_config</h1>
 <p>Change the line &ldquo;PermitRootLogin&rdquo; to &ldquo;yes&rdquo;</p>
-
-<p># service sshd restart</p>
-
-<p>$ ssh root@192.168.1.101</p>
-
+<h1 id="service-sshd-restart">service sshd restart</h1>
+<p>$ ssh <a href="mailto:root@192.168.1.101">root@192.168.1.101</a></p>
 <p>You will be able to connect to the server using root username</p>
-
 <h3 id="create-ansible-user-with-sudo-permissions">Create ansible user with sudo permissions</h3>
-
 <p>On the server where you will be configuring you need to have a user with sudo permissions and authentication method must not need password. i.e use ssh keys</p>
-
-<p># sudo adduser ansible
-   # sudo usermod -aG sudo ansible</p>
-
+<h1 id="sudo-adduser-ansible">sudo adduser ansible</h1>
+<h1 id="sudo-usermod--ag-sudo-ansible">sudo usermod -aG sudo ansible</h1>
 <h3 id="setup-ssh-keys">Setup ssh keys</h3>
-
 <pre><code> On the OUR computer AND WITH ANSIBLE USER ( Create if not not available )
  from where we will be managing ansible
 </code></pre>
-
 <p>Swith to the user using following command</p>
-
 <pre><code> $ su ansible
 </code></pre>
-
 <p>Then start commands</p>
-
 <pre><code> $ ssh-keygen
    accept all default options
 
@@ -230,9 +189,7 @@ if (!doNotTrack) {
 
  You will be logged in without password
 </code></pre>
-
 <h3 id="disable-password-authentication-recommended-not-necessary-now">Disable Password Authentication (Recommended) not necessary now</h3>
-
 <pre><code> On Server (Where we have ansible user):
  Now oce you have configured the key based login, now you can disable the password based auth
 
@@ -244,150 +201,93 @@ if (!doNotTrack) {
 
  $ sudo systemctl reload sshd
 </code></pre>
-
 <h3 id="set-up-a-basic-firewall">Set Up a Basic Firewall</h3>
-
 <p>$ sudo ufw app list
-   $ sudo ufw allow OpenSSH
-   $ sudo ufw enable
-   $ sudo ufw status</p>
-
+$ sudo ufw allow OpenSSH
+$ sudo ufw enable
+$ sudo ufw status</p>
 <p>Now lets configure ansible user to run commands as a root on the remote machine</p>
-
 <p>$ sudo visudo</p>
-
 <p>add following below the User privilege section, just below the root
-   ansible  ALL=(ALL) NOPASSWD: ALL</p>
-
+ansible  ALL=(ALL) NOPASSWD: ALL</p>
 <p>CTRL + O  &mdash;-&gt; Enter to Save  and CTRL + X</p>
-
 <p>and then check if its ok
-   $ sudo visudo -c</p>
-
+$ sudo visudo -c</p>
 <p>Check if you can be root without the password</p>
-
 <p>$ su ansible -</p>
-
-<hr />
-
+<hr>
 <p><code>Explore the documentation of the ansible.com</code></p>
-
 <h2 id="running-ansible-commands">Running Ansible Commands</h2>
-
 <p>Make sure you are anisible user Also you have configured ansible user on remote hosts with ssh keys login and sudo commands permissions</p>
-
 <p>Check nodes present in the inventory by using folowing command</p>
-
 <pre><code>$ cat /etc/ansible/hosts
 </code></pre>
-
 <h2 id="to-ping-all-hosts">To ping all hosts</h2>
-
 <pre><code>$ ansible all -m ping
 
 -m Use following module
 ping is a module
 </code></pre>
-
 <h2 id="to-list-all-files-on-the-nodes">To list all files on the nodes</h2>
-
 <pre><code>$ ansible all -a &quot;ls -al /home/ansible&quot;
 </code></pre>
-
 <h2 id="to-open-syslog-file">To open syslog file</h2>
-
 <pre><code>$ ansible all -a &quot;cat /var/log/syslog&quot;
 </code></pre>
-
 <h2 id="copy-files-to-remote-machines">Copy files to remote machines</h2>
-
 <p>On My computer</p>
-
 <p>touch test.txt
 Enter some text</p>
-
 <p>$ ansible all -m copy -a &ldquo;src=test.txt dest=/tmp/test.txt&rdquo;</p>
-
 <h2 id="install-packages">Install packages</h2>
-
 <p>$ ansible ubuntu -m apt -a &ldquo;name=elinks state=latest&rdquo;</p>
-
 <p>Whats the difference</p>
-
 <p>$ ansible ubuntu -m apt -a &ldquo;name=elinks state=present&rdquo;</p>
-
 <p>Will it run ?</p>
-
 <pre><code>$ ansible ubuntu -s -m apt -a &quot;name=elinks state=present&quot;
 </code></pre>
-
 <p>-s is become super user and then install</p>
-
 <pre><code>$ ansible ubuntu -s -m apt -a &quot;name=elinks state=absent&quot;
 </code></pre>
-
 <p>Above command will remove the package</p>
-
 <p>Lets create a user with the user module</p>
-
 <pre><code>$ ansible centos -s -m user -a &quot;name=test&quot;
 </code></pre>
-
 <p>Check test user on the server , see its home directory</p>
-
 <pre><code>$ ansible centos -s -m user -a &quot;name=test state=abset&quot;
 </code></pre>
-
 <p>Check User has gone</p>
-
 <pre><code>$ cat /etc/passwd | grep test
 
 Assignment install, upgrade ubunutu
 install vlc, install kazam
 </code></pre>
-
 <h2 id="playbook-structure">Playbook Structure</h2>
-
 <p>In the ansible user
-      $ mkdir ansible</p>
-
+$ mkdir ansible</p>
 <p>Use following command to Check the playbook syntex</p>
-
 <pre><code>$ ansible-playbook name.yaml
 </code></pre>
-
 <p>Execute the following Playbook</p>
-
 <p>From the URL  :</p>
-
 <pre><code>    https://github.com/ansible/ansible-examples
 </code></pre>
-
 <p>Execute and Explain the Structure of the playbook</p>
-
 <h2 id="gathering-the-facts">Gathering the facts</h2>
-
 <h4 id="observe-the-output">Observe the output</h4>
-
 <pre><code>    $ ansible centos -m setup
 </code></pre>
-
 <h4 id="you-can-do-grep-also">You can do grep also</h4>
-
 <pre><code>      $ ansible centos -m setup | grep ipv4
 
       $ ansible localhost -m setup -a 'filter=*ipv4*'
 </code></pre>
-
 <h4 id="to-get-the-facts-in-to-the-directory-and-in-separate-files">To get the facts in to the directory and in separate files</h4>
-
 <pre><code>      $ ansible all -m setup -m --tree facts
       $ cd facts
       $ ls
 </code></pre>
-
 <h4 id="install-httpd-on-ubuntu">Install httpd on ubuntu</h4>
-
 <pre><code>      --- # This is a structure example to install httpd on ubuntu
 
       - hosts: ubuntu
@@ -516,43 +416,37 @@ install vlc, install kazam
 	<h4 class="widget-social__title widget__title">Social</h4>
 	<div class="widget-social__content widget__content">
 		<div class="widget-social__item widget__item">
-			<a class="widget-social__link widget__link btn" title="Facebook" rel="noopener noreferrer" href="https://facebook.com/https://www.facebook.com/tayyabsayyad" target="_blank">
-				<svg class="widget-social__link-icon icon icon-facebook" width="24" height="24" viewBox="0 0 352 352"><path d="m0 32v288c0 17.5 14.5 32 32 32h288c17.5 0 32-14.5 32-32v-288c0-17.5-14.5-32-32-32h-288c-17.5 0-32 14.5-32 32zm320 0v288h-83v-108h41.5l6-48h-47.5v-31c0-14 3.5-23.5 23.5-23.5h26v-43.5c-4.4-.6-19.8-1.5-37.5-1.5-36.9 0-62 22.2-62 63.5v36h-42v48h42v108h-155v-288z"/></svg>
-				<span>Facebook</span>
-			</a>
-		</div>
-		<div class="widget-social__item widget__item">
-			<a class="widget-social__link widget__link btn" title="Twitter" rel="noopener noreferrer" href="https://twitter.com/https://twitter.com/tayyabsayyad" target="_blank">
+			<a class="widget-social__link widget__link btn" title="Twitter" rel="noopener noreferrer" href="https://twitter.com/tayyabsayyad" target="_blank">
 				<svg class="widget-social__link-icon icon icon-twitter" width="24" height="24" viewBox="0 0 384 312"><path d="m384 36.9c-14.1 6.3-29.3 10.5-45.2 12.4 16.3-9.7 28.8-25.2 34.6-43.6-15.2 9-32.1 15.6-50 19.1-14.4-15.2-34.9-24.8-57.5-24.8-43.5 0-78.8 35.3-78.8 78.8 0 6.2.7 12.2 2 17.9-65.5-3.3-123.5-34.6-162.4-82.3-6.7 11.6-10.6 25.2-10.6 39.6 0 27.3 13.9 51.4 35 65.6-12.9-.4-25.1-4-35.7-9.9v1c0 38.2 27.2 70 63.2 77.2-6.6 1.8-13.6 2.8-20.8 2.8-5.1 0-10-.5-14.8-1.4 10 31.3 39.1 54.1 73.6 54.7-27 21.1-60.9 33.7-97.8 33.7-6.4 0-12.6-.4-18.8-1.1 34.9 22.4 76.3 35.4 120.8 35.4 144.9 0 224.1-120 224.1-224.1 0-3.4-.1-6.8-.2-10.2 15.4-11.1 28.7-25 39.3-40.8z"/></svg>
 				<span>Twitter</span>
 			</a>
 		</div>
 		<div class="widget-social__item widget__item">
-			<a class="widget-social__link widget__link btn" title="Instagram" rel="noopener noreferrer" href="https://www.instagram.com/https://www.instagram.com/tayyabsayyad/" target="_blank">
+			<a class="widget-social__link widget__link btn" title="Instagram" rel="noopener noreferrer" href="https://www.instagram.com/tayyabsayyad" target="_blank">
 				<svg class="widget-social__link-icon icon icon-instagram" width="24" height="24" viewBox="0 0 256 256"><circle cx="193" cy="59" r="15"/><path fill-rule="evenodd" d="M101 0h54c41 0 58.4 3.9 74.5 17C256.2 37.5 256 74.8 256 97.7v60c0 26.7 0 60.4-26.5 81.4-16 13.4-33.5 16.9-74.5 16.9h-54c-41 0-57.5-3.5-74.5-16.9C1 218.9.5 186.3.1 160.5L0 155V97.7c0-23-.2-60.2 26.5-80.7C45 2 60 0 101 0zm4.9 23h44.3c45.8 0 58.3 3.5 70.3 17.5 11.8 13.2 12 30.1 12.5 62.9V156c.2 20.8.3 45.8-12.5 59.5-12 14-24.5 17.5-70.3 17.5h-44.3c-45.9 0-57.3-3.5-70.4-17.5-12.2-13-12.3-36.5-12.4-56.7v-55.6c.4-32.6.7-49.6 12.4-62.7C48 26.5 60 23 105.9 23zm19.6 144.5a42 42 0 1 0 0-84 42 42 0 0 0 0 84zm0 22.5a64.5 64.5 0 1 0 0-129 64.5 64.5 0 0 0 0 129z"/></svg>
 				<span>Instagram</span>
 			</a>
 		</div>
 		<div class="widget-social__item widget__item">
-			<a class="widget-social__link widget__link btn" title="LinkedIn" rel="noopener noreferrer" href="https://linkedin.com/in/https://www.linkedin.com/in/tayyabsayyad" target="_blank">
+			<a class="widget-social__link widget__link btn" title="LinkedIn" rel="noopener noreferrer" href="https://linkedin.com/in/tayyabsayyad/" target="_blank">
 				<svg class="widget-social__link-icon icon icon-linkedin" width="24" height="24" viewBox="0 0 352 352"><path d="M0,40v272c0,21.9,18.1,40,40,40h272c21.9,0,40-18.1,40-40V40c0-21.9-18.1-40-40-40H40C18.1,0,0,18.1,0,40z M312,32 c4.6,0,8,3.4,8,8v272c0,4.6-3.4,8-8,8H40c-4.6,0-8-3.4-8-8V40c0-4.6,3.4-8,8-8H312z M59.5,87c0,15.2,12.3,27.5,27.5,27.5 c15.2,0,27.5-12.3,27.5-27.5c0-15.2-12.3-27.5-27.5-27.5C71.8,59.5,59.5,71.8,59.5,87z M187,157h-1v-21h-45v152h47v-75 c0-19.8,3.9-39,28.5-39c24.2,0,24.5,22.4,24.5,40v74h47v-83.5c0-40.9-8.7-72-56.5-72C208.5,132.5,193.3,145.1,187,157z M64,288h47.5 V136H64V288z"/></svg>
 				<span>LinkedIn</span>
 			</a>
 		</div>
 		<div class="widget-social__item widget__item">
-			<a class="widget-social__link widget__link btn" title="Telegram" rel="noopener noreferrer" href="https://t.me/https://telegram.me/tayyabali" target="_blank">
+			<a class="widget-social__link widget__link btn" title="Telegram" rel="noopener noreferrer" href="https://t.me/tayyabali" target="_blank">
 				<svg class="widget-social__link-icon icon icon-telegram" width="24" height="24" viewBox="0 0 132 110"><path fill="#ddd" d="M50 103c-4 0-3-1-5-5L34 60l88-52"/><path fill="#aaa" d="M50 103c3 0 4-1 6-3l16-16-20-12"/><path fill="#fff" d="M52 72l48 36c6 3 10 2 11-5l20-93c2-8-3-11-8-9L7 45c-8 4-8 8-1 10l29 9 69-43c3-2 6-1 4 1"/></svg>
 				<span>Telegram</span>
 			</a>
 		</div>
 		<div class="widget-social__item widget__item">
-			<a class="widget-social__link widget__link btn" title="GitHub" rel="noopener noreferrer" href="https://github.com/https://github.com/tayyabsayyad" target="_blank">
+			<a class="widget-social__link widget__link btn" title="GitHub" rel="noopener noreferrer" href="https://github.com/tayyabsayyad" target="_blank">
 				<svg class="widget-social__link-icon icon icon-github" width="24" height="24" viewBox="0 0 384 374"><path d="m192 0c-106.1 0-192 85.8-192 191.7 0 84.7 55 156.6 131.3 181.9 9.6 1.8 13.1-4.2 13.1-9.2 0-4.6-.2-16.6-.3-32.6-53.4 11.6-64.7-25.7-64.7-25.7-8.7-22.1-21.3-28-21.3-28-17.4-11.9 1.3-11.6 1.3-11.6 19.3 1.4 29.4 19.8 29.4 19.8 17.1 29.3 44.9 20.8 55.9 15.9 1.7-12.4 6.7-20.8 12.2-25.6-42.6-4.8-87.5-21.3-87.5-94.8 0-20.9 7.5-38 19.8-51.4-2-4.9-8.6-24.3 1.9-50.7 0 0 16.1-5.2 52.8 19.7 15.3-4.2 31.7-6.4 48.1-6.5 16.3.1 32.7 2.2 48.1 6.5 36.7-24.8 52.8-19.7 52.8-19.7 10.5 26.4 3.9 45.9 1.9 50.7 12.3 13.4 19.7 30.5 19.7 51.4 0 73.7-44.9 89.9-87.7 94.6 6.9 5.9 13 17.6 13 35.5 0 25.6-.2 46.3-.2 52.6 0 5.1 3.5 11.1 13.2 9.2 76.2-25.5 131.2-97.3 131.2-182 0-105.9-86-191.7-192-191.7z"/></svg>
 				<span>GitHub</span>
 			</a>
 		</div>
 		<div class="widget-social__item widget__item">
-			<a class="widget-social__link widget__link btn" title="GitLab" rel="noopener noreferrer" href="https://gitlab.com/https://gitlab.com/tayyabsayyad" target="_blank">
+			<a class="widget-social__link widget__link btn" title="GitLab" rel="noopener noreferrer" href="https://gitlab.com/tayyabsayyad" target="_blank">
 				<svg class="widget-social__link-icon icon icon-gitlab" width="24" height="24" viewBox="0 0 265 265"><path d="M128.075 236.075l47.104-144.97H80.97l47.104 144.97z M14.956 91.104L.642 135.16a9.752 9.752 0 0 0 3.542 10.903l123.891 90.012-113.12-144.97z M14.956 91.105H80.97L52.601 3.79c-1.46-4.493-7.816-4.492-9.275 0l-28.37 87.315z M241.194 91.104l14.314 44.056a9.752 9.752 0 0 1-3.543 10.903l-123.89 90.012 113.119-144.97z M241.194 91.105h-66.015l28.37-87.315c1.46-4.493 7.816-4.492 9.275 0l28.37 87.315z"/></svg>
 				<span>GitLab</span>
 			</a>
@@ -595,7 +489,7 @@ install vlc, install kazam
 		<a class="widget-taglist__link widget__link btn" href="/tags/commands/" title="Commands">Commands</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/geodjango/" title="GeoDjango">GeoDjango</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/geoserver/" title="geoserver">geoserver</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/linux/" title="LINUX">LINUX</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/linux/" title="Linux">Linux</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/postgis/" title="postgis">postgis</a>
 	</div>
 </div>
@@ -605,7 +499,7 @@ install vlc, install kazam
 	<div class="container footer__container flex">
 		
 		<div class="footer__copyright">
-			&copy; 2019 Open Source Tutorials.
+			&copy; 2020 Open Source Tutorials.
 			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
 		</div>
 	</div>

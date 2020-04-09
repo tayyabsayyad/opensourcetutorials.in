@@ -14,10 +14,10 @@
     
     <item>
       <title> Installation of Postgis and Geoserver on Ubuntu 18.04 </title>
-      <link>https://opensourcetutorials.in/post/gis/postgis/postgis/</link>
+      <link>https://opensourcetutorials.in/post/gis/postgis/</link>
       <pubDate>Fri, 06 Sep 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://opensourcetutorials.in/post/gis/postgis/postgis/</guid>
+      <guid>https://opensourcetutorials.in/post/gis/postgis/</guid>
       <description>&lt;p&gt;In this post we will learn install the geoserver and postgis on ubuntu 18.04&lt;/p&gt;</description>
     </item>
     

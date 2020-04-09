@@ -37,6 +37,7 @@ Following are the commands to work with multiple screens
 + `Ctrl+a p` : Switch with the previous/next window
 + `Ctrl+a n ` : Switch with the next window
 
+[![Foo](https://www.vultr.com/media/banners/banner_468x60.png)](https://www.vultr.com/?ref=8528975)
 
 ### Examples
 

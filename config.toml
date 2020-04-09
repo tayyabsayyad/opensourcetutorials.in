@@ -52,30 +52,38 @@ rssLimit = 15
 
 [menu]
 
+[[menu.main]]
+      name = "Switch to Linux"
+      url = "/switch/"
+      weight = 20
+
+  [[menu.main]]
+      name = "Cheetsheets"
+      url = "/cheetsheets/"
+      weight = 40
 
   [[menu.main]]
         name = "RSS Feeds"
         url = "/post/rss"
-        weight = -70
+        weight = 50
 
   [[menu.main]]
         name = "Subscribe"
         url = "http://eepurl.com/gcdqnH"
-        weight = -70
+        weight = 60
 
   [[menu.main]]
         name = "About Me"
         url = "https://tayyabali.in"
-        weight = -70
+        weight = 70
 
 
 [Params.widgets.social]
   # Enable parts of social widget
-  facebook = "https://www.facebook.com/tayyabsayyad"
-  twitter = "https://twitter.com/tayyabsayyad"
-  instagram = "https://www.instagram.com/tayyabsayyad/"
-  linkedin = "https://www.linkedin.com/in/tayyabsayyad"
-  telegram = "https://telegram.me/tayyabali"
-  github = "https://github.com/tayyabsayyad"
-  gitlab = "https://gitlab.com/tayyabsayyad"
+  twitter = "tayyabsayyad"
+  instagram = "tayyabsayyad"
+  linkedin = "tayyabsayyad/"
+  telegram = "tayyabali"
+  github = "tayyabsayyad"
+  gitlab = "tayyabsayyad"
   email = "tayyabsayyad@gmail.com"

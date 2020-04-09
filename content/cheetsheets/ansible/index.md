@@ -1,5 +1,5 @@
 ---
-title: "Ansible"
+title: "Ansible Quick Start"
 date: "2018-12-31"
 description: "Ansible "
 disable_comments: false # Optional, disable Disqus comments if true

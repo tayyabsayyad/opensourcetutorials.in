@@ -106,84 +106,56 @@ if (!doNotTrack) {
 			<img src="/img/thumbs/docker.png" alt="Docker Quick Start">
 		</figure><div class="content post__content clearfix">
 			<p>In this post we will learn how to quickly start using docker</p>
-
-<hr />
-
-<h2 id="1-install-dockers-on-ubuntu-16-04-or-above">1. Install Dockers on Ubuntu 16.04 or above</h2>
-
-<hr />
-
+<hr>
+<h2 id="1-install-dockers-on-ubuntu-1604-or-above">1. Install Dockers on Ubuntu 16.04 or above</h2>
+<hr>
 <h4 id="update-the-repository">Update the Repository</h4>
-
 <pre><code>$ sudo apt-get update
 </code></pre>
-
 <h4 id="install-ssl-related-packages">Install ssl related packages</h4>
-
 <pre><code>$ sudo apt-get install \
 apt-transport-https \
 ca-certificates \
 curl \
 software-properties-common
 </code></pre>
-
 <h4 id="download-the-gpg-key-from-the-docker-site">Download the GPG key from the docker site</h4>
-
 <pre><code>$ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 </code></pre>
-
 <h4 id="add-docker-repository">Add docker repository</h4>
-
 <pre><code>$ sudo add-apt-repository \
 &quot;deb [arch=amd64] https://download.docker.com/linux/ubuntu \
  $(lsb_release -cs) \
   stable edge test&quot;
 </code></pre>
-
 <h4 id="update-the-packages-and-install-docker-community-edition">Update the packages and install docker community edition</h4>
-
 <pre><code>$ sudo apt-get update
 $ sudo apt-get install docker-ce
 </code></pre>
-
 <h4 id="finally-check-the-docker-installation-is-correct">Finally check the docker installation is correct</h4>
-
 <pre><code>$ sudo docker run hello-world
 </code></pre>
-
 <h4 id="you-can-check-status-on-off-and-restart-docker-using-following-commands">You can check status, on, off and restart docker using following commands</h4>
-
 <pre><code>$ sudo service docker status
 $ sudo service docker start
 $ sudo service docker stop
 $ sudo service docker restart
 </code></pre>
-
 <h4 id="to-run-the-docker-without-sudo-commands">To run the docker without sudo commands</h4>
-
 <pre><code>$ sudo usermod -aG docker $USER
 </code></pre>
-
 <h4 id="logout-and-then-check-with-following-command">Logout and then check with following command</h4>
-
 <pre><code>$ docker ps -a
 $ docker ps
 ## Docker Hub
 </code></pre>
-
-<hr />
-
-<h2 id="2-docker-hub">2.Docker Hub</h2>
-
-<hr />
-
-<h4 id="signup-to-https-hub-docker-com">Signup to <a href="https://hub.docker.com/">https://hub.docker.com/</a></h4>
-
+<hr>
+<h2 id="2docker-hub">2.Docker Hub</h2>
+<hr>
+<h4 id="signup-to-httpshubdockercom">Signup to <a href="https://hub.docker.com/">https://hub.docker.com/</a></h4>
 <pre><code>one private repository for free and unlimited public repository
 </code></pre>
-
-<h4 id="explore-following-on-https-hub-docker-com">Explore Following on <a href="https://hub.docker.com/">https://hub.docker.com/</a></h4>
-
+<h4 id="explore-following-on-httpshubdockercom">Explore Following on <a href="https://hub.docker.com/">https://hub.docker.com/</a></h4>
 <pre><code>  Explore Official Repositories
  https://hub.docker.com/explore/
   - Explore Mysql official repository
@@ -191,20 +163,13 @@ $ docker ps
   - Search for wordpress and how to use this image
   - Click on the docker files link which is redirected ot github and check how the wordpress image is built
 </code></pre>
-
-<hr />
-
+<hr>
 <h2 id="3-base-images">3. Base Images</h2>
-
-<hr />
-
+<hr>
 <h4 id="check-for-the-availabe-images">Check for the availabe images</h4>
-
 <pre><code>$ docker images
 </code></pre>
-
 <h4 id="search-for-docker">Search for Docker</h4>
-
 <pre><code>$ docker search ubuntu
 $ docker search apache
 $ docker search cartoview
@@ -213,102 +178,65 @@ $ docker search httpd
 
 Examine the output
 </code></pre>
-
 <h4 id="lets-use-docker-pull-command-to-get-image">Lets use Docker pull command to get image</h4>
-
 <p>Docker will pull the latest version of image</p>
-
 <pre><code>$ docker pull hello-world
 </code></pre>
-
 <p>Check the image using docker images command</p>
-
 <pre><code>$ docker images
 </code></pre>
-
 <p>Run the docker using docker run command, Its always good to specify the tag</p>
-
 <pre><code>$ docker run hello-world:latest
 </code></pre>
-
 <p>You can also run the docker image using its ID which you can get from the docker images output</p>
-
 <pre><code>$ docker run f2a91732366c
 </code></pre>
-
 <h4 id="lets-pull-some-useful-image-from-hub">Lets pull some useful image from hub</h4>
-
 <pre><code>$ docker images
 </code></pre>
-
 <p>All below command get the same image</p>
-
 <pre><code>$ docker pull centos:centos7
 $ docker pull centos:latest
 $ docker pull centos
 </code></pre>
-
 <p>Following will pull the centos6 image</p>
-
 <pre><code>$ docker pull centos:centos6
 </code></pre>
-
 <p>Lets pull some of the ubuntu images, Below command will pull ubuntu 16.04</p>
-
 <pre><code>$ docker pull ubuntu:latest
 </code></pre>
-
 <p>Below command will pull ubuntu 17.10</p>
-
 <pre><code>$ docker pull ubuntu:artful
 </code></pre>
-
 <h4 id="lets-pull-nginx">Lets pull nginx</h4>
-
 <pre><code>$ docker pull nginx:latest
 </code></pre>
-
 <h4 id="getting-information-from-the-docker">Getting information from the docker</h4>
-
 <pre><code>$ docker inspect nginx:latest
 $ docker inspect ubuntu:artful
 $ docker inspect centos:centos7
 </code></pre>
-
 <p>You can also give the ID for inspection</p>
-
 <pre><code>$ docker inspect 275d79972a86
 </code></pre>
-
 <p>Observe the details given in the output</p>
-
 <h2 id="running-container">Running Container</h2>
-
 <p>We have lots of base images</p>
-
 <pre><code>$ docker images
 $ docker run hello-world
 </code></pre>
-
-<h3 id="lets-pull-docker-whalesay-image-which-is-built-for-study-of-docker">Lets pull docker/whalesay image which is built for study of docker</h3>
-
+<h3 id="lets-pull-dockerwhalesay-image-which-is-built-for-study-of-docker">Lets pull docker/whalesay image which is built for study of docker</h3>
 <pre><code>$ docker search docker-whale
 $ docker pull docker/whalesay
 $ docker run docker/whalesay cowsay hello
 $ docker run docker/whalesay cowsay I AM DOCKER
 </code></pre>
-
 <p>This container has cowsay application which displays hello</p>
-
 <h2 id="how-to-know-what-all-containers-are-running-on-our-system">How to know what all containers are running on our system</h2>
-
 <pre><code>$ docker ps
 </code></pre>
-
 <p>Why output is nothing ? Containers run and stop.</p>
-
 <h2 id="get-the-list-of-containers-which-are-stopped-and-i-have-run">Get the list of containers which are stopped and I have run</h2>
-
 <pre><code>  $ docker ps -a
 
   - Each container has unique ID
@@ -319,9 +247,7 @@ $ docker run docker/whalesay cowsay I AM DOCKER
 
               If docker is running then you can see ip address etc.
 </code></pre>
-
 <h2 id="docker-network-interface">Docker Network Interface</h2>
-
 <pre><code>  $ ifconfig
       docker0:
       flags=4099&lt;UP,BROADCAST,MULTICAST&gt;  mtu 1500
@@ -337,9 +263,7 @@ $ docker run docker/whalesay cowsay I AM DOCKER
 
       **We are not going to see how to configure the network of the docker interfaces**
 </code></pre>
-
 <h2 id="lets-start-container-and-then-inspect">Lets start container and then inspect</h2>
-
 <pre><code>$ docker run -it centos:latest /bin/bash
                     - run : run the container
                     - i   : interactively
@@ -367,16 +291,12 @@ $ docker run docker/whalesay cowsay I AM DOCKER
 
  Why it existed ? Its because the command we run is now terminiated so container
 </code></pre>
-
-<h3 id="to-run-container-in-the-backgroud-use-d-option">To run container in the backgroud use -d option</h3>
-
+<h3 id="to-run-container-in-the-backgroud-use--d-option">To run container in the backgroud use -d option</h3>
 <pre><code>    $ docker run -d centos:latest /bin/bash
 
     Here command executed and finished
 </code></pre>
-
 <h3 id="lets-run-the-nginx-in-the-background-mode">Lets run the nginx in the background mode</h3>
-
 <pre><code>    $ docker run -d nginx:latest
     $ docker ps
 
@@ -401,14 +321,10 @@ We are able to ping because the container is running
 
     Use q to exit
 </code></pre>
-
 <h3 id="to-stop-nginx-container">To stop nginx container</h3>
-
 <pre><code>    $ docker stop focused_swirles
 </code></pre>
-
 <h2 id="to-start-docker-with-name-start-2nd-instance-of-nginx-image">To start docker with name, start 2nd instance of nginx image</h2>
-
 <pre><code>    $ docker run -d --name=MyWeb1 nginx:latest
     $ docker ps
 
@@ -417,14 +333,10 @@ We are able to ping because the container is running
 
 Ip address is from dhcp of docker interface, we we run another container it will get next ip from ip pool.
 </code></pre>
-
 <h3 id="to-start-container-again">To start container again</h3>
-
 <pre><code>    $ docker container start MyWeb1
 </code></pre>
-
-<p>## Container Lifecycle</p>
-
+<h2 id="container-lifecycle">Container Lifecycle</h2>
 <pre><code>Lets have a look at all images we have
 
 $ docker images
@@ -437,18 +349,13 @@ Lets see history of the Containers we run
 
 $ docker ps -a
 </code></pre>
-
-<p>## Lifecycle of Container</p>
-
+<h2 id="lifecycle-of-container">Lifecycle of Container</h2>
 <pre><code>$ docker run -d --name=LifeCycle1 nginx:latest
 $ docker ps
 $ ping 172.17.0.2
 </code></pre>
-
 <p>Container is running, its ip must be 172.17.0.2</p>
-
 <h2 id="attach-to-the-container">Attach to the Container</h2>
-
 <pre><code>$docker attach Lifecycle1
 
 You are attached to the process and not the coommand prompt
@@ -457,16 +364,12 @@ Now if you put CTL + C then you will close the Container
 
 $ docker ps
 </code></pre>
-
-<p>## Restart Container</p>
-
+<h2 id="restart-container">Restart Container</h2>
 <pre><code>$ docker restart Lifecycle1
 $ docker start Lifecycle1
 $ docker ps
 </code></pre>
-
 <h2 id="run-command-in-the-container-with-out-affecting-the-container-process">Run command in the Container with out affecting the Container process</h2>
-
 <pre><code>$ docker exec -it LifeCycle1 /bin/bash
                         - exec execute command
                         - -i interactively
@@ -477,14 +380,10 @@ $ docker ps
 
   You have just executed and not attached. If you have attached then it would exit.
 </code></pre>
-
 <h2 id="docker-stop">Docker Stop</h2>
-
 <pre><code>  $ docker stop LifeCycle1
 </code></pre>
-
 <h2 id="docker-restart-or-start">Docker Restart or start</h2>
-
 <pre><code>$ docker restart LifeCycle1
 $ docker ps
 
@@ -509,118 +408,76 @@ $ docker images
     By force you can delete image
     $ docker rmi -f hello-world
 </code></pre>
-
 <p><strong>If you remove images, you will be able to run the containers</strong></p>
-
 <h3 id="to-stop-all-non-running-container-delete">To stop all non-running Container delete</h3>
-
 <pre><code>    $ docker ps -a -q
     $ docker rm `docker ps -a -q`
 </code></pre>
-
-<h2 id="redirection-ports-and-volumes">Redirection - Ports and Volumes</h2>
-
+<h2 id="redirection---ports-and-volumes">Redirection - Ports and Volumes</h2>
 <p>Lets see which all images we have available</p>
-
 <pre><code>$ docker images
 </code></pre>
-
 <p>Lets run the ngins container</p>
-
 <pre><code>$ docker run -d nginx:latest
 </code></pre>
-
 <p>To check the Ip address</p>
-
 <pre><code>$ docker inspect stupefied_ramanujan | grep IPAddr
 </code></pre>
-
 <p>Check the nginx is running using the elinks</p>
-
 <pre><code>$elinks 172.17.0.2
 $elinks localhost
 </code></pre>
-
 <p>Here container will show the web page but the localhost will not.</p>
-
 <p>How to redirect from local port to container ?</p>
-
 <p>Lets stop the container</p>
-
 <pre><code>  $ docker stop stupefied_ramanujan
 </code></pre>
-
 <p>and also lets remove the container</p>
-
 <pre><code>  $ docker rm `docker ps -a -q`
 </code></pre>
-
 <p>Above will remove all containers</p>
-
 <h2 id="port-redirection">Port redirection</h2>
-
 <pre><code>  $ docker images
   $ docker run -d --name=WebServer2 -P nginx:latest
 </code></pre>
-
 <p>-P makes forawarding 32768 to 65000 range</p>
-
 <p>Now You can connect to the container with two ways but lets see the port it is picked for binding</p>
-
 <pre><code>  $ docker ps
 </code></pre>
-
 <p>In my case port 32768 is picked upby container</p>
-
 <p>$ docker inspect WebServer2</p>
-
 <p>IP address of container is 172.17.0.2</p>
-
 <p>$ elinks 172.17.0.2
-$ elinks <a href="http://localhost:32768">http://localhost:32768</a></p>
-
+$ elinks http://localhost:32768</p>
 <p>You will be able to connecct to nginx using both the ways shown above</p>
-
 <h2 id="to-know-which-port-is-redirected-you-can-also-use-follwing-command">To know which port is redirected you can also use follwing command</h2>
-
 <pre><code>$ docker port WebServer2 $CONTAINERPORT
 </code></pre>
-
 <p>To run bind a specific port like following 8090 we use -p option</p>
-
 <pre><code>$ docker run -d -p 8090:80 --name=MyWebServer3 nginx:latest
 
 $ docker ps
 </code></pre>
-
 <p>Check port which is getting redirected</p>
-
 <p>You can check forwarding using follwing commands</p>
-
 <pre><code>  $ elinks 172.17.0.2
   $ elinks http://localhost:8090
 </code></pre>
-
 <h2 id="mounting-volumes">Mounting Volumes</h2>
-
 <pre><code>  $ mkdir www
   $ cd www
   $ vi index.html
 </code></pre>
-
 <p>Put following code in the index.html
-        <html>
-        <body>
-        <h1>My Custom HTML </h1>
-        </body>
-        </html></p>
-
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->My Custom HTML <!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted --></p>
 <pre><code>    $ docker run -d -p 8070:80 --name=WebServer5 -v /home/tayyabali/www:/usr/share/nginx/html nginx:latest
 </code></pre>
-
 <p>Now you can check the site in the localhost or using ip address of the container as follows
 Check Ip</p>
-
 <pre><code>    $ docker ps
     $ docker inspect
     $ elinks 172.17.0.3
@@ -630,32 +487,23 @@ Check Ip</p>
     $ docker images
     $ docker ps
 </code></pre>
-
 <p>Stop containers if any running</p>
-
 <pre><code>    $ docker stop CONTAINER_ID/NAME
 </code></pre>
-
 <p>Lets Cleanup all the containers and keep only images</p>
-
 <pre><code>    $ docker ps -a
     $ docker rm `docker ps -a -q`
     $ docker ps -a
     $ docker ps
 </code></pre>
-
 <p>Lets build a directory for our build</p>
-
 <pre><code>    $ mkdir build
     $ cd build
     $ docker images
 </code></pre>
-
 <p>We only now have images</p>
-
 <p>Create a file in build directory
-        $ vi Dockerfile</p>
-
+$ vi Dockerfile</p>
 <pre><code>Put followig text in the Dockerfile
 
     FROM debian:stable
@@ -664,24 +512,16 @@ Check Ip</p>
     RUN apt-get upgrade
     RUN apt-get install telnet
 </code></pre>
-
 <p>Then lets build the image using followig command</p>
-
 <pre><code>  $ build$ docker build -t tayyabali/myapache .
 </code></pre>
-
 <p>You may see this is failed because of the questions it asks</p>
-
 <pre><code>  Do you want to continue? [Y/n] Abort
 </code></pre>
-
 <p>If build is failed you have only latest debian image available as you can see</p>
-
 <pre><code>  $ docker images
 </code></pre>
-
 <p>But what happens if we try to pur a unknow command in the file as shown below and build image</p>
-
 <pre><code>  FROM debian:stable
   MAINTAINER tayyabali &lt;tayyabsayyad@gmail.com&gt;
   RUN apt-get update
@@ -689,21 +529,15 @@ Check Ip</p>
   RUN apt-get install telnet
   RUN my-command
 </code></pre>
-
 <p>Docker uses cache memory for the image layer, When you run commands separately image layers are increased good to combine command together as following</p>
-
 <pre><code>  FROM debian:stable
   MAINTAINER tayyabali &lt;tayyabsayyad@gmail.com&gt;
   RUN apt-get update &amp;&amp; apt-get upgrade -y &amp;&amp; apt-get install -y telnet apache2 elinks openssh-server
 </code></pre>
-
 <p>Check the build image</p>
-
 <pre><code>  $ docker images
 </code></pre>
-
 <p>Lets add environment variables and file looks as followig</p>
-
 <pre><code>  FROM debian:stable
   MAINTAINER tayyabali &lt;tayyabsayyad@gmail.com&gt;
 
@@ -711,36 +545,26 @@ Check Ip</p>
 
   ENV MYVALUE my-value
 </code></pre>
-
 <p>and build image again</p>
-
 <pre><code>  $ docker build -t tayyabali/myapache .
 
                 It will build quickly becaue it used cache
 </code></pre>
-
 <p>Lets make container from the image</p>
-
 <pre><code>  $ docker run -it tayyabali/myapache:latest /bin/bash
 </code></pre>
-
 <p>and check the environment variable in container, you can see the value</p>
-
 <pre><code>  $ root@3012264990e9:/# echo $MYVALUE
   my-value
 </code></pre>
-
 <p>This is the way how you can pass variable in the container which is instantiated
-  Lets Clean up again</p>
-
+Lets Clean up again</p>
 <pre><code>    $ docker ps -a
     $ docker rm `docker ps -a -q`
     $ docker ps -a
     $ docker ps
 </code></pre>
-
 <p>Lets change the Dockerfile as follows to expose the ports</p>
-
 <pre><code>    FROM debian:stable
     MAINTAINER tayyabali &lt;tayyabsayyad@gmail.com&gt;
 
@@ -751,34 +575,23 @@ Check Ip</p>
     EXPOSE 80
     EXPOSE 22
 </code></pre>
-
 <p>and build the image again</p>
-
 <pre><code>    $ docker build -t tayyabali/myapache .
 </code></pre>
-
 <p>Lets create the continer based on the image created</p>
-
 <pre><code>    $ docker run -it tayyabali/myapache:latest /bin/bash
 </code></pre>
-
 <p>Open New Terminal and see ports are now open</p>
-
 <pre><code>    $ docker ps
 </code></pre>
-
 <p>Exit from the container and remove the container</p>
-
 <pre><code>    $ docker ps -a
     $ docker rm `docker ps -a -q`
     $ docker ps -a
     $ docker ps
 </code></pre>
-
 <p>Starting apache in the container</p>
-
 <p>Remove the port 22 we dont need that to be exposed and add command to start apache as follows</p>
-
 <pre><code>    FROM debian:stable
     MAINTAINER tayyabali &lt;tayyabsayyad@gmail.com&gt;
 
@@ -790,41 +603,28 @@ Check Ip</p>
 
     CMD [&quot;/usr/sbin/apache2ctl&quot;,&quot;-D&quot;,&quot;FOREGROUND&quot;]
 </code></pre>
-
 <p>Build the image again</p>
-
 <pre><code>  $ docker build -t tayyabali/myapache .
 </code></pre>
-
 <p>Now once image is built make container as follows, we will run in the -d mode as we have executed commands in the continer</p>
-
 <pre><code>  $ docker run -d tayyabali/myapache:latest
   $ docker ps
   $ docker inspect CONTAINER_ID
 </code></pre>
-
 <p>Now check the apache page</p>
-
 <pre><code>$ elinks 172.17.0.2
 </code></pre>
-
 <p>Now you can do port redirection, valume management</p>
-
 <p>You can also connect to the container as follows</p>
-
 <pre><code>$ docker exec -it fervent_visvesvaraya /bin/bash
 root@c4ecaf1aa2fe:/# ps aux | grep apache
 root@c4ecaf1aa2fe:/# echo $MYVALUE
 </code></pre>
-
 <p>See apache is running and MYVALUE is also set</p>
-
 <p>Exit and check ps it will be still running</p>
-
 <pre><code>root@c4ecaf1aa2fe:/# exit
 $ docker ps
 </code></pre>
-
 <p>To learn more about the docker files check the official repositories images docker files.</p>
 		</div>
 		<footer class="post__footer">
@@ -910,43 +710,37 @@ $ docker ps
 	<h4 class="widget-social__title widget__title">Social</h4>
 	<div class="widget-social__content widget__content">
 		<div class="widget-social__item widget__item">
-			<a class="widget-social__link widget__link btn" title="Facebook" rel="noopener noreferrer" href="https://facebook.com/https://www.facebook.com/tayyabsayyad" target="_blank">
-				<svg class="widget-social__link-icon icon icon-facebook" width="24" height="24" viewBox="0 0 352 352"><path d="m0 32v288c0 17.5 14.5 32 32 32h288c17.5 0 32-14.5 32-32v-288c0-17.5-14.5-32-32-32h-288c-17.5 0-32 14.5-32 32zm320 0v288h-83v-108h41.5l6-48h-47.5v-31c0-14 3.5-23.5 23.5-23.5h26v-43.5c-4.4-.6-19.8-1.5-37.5-1.5-36.9 0-62 22.2-62 63.5v36h-42v48h42v108h-155v-288z"/></svg>
-				<span>Facebook</span>
-			</a>
-		</div>
-		<div class="widget-social__item widget__item">
-			<a class="widget-social__link widget__link btn" title="Twitter" rel="noopener noreferrer" href="https://twitter.com/https://twitter.com/tayyabsayyad" target="_blank">
+			<a class="widget-social__link widget__link btn" title="Twitter" rel="noopener noreferrer" href="https://twitter.com/tayyabsayyad" target="_blank">
 				<svg class="widget-social__link-icon icon icon-twitter" width="24" height="24" viewBox="0 0 384 312"><path d="m384 36.9c-14.1 6.3-29.3 10.5-45.2 12.4 16.3-9.7 28.8-25.2 34.6-43.6-15.2 9-32.1 15.6-50 19.1-14.4-15.2-34.9-24.8-57.5-24.8-43.5 0-78.8 35.3-78.8 78.8 0 6.2.7 12.2 2 17.9-65.5-3.3-123.5-34.6-162.4-82.3-6.7 11.6-10.6 25.2-10.6 39.6 0 27.3 13.9 51.4 35 65.6-12.9-.4-25.1-4-35.7-9.9v1c0 38.2 27.2 70 63.2 77.2-6.6 1.8-13.6 2.8-20.8 2.8-5.1 0-10-.5-14.8-1.4 10 31.3 39.1 54.1 73.6 54.7-27 21.1-60.9 33.7-97.8 33.7-6.4 0-12.6-.4-18.8-1.1 34.9 22.4 76.3 35.4 120.8 35.4 144.9 0 224.1-120 224.1-224.1 0-3.4-.1-6.8-.2-10.2 15.4-11.1 28.7-25 39.3-40.8z"/></svg>
 				<span>Twitter</span>
 			</a>
 		</div>
 		<div class="widget-social__item widget__item">
-			<a class="widget-social__link widget__link btn" title="Instagram" rel="noopener noreferrer" href="https://www.instagram.com/https://www.instagram.com/tayyabsayyad/" target="_blank">
+			<a class="widget-social__link widget__link btn" title="Instagram" rel="noopener noreferrer" href="https://www.instagram.com/tayyabsayyad" target="_blank">
 				<svg class="widget-social__link-icon icon icon-instagram" width="24" height="24" viewBox="0 0 256 256"><circle cx="193" cy="59" r="15"/><path fill-rule="evenodd" d="M101 0h54c41 0 58.4 3.9 74.5 17C256.2 37.5 256 74.8 256 97.7v60c0 26.7 0 60.4-26.5 81.4-16 13.4-33.5 16.9-74.5 16.9h-54c-41 0-57.5-3.5-74.5-16.9C1 218.9.5 186.3.1 160.5L0 155V97.7c0-23-.2-60.2 26.5-80.7C45 2 60 0 101 0zm4.9 23h44.3c45.8 0 58.3 3.5 70.3 17.5 11.8 13.2 12 30.1 12.5 62.9V156c.2 20.8.3 45.8-12.5 59.5-12 14-24.5 17.5-70.3 17.5h-44.3c-45.9 0-57.3-3.5-70.4-17.5-12.2-13-12.3-36.5-12.4-56.7v-55.6c.4-32.6.7-49.6 12.4-62.7C48 26.5 60 23 105.9 23zm19.6 144.5a42 42 0 1 0 0-84 42 42 0 0 0 0 84zm0 22.5a64.5 64.5 0 1 0 0-129 64.5 64.5 0 0 0 0 129z"/></svg>
 				<span>Instagram</span>
 			</a>
 		</div>
 		<div class="widget-social__item widget__item">
-			<a class="widget-social__link widget__link btn" title="LinkedIn" rel="noopener noreferrer" href="https://linkedin.com/in/https://www.linkedin.com/in/tayyabsayyad" target="_blank">
+			<a class="widget-social__link widget__link btn" title="LinkedIn" rel="noopener noreferrer" href="https://linkedin.com/in/tayyabsayyad/" target="_blank">
 				<svg class="widget-social__link-icon icon icon-linkedin" width="24" height="24" viewBox="0 0 352 352"><path d="M0,40v272c0,21.9,18.1,40,40,40h272c21.9,0,40-18.1,40-40V40c0-21.9-18.1-40-40-40H40C18.1,0,0,18.1,0,40z M312,32 c4.6,0,8,3.4,8,8v272c0,4.6-3.4,8-8,8H40c-4.6,0-8-3.4-8-8V40c0-4.6,3.4-8,8-8H312z M59.5,87c0,15.2,12.3,27.5,27.5,27.5 c15.2,0,27.5-12.3,27.5-27.5c0-15.2-12.3-27.5-27.5-27.5C71.8,59.5,59.5,71.8,59.5,87z M187,157h-1v-21h-45v152h47v-75 c0-19.8,3.9-39,28.5-39c24.2,0,24.5,22.4,24.5,40v74h47v-83.5c0-40.9-8.7-72-56.5-72C208.5,132.5,193.3,145.1,187,157z M64,288h47.5 V136H64V288z"/></svg>
 				<span>LinkedIn</span>
 			</a>
 		</div>
 		<div class="widget-social__item widget__item">
-			<a class="widget-social__link widget__link btn" title="Telegram" rel="noopener noreferrer" href="https://t.me/https://telegram.me/tayyabali" target="_blank">
+			<a class="widget-social__link widget__link btn" title="Telegram" rel="noopener noreferrer" href="https://t.me/tayyabali" target="_blank">
 				<svg class="widget-social__link-icon icon icon-telegram" width="24" height="24" viewBox="0 0 132 110"><path fill="#ddd" d="M50 103c-4 0-3-1-5-5L34 60l88-52"/><path fill="#aaa" d="M50 103c3 0 4-1 6-3l16-16-20-12"/><path fill="#fff" d="M52 72l48 36c6 3 10 2 11-5l20-93c2-8-3-11-8-9L7 45c-8 4-8 8-1 10l29 9 69-43c3-2 6-1 4 1"/></svg>
 				<span>Telegram</span>
 			</a>
 		</div>
 		<div class="widget-social__item widget__item">
-			<a class="widget-social__link widget__link btn" title="GitHub" rel="noopener noreferrer" href="https://github.com/https://github.com/tayyabsayyad" target="_blank">
+			<a class="widget-social__link widget__link btn" title="GitHub" rel="noopener noreferrer" href="https://github.com/tayyabsayyad" target="_blank">
 				<svg class="widget-social__link-icon icon icon-github" width="24" height="24" viewBox="0 0 384 374"><path d="m192 0c-106.1 0-192 85.8-192 191.7 0 84.7 55 156.6 131.3 181.9 9.6 1.8 13.1-4.2 13.1-9.2 0-4.6-.2-16.6-.3-32.6-53.4 11.6-64.7-25.7-64.7-25.7-8.7-22.1-21.3-28-21.3-28-17.4-11.9 1.3-11.6 1.3-11.6 19.3 1.4 29.4 19.8 29.4 19.8 17.1 29.3 44.9 20.8 55.9 15.9 1.7-12.4 6.7-20.8 12.2-25.6-42.6-4.8-87.5-21.3-87.5-94.8 0-20.9 7.5-38 19.8-51.4-2-4.9-8.6-24.3 1.9-50.7 0 0 16.1-5.2 52.8 19.7 15.3-4.2 31.7-6.4 48.1-6.5 16.3.1 32.7 2.2 48.1 6.5 36.7-24.8 52.8-19.7 52.8-19.7 10.5 26.4 3.9 45.9 1.9 50.7 12.3 13.4 19.7 30.5 19.7 51.4 0 73.7-44.9 89.9-87.7 94.6 6.9 5.9 13 17.6 13 35.5 0 25.6-.2 46.3-.2 52.6 0 5.1 3.5 11.1 13.2 9.2 76.2-25.5 131.2-97.3 131.2-182 0-105.9-86-191.7-192-191.7z"/></svg>
 				<span>GitHub</span>
 			</a>
 		</div>
 		<div class="widget-social__item widget__item">
-			<a class="widget-social__link widget__link btn" title="GitLab" rel="noopener noreferrer" href="https://gitlab.com/https://gitlab.com/tayyabsayyad" target="_blank">
+			<a class="widget-social__link widget__link btn" title="GitLab" rel="noopener noreferrer" href="https://gitlab.com/tayyabsayyad" target="_blank">
 				<svg class="widget-social__link-icon icon icon-gitlab" width="24" height="24" viewBox="0 0 265 265"><path d="M128.075 236.075l47.104-144.97H80.97l47.104 144.97z M14.956 91.104L.642 135.16a9.752 9.752 0 0 0 3.542 10.903l123.891 90.012-113.12-144.97z M14.956 91.105H80.97L52.601 3.79c-1.46-4.493-7.816-4.492-9.275 0l-28.37 87.315z M241.194 91.104l14.314 44.056a9.752 9.752 0 0 1-3.543 10.903l-123.89 90.012 113.119-144.97z M241.194 91.105h-66.015l28.37-87.315c1.46-4.493 7.816-4.492 9.275 0l28.37 87.315z"/></svg>
 				<span>GitLab</span>
 			</a>
@@ -989,7 +783,7 @@ $ docker ps
 		<a class="widget-taglist__link widget__link btn" href="/tags/commands/" title="Commands">Commands</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/geodjango/" title="GeoDjango">GeoDjango</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/geoserver/" title="geoserver">geoserver</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/linux/" title="LINUX">LINUX</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/linux/" title="Linux">Linux</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/postgis/" title="postgis">postgis</a>
 	</div>
 </div>
@@ -999,7 +793,7 @@ $ docker ps
 	<div class="container footer__container flex">
 		
 		<div class="footer__copyright">
-			&copy; 2019 Open Source Tutorials.
+			&copy; 2020 Open Source Tutorials.
 			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
 		</div>
 	</div>

@@ -46,6 +46,8 @@ In this post we will learn how to quickly start using docker
     $ sudo apt-get update
     $ sudo apt-get install docker-ce
 
+[![Foo](https://www.vultr.com/media/banners/banner_468x60.png)](https://www.vultr.com/?ref=8528975)
+
 #### Finally check the docker installation is correct
     $ sudo docker run hello-world
 

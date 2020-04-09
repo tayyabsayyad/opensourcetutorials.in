@@ -1,0 +1,4 @@
+default http://www.google.com
+rect  https://www.dell.com/en-in 34,44,270,350
+rect  https://www.gadgetsnow.com/mobile-phones 290,172,333,250
+circle  http://www.yahoo.com 337,300,44

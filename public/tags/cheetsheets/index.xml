@@ -13,38 +13,38 @@
     
     
     <item>
-      <title>Ansible</title>
-      <link>https://opensourcetutorials.in/post/cheetsheets/ansible/</link>
+      <title>Ansible Quick Start</title>
+      <link>https://opensourcetutorials.in/cheetsheets/ansible/</link>
       <pubDate>Mon, 31 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://opensourcetutorials.in/post/cheetsheets/ansible/</guid>
+      <guid>https://opensourcetutorials.in/cheetsheets/ansible/</guid>
       <description>&lt;p&gt;Ansible is powerful open source IT automation tool. It allows you to manage IT infrasture and apps deployment easily.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Screen : Terminal Multiplexer</title>
-      <link>https://opensourcetutorials.in/post/cheetsheets/screen_useful_commands/</link>
+      <link>https://opensourcetutorials.in/cheetsheets/screen_useful_commands/</link>
       <pubDate>Sat, 29 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://opensourcetutorials.in/post/cheetsheets/screen_useful_commands/</guid>
+      <guid>https://opensourcetutorials.in/cheetsheets/screen_useful_commands/</guid>
       <description>&lt;p&gt;Cheetsheet for Screen which is Terminal Multiplexer, Allows you to use multiple screens.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title> Git Quick Start</title>
-      <link>https://opensourcetutorials.in/post/cheetsheets/gitcheetsheet/</link>
+      <link>https://opensourcetutorials.in/cheetsheets/gitcheetsheet/</link>
       <pubDate>Tue, 25 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://opensourcetutorials.in/post/cheetsheets/gitcheetsheet/</guid>
+      <guid>https://opensourcetutorials.in/cheetsheets/gitcheetsheet/</guid>
       <description>&lt;p&gt;In this post we will learn basic commands to get started with git and github&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Docker Quick Start</title>
-      <link>https://opensourcetutorials.in/post/cheetsheets/docker_useful_commands/</link>
+      <link>https://opensourcetutorials.in/cheetsheets/docker_useful_commands/</link>
       <pubDate>Tue, 25 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://opensourcetutorials.in/post/cheetsheets/docker_useful_commands/</guid>
+      <guid>https://opensourcetutorials.in/cheetsheets/docker_useful_commands/</guid>
       <description>&lt;p&gt;In this post we will learn how to quickly start using docker&lt;/p&gt;</description>
     </item>
     

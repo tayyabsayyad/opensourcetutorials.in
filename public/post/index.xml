@@ -7,55 +7,10 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</copyright>
-    <lastBuildDate>Thu, 12 Sep 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 08 Sep 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://opensourcetutorials.in/post/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Linux alternatives to windows softwares </title>
-      <link>https://opensourcetutorials.in/post/alternatives/</link>
-      <pubDate>Thu, 12 Sep 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://opensourcetutorials.in/post/alternatives/</guid>
-      <description>&lt;p&gt;In this post we will list all the Linux softwares equaivalent to windows softwares&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Why to learn commands in Linux </title>
-      <link>https://opensourcetutorials.in/post/whycommandline/</link>
-      <pubDate>Thu, 12 Sep 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://opensourcetutorials.in/post/whycommandline/</guid>
-      <description>&lt;p&gt;In this post we discuss why you must learn command line in Linux&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title> How to get help from Linux Community ? </title>
-      <link>https://opensourcetutorials.in/post/gettinghelp/</link>
-      <pubDate>Wed, 11 Sep 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://opensourcetutorials.in/post/gettinghelp/</guid>
-      <description>&lt;p&gt;In this post we learn how to get help from various open source communities.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title> Linux Package Managers </title>
-      <link>https://opensourcetutorials.in/post/installation/</link>
-      <pubDate>Tue, 10 Sep 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://opensourcetutorials.in/post/installation/</guid>
-      <description>&lt;p&gt;In this post, we will see installation methods used in Linux distributions&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title> Linux Commands Examples </title>
-      <link>https://opensourcetutorials.in/post/linuxcommands/</link>
-      <pubDate>Mon, 09 Sep 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://opensourcetutorials.in/post/linuxcommands/</guid>
-      <description>&lt;p&gt;In this post we will see all linux commands with detailed examples.&lt;/p&gt;</description>
-    </item>
     
     <item>
       <title>Installation of Skype on Manjaro Linux  </title>
@@ -67,20 +22,11 @@
     </item>
     
     <item>
-      <title>Must have softwares in Linux</title>
-      <link>https://opensourcetutorials.in/post/linuxsoftwares/</link>
-      <pubDate>Sun, 08 Sep 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://opensourcetutorials.in/post/linuxsoftwares/</guid>
-      <description>&lt;p&gt;In post contains the List of commonly used softwares in Linux.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title> Installation of Postgis and Geoserver on Ubuntu 18.04 </title>
-      <link>https://opensourcetutorials.in/post/gis/postgis/postgis/</link>
+      <link>https://opensourcetutorials.in/post/gis/postgis/</link>
       <pubDate>Fri, 06 Sep 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://opensourcetutorials.in/post/gis/postgis/postgis/</guid>
+      <guid>https://opensourcetutorials.in/post/gis/postgis/</guid>
       <description>&lt;p&gt;In this post we will learn install the geoserver and postgis on ubuntu 18.04&lt;/p&gt;</description>
     </item>
     
@@ -94,15 +40,6 @@
     </item>
     
     <item>
-      <title>Ansible</title>
-      <link>https://opensourcetutorials.in/post/cheetsheets/ansible/</link>
-      <pubDate>Mon, 31 Dec 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://opensourcetutorials.in/post/cheetsheets/ansible/</guid>
-      <description>&lt;p&gt;Ansible is powerful open source IT automation tool. It allows you to manage IT infrasture and apps deployment easily.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>RSS for the recent posts</title>
       <link>https://opensourcetutorials.in/post/rss/</link>
       <pubDate>Sat, 29 Dec 2018 00:00:00 +0000</pubDate>
@@ -112,39 +49,21 @@
     </item>
     
     <item>
-      <title>Screen : Terminal Multiplexer</title>
-      <link>https://opensourcetutorials.in/post/cheetsheets/screen_useful_commands/</link>
-      <pubDate>Sat, 29 Dec 2018 00:00:00 +0000</pubDate>
+      <title>Open Source Blogging Tools </title>
+      <link>https://opensourcetutorials.in/post/bloggingtools/</link>
+      <pubDate>Wed, 10 Jan 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://opensourcetutorials.in/post/cheetsheets/screen_useful_commands/</guid>
-      <description>&lt;p&gt;Cheetsheet for Screen which is Terminal Multiplexer, Allows you to use multiple screens.&lt;/p&gt;</description>
+      <guid>https://opensourcetutorials.in/post/bloggingtools/</guid>
+      <description>&lt;p&gt;In this post, we will look at top open source blogging tools&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title> Git Quick Start</title>
-      <link>https://opensourcetutorials.in/post/cheetsheets/gitcheetsheet/</link>
-      <pubDate>Tue, 25 Dec 2018 00:00:00 +0000</pubDate>
+      <title>Why we need Open-source software in schools?</title>
+      <link>https://opensourcetutorials.in/post/whymanjaro/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://opensourcetutorials.in/post/cheetsheets/gitcheetsheet/</guid>
-      <description>&lt;p&gt;In this post we will learn basic commands to get started with git and github&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title> Linux Commands</title>
-      <link>https://opensourcetutorials.in/post/cheetsheets/linux_useful_commands/</link>
-      <pubDate>Tue, 25 Dec 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://opensourcetutorials.in/post/cheetsheets/linux_useful_commands/</guid>
-      <description>&lt;p&gt;In this post we will see all linux commands which you find find useful in daily activites.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Cheetsheets</title>
-      <link>https://opensourcetutorials.in/post/cheetsheets/index/</link>
-      <pubDate>Tue, 25 Dec 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://opensourcetutorials.in/post/cheetsheets/index/</guid>
-      <description>&lt;h3 id=&#34;index-of-all-cheetsheets&#34;&gt;Index of all Cheetsheets&lt;/h3&gt;</description>
+      <guid>https://opensourcetutorials.in/post/whymanjaro/</guid>
+      <description>&lt;p&gt;In this post we will see reasons why somebody who wants to learn Linux must use Manjaro Linux.&lt;/p&gt;</description>
     </item>
     
   </channel>
